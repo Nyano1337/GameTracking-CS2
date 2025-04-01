@@ -46,3 +46,5 @@ DumpSource2/.stringsignore
 **/*_turkish*.txt
 **/*_ukrainian*.txt
 **/*_vietnamese*.txt
+*.pb.cc
+*.pb.h
