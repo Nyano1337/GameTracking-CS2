@@ -241,11 +241,9 @@ autoexposure scratch not set
 autoexposure source not set
 bad allocation
 bad array new length
-ceilf
 chlid 18
 convolution argument not set
 external memory type not supported by the device
-free
 gfx1030
 gfx800
 gfx802
@@ -288,19 +286,12 @@ invalid hash bucket count
 invalid image format
 invalid number of HIP devices/streams
 invalid storage mode
-malloc
-memchr
-memcmp
-memcpy
-memmove
-memset
 num_group: 
 oidn_init_module_device_hip_v20300
 operation is not implemented
 pooling source/destination not set
 r\n0\tp
 string too long
-strlen
 unexpected convolution activation function
 unexpected convolution source data type
 unexpected input processing destination channel count

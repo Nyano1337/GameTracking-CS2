@@ -216,6 +216,10 @@ var ItemTile;
             $.DispatchEvent("OnItemTileActivated", $.GetContextPanel(), id);
             return;
         }
+        if ($.GetContextPanel().FindAncestor("id-pet-sticker-item-list") != null) {
+            $.DispatchEvent("OnItemTileActivated", $.GetContextPanel(), id);
+            return;
+        }
         let capabilityInfo = _GetPopUpCapability();
         if (capabilityInfo) {
             $.DispatchEvent('CSGOPlaySoundEffect', 'inventory_item_select', 'MOUSE');
@@ -373,6 +377,34 @@ var ItemTile;
     }
     ;
     let jsTooltipDelayHandle = null;
+    function ShowVideoClip() {
+        const id = $.GetContextPanel().GetAttributeString('itemid', '0');
+        const reelId = InventoryAPI.GetItemAttributeValue(id, '{uint32}keychain slot 0 highlight');
+        if (reelId) {
+            const reelJson = InventoryAPI.BuildHighlightReelSchemaJSON(reelId);
+            const reelSchemaDef = JSON.parse(reelJson);
+            const videoPlayerContainer = $.GetContextPanel().FindChildTraverse('VideoClipMovieContainer');
+            const videoPlayer = $.GetContextPanel().FindChildTraverse('VideoClipMovie');
+            if (videoPlayerContainer && videoPlayer) {
+                videoPlayerContainer.AddClass('play');
+                videoPlayer.AddClass('play');
+                videoPlayer.SetMovie(reelSchemaDef["url_480p"]);
+                videoPlayer.Play();
+            }
+        }
+    }
+    function HideVideoClip() {
+        let id = $.GetContextPanel().GetAttributeString('itemid', '0');
+        if (InventoryAPI.GetItemAttributeValue(id, '{uint32}keychain slot 0 highlight')) {
+            const videoPlayerContainer = $.GetContextPanel().FindChildTraverse('VideoClipMovieContainer');
+            const videoPlayer = $.GetContextPanel().FindChildTraverse('VideoClipMovie');
+            if (videoPlayerContainer && videoPlayer) {
+                videoPlayerContainer.RemoveClass('play');
+                videoPlayer.RemoveClass('play');
+                videoPlayer.Stop();
+            }
+        }
+    }
     function ShowTooltip() {
         jsTooltipDelayHandle = $.Schedule(.4, ShowToolTipOnDelay);
     }
@@ -384,6 +416,7 @@ var ItemTile;
             return;
         }
         UiToolkitAPI.ShowCustomLayoutParametersTooltip('ItemImage', 'JsItemTooltip', 'file://{resources}/layout/tooltips/tooltip_inventory_item.xml', 'itemid=' + id);
+        ShowVideoClip();
     }
     ;
     function HideTooltip() {
@@ -392,6 +425,7 @@ var ItemTile;
             $.CancelScheduled(jsTooltipDelayHandle);
             jsTooltipDelayHandle = null;
         }
+        HideVideoClip();
     }
     ItemTile.HideTooltip = HideTooltip;
     ;

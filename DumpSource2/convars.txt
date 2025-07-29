@@ -709,6 +709,9 @@ cash_team_loser_bonus 1400 (gamedll clientdll notify replicated release commandl
 cash_team_loser_bonus_consecutive_rounds 500 (gamedll clientdll notify replicated release commandline_enforced)
 	<no description>
 
+cash_team_per_dead_enemy 50 (gamedll clientdll notify replicated release commandline_enforced)
+	<no description>
+
 cash_team_planted_bomb_but_defused 600 (gamedll clientdll notify replicated release commandline_enforced)
 	<no description>
 
@@ -1150,6 +1153,9 @@ cl_embedded_stream_video_playing 0 (developmentonly clientdll hidden defensive)
 cl_enable_eye_occlusion true (developmentonly clientdll defensive)
 	<no description>
 
+cl_enable_party_voice true (clientdll archive release)
+	<no description>
+
 cl_ent_joint_axis_size 4 (developmentonly clientdll defensive)
 	<no description>
 
@@ -1336,6 +1342,9 @@ cl_hide_avatar_images 0 (clientdll archive)
 	1 - Block All
 	2 - Block all but friends
 
+cl_highlights_hud_playback 0 (clientdll hidden release)
+	Highlights hud playback
+
 cl_hitbox_debug false (developmentonly clientdll defensive)
 	<no description>
 
@@ -1386,9 +1395,6 @@ cl_hud_telemetry_ping_show 1 (clientdll archive release)
 
 cl_hud_telemetry_serverrecvmargin_graph_show 0 (clientdll archive release)
 	Show graph of the server recv margin in the HUD.  (How early/late user commands are arriving at the server before they are executed.)   0=never, 1=only when there are command queue problems, 2=always
-
-cl_ignore_campaign_completion_requirements false (developmentonly clientdll)
-	Ignores campaign progression requirements when granting quests.
 
 cl_ignorepackets false (cheat)
 	Force client to ignore packets (for debugging).
@@ -2320,6 +2326,9 @@ cl_weapon_debug_show_accuracy_duration 10 (clientdll cheat release)
 cl_weapon_pickup_lerp 2 (developmentonly clientdll defensive)
 	<no description>
 
+cl_weapon_selection_rarity_color false (clientdll archive release)
+	<no description>
+
 cl_workshop_map_download_timeout 120 (developmentonly clientdll defensive)
 	<no description>
 
@@ -2673,9 +2682,6 @@ csgo_nav_jump_link_detour_threshold 1500 (developmentonly gamedll replicated def
 
 csgo_use_fullsort_for_opaque true (clientdll cheat)
 	fullsort the opaque pass when there wasn't a depth prepass
-
-csgo_vanity_defer_teleport 3 (developmentonly clientdll)
-	<no description>
 
 csm_bias_override_0 1 (cheat)
 	<no description>
@@ -3844,6 +3850,12 @@ inferno_smoke_volume_density 0.03 (gamedll cheat)
 inferno_spawn_angle 45 (gamedll cheat)
 	Angular change from parent
 
+inferno_spread_speed_mult 1 (gamedll replicated release)
+	Speed up the spreadrate of the Molotov until max number of nodes are created.  slowdown < 1 > Speedup
+
+inferno_spread_speed_mult_ct 10 (gamedll replicated release)
+	Speed up the spread rate of the Incendiary until max number of nodes are created. slowdown < 1 > Speedup
+
 inferno_surface_offset 15 (gamedll cheat)
 	<no description>
 
@@ -3851,6 +3863,9 @@ inferno_velocity_decay_factor 0.2 (gamedll cheat)
 	<no description>
 
 inferno_velocity_factor 0.003 (gamedll cheat)
+	<no description>
+
+inferno_velocity_factor_ct 0.003 (gamedll cheat)
 	<no description>
 
 inferno_velocity_normal_factor 0 (gamedll cheat)
@@ -4899,21 +4914,6 @@ mp_halftime_pausematch 0 (gamedll clientdll replicated release)
 mp_halftime_pausetimer 0 (gamedll clientdll replicated release commandline_enforced)
 	Set to 1 to stay in halftime indefinitely. Set to 0 to resume the timer.
 
-mp_heavyassaultsuit_aimpunch true (gamedll clientdll replicated release commandline_enforced)
-	How much EXTRA aim punch will happen when a player wearing the assault suit gets when shot
-
-mp_heavyassaultsuit_cooldown 5 (gamedll clientdll replicated release commandline_enforced)
-	Determines cooldown of purchase.
-
-mp_heavyassaultsuit_deploy_timescale 0.8 (gamedll clientdll replicated release commandline_enforced)
-	How fast a player wearing the heavy assault suit will draw their weapon (1.0 = normal speed, 0.5 = half speed)
-
-mp_heavyassaultsuit_speed 130 (gamedll clientdll replicated release commandline_enforced)
-	The max speed of a player when they are wearing the heavy assault suit
-
-mp_heavybot_damage_reduction_scale 1 (gamedll clientdll replicated release commandline_enforced)
-	How much damage should scale when the player wearing the heavy assault suit is shot (1.0 = no change, 0.5 = half damage)
-
 mp_hostages_max 2 (gamedll replicated release commandline_enforced)
 	Maximum number of hostages to spawn.
 
@@ -5309,9 +5309,6 @@ mp_weapon_self_inflict_amount 0 (gamedll replicated release commandline_enforced
 
 mp_weapons_allow_heavy -1 (gamedll clientdll replicated release commandline_enforced)
 	Determines which team, if any, can purchase Heavy guns. -1 = any; 0 = non; 2 = Ts; 3 = CTs.
-
-mp_weapons_allow_heavyassaultsuit false (gamedll clientdll replicated release commandline_enforced)
-	Determines whether heavyassaultsuit is permitted.
 
 mp_weapons_allow_map_placed false (gamedll clientdll replicated release commandline_enforced)
 	If this convar is set, when a match starts, the game will not delete weapons placed in the map.
@@ -6090,72 +6087,6 @@ opus_unittest_test_signal false (developmentonly)
 panorama_2d_translate_no_comp_layer true (developmentonly hidden defensive)
 	<no description>
 
-panorama_3dpanel_anim_fadeinout_time_scale 2 (developmentonly clientdll)
-	temp scale factor for animation fade in/out time
-
-panorama_3dpanel_anims_pivotlock false (developmentonly clientdll)
-	default true.
-
-panorama_3dpanel_camera_blend_mode 0 (developmentonly clientdll)
-	<no description>
-
-panorama_3dpanel_camera_inout_scale 0.1 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_camera_inout_scale_kb 1 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_camera_lookat_scale 0.1 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_camera_preset_blend_time 1 (developmentonly clientdll)
-	time to blend between camera presets
-
-panorama_3dpanel_camera_rotate_altitude_scale 0.004 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_camera_rotate_azimuth_scale 0.004 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_debuginfo_anim true (developmentonly clientdll)
-	<no description>
-
-panorama_3dpanel_debuginfo_cam true (developmentonly clientdll)
-	<no description>
-
-panorama_3dpanel_debuginfo_item true (developmentonly clientdll)
-	<no description>
-
-panorama_3dpanel_debuginfo_manifest true (developmentonly clientdll)
-	<no description>
-
-panorama_3dpanel_debuginfo_paused true (developmentonly clientdll)
-	<no description>
-
-panorama_3dpanel_debuginfo_player true (developmentonly clientdll)
-	<no description>
-
-panorama_3dpanel_light_move_scale 0.1 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_light_rotate_altitude_scale 0.004 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_light_rotate_azimuth_scale 0.004 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_loadout_rotate_drag 0.19 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_loadout_rotate_frametime_multiplier 4 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_loadout_rotate_grab_scale 0.5 (developmentonly clientdll defensive)
-	<no description>
-
-panorama_3dpanel_loadout_rotate_scale 2 (developmentonly clientdll defensive)
-	<no description>
-
 panorama_alignment_fixes true (developmentonly hidden defensive)
 	Fix alignment issues
 
@@ -6337,9 +6268,6 @@ panorama_label_wrap_before_shrink true (developmentonly clientdll hidden defensi
 	Should labels try to wrap text before using text-overflow: shrink
 
 panorama_large_dispatch_event_queue 0 (developmentonly hidden defensive)
-	<no description>
-
-panorama_light_inout_scale 0.5 (developmentonly clientdll defensive)
 	<no description>
 
 panorama_max_fps 120 (developmentonly hidden defensive)
@@ -6702,10 +6630,10 @@ player0_using_joystick false (archive)
 player_botdifflast_s "2" (clientdll archive release)
 	<no description>
 
-player_competitive_maplist_2v2_10_0_CCC21262 "mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_palais,mg_de_whistle,mg_de_overpass" (clientdll archive)
+player_competitive_maplist_2v2_10_0_E7739BAE "mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_brewery,mg_de_dogtown,mg_de_overpass" (clientdll archive)
 	<no description>
 
-player_competitive_maplist_8_10_0_E5CC76A3 "mg_de_dust2,mg_de_train,mg_de_ancient,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_cs_italy,mg_de_edin,mg_de_anubis,mg_lobby_mapveto,mg_de_basalt,mg_de_overpass" (clientdll archive)
+player_competitive_maplist_8_10_0_F1716344 "mg_de_grail,mg_de_dust2,mg_de_train,mg_de_ancient,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_cs_italy,mg_de_jura,mg_de_anubis,mg_lobby_mapveto,mg_cs_agency,mg_de_overpass" (clientdll archive)
 	<no description>
 
 player_debug_off_nav false (gamedll cheat)
@@ -6918,6 +6846,9 @@ r_csgo_cmaa_quality 3 (developmentonly clientdll defensive)
 r_csgo_csm_pushback_distance 7000 (developmentonly clientdll)
 	<no description>
 
+r_csgo_csm_pushback_distance_preview 1500 (developmentonly clientdll)
+	<no description>
+
 r_csgo_cubemap_normalization true (clientdll cheat)
 	<no description>
 
@@ -7071,12 +7002,6 @@ r_csgo_override_global_time true (clientdll cheat)
 r_csgo_postprocess_enable true (clientdll cheat)
 	<no description>
 
-r_csgo_preview_csm_max_visible_distance 2000 (developmentonly clientdll)
-	<no description>
-
-r_csgo_preview_csm_pushback_distance 1500 (developmentonly clientdll)
-	<no description>
-
 r_csgo_prewarm_particles false (developmentonly clientdll defensive)
 	<no description>
 
@@ -7216,9 +7141,6 @@ r_csgo_water_skybox_depth true (developmentonly clientdll)
 	<no description>
 
 r_cubemap_debug_colors 0 (cheat)
-	<no description>
-
-r_dac_disable_portrait_world_renderer false (developmentonly clientdll)
 	<no description>
 
 r_dashboard_render_quality true (developmentonly clientdll missing1 defensive)
@@ -7508,9 +7430,6 @@ r_icon_max_mip_width 128 (developmentonly clientdll cheat)
 
 r_icon_player_equip_gloves_from_loadout false (developmentonly clientdll cheat)
 	equip gloves on player for icon rendering from loadout, or use default gloves
-
-r_icon_reload_map false (developmentonly clientdll cheat)
-	force reload map on new request
 
 r_icon_rendering_height 384 (developmentonly clientdll hidden cheat)
 	icon rendering height
@@ -8658,6 +8577,9 @@ snd_mapobjective_volume 0.04 (min: 0, max: 1, clientdll archive release)
 snd_max_pitch_shift_inaccuracy 0.08 (developmentonly gamedll clientdll replicated defensive)
 	<no description>
 
+snd_menumap_volume 1 (min: 0, max: 1, clientdll archive release)
+	Volume of background sounds for maps
+
 snd_menumusic_volume 0.04 (min: 0, max: 1, clientdll archive release)
 	Volume of Menu / Non-gameplay music
 
@@ -9684,35 +9606,14 @@ sv_guardian_extra_equipment_ct "" (gamedll release commandline_enforced)
 sv_guardian_extra_equipment_t "" (gamedll release commandline_enforced)
 	Extra starting equipment for Terrorist players in guardian modes
 
-sv_guardian_health_refresh_per_wave 50 (gamedll release commandline_enforced)
-	Health given to survivors per wave in guardian mode.
-
-sv_guardian_heavy_all false (gamedll release commandline_enforced)
-	<no description>
-
-sv_guardian_heavy_count 0 (gamedll release commandline_enforced)
-	<no description>
-
-sv_guardian_max_wave_for_heavy 0 (gamedll release commandline_enforced)
-	<no description>
-
-sv_guardian_min_wave_for_heavy 0 (gamedll release commandline_enforced)
-	<no description>
-
 sv_guardian_refresh_ammo_for_items_on_waves "" (gamedll release commandline_enforced)
 	List of additional weapons to refill ammo on waves.
-
-sv_guardian_respawn_health 50 (min: 1, gamedll release commandline_enforced)
-	Starting health of guardian players when respawned.
 
 sv_guardian_spawn_health_ct 100 (gamedll release commandline_enforced)
 	Starting health in guardian modes.
 
 sv_guardian_spawn_health_t 100 (gamedll release commandline_enforced)
 	Starting health in guardian modes.
-
-sv_guardian_starting_equipment_humans "" (gamedll release commandline_enforced)
-	Extra starting equipment for human players in guardian modes
 
 sv_health_approach_enabled true (gamedll replicated release commandline_enforced)
 	<no description>
@@ -9843,7 +9744,7 @@ sv_logsdir "logs" (archive release)
 sv_long_frame_ms 0 (developmentonly defensive)
 	If a server frame takes longer than N ms, complain about it.  (Dedicated server only.)  See also engine_frametime_warnings_enable.
 
-sv_mapvetopickvote_maps "de_anubis,de_inferno,de_mirage,de_train,de_dust2,de_nuke,de_ancient" (gamedll release)
+sv_mapvetopickvote_maps "de_inferno,de_mirage,de_train,de_dust2,de_nuke,de_ancient,de_overpass" (gamedll release)
 	Which maps are used for map veto pick sequence
 
 sv_mapvetopickvote_phase_duration "[1:5][2:15][3:20][4:10][5:10][6:5]" (gamedll release)
@@ -10953,10 +10854,10 @@ ui_playsettings_maps_listen_scrimcomp2v2 "mg_de_inferno" (clientdll archive rele
 ui_playsettings_maps_listen_skirmish "mg_skirmish_armsrace" (clientdll archive release)
 	<no description>
 
-ui_playsettings_maps_official_casual "mg_dust247" (clientdll archive release)
+ui_playsettings_maps_official_casual "mg_casualalpha" (clientdll archive release)
 	<no description>
 
-ui_playsettings_maps_official_deathmatch "mg_dust247" (clientdll archive release)
+ui_playsettings_maps_official_deathmatch "mg_casualalpha" (clientdll archive release)
 	<no description>
 
 ui_playsettings_maps_official_gungameprogressive "mg_armsrace" (clientdll archive release)

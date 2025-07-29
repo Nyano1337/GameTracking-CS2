@@ -108,7 +108,7 @@ var mainmenu_watch;
                 elTournamentPanel.SetDialogVariable('tournament-title', $.Localize('#CSGO_Tournament_Event_Location_' + i));
                 let elTOLogo = elTournamentPanel.FindChildTraverse('id-tournament-to-logo');
                 elTOLogo.SetImage('file://{images}/tournaments/events/tournament_logo_' + i + '.svg');
-                elTOLogo.GetParent().SetHasClass('tall-logo', i == 22);
+                elTOLogo.GetParent().SetHasClass('tall-logo', i == 22 || i == 24);
                 let ProEventJSO = TournamentsAPI.GetProEventDataJSO(i, 8);
                 let oWinningTeam;
                 let hasEventData = false;
@@ -146,6 +146,11 @@ var mainmenu_watch;
                     elButton.style.backgroundPosition = '50% 50%';
                     elButton.style.backgroundSize = 'auto 110%';
                     elButton.style.backgroundImgOpacity = '.7';
+                    if (i == maxTournaments) {
+                        elButton.SetPanelEvent('onactivate', () => {
+                            UiToolkitAPI.ShowCustomLayoutPopupParameters('id-popup-major-hub', 'file://{resources}/layout/popups/popup_major_hub.xml', 'eventid=' + i);
+                        });
+                    }
                 }
             }
         }
@@ -257,7 +262,6 @@ var mainmenu_watch;
         _UpdateMatchList(listId, true);
     }
     function NavigateToTab(tab = '', xmlName = '', tournament_id = '', isSubTab = false, addToStack = false) {
-        StoreAPI.RecordUIEvent("WatchMenuTab_" + tab);
         if (isSubTab && addToStack) {
             if (_m_tabStack.length > 0) {
                 _m_tabStack[_m_tabStack.length - 1].AddClass("mainmenu-content--hidden");

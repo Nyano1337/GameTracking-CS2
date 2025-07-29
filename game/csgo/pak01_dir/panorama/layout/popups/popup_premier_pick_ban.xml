@@ -3,6 +3,7 @@
 	<styles>
 		<include src="s2r://panorama/styles/gamestyles.vcss_c" />
 		<include src="s2r://panorama/styles/popups/popup_premier_pick_ban.vcss_c" />
+		<include src="s2r://panorama/styles/hud/hudvoicestatus.vcss_c" />
 	</styles>
 	<scripts />
 	<snippets>
@@ -36,8 +37,18 @@
 			<Panel class="premier-pickban__map-avatars__btn">
 				<Panel id="id-avatar-party-line" />
 				<Panel>
-					<Panel class="avatar-image__default" />
-					<CSGOAvatarImage id="JsAvatarImage" class="avatar-image__icon" />
+					<Button id="FriendContextMenuButton">
+						<Panel class="avatar-image__default" />
+						<CSGOAvatarImage id="JsAvatarImage" class="avatar-image__icon" />
+					</Button>
+					<Panel id="JsAvatarSpeaking" class="avatar-lobby-speaking hidden" acceptsinput="false">
+						<Panel class="SoundAnim Looping">
+							<Panel class="SpeakerIcon" />
+							<Panel class="SoundIcon1" />
+							<Panel class="SoundIcon2" />
+							<Panel class="SoundIcon3" />
+						</Panel>
+					</Panel>
 				</Panel>
 				<Frame class="vertical-align-center" src="s2r://panorama/layout/rating_emblem.vxml_c" />
 				<Label class="premier-pickban__map-avatars__label stratum-regular-tf" text="{s:teammate_name}" />

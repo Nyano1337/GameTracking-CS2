@@ -272,7 +272,7 @@ var Leaderboard;
             _msg('leaderboard status: requested');
         }
         if (m_leaderboardName.includes('friends')) {
-            if (IS_NEW_SEASON && (count == 0)) {
+            if (count == 0) {
                 _ShowNewSeasonFriends();
             }
             else {

@@ -40,6 +40,7 @@ var InspectActionBar;
         _SetCloseBtnAction(elPanel);
         _SetUpMarketLink(elPanel, itemId);
         _SetUpOpenSeasonStatsAction(elPanel, itemId);
+        _SetUpViewHighlightReelAction(elPanel, itemId);
         const category = InventoryAPI.GetLoadoutCategory(itemId);
         if (category == "musickit") {
             InventoryAPI.PlayItemPreviewMusic(itemId, '');
@@ -87,7 +88,6 @@ var InspectActionBar;
         elMarketLinkBtn.SetPanelEvent('onmouseout', () => UiToolkitAPI.HideTextTooltip());
         elMarketLinkBtn.SetPanelEvent('onactivate', () => {
             SteamOverlayAPI.OpenURL(ItemInfo.GetMarketLinkForLootlistItem(id));
-            StoreAPI.RecordUIEvent("ViewOnMarket");
         });
     }
     function _SetUpOpenSeasonStatsAction(elPanel, id) {
@@ -104,6 +104,17 @@ var InspectActionBar;
             $.DispatchEvent('ContextMenuEvent', '');
             elOpenSeasonPanel.SetHasClass('hidden', false);
         }
+    }
+    function _SetUpViewHighlightReelAction(elPanel, id) {
+        const reelId = InventoryAPI.GetItemAttributeValue(id, '{uint32}keychain slot 0 highlight');
+        if (!reelId)
+            return;
+        const elViewHighlightReelAction = elPanel.FindChildInLayoutFile('ViewHighlightReelAction');
+        elViewHighlightReelAction.SetPanelEvent('onactivate', () => {
+            UiToolkitAPI.ShowCustomLayoutPopupParameters('popup-videoclip-' + reelId, 'file://{resources}/layout/popups/popup_videoclip.xml', 'reelid=' + reelId + '&' +
+                'itemid=' + id);
+        });
+        elViewHighlightReelAction.SetHasClass('hidden', false);
     }
     function _SetupEquipItemBtns(elPanel, id) {
         const elMoreActionsBtn = elPanel.FindChildInLayoutFile('InspectActionsButton');
@@ -262,11 +273,13 @@ var InspectActionBar;
         InspectModelImage.SetCharScene(characterItemId, weaponItemId);
     }
     InspectActionBar.OnUpdateCharModel = OnUpdateCharModel;
-    function NavigateModelPanel(type) {
+    function NavigateModelPanel(type, bEndWeaponLookat = true) {
         InspectModelImage.ShowHideItemPanel((type !== 'InspectModelChar'));
         InspectModelImage.ShowHideCharPanel((type === 'InspectModelChar'));
         $.GetContextPanel().FindChildTraverse('InspectCharModelsControls').SetHasClass('hidden', type !== 'InspectModelChar');
-        InspectModelImage.EndWeaponLookat();
+        if (bEndWeaponLookat) {
+            InspectModelImage.EndWeaponLookat();
+        }
         let elDesc = $.GetContextPanel().GetParent().FindChildInLayoutFile('InspectItemDesc');
         if (elDesc && elDesc.IsValid()) {
             elDesc.SetHasClass('hidden', false);
@@ -307,7 +320,8 @@ var InspectActionBar;
     }
     InspectActionBar.UpdateScenery = UpdateScenery;
     function LookatWeapon() {
-        NavigateModelPanel('InspectModel');
+        const bEndWeaponLookat = false;
+        NavigateModelPanel('InspectModel', bEndWeaponLookat);
         let elDesc = $.GetContextPanel().GetParent().FindChildInLayoutFile('InspectItemDesc');
         if (elDesc && elDesc.IsValid()) {
             elDesc.SetHasClass('hidden', true);
