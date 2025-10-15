@@ -8,6 +8,7 @@
 // MNetworkVarNames = "ServerAuthoritativeWeaponSlot_t m_vecServerAuthoritativeWeaponSlots"
 class CCSPlayerController_InventoryServices : public CPlayerControllerComponent
 {
+	CUtlVector< CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t > m_vecNetworkableLoadout;
 	// MNetworkEnable
 	uint16 m_unMusicID;
 	// MNetworkEnable

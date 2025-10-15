@@ -1,3 +1,4 @@
+// MNetworkVarNames = "bool m_ragEnabled"
 // MNetworkVarNames = "Vector m_ragPos"
 // MNetworkVarNames = "QAngle m_ragAngles"
 // MNetworkVarNames = "EHANDLE m_hRagdollSource"
@@ -6,6 +7,8 @@ class CRagdollProp : public CBaseAnimGraph
 {
 	ragdoll_t m_ragdoll;
 	bool m_bStartDisabled;
+	// MNetworkEnable
+	CNetworkUtlVectorBase< bool > m_ragEnabled;
 	// MNetworkEnable
 	// MNetworkEncoder = "coord"
 	CNetworkUtlVectorBase< Vector > m_ragPos;
@@ -24,14 +27,13 @@ class CRagdollProp : public CBaseAnimGraph
 	GameTime_t m_flLastPhysicsInfluenceTime;
 	GameTime_t m_flFadeOutStartTime;
 	float32 m_flFadeTime;
-	// MNetworkDisable
 	Vector m_vecLastOrigin;
 	GameTime_t m_flAwakeTime;
 	GameTime_t m_flLastOriginChangeTime;
 	CUtlSymbolLarge m_strOriginClassName;
 	CUtlSymbolLarge m_strSourceClassName;
 	bool m_bHasBeenPhysgunned;
-	bool m_bShouldTeleportPhysics;
+	bool m_bAllowStretch;
 	// MNetworkEnable
 	// MNetworkBitCount = 8
 	// MNetworkMinValue = 0.000000
@@ -42,5 +44,4 @@ class CRagdollProp : public CBaseAnimGraph
 	CUtlVector< Vector > m_ragdollMins;
 	CUtlVector< Vector > m_ragdollMaxs;
 	bool m_bShouldDeleteActivationRecord;
-	bool m_bValidatePoweredRagdollPose;
 };

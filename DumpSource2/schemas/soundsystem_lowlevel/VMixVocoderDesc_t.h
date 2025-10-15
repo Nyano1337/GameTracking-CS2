@@ -1,4 +1,4 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = Could not parse KV3 Defaults
 class VMixVocoderDesc_t
 {
 	int32 m_nBandCount;

@@ -9,6 +9,7 @@
 /// <reference path="common/licenseutil.ts" />
 /// <reference path="common/sessionutil.ts" />
 /// <reference path="rating_emblem.ts" />
+$.LogChannel("p.mainmenu", "LV_OFF");
 var PlayMenu;
 (function (PlayMenu) {
     const k_workshopPanelId = 'gameModeButtonContainer_workshop';
@@ -2047,7 +2048,7 @@ var PlayMenu;
         const elCanelBtn = $('#WorkshopSearchTextEntryCanel');
         if (elCanelBtn) {
             elCanelBtn.SetHasClass('hide', filter == '');
-            elCanelBtn.SetPanelEvent('onactivate', () => { elTextLabel.text = '', _UpdateWorkshopMapFilter; });
+            elCanelBtn.SetPanelEvent('onactivate', () => { elTextLabel.text = ''; _UpdateWorkshopMapFilter(); });
         }
         if (!container) {
             return;
@@ -2134,7 +2135,7 @@ var PlayMenu;
     function OnClearFilterText() {
         const elTextLabel = $('#WorkshopSearchTextEntry');
         const elCanelBtn = $('#WorkshopSearchTextEntryCanel');
-        elCanelBtn.SetPanelEvent('onactivate', () => { elTextLabel.text = '', _UpdateWorkshopMapFilter; });
+        elCanelBtn.SetPanelEvent('onactivate', () => { elTextLabel.text = ''; _UpdateWorkshopMapFilter(); });
     }
     PlayMenu.OnClearFilterText = OnClearFilterText;
     function _SwitchGameModeTab(gameMode) {

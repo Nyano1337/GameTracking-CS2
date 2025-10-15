@@ -633,15 +633,13 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 .?AV_System_error@std@@
 .?AV__non_rtti_object@std@@
 .?AVbad_alloc@std@@
-.?AVbad_alloc@stdext@@
-.?AVbad_array_new_length@stdext@@
+.?AVbad_array_new_length@std@@
 .?AVbad_cast@std@@
 .?AVbad_exception@std@@
 .?AVbad_function_call@std@@
 .?AVbad_typeid@std@@
 .?AVerror_category@std@@
 .?AVexception@std@@
-.?AVexception@stdext@@
 .?AVfuture_error@std@@
 .?AVinvalid_operation@Concurrency@@
 .?AVlength_error@std@@
@@ -798,7 +796,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\rU2t
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vptg
+2\vp4
 2aboutToShow()
 2activated( int )
 2changed()
@@ -1171,7 +1169,6 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 ?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
 ?TruncateAt@CBufferString@@QEAAPEBDPEBD_N@Z
 ?UUUUUU
-?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnqualifiedFilenameAlloc@CUtlString@@QEBA?AV1@XZ
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?V_strnlen@@YAHPEBDH@Z
@@ -2412,7 +2409,6 @@ Could not check in file(s): %s
 Could not check out file(s): %s
 Could not check out file\n%s
 Courier
-Create
 Create Rectangle
 CreateFileW
 CreateThreadpoolWork
@@ -2510,6 +2506,7 @@ Failed to save unsupported class
 Failed to unserialize document data from kv3 data:\n%s
 Failed to write file: %s\n
 Fast Asset Search
+FastAssetPicked
 File
 File Opened by Other User
 File Opened by Other Users
@@ -2529,16 +2526,16 @@ FindClose
 FindFirstFileExW
 FindNextFileW
 Fixed
-FloatBitMap_t::ConvertGammaToLinear(319): Conversion not supported yet!\n
+FloatBitMap_t::ConvertGammaToLinear(320): Conversion not supported yet!\n
 FloatBitMap_t::InitializeDummyRow
-FloatBitMap_t::WriteToBuffer(985): Unsupported color format "%s", skipping!\n
-FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:1672
-FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:1784
-FloatBitMap_t::WriteToBufferDXT_atitc(1043): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!\n
-FloatBitMap_t::WriteToBufferDXT_atitc(1128): Unsupported output color format "%s"!\n
-FloatBitMap_t::WriteToBufferDXT_atitc(1137): Error! Allocated %llu bytes when ATI's lib requires %d bytes!\n
-FloatBitMap_t::WriteToBufferDXT_atitc(1145): Error %d returned from ATI_TC_ConvertTexture()!\n
-FloatBitMap_t::WriteToBufferETC(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:1908
+FloatBitMap_t::WriteToBuffer(986): Unsupported color format "%s", skipping!\n
+FloatBitMap_t::WriteToBufferBC7_bc7e(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:1673
+FloatBitMap_t::WriteToBufferBC7_ispctexcomp(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:1785
+FloatBitMap_t::WriteToBufferDXT_atitc(1044): Error! Temp texture is %d bytes when ATI's lib requires %d bytes!\n
+FloatBitMap_t::WriteToBufferDXT_atitc(1129): Unsupported output color format "%s"!\n
+FloatBitMap_t::WriteToBufferDXT_atitc(1138): Error! Allocated %llu bytes when ATI's lib requires %d bytes!\n
+FloatBitMap_t::WriteToBufferDXT_atitc(1146): Error %d returned from ATI_TC_ConvertTexture()!\n
+FloatBitMap_t::WriteToBufferETC(), C:\buildworker\csgo_rel_win64\build\src\bitmap\floatbitmap.cpp:1909
 FlsAlloc
 FlsFree
 FlsGetValue
@@ -2623,7 +2620,6 @@ I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
 IAsset*
 IAssetSelectionListener
 IBindTarget
-ICON
 IHelpChangeListener
 IToolFrameListener
 IToolFrameworkAudioSettingsListener
@@ -2645,6 +2641,7 @@ InitializeSListHead
 Input Binding Error
 Input Debugger [%1]
 Input Sequence
+InputBindSystem
 Inset X
 Inset Y
 InterlockedFlushSList
@@ -2673,7 +2670,6 @@ KeyState
 KeyState[%1]
 KeyValues3: pre-allocated array memory is too small for %u elements (%u bytes available, %u bytes needed)\n
 KeyValues3: pre-allocated table memory is too small for %u members (%u bytes available, %u bytes needed)\n
-L>InputBindSystem
 L>ev
 LCMapStringEx
 LCMapStringW
@@ -2688,7 +2684,6 @@ LastLoadDirectory
 LastSaveDirectory
 LaunchEngineTool
 LeaveCriticalSection
-Left
 Load Autosave On Crash
 LoadLibraryExW
 LoadRecentFile
@@ -2708,7 +2703,6 @@ M\v?event@QListWidget@@MEAA_NPEAVQEvent@@@Z
 MapViewOfFile
 MarkSettingsDirty
 MaterialPicker
-Materials
 Max Autosave Space 2
 Max Saves Per Map
 Maximum
@@ -2736,7 +2730,6 @@ N?index@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
 NAN(IND)
 NAN(SNAN)
 NO COMMAND TARGET
-NONE
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 NavSystem001
@@ -2835,7 +2828,6 @@ OpenBuildWatch
 OpenFileMappingA
 OpenMutexA
 OpenVConsole
-Orientation
 Other Tools
 OutputDebugStringW
 P?isValid@QColor@@QEBA_NXZ
@@ -2849,7 +2841,6 @@ PgDn
 PgUp
 Policy
 PopupClosed
-Position
 Preferred
 Preview Texture:
 PreviousSession
@@ -2915,10 +2906,10 @@ RMouse
 RMouseDoubleClick
 RSDS
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fp4
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
-RaiseException
 ReSelectOnReturn
 Read Only
 Read-Only
@@ -2951,7 +2942,6 @@ Reverted %d file(s).
 Reverted %d file(s).  %d file(s) were not reverted!
 Reverting %d file(s).  Please wait...
 Revision
-Right
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlPcToFileHeader
@@ -3052,7 +3042,6 @@ TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
 Tabbed Mode
 TerminateProcess
-Text Color
 TextProgramaticallyChanged
 The autosave directory does not exist and could not be created.\nThe autosave feature will be disabled.
 The autosave feature will be disabled
@@ -3088,13 +3077,13 @@ ToggleGrid
 ToggleTabbedMode
 ToolBarArea
 ToolEvents
+ToolFramework
 ToolSystem2_001
 Tools  
 Tools audio currently muted
 Track Mouse & Focus
 TryAcquireSRWLockExclusive
 TrySendVNotify - SendKV3 failed\n
-Type
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 USER32.dll
@@ -3341,6 +3330,7 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \tWarning
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+\t_MakeGlobalSymbolCaseSensitive
 \t_V_FixupPathName
 \t_V_StringAfterPrefix
 \t_V_strncmp
@@ -3348,7 +3338,6 @@ Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 \t_V_strnicmp_fast
 \tcQr
 \tg_Mathlib_GammaToLinearByteTable
-\tg_bUpdateStringTokenDatabase
 \tg_pMemAlloc
 \tg_pThreadPool
 \tkE>fvw
@@ -3580,7 +3569,6 @@ i\v?event@QTableWidget@@MEAA_NPEAVQEvent@@@Z
 identifier removed
 illegal byte sequence
 inappropriate io control operation
-info
 inset
 interrupted
 invalid seek
@@ -3606,9 +3594,7 @@ mG4>
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\nXo
 m_Bindings
-m_Command
 m_Context
-m_Input
 m_InputMacros
 m_bShutdown
 menu
@@ -3619,7 +3605,6 @@ monitor_pid
 n03>Pu
 nCheckState
 nDelayInMS
-nIndex
 nToolId
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
@@ -3669,7 +3654,6 @@ pAssetMenuObject
 pCurrentFocusWidget
 pEvent
 pFilter
-pItem
 pPrevFocusWidget
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pWidget
@@ -3680,7 +3664,6 @@ permission denied
 portrait
 portrait (inverted)
 preview_material
-priority
 process
 promise already satisfied
 properties
@@ -3692,6 +3675,7 @@ q\tV_snprintf
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quiet
 r\tVr.>T
+r\vp4
 range check failure
 read only file system
 recovered_autosave
@@ -3740,7 +3724,6 @@ uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 underline
-unknown exception
 untitled_
 uzKs@>
 v2!L.2

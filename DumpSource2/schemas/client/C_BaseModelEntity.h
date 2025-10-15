@@ -1,5 +1,6 @@
 // MNetworkVarNames = "CRenderComponent::Storage_t m_CRenderComponent"
 // MNetworkVarNames = "CHitboxComponent::Storage_t m_CHitboxComponent"
+// MNetworkVarNames = "CDestructiblePartsComponent * m_pDestructiblePartsSystemComponent"
 // MNetworkVarNames = "RenderMode_t m_nRenderMode"
 // MNetworkVarNames = "RenderFx_t m_nRenderFX"
 // MNetworkVarNames = "Color m_clrRender"
@@ -19,7 +20,10 @@
 // MNetworkVarNames = "Vector m_vDecalForwardAxis"
 // MNetworkVarNames = "float m_flDecalHealBloodRate"
 // MNetworkVarNames = "float m_flDecalHealHeightRate"
+// MNetworkVarNames = "DecalMode_t m_nDecalMode"
+// MNetworkVarNames = "DecalMode_t m_nRequiredDecalMode"
 // MNetworkVarNames = "CHandle< C_BaseModelEntity > m_ConfigEntitiesToPropagateMaterialDecalsTo"
+// MNetworkVarNames = "uint32 m_bvDisabledHitGroups"
 class C_BaseModelEntity : public C_BaseEntity
 {
 	// MNetworkEnable
@@ -32,7 +36,12 @@ class C_BaseModelEntity : public C_BaseEntity
 	// MNetworkAlias = "CHitboxComponent"
 	// MNetworkTypeAlias = "CHitboxComponent"
 	CHitboxComponent m_CHitboxComponent;
+	// MNetworkEnable
+	// MNetworkTypeAlias = "CDestructiblePartsSystemComponent*"
+	CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent;
 	HitGroup_t m_LastHitGroup;
+	CGlobalSymbol m_sLastDamageSourceName;
+	Vector m_vLastDamagePosition;
 	bool m_bInitModelEffects;
 	bool m_bIsStaticProp;
 	int32 m_nLastAddDecal;
@@ -81,6 +90,10 @@ class C_BaseModelEntity : public C_BaseEntity
 	// MNetworkEnable
 	float32 m_flDecalHealHeightRate;
 	// MNetworkEnable
+	DecalMode_t m_nDecalMode;
+	// MNetworkEnable
+	DecalMode_t m_nRequiredDecalMode;
+	// MNetworkEnable
 	C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo;
 	// MNetworkEnable
 	// MNetworkPriority = 32
@@ -90,4 +103,7 @@ class C_BaseModelEntity : public C_BaseEntity
 	CClientAlphaProperty* m_pClientAlphaProperty;
 	Color m_ClientOverrideTint;
 	bool m_bUseClientOverrideTint;
+	// MNetworkEnable
+	// MNetworkChangeCallback = "OnDisabledHitgroupsChanged"
+	uint32[1] m_bvDisabledHitGroups;
 };

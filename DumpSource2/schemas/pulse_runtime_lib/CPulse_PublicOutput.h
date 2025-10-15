@@ -1,7 +1,13 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"m_Name": "",
+//	"m_Description": "",
+//	"m_Args":
+//	[
+//	]
+//}
 class CPulse_PublicOutput
 {
-	CUtlSymbolLarge m_Name;
+	PulseSymbol_t m_Name;
 	CUtlString m_Description;
-	CPulseValueFullType m_ParamType;
+	CUtlLeanVector< CPulseRuntimeMethodArg > m_Args;
 };

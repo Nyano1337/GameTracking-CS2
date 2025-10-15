@@ -1,4 +1,4 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = Could not parse KV3 Defaults
 class CParticleFunction
 {
 	// MPropertyFriendlyName = "operator strength"
@@ -63,7 +63,6 @@ class CParticleFunction
 	bool m_bDisableOperator;
 	// MPropertyFriendlyName = "operator help and notes"
 	// MParticleHelpField
-	// MParticleAdvancedField
 	// MPropertySortPriority = -100
 	CUtlString m_Notes;
 };

@@ -1,12 +1,20 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
-// MCellForDomain = "BaseDomain"
+// MGetKV3ClassDefaults = {
+//	"_class": "CPulseCell_Inflow_EntOutputHandler",
+//	"m_nEditorNodeID": -1,
+//	"m_EntryChunk": -1,
+//	"m_RegisterMap":
+//	{
+//		"m_Inparams": null,
+//		"m_Outparams": null
+//	},
+//	"m_SourceEntity": "",
+//	"m_SourceOutput": "",
+//	"m_ExpectedParamType": "PVAL_VOID"
+//}
 // MPulseCellMethodBindings (UNKNOWN FOR PARSER)
-// MPulseCellOutflowHookInfo (UNKNOWN FOR PARSER)
-// MPulseCellWithCustomDocNode
 class CPulseCell_Inflow_EntOutputHandler : public CPulseCell_Inflow_BaseEntrypoint
 {
-	CUtlSymbolLarge m_SourceEntity;
-	CUtlSymbolLarge m_SourceOutput;
-	CUtlSymbolLarge m_TargetInput;
+	PulseSymbol_t m_SourceEntity;
+	PulseSymbol_t m_SourceOutput;
 	CPulseValueFullType m_ExpectedParamType;
 };

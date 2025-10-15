@@ -1,21 +1,19 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"_class": "CRagdollAnimTag",
+//	"m_name": "Unnamed Tag",
+//	"m_sComment": "",
+//	"m_group": "",
+//	"m_tagID":
+//	{
+//		"m_id": 4294967295
+//	},
+//	"m_bIsReferenced": false,
+//	"m_profileName": ""
+//}
 // MPropertyFriendlyName = "Ragdoll Tag"
 class CRagdollAnimTag : public CAnimTagBase
 {
-	// MPropertyFriendlyName = "Pose Control"
-	AnimPoseControl m_nPoseControl;
-	// MPropertyFriendlyName = "Frequency"
-	// MPropertyAttributeRange = "0 30"
-	float32 m_flFrequency;
-	// MPropertyFriendlyName = "Damping Ratio"
-	// MPropertyAttributeRange = "0 2"
-	float32 m_flDampingRatio;
-	// MPropertyFriendlyName = "Decay Duration"
-	// MPropertyAttributeRange = "-1 1000"
-	float32 m_flDecayDuration;
-	// MPropertyFriendlyName = "Decay Bias"
-	// MPropertyAttributeRange = "0 1"
-	float32 m_flDecayBias;
-	// MPropertyFriendlyName = "Destroy"
-	bool m_bDestroy;
+	// MPropertyFriendlyName = "Profile Name"
+	// MPropertySortPriority = 100
+	CGlobalSymbol m_profileName;
 };

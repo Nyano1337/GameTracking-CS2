@@ -1,4 +1,7 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"m_BodyGroupName": "",
+//	"m_nBodyGroupOption": 0
+//}
 // MPropertyFriendlyName = "Body Group Setting"
 // MPropertyElementNameFn (UNKNOWN FOR PARSER)
 class CBodyGroupSetting
@@ -9,6 +12,5 @@ class CBodyGroupSetting
 	CUtlString m_BodyGroupName;
 	// MPropertyFriendlyName = "BodyGroup Option"
 	// MPropertyAttributeChoiceName = "BodyGroupOption"
-	// MPropertyAttrExtraInfoFn (UNKNOWN FOR PARSER)
 	int32 m_nBodyGroupOption;
 };

@@ -145,6 +145,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 &Tools
 &View
 &Working Sets
+&\r?hideColumn@QTreeView@@QEAAXH@Z
 ' ?timerEvent@QPlainTextEdit@@MEAAXPEAVQTimerEvent@@@Z
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1 checked )
@@ -1135,6 +1136,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpx
 2aboutToShow()
 2accepted()
 2cellDoubleClicked(int,int)
@@ -1251,6 +1253,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??0CUtlBuffer@@QEAA@HHW4BufferFlags_t@0@@Z
 ??0CUtlString@@QEAA@AEBVCBufferString@@@Z
 ??0CUtlSymbolTable@@QEAA@HH_N@Z
+??0Connection@QMetaObject@@QEAA@AEBV01@@Z
 ??0Connection@QMetaObject@@QEAA@XZ
 ??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
 ??0QAbstractItemModel@@QEAA@PEAVQObject@@@Z
@@ -1678,9 +1681,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?TrimTail@CBufferString@@QEAAPEBDPEBD@Z
 ?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
 ?UUUUUU
-?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnqualifiedFilenameAlloc@CUtlString@@QEBA?AV1@XZ
-?VNotify
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@_N@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?V_strnlen@@YAHPEBDH@Z
@@ -2930,6 +2931,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?sliderChange@QScrollBar@@MEAAXW4SliderChange@QAbstractSlider@@@Z
 ?sort@QAbstractItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 ?sort@QSortFilterProxyModel@@UEAAXHW4SortOrder@Qt@@@Z
+?sortByColumn@QTreeView@@QEAAXHW4SortOrder@Qt@@@Z
 ?sortIndicatorOrder@QHeaderView@@QEBA?AW4SortOrder@Qt@@XZ
 ?sortIndicatorSection@QHeaderView@@QEBAHXZ
 ?sourceModel@QAbstractProxyModel@@QEBAPEAVQAbstractItemModel@@XZ
@@ -3505,6 +3507,7 @@ Clone
 Clone Set
 Clone the selected working set
 CloneWorkingSetAction
+Close
 Close the Asset Browser. (Does NOT shut down the engine or other tools.)
 Close the group automatically after a short wait (good for 'success' messages)
 Close the group automatically when the associated parent process exits (good for sticky 'error' messages)
@@ -3549,7 +3552,6 @@ CorExitProcess
 CornerWidget:%s
 Could not execute the command:\n%1\nWorking directory:\n%2
 Could not resolve path: %1
-Count
 Courier
 Cover
 Create Changelist
@@ -3565,7 +3567,6 @@ Ctrl+Q
 CurrentWorkingSetChanged
 Cursor to use when hovered over an item.
 CursorShape
-DEFAULT
 DELETE
 DRAG_HANDLE
 Date/Time
@@ -3616,9 +3617,7 @@ Down
 DownArrowPressed
 Drag
 DragFinished
-DragOffsetDeltaEdited
 DragOffsetRelativeEnd
-DragOffsetRelativeLock
 DragOffsetRelativeStart
 DragOffsetRelativeUpdate
 DragStarted
@@ -3712,6 +3711,7 @@ Failed to run external tool
 Failed to save '%s': %s\n
 Failed to save unsupported class
 Fast Asset Search
+FastAssetPicked
 File
 File '%1'
 File Hierarchy
@@ -3759,7 +3759,6 @@ FocusLeft
 FocusOut
 FocusStringFilter
 Follow user preference
-Font
 For an asset to match, it must have ALL of the 'include' tags rather than any of them
 ForceRelayoutOfAllScenes
 Foreground
@@ -3883,7 +3882,6 @@ IAssetNameStringAdapter
 IAssetSelectionListener
 IAssetTagListener
 IBindTarget
-ICON
 IDynamicWidgetHost
 IEmbeddedAssetBrowser
 IEmbeddedAssetPicker
@@ -3895,7 +3893,6 @@ IHelpChangeListener
 ILiveEmbeddedPreviewStateListener
 IMPORTMODEL 
 INSIDE_PARENT
-INVALID
 ISemiModalAssetBrowser
 ISubasset*
 IToolFrameListener
@@ -3953,7 +3950,6 @@ InvokeCommand
 IsDebuggerPresent
 IsProcessorFeaturePresent
 IsValidCodePage
-Item
 ItemDoubleClicked
 J ?toggleViewAction@QToolBar@@QEBAPEAVQAction@@XZ
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
@@ -3970,6 +3966,7 @@ KeyValues3*
 KeyValues3: pre-allocated array memory is too small for %u elements (%u bytes available, %u bytes needed)\n
 KeyValues3: pre-allocated table memory is too small for %u members (%u bytes available, %u bytes needed)\n
 L>ev
+L>hU
 LAST_CHILD
 LCMapStringEx
 LCMapStringW
@@ -4005,7 +4002,6 @@ LayoutSystem_PlaceInRegion_R
 Layout_CalcDesiredSize_R
 Layout_CalcDesiredSize_R::ForceCollapsed
 LeaveCriticalSection
-Left
 List
 Live
 LoadLibraryExW
@@ -4019,7 +4015,6 @@ MENU
 MM/dd/yy
 MMouse
 MMouseDoubleClick
-MPropertySuppressEnumerator
 MWheelDn
 MWheelLeft
 MWheelRight
@@ -4039,7 +4034,6 @@ MaxSizeX
 MaxSizeY
 Maximum
 MbP?
-Medium
 Millisecond delay between typing in the assetbrowser filter and the filter being applied
 MinSize
 MinSizeHint
@@ -4091,7 +4085,6 @@ NAN(IND)
 NAN(SNAN)
 NO COMMAND TARGET
 NODES
-NONE
 NONINTERACTIVE
 NO_UI
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
@@ -4353,7 +4346,6 @@ OpenSelectedInTools
 OpenVConsole
 OpenWorkingSet
 Options...
-Orientation
 Other Tools
 Other assets referencing or depending on this
 Outside
@@ -4420,7 +4412,6 @@ Port_Strong
 Port_Weak
 PosX
 PosY
-Position
 Positioning
 PostListChange
 PreGatherStyles
@@ -4432,6 +4423,7 @@ Preview Anim Slider Enabled
 Preview Menu Enabled
 PropEdModifyType_t
 PropEdSpecificAttr_t
+PropagateClicksToNonOverlappingAncestors
 Properties
 Property
 Property '%s.%s' not writable
@@ -4513,10 +4505,10 @@ RMouseDoubleClick
 RSDS
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fpx
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
-RaiseException
 ReSelectOnReturn
 Ready
 Really delete this widget?<br><br>***THIS MAY CRASH THE PROGRAM***<br>
@@ -4596,7 +4588,6 @@ Revision Helper: %1 Assets
 RevisionHelper
 RichItemList_Accept
 RichItemList_Reject
-Right
 RightClick
 RightClickHierarchy
 RightClickSelectedAssets
@@ -4643,7 +4634,6 @@ SPECIAL_DEBUGGER_OVERLAY
 SPECIAL_LAYER_HOVER_TOOLTIP
 STANDARD_LAYER_COUNT
 STANDIN: %1
-STRETCH
 Sa?width@QPaintDevice@@QEBAHXZ
 Save the current search in the Saved Search list below.
 SavedSearchSaved
@@ -4814,7 +4804,6 @@ Take a list of assets on the clipboard and create a working set
 TermIncrementalOperation
 TerminateProcess
 Text = "%1"
-Text Color
 TextClipMode
 TextHAlign
 TextProgramaticallyChanged
@@ -4838,6 +4827,7 @@ ToggleTypeSelector
 Too many values (at most 4)
 ToolBarArea
 ToolEditContext_AssetBrowserExtraFilter
+ToolFramework
 Tools  
 Tools audio currently muted
 ToolsBar
@@ -4852,7 +4842,6 @@ Track Mouse & Focus
 Tree
 TriggerSettingsSave
 TrySendVNotify - SendKV3 failed\n
-Type
 TypeSelectionChanged
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -4863,7 +4852,6 @@ U?qt_metacast@QIntValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 U?qt_metacast@QTextDocument@@UEAAPEAXPEBD@Z
 UNKNOWN TOOL
-UNRECOGNIZED
 USER32.dll
 UUUUUU
 U\r?home@QTextBrowser@@UEAAXXZ
@@ -4927,6 +4915,7 @@ VConsole
 VData:%s
 VISIBLE
 VNOTIFY_DISABLE
+VNotify
 VNotify Abandoned (ActiveProtocolIsNewer)\n
 VNotify Abandoned (No ProcessUtils)\n
 VNotify Abandoned (Not enabled)\n
@@ -4993,6 +4982,7 @@ Whether an item and children will be rendered or not (and whether it will take u
 Whether an item can be selected when the user draws a box on the canvas or not.
 Whether the background image repeats and how
 Whether the hittest region for an item should include its margin.
+Whether this item should propagate clicks to its ancestor items even when the click is outside their bounds. (Useful for flyout buttons)
 WideCharToMultiByte
 Widget Debugger
 Widget Properties
@@ -5114,6 +5104,7 @@ ZoomOutFromMiniMap
 \f?detach_grow@QListData@@QEAAPEAUData@1@PEAHH@Z
 \f?detach_helper@QHashData@@QEAAPEAU1@P6AXPEAUNode@1@PEAX@ZP6AX0@ZHH@Z
 \f?disconnect@QObject@@QEBA_NPEBDPEBV1@0@Z
+\f?disconnect@QObject@@SA_NAEBVConnection@QMetaObject@@@Z
 \f?disconnect@QObject@@SA_NPEBV1@PEBD01@Z
 \f?disconnectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 \f?dispose@QListData@@QEAAXXZ
@@ -5142,7 +5133,6 @@ ZoomOutFromMiniMap
 \f?getContentsMargins@QLayout@@QEBAXPEAH000@Z
 \f?getOpenFileNames@QFileDialog@@SA?AVQStringList@@PEAVQWidget@@AEBVQString@@11PEAV4@V?$QFlags@W4Option@QFileDialog@@@@@Z
 \f?grab@QWidget@@QEAA?AVQPixmap@@AEBVQRect@@@Z
-\f?grabMouse@QWidget@@QEAAXXZ
 \f?handleWidth@QSplitter@@QEBAHXZ
 \f?hasFocus@QWidget@@QEBA_NXZ
 \f?hasHeightForWidth@QBoxLayout@@UEBA_NXZ
@@ -5266,6 +5256,8 @@ ZoomOutFromMiniMap
 \tWarning
 \t\f?data@QString@@QEBAPEBVQChar@@XZ
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t_MakeGlobalSymbol
+\t_MakeGlobalSymbolCaseSensitive
 \t_V_StringAfterPrefix
 \t_V_StringAfterPrefixCaseSensitive
 \t_V_StripExtension
@@ -5275,7 +5267,6 @@ ZoomOutFromMiniMap
 \t_V_strncpy
 \t_V_strnicmp_fast
 \tcQr
-\tg_bUpdateStringTokenDatabase
 \tg_pMemAlloc
 \tg_pThreadPool
 \tkE>fvw
@@ -5349,11 +5340,6 @@ __thiscall
 __unaligned
 __vectorcall
 _baked/*
-_base
-_include
-_localization_path
-_multibase
-_not_pickable
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `RTTI
@@ -5590,8 +5576,6 @@ fix_selected
 fixed_height
 fixed_size
 fixed_width
-flMax
-flMin
 flValue
 flVaue
 floralwhite
@@ -5711,7 +5695,6 @@ game:tools/images/vconsole/appicon_dev.ico
 generic-type-
 genericFilterCompleter_AutoPopupMode
 genericFilterCompleter_ShowDetails
-generic_data_type
 ghostwhite
 gold
 goldenrod
@@ -5778,7 +5761,6 @@ increase_depth_button
 index
 indianred
 indigo
-info
 info_description
 info_table
 initial
@@ -5786,7 +5768,6 @@ int
 invalid_parameter
 is_cqbasegridview_panel
 italic
-item
 ivory
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 jZ?setMimeData@QDrag@@QEAAXPEAVQMimeData@@@Z
@@ -5838,9 +5819,7 @@ m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 m\nXo
 m\tV_sind
 m_Bindings
-m_Command
 m_Context
-m_Input
 m_InputMacros
 m_tail != QUEUE_ITERATOR_INVALID
 magenta
@@ -5848,7 +5827,6 @@ margin
 maroon
 maxValue
 max_links_edit
-maximum
 mediumaquamarine
 mediumblue
 mediumorchid
@@ -5863,7 +5841,6 @@ menuAction
 menus
 midnightblue
 minValue
-minimum
 mintcream
 mistyrose
 moccasin
@@ -5879,7 +5856,6 @@ nColumn
 nDelayInMS
 nEngineToolID
 nGroup
-nIndex
 nLogicalIndex
 nOptionIndex
 nRow
@@ -5888,7 +5864,6 @@ nTabIndex
 nTagHandle
 nToolID
 nToolId
-nType
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
@@ -5935,7 +5910,6 @@ pCurrentFocusWidget
 pFilter
 pFromSelectionWidget
 pGroup
-pItem
 pOutSelection
 pPrevFocusWidget
 pSet
@@ -5963,7 +5937,6 @@ plum
 powderblue
 ppAssets
 preview_splitter
-priority
 private: 
 process
 prompt_for_new_toplevel_node
@@ -5980,6 +5953,7 @@ qcontrols
 quiet
 r\f?copy@QPixmap@@QEBA?AV1@AEBVQRect@@@Z
 r\tVr.>T
+r\vpx
 range check failure
 rebeccapurple
 recompile

@@ -6001,7 +6001,6 @@ Memory Deallocation
 Memory Transfer (Copy)
 Memory Transfer (Map)
 Memory Transfer (Unmap)
-Message
 Method not yet implemented
 Mipmap number of levels must be 2 or more
 More than one image exists with the 
@@ -6430,7 +6429,6 @@ _Cnd_init_in_situ
 _Cnd_signal
 _Cnd_timedwait
 _Cnd_wait
-_CxxThrowException
 _Mbrtowc
 _Mtx_current_owns
 _Mtx_destroy_in_situ
@@ -6491,7 +6489,6 @@ _invalid_parameter_noinfo_noreturn
 _lock_file
 _mkdir
 _open
-_purecall
 _register_onexit_function
 _seh_filter_dll
 _stat64i32
@@ -6780,7 +6777,6 @@ ocloc64.dll
 oclocFreeOutput
 oclocInvoke
 oclocVersion
-offset
 online_compiler
 online_linker
 opencl

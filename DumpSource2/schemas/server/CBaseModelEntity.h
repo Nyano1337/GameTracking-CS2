@@ -1,5 +1,6 @@
 // MNetworkVarNames = "CRenderComponent::Storage_t m_CRenderComponent"
 // MNetworkVarNames = "CHitboxComponent::Storage_t m_CHitboxComponent"
+// MNetworkVarNames = "CDestructiblePartsComponent * m_pDestructiblePartsSystemComponent"
 // MNetworkVarNames = "RenderMode_t m_nRenderMode"
 // MNetworkVarNames = "RenderFx_t m_nRenderFX"
 // MNetworkVarNames = "Color m_clrRender"
@@ -19,8 +20,11 @@
 // MNetworkVarNames = "Vector m_vDecalForwardAxis"
 // MNetworkVarNames = "float m_flDecalHealBloodRate"
 // MNetworkVarNames = "float m_flDecalHealHeightRate"
+// MNetworkVarNames = "DecalMode_t m_nDecalMode"
+// MNetworkVarNames = "DecalMode_t m_nRequiredDecalMode"
 // MNetworkVarNames = "CHandle< CBaseModelEntity > m_ConfigEntitiesToPropagateMaterialDecalsTo"
 // MNetworkVarNames = "CNetworkViewOffsetVector m_vecViewOffset"
+// MNetworkVarNames = "uint32 m_bvDisabledHitGroups"
 class CBaseModelEntity : public CBaseEntity
 {
 	// MNetworkEnable
@@ -38,8 +42,17 @@ class CBaseModelEntity : public CBaseEntity
 	HitGroup_t m_nDestructiblePartInitialStateDestructed2;
 	HitGroup_t m_nDestructiblePartInitialStateDestructed3;
 	HitGroup_t m_nDestructiblePartInitialStateDestructed4;
-	int32 m_nLastHitDestructiblePartIndex;
+	int32 m_nDestructiblePartInitialStateDestructed0_PartIndex;
+	int32 m_nDestructiblePartInitialStateDestructed1_PartIndex;
+	int32 m_nDestructiblePartInitialStateDestructed2_PartIndex;
+	int32 m_nDestructiblePartInitialStateDestructed3_PartIndex;
+	int32 m_nDestructiblePartInitialStateDestructed4_PartIndex;
+	// MNetworkEnable
+	// MNetworkTypeAlias = "CDestructiblePartsSystemComponent*"
+	CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent;
 	HitGroup_t m_LastHitGroup;
+	CGlobalSymbol m_sLastDamageSourceName;
+	Vector m_vLastDamagePosition;
 	GameTime_t m_flDissolveStartTime;
 	CEntityIOOutput m_OnIgnite;
 	// MNetworkEnable
@@ -84,9 +97,16 @@ class CBaseModelEntity : public CBaseEntity
 	// MNetworkEnable
 	float32 m_flDecalHealHeightRate;
 	// MNetworkEnable
+	DecalMode_t m_nDecalMode;
+	// MNetworkEnable
+	DecalMode_t m_nRequiredDecalMode;
+	// MNetworkEnable
 	CNetworkUtlVectorBase< CHandle< CBaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo;
 	// MNetworkEnable
 	// MNetworkPriority = 32
 	// MNetworkUserGroup = "Player"
 	CNetworkViewOffsetVector m_vecViewOffset;
+	// MNetworkEnable
+	// MNetworkChangeCallback = "OnDisabledHitgroupsChanged"
+	uint32[1] m_bvDisabledHitGroups;
 };

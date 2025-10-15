@@ -1,5 +1,21 @@
 // MVDataRoot
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"m_bAgentEnabled": true,
+//	"m_agentRadius": 15.000000,
+//	"m_agentHeight": 71.000000,
+//	"m_agentShortHeightEnabled": false,
+//	"m_agentShortHeight": 35.500000,
+//	"m_agentCrawlEnabled": false,
+//	"m_agentCrawlHeight": 17.500000,
+//	"m_agentMaxClimb": 17.500000,
+//	"m_agentMaxSlope": 50,
+//	"m_agentMaxJumpDownDist": 240.000000,
+//	"m_agentMaxJumpHorizDistBase": 64.000000,
+//	"m_agentMaxJumpUpDist": 0.000000,
+//	"m_agentBorderErosion": -1,
+//	"m_flowMapGenerationEnabled": false,
+//	"m_flowMapNodeMaxRadius": 400.000000
+//}
 class CNavHullVData
 {
 	// MPropertyFriendlyName = "Enabled"
@@ -11,12 +27,18 @@ class CNavHullVData
 	// MPropertyFriendlyName = "Height"
 	// MPropertyDescription = "Height of navigating agent capsule."
 	float32 m_agentHeight;
-	// MPropertyFriendlyName = "Enable Short Height"
-	// MPropertyDescription = "Enable shorter navigating agent capsules ( e.g. crouch ) in addition to regular height capsules."
+	// MPropertyFriendlyName = "Enable Crouch Height"
+	// MPropertyDescription = "Enable shorter navigating agent capsules ( crouch ) in addition to regular height capsules."
 	bool m_agentShortHeightEnabled;
-	// MPropertyFriendlyName = "Short height"
-	// MPropertyDescription = "Short Height of navigating agent capsules if enabled."
+	// MPropertyFriendlyName = "Crouch height"
+	// MPropertyDescription = "Crouch height of navigating agent capsules if enabled."
 	float32 m_agentShortHeight;
+	// MPropertyFriendlyName = "Enable Crawl Height"
+	// MPropertyDescription = "Enable even shorter navigating agent capsules ( crawl ) in addition to regular height capsules."
+	bool m_agentCrawlEnabled;
+	// MPropertyFriendlyName = "Crawl height"
+	// MPropertyDescription = "Crawl height of navigating agent capsules if enabled."
+	float32 m_agentCrawlHeight;
 	// MPropertyFriendlyName = "Max Climb"
 	// MPropertyDescription = "Max vertical offset that the agent simply ignores and walks over."
 	float32 m_agentMaxClimb;

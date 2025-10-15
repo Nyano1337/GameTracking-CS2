@@ -13,6 +13,7 @@ var InspectModelImage;
     let m_isItemInLootlist = false;
     let m_strWorkType = '';
     let m_isWorkshopPreview = false;
+    let m_isLaptopOpening = false;
     InspectModelImage.m_CameraSettingsPerWeapon = [
         { type: 'weapon_awp', camera: '7', zoom_camera: 'weapon_awp_zoom,weapon_awp_front_zoom' },
         { type: 'weapon_aug', camera: '3', zoom_camera: 'weapon_aug_zoom' },
@@ -47,6 +48,7 @@ var InspectModelImage;
         m_isWorkshopPreview = funcGetSettingCallback ? funcGetSettingCallback('workshopPreview', 'false') === 'true' : false;
         m_isStickerApplyRemove = funcGetSettingCallback ? funcGetSettingCallback('stickerApplyRemove', 'false') === 'true' : false;
         m_isItemInLootlist = funcGetSettingCallback ? funcGetSettingCallback('isItemInLootlist', 'false') === 'true' : false;
+        m_isLaptopOpening = funcGetSettingCallback ? funcGetSettingCallback('isLapTopOpening', 'false') === 'true' : false;
         if (!InventoryAPI.IsValidItemID(itemId)) {
             return '';
         }
@@ -77,7 +79,7 @@ var InspectModelImage;
             m_elPanel = _InitDisplayScene(itemId);
         }
         else if (ItemInfo.IsKeychain(itemId)) {
-            m_elPanel = _InitNametagScene(itemId);
+            m_elPanel = _InitKeyChainScene(itemId);
         }
         else if (InventoryAPI.GetLoadoutCategory(itemId) == "musickit") {
             m_elPanel = _InitMusicKitScene(itemId);
@@ -100,8 +102,13 @@ var InspectModelImage;
             if (InventoryAPI.GetLoadoutCategory(itemId) === 'clothing') {
                 m_elPanel = _InitGlovesScene(itemId);
             }
-            else if (model.includes('models/props/crates/')) {
-                m_elPanel = _InitCaseScene(itemId);
+            else if (ItemInfo.ItemHasCapability(itemId, 'decodable')) {
+                if (InventoryAPI.GetItemAttributeValue(itemId, '{uint32}volatile container')) {
+                    m_elPanel = _InitLaptopScene(itemId);
+                }
+                else {
+                    m_elPanel = _InitCaseScene(itemId);
+                }
             }
         }
         else if (!model) {
@@ -164,6 +171,14 @@ var InspectModelImage;
         }
     }
     InspectModelImage.EndWeaponLookat = EndWeaponLookat;
+    function PanZoomEnabled() {
+        let elItemPanel = GetExistingItemPanel('ItemPreviewPanel');
+        if (elItemPanel) {
+            return elItemPanel.PanZoomEnabled();
+        }
+        return false;
+    }
+    InspectModelImage.PanZoomEnabled = PanZoomEnabled;
     function _SetCSMSplitPlane0DistanceOverride(elPanel, backgroundMap) {
         let flSplitPlane0Distance = 0.0;
         if (backgroundMap === 'de_ancient_vanity') {
@@ -353,6 +368,39 @@ var InspectModelImage;
         _TransitionCamera(panel, m_useAcknowledge ? 'case_new_item' : 'case', m_useAcknowledge ? true : false);
         return panel;
     }
+    function _InitLaptopScene(itemId) {
+        let oSettings = {
+            panel_type: "MapItemPreviewPanel",
+            active_item_idx: 10,
+            camera: 'cam_laptop_intro',
+            initial_entity: 'item',
+            mouse_rotate: "false",
+            rotation_limit_x: "",
+            rotation_limit_y: "",
+            auto_rotate_x: "",
+            auto_rotate_y: "",
+            auto_rotate_period_x: "",
+            auto_rotate_period_y: "",
+            auto_recenter: false,
+            map_override: 'ui/inspect_laptop',
+            player: "false",
+        };
+        const panel = _LoadInspectMap(itemId, oSettings);
+        _SetParticlesBg(panel);
+        if (m_isLaptopOpening) {
+            panel.TransitionToCamera('cam_laptop', 0);
+            $.Schedule(.25, () => {
+                if (panel.IsValid() && panel) {
+                    $.DispatchEvent('CSGOPlaySoundEffect', 'UI.Laptop.ZoomIn', 'MOUSE');
+                    panel.TransitionToCamera('cam_laptop_open', 1);
+                }
+            });
+        }
+        else {
+            _TransitionCamera(panel, m_useAcknowledge ? 'laptop_new_item' : 'laptop', m_useAcknowledge ? true : false);
+        }
+        return panel;
+    }
     function _InitGlovesScene(itemId) {
         let oSettings = {
             panel_type: "MapItemPreviewPanel",
@@ -395,6 +443,27 @@ var InspectModelImage;
         _TransitionCamera(panel, 'nametag_close');
         return panel;
     }
+    function _InitKeyChainScene(itemId) {
+        let oSettings = {
+            panel_type: "MapItemPreviewPanel",
+            active_item_idx: 1,
+            camera: 'cam_nametag_close_intro',
+            initial_entity: 'item',
+            mouse_rotate: "true",
+            rotation_limit_x: "360",
+            rotation_limit_y: "360",
+            auto_rotate_x: "20",
+            auto_rotate_y: "0",
+            auto_rotate_period_x: "10",
+            auto_rotate_period_y: "10",
+            auto_recenter: false,
+            player: "false",
+        };
+        const panel = _LoadInspectMap(itemId, oSettings);
+        _SetParticlesBg(panel);
+        _TransitionCamera(panel, 'nametag_close');
+        return panel;
+    }
     function _GetBackGroundMap(bUseMainMenuMap = false) {
         if (m_useAcknowledge) {
             return 'ui/acknowledge_item';
@@ -407,7 +476,7 @@ var InspectModelImage;
         return backgroundMap;
     }
     function _LoadInspectMap(itemId, oSettings, bUseMainMenuMap = false) {
-        let mapName = _GetBackGroundMap(bUseMainMenuMap);
+        let mapName = oSettings.map_override ? oSettings.map_override : _GetBackGroundMap(bUseMainMenuMap);
         let elPanel = GetExistingItemPanel('ItemPreviewPanel');
         if (!elPanel) {
             let strAsyncWorkType = $.GetContextPanel().GetAttributeString("asyncworktype", "");
@@ -430,6 +499,9 @@ var InspectModelImage;
                 auto_rotate_period_y: oSettings.auto_rotate_period_y,
                 auto_recenter: oSettings.auto_recenter,
                 workshop_preview: m_isWorkshopPreview,
+                panzoom_enabled: oSettings.mouse_rotate,
+                tabindex: "auto",
+                selectionpos: "auto",
                 sticker_application_mode: (strAsyncWorkType === "can_sticker"),
                 keychain_application_mode: (strAsyncWorkType === "can_keychain"),
                 sticker_scrape_mode: strAsyncWorkType === "remove_sticker",
@@ -443,6 +515,10 @@ var InspectModelImage;
         elPanel.RemoveClass('inspect-model-image-panel--hidden');
         _AdditionalMapLoadSettings(elPanel, oSettings.active_item_idx, mapName);
         _SetParticlesBg(elPanel);
+        if (elPanel.PanZoomEnabled()) {
+            elPanel.SetAcceptsFocus(true);
+            elPanel.SetFocus();
+        }
         return elPanel;
     }
     function GetExistingItemPanel(panelId) {
@@ -621,11 +697,17 @@ var InspectModelImage;
     function ShowHideItemPanel(bshow) {
         if (!m_elContainer.IsValid())
             return;
-        const elItemPanel = GetExistingItemPanel('ItemPreviewPanel');
-        elItemPanel.SetHasClass('hidden', !bshow);
-        elItemPanel.SetReadyForDisplay(bshow);
-        if (bshow)
-            $.DispatchEvent("CSGOPlaySoundEffect", "weapon_showSolo", "MOUSE");
+        let elItemPanel = GetExistingItemPanel('ItemPreviewPanel');
+        if (elItemPanel) {
+            elItemPanel.SetHasClass('hidden', !bshow);
+            elItemPanel.SetReadyForDisplay(bshow);
+            if (bshow) {
+                if (elItemPanel.PanZoomEnabled()) {
+                    elItemPanel.SetFocus();
+                }
+                $.DispatchEvent("CSGOPlaySoundEffect", "weapon_showSolo", "MOUSE");
+            }
+        }
     }
     InspectModelImage.ShowHideItemPanel = ShowHideItemPanel;
     function ShowHideCharPanel(bshow) {
@@ -678,7 +760,7 @@ var InspectModelImage;
     }
     InspectModelImage.DisableItemLighting = DisableItemLighting;
     function _SetLightingForItem(indexShow, elPanel) {
-        let numItemEntitiesInMap = 9;
+        let numItemEntitiesInMap = 10;
         for (let i = 0; i <= numItemEntitiesInMap; i++) {
             let itemIndexMod = i === 0 ? '' : i.toString();
             if (indexShow !== i) {

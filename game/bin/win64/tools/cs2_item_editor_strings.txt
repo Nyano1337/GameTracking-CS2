@@ -13,13 +13,14 @@
  #Valve_Reject_Reserved_For_Lobby
  (%d remaining)...
  (08@HPX`hpx
- (08@HPX`j`
- (08@HPXb
- (08@HPZ`
- (08@HR
- (0X`hpz
+ (08@HPX`jPl
+ (08@HPXbp
+ (08@HPZPl
+ (08@HRp
+ (08@JPl
+ (08@Jp
+ (0X`hpzp
  (Boosted +1)
- (Start: 
  (repeat)
  - IsCheckedOut: %s\n
  - IsVersionControlled: %s\n
@@ -27,20 +28,6 @@
  -filelist "%s"
  -retail
  255
- : Extraneous input - expected %s ...\n
- : Extraneous input - expected <EOF>\n
- : Extraneous input...
- : Missing %s \n
- : Missing <EOF>\n
- : Missing token (%d)...\n
- : cannot match to any predicted input...\n
- : error %d : %s
- : expected %s ...\n
- : expected <EOF>\n
- : missing elements...\n
- : syntax error...\n
- : syntax not recognized...\n
- : unexpected input...\n  expected one of : 
  ?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
  ?timerEvent@QAbstractItemView@@MEAAXPEAVQTimerEvent@@@Z
  ?timerEvent@QAbstractSlider@@MEAAXPEAVQTimerEvent@@@Z
@@ -48,6 +35,7 @@
  ?writableLocation@QStandardPaths@@SA?AVQString@@W4StandardLocation@1@@Z
  ?write@QIODevice@@QEAA_JPEBD_J@Z
  ?write@QMetaProperty@@QEBA_NPEAVQObject@@AEBVQVariant@@@Z
+ A<NONE>
  Base Class Array'
  Base Class Descriptor at (
  Class Hierarchy Descriptor'
@@ -59,7 +47,6 @@
  Icon
  Item Description
  Item Name
- LinePos:
  Loot List Index
  Music Kit Box ID
  Mutator
@@ -86,6 +73,7 @@
  bgcolor=%1
  color=[%d,%d,%d]
  friendlyname='%s'
+ google/protobuf/descriptor.proto
  google/protobuf/descriptor.proto"
  google/protobuf/descriptor.proto*
  near '%s' -
@@ -204,6 +192,7 @@
 "o\n(CMsgGCHRecurringSubscriptionStatusChange
 "o\n)CMsgGCCstrike15_v2_ClientRedeemFreeReward
 "r\n-CMsgGCCStrike15_v2_GetEventFavorites_Response
+"u\n!CNETMsg_SpawnGroup_ManifestUpdate
 "w\n;CChinaAgreementSessions_StartAgreementSessionInGame_Request
 "y\n2CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate_Note
 "{\n/CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin
@@ -355,6 +344,7 @@ $schemasystem/schema_enable_defines.h
 %\n k_EMsgGCRequestPassportItemGrant
 %\n k_EMsgGCStoreGetUserDataResponse
 %\n k_EMsgGCToGCWebAPIAccountChanged
+%\n k_EMsgGCVolatileItemLoadContents
 %\n!GCClientLauncherType_PERFECTWORLD
 %\n!k_ECommunityItemAttribute_Invalid
 %\n!k_ECommunityItemClass_BoosterPack
@@ -366,7 +356,6 @@ $schemasystem/schema_enable_defines.h
 %d_%d_%d_%d_%d.tmp
 %s (Chance = %d)
 %s - Perforce unavailable: %s \n
-%s allocation count overflow( add %llu + current %llu > max %llu )\n
 %s%s: DynamicWidget: %s\n
 %s%s: FGD Parse error: %s %s\n
 %s.png
@@ -419,6 +408,7 @@ $schemasystem/schema_enable_defines.h
 &\n"k_ECsgoSteamUserStat_XpEarnedGames
 &\n"k_UnlockStyle_Failed_CantLockCache
 &\n\ngc_msg_src
+&\r?hideColumn@QTreeView@@QEAAXH@Z
 '#GameUI_Disconnect_BadSpectatorPassword
 '#GameUI_Disconnect_DifferentClassTables
 '#GameUI_ServerRejectInvalidSteamCertLen
@@ -454,26 +444,25 @@ $schemasystem/schema_enable_defines.h
 (#Player_DisconnectReason_InputAutomation
 ((6"8(:,<*>
 (0`hpx
-(1NW
-(1lW
-(5MW
-(9CW
-(9qW
-(9wW
-(AkW
+(10W
+(1cW
+(58W
+(5BW
+(5KW
+(5SW
+(5tW
+(9LW
+(9mW
+(A2W
+(AVW
+(AnW
 (Documents Filter - Use | for OR, space for AND)
-(Expecting %s)
-(Expecting EOF)
 (Filter)
-(IaW
+(I5W
+(ITW
+(MlW
 (No Active Session)
 (Outliner Filter)
-(Q7W
-(QLW
-(QSW
-(QzW
-(UNW
-(YAW
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -502,7 +491,6 @@ $schemasystem/schema_enable_defines.h
 (\n$k_EGCMsgGetAccountDetails_DEPRECATED
 (\n$k_EGCMsgWebAPIJobRequestHttpResponse
 (\n\feinit_result
-(\n\nEGCItemMsg
 (\n\tattribute
 (\r""\n\rCMsgSortItems
 (\r",\n*CMsgGCCStrike15_v2_GiftsLeaderboardRequest"
@@ -523,13 +511,13 @@ $schemasystem/schema_enable_defines.h
 (\r"O\n\rCSOEconCoupon
 (\r"P\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus
 (\r"Q\n\fCVDiagnostic
-(\r"R\n\rCMsgOpenCrate
 (\r"X\n\rIpAddressMask
 (\r"[\n#CMsgGCItemCustomizationNotification
 (\r"_\n(CMsgGCCStrike15_v2_ClientLogonFatalError
 (\r"b\n2CMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 (\r"f\n(CMsgGCCStrike15_v2_ClientPlayerDecalSign
 (\r"j\n'CCommunity_GamePersonalDataCategoryInfo
+(\r"l\n\rCMsgOpenCrate
 (\r"o\n-CMsgGCCStrike15_v2_GC2ServerReservationUpdate
 (\r"o\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm
 (\r"q\n"CMsgGCDev_SchemaReservationRequest
@@ -548,7 +536,6 @@ $schemasystem/schema_enable_defines.h
 (\t"U\n3CCommunity_TerminateGamePersonalDataEntries_Request
 (\t"U\n<CChinaAgreementSessions_StartAgreementSessionInGame_Response
 (\t"\r\n\vCNETMsg_NOP"'\n
-(\t"u\n!CNETMsg_SpawnGroup_ManifestUpdate
 (\t"u\n-CCommunity_GetGamePersonalDataEntries_Request
 (\t"z\n1CMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 (\tV_fpclassifyd
@@ -625,25 +612,22 @@ $schemasystem/schema_enable_defines.h
 (\v2\t.CMsgRGBA
 (\v2\v.CMsgQAngle
 (\v2\v.CMsgVector
-(\v2\v.CMsg_CVars"
+(\v2\v.CMsg_CVars:
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
 (aHW
-(aeW
-(arW
-(channel = 
+(aNW
+(adW
 (default)
-(end of input).\n\t This indicates a poorly specified lexer RULE\n\t or unterminated input element such as: "STRING["]\n
-(i1W
-(iGW
-(igW
-(iyW
-(mKW
+(efW
 (null)
-(q2W
-(q6W
-(uLW
-(ufW
-(ylW
+(qJW
+(qVW
+(qWW
+(qmW
+(uhW
+(yCW
+(ybW
+(ynW
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -667,6 +651,7 @@ $schemasystem/schema_enable_defines.h
 )\n%k_ECommunityItemClass_ProfileModifier
 )\n%k_UnlockStyle_Failed_CantAffordAttrib
 )\n?displayText@QStyledItemDelegate@@UEBA?AVQString@@AEBVQVariant@@AEBVQLocale@@@Z
+)\n\nEGCItemMsg
 )\r?hideEvent@QComboBox@@MEAAXPEAVQHideEvent@@@Z
 )\t?buddy@QAbstractItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 )\tV_fprintf
@@ -731,8 +716,6 @@ $schemasystem/schema_enable_defines.h
 +\t?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 , *filterProcedural:location=content )
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
-, at offset %d
-, near %s
 ,"?updateGeometries@QTableView@@MEAAXXZ
 ,#Player_DisconnectReason_CompetitiveCooldown
 ,<ellipsis>
@@ -751,7 +734,6 @@ $schemasystem/schema_enable_defines.h
 -"?updateGeometries@QTreeView@@MEAAXXZ
 -#GameUI_Disconnect_LocalProblem_NetworkConfig
 -> Success (%d attempts)\n
--Stop: 
 -\n(k_EMsgGCCStrike15_v2_ClientCommendPlayer
 -\n(k_EMsgGCCStrike15_v2_ClientNetworkConfig
 -\n(k_EMsgGCCStrike15_v2_ClientRequestOffers
@@ -761,10 +743,7 @@ $schemasystem/schema_enable_defines.h
 -\n\fcommendation
 -\n\nconditions
 -\n\tAttribute
--end of input-(
 -memory-
--unknown source-
--unknown source-(
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 .00cfg
 .?AU?$Container@VUnknownFieldSet@protobuf@google@@@InternalMetadata@internal@protobuf@google@@
@@ -916,9 +895,11 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_bIsScratchTarget@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPassWhenTrue@?1??GetAttributeTable_Impl@CompMatMutatorCondition_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPassWhenTrue@?1??GetAttributeTable_Impl@CompositeMaterialMatchFilter_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bSendGiftAPI@?1??GetAttributeTable_CCS2EconNode_CommunityCase@CCS2EconNode_CommunityCase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bShowNameTag@?1??GetAttributeTable_CEconItemPreviewAttrs@CEconItemPreviewAttrs@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bShowStatTrak@?1??GetAttributeTable_CEconItemPreviewAttrs@CEconItemPreviewAttrs@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bSplatDebugInfo@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bStatTrakEnabled@?1??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bValueBoolean@?1??GetAttributeTable_Impl@CompositeMaterialInputLooseVariable_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_cValueColor4@?1??GetAttributeTable_Impl@CompositeMaterialInputLooseVariable_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_colDrawText_Color@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -982,6 +963,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_strAttrName@?1??GetAttributeTable_Impl@CompositeMaterialInputContainer_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strAttrNameForVar@?1??GetAttributeTable_Impl@CompositeMaterialInputContainer_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strBitmapName@?1??GetAttributeTable_Impl@GeneratedTextureHandle_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_strCompressionFormat@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strCopyKeysWithSuffix_FindSuffix@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strCopyKeysWithSuffix_InputContainerSrc@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strCopyKeysWithSuffix_ReplaceSuffix@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1277,6 +1259,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@_NUCompositeMaterialMatchFilter_t@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCCS2EconNode_CaseKey@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCCS2EconNode_Collection@@@@
+.?AV?$CBaseConcreteToolAttr@_NVCCS2EconNode_CommunityCase@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCCS2EconNode_DiscreteSet@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCCS2EconNode_MusicKit@@@@
 .?AV?$CBaseConcreteToolAttr@_NVCCS2EconNode_MusicKitBox@@@@
@@ -1376,6 +1359,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttrValue@_NUCompositeMaterialMatchFilter_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCCS2EconNode_CaseKey@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCCS2EconNode_Collection@@@@
+.?AV?$CBaseConcreteToolAttrValue@_NVCCS2EconNode_CommunityCase@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCCS2EconNode_DiscreteSet@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCCS2EconNode_MusicKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@_NVCCS2EconNode_MusicKitBox@@@@
@@ -1527,6 +1511,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@_NUCompositeMaterialMatchFilter_t@@X@@
 .?AV?$CConcreteToolAttr@_NVCCS2EconNode_CaseKey@@X@@
 .?AV?$CConcreteToolAttr@_NVCCS2EconNode_Collection@@X@@
+.?AV?$CConcreteToolAttr@_NVCCS2EconNode_CommunityCase@@X@@
 .?AV?$CConcreteToolAttr@_NVCCS2EconNode_DiscreteSet@@X@@
 .?AV?$CConcreteToolAttr@_NVCCS2EconNode_MusicKit@@X@@
 .?AV?$CConcreteToolAttr@_NVCCS2EconNode_MusicKitBox@@X@@
@@ -1652,6 +1637,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttrGetSet@_KVCCS2ItemEditorNode@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCCS2EconNode_CaseKey@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCCS2EconNode_Collection@@@@
+.?AV?$CConcreteToolAttrGetSet@_NVCCS2EconNode_CommunityCase@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCCS2EconNode_DiscreteSet@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCCS2EconNode_MusicKit@@@@
 .?AV?$CConcreteToolAttrGetSet@_NVCCS2EconNode_MusicKitBox@@@@
@@ -1661,6 +1647,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CDefaultToolAttrTableForStruct@UCompMatMutatorCondition_t@@@@
 .?AV?$CDefaultToolAttrTableForStruct@UCompMatPropertyMutator_t@@@@
 .?AV?$CDefaultToolAttrTableForStruct@UCompositeMaterialAssemblyProcedure_t@@@@
+.?AV?$CDefaultToolAttrTableForStruct@UCompositeMaterialEditorPoint_t@@@@
 .?AV?$CDefaultToolAttrTableForStruct@UCompositeMaterialInputContainer_t@@@@
 .?AV?$CDefaultToolAttrTableForStruct@UCompositeMaterialInputLooseVariable_t@@@@
 .?AV?$CDefaultToolAttrTableForStruct@UCompositeMaterialMatchFilter_t@@@@
@@ -1869,6 +1856,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CToolAttrGetSetAccess@_KVCCS2ItemEditorNode@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCCS2EconNode_CaseKey@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCCS2EconNode_Collection@@@@
+.?AV?$CToolAttrGetSetAccess@_NVCCS2EconNode_CommunityCase@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCCS2EconNode_DiscreteSet@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCCS2EconNode_MusicKit@@@@
 .?AV?$CToolAttrGetSetAccess@_NVCCS2EconNode_MusicKitBox@@@@
@@ -1981,7 +1969,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$IToolAttr_TypedValue@W4SeedMode_t@@@@
 .?AV?$IToolAttr_TypedValue@_K@@
 .?AV?$IToolAttr_TypedValue@_N@@
-.?AV?$ITypedPropertyEditDomain@VHToolAttrTarget@@PEAVIToolAttr_Table@@PEAVIBaseToolAttr@@@@
+.?AV?$ITypedPropertyEditDomain@VHToolAttrTableInstance@@PEAVIBaseToolAttr@@@@
 .?AV?$RepeatedField@H@protobuf@google@@
 .?AV?$RepeatedField@I@protobuf@google@@
 .?AV?$RepeatedField@M@protobuf@google@@
@@ -2026,8 +2014,8 @@ $schemasystem/schema_enable_defines.h
 .?AV?$_Func_base@XPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@std@@
 .?AV?$_Func_base@XPEBDPEBD_JI@std@@
-.?AV?$_Func_base@_NVHToolAttrTarget@@PEBVIBaseToolAttr@@@std@@
-.?AV?$_Func_base@_NVHToolAttrTarget@@PEBVIBaseToolAttr@@PEAVCUtlString@@@std@@
+.?AV?$_Func_base@_NVHToolAttrTableInstance@@PEBVIBaseToolAttr@@@std@@
+.?AV?$_Func_base@_NVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAVCUtlString@@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQCheckBox@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
@@ -2040,8 +2028,8 @@ $schemasystem/schema_enable_defines.h
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
 .?AV?$_Func_impl_no_alloc@P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@ZXPEAV1@AEBU23@@std@@
-.?AV?$_Func_impl_no_alloc@P6A_NVHToolAttrTarget@@PEBVIBaseToolAttr@@@Z_NV1@PEBV2@@std@@
-.?AV?$_Func_impl_no_alloc@P6A_NVHToolAttrTarget@@PEBVIBaseToolAttr@@PEAVCUtlString@@@Z_NV1@PEBV2@PEAV3@@std@@
+.?AV?$_Func_impl_no_alloc@P6A_NVHToolAttrTableInstance@@PEBVIBaseToolAttr@@@Z_NV1@PEBV2@@std@@
+.?AV?$_Func_impl_no_alloc@P6A_NVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAVCUtlString@@@Z_NV1@PEBV2@PEAV3@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_10>@?M@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_11>@?N@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_12>@?O@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -2571,6 +2559,8 @@ $schemasystem/schema_enable_defines.h
 .?AVCSOPartyInvite@@
 .?AVCSOPersonaDataPublic@@
 .?AVCSOQuestProgress@@
+.?AVCSOVolatileItemClaimedRewards@@
+.?AVCSOVolatileItemOffer@@
 .?AVCSVCMsgList_GameEvents@@
 .?AVCSVCMsgList_GameEvents_event_t@@
 .?AVCSVCMsg_GameEvent@@
@@ -2917,8 +2907,8 @@ $schemasystem/schema_enable_defines.h
 .P6AXPEAVQTableWidget@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolBar@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
-.P6A_NVHToolAttrTarget@@PEBVIBaseToolAttr@@@Z
-.P6A_NVHToolAttrTarget@@PEBVIBaseToolAttr@@PEAVCUtlString@@@Z
+.P6A_NVHToolAttrTableInstance@@PEBVIBaseToolAttr@@@Z
+.P6A_NVHToolAttrTableInstance@@PEBVIBaseToolAttr@@PEAVCUtlString@@@Z
 .PlayerCommendationInfo
 .PlayerDecalDigitalSignature
 .PlayerMedalsInfo
@@ -3020,13 +3010,11 @@ $schemasystem/schema_enable_defines.h
 /sprays
 /stickers
 /weapons/customization/paints_gloves/
-0 255
 0$2z4
-0.0 1.0
 08@HP
-08@HR`
-08@J
-08B`
+08@HRPl
+08@Jp
+08BPl
 08\fj
 0:<\n\fdelta_ignore
 0T.Q
@@ -3057,7 +3045,6 @@ $schemasystem/schema_enable_defines.h
 16777215B$
 18446744073709551615
 1970/01/02
-1:1: Tokens : ( T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | TOK_COLON | OPEN_BRACE | CLOSE_BRACE | OPEN_PAREN | CLOSE_PAREN | OPEN_BRACKET | CLOSE_BRACKET | SEMICOLON | OP_EQUAL | COMMA | DOUBLE_AND | NEGATIVE_TOK | DOUBLE_OR | LITERAL_TRUE | LITERAL_FALSE | POS_INTLITERAL | POS_FLOATLITERAL | ID | DOUBLE_QUOTED_STRING | SINGLE_QUOTED_STRING | SINGLE_LINE_COMMENT | ML_COMMENT | WS | UNRECOGNIZED );
 1AcceptIfItemPicked()
 1ActivateAndClose( QTableWidgetItem* )
 1ActivateSelectedAndClose()
@@ -3158,6 +3145,7 @@ $schemasystem/schema_enable_defines.h
 1\n,k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo
 1\n,k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest
 1\n,k_EMsgGCCStrike15_v2_Server2GCClientValidate
+1\n,k_EMsgGCCStrike15_v2_VolatileItemClaimReward
 1\n,k_EMsgGCStorePurchaseInitResponse_DEPRECATED
 1\n-NETWORK_DISCONNECT_DIRECT_CONNECT_RESERVATION
 1\n-k_EClientReportingVersion_SupportsTrustedMode
@@ -3183,6 +3171,8 @@ $schemasystem/schema_enable_defines.h
 2*.google.protobuf.FieldDescriptorProto.Type
 2+.google.protobuf.FieldDescriptorProto.Label
 2/.google.protobuf.MethodOptions.IdempotencyLevel:
+20t 
+20x 
 2DownArrowPressed()
 2OnDownPressed()
 2SIG_DragStarted()
@@ -3206,8 +3196,7 @@ $schemasystem/schema_enable_defines.h
 2\n\nline_items
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vp!m
-2\vp4A>
+2\vptH>
 2aboutToShow()
 2activated( int )
 2changed()
@@ -3253,7 +3242,6 @@ $schemasystem/schema_enable_defines.h
 3\tV_ftell
 3_?tip@QStatusTipEvent@@QEBA?AVQString@@XZ
 4*p0
-488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
 4\n/k_EGCItemCustomizationNotification_ApplySticker
 4\n/k_EGCItemCustomizationNotification_NameBaseItem
 4\n/k_EGCItemCustomizationNotification_StatTrakSwap
@@ -3282,6 +3270,9 @@ $schemasystem/schema_enable_defines.h
 5\n\vtype_caches
 5\tV_fwrite
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
+605?
+606?
+6PJ?
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_GraffitiUnseal
@@ -3297,6 +3288,7 @@ $schemasystem/schema_enable_defines.h
 6\n\nvariations
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
+6pA?
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
 7\n2k_EGCItemCustomizationNotification_XpShopAckTracks
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
@@ -3304,7 +3296,11 @@ $schemasystem/schema_enable_defines.h
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
 7\n\tenum_type
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
+85aW
 8@HP:
+8@JPl
+8B0x 
+8BPl
 8Csinf
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
@@ -3312,6 +3308,7 @@ $schemasystem/schema_enable_defines.h
 8\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
 8\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
+8\nPl
 8\n\textension
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
@@ -3325,7 +3322,6 @@ $schemasystem/schema_enable_defines.h
 9\n4k_EMsgGCCStrike15_v2_RequestRecurringMissionSchedule
 9\n\noneof_decl
 9\n\vFantasySlot
-: lexer error %d :\n\t%s at offset %d, 
 :9\n\tkey_field
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
 :\n5k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse
@@ -3345,13 +3341,10 @@ $schemasystem/schema_enable_defines.h
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePattern"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePattern"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePattern"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "srgb"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "srgb"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePattern"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePearlescenceMask"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "mask"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePearlescenceMask"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePosition"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "RGBA16161616F"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePosition"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
 </font>
-<DOWN>
-<EOR>
 <Multiple Different Values>
-<NONE>
 <UNKNOWN>
-<Unknown>
 <\f?deallocate@QArrayData@@SAXPEAU1@_K1@Z
 <\f?focusPolicy@QWidget@@QEBA?AW4FocusPolicy@Qt@@XZ
 <\n\ncategories
@@ -3363,9 +3356,6 @@ $schemasystem/schema_enable_defines.h
 <br>This session has unsaved changes. Save them?<br>
 <ellipsis>
 <font color=%1>
-<invalid>
-<missing 
-<no text for the token>
 <pre>"%s"</pre> Is not an allowed file path. %s<br><br>%s
 <table style="font-size:%1px; border-collapse:collapse; border-width:1px; border-color:%2; color:%2;">
 <tr><td width=%1
@@ -3378,7 +3368,6 @@ $schemasystem/schema_enable_defines.h
 =\tV_isdigit_str
 =cQ6
 =imb;D
-=m_bUseShadowFastPath
 =texcoord
 >%1</td></tr></table><br>
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -3400,6 +3389,7 @@ $schemasystem/schema_enable_defines.h
 ??0CUtlBuffer@@QEAA@HHW4BufferFlags_t@0@@Z
 ??0CUtlString@@QEAA@AEBVCBufferString@@@Z
 ??0CUtlSymbolTable@@QEAA@HH_N@Z
+??0Connection@QMetaObject@@QEAA@AEBV01@@Z
 ??0Connection@QMetaObject@@QEAA@XZ
 ??0KeyValues@@QEAA@PEBD00@Z
 ??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
@@ -4873,6 +4863,7 @@ $schemasystem/schema_enable_defines.h
 ?sliderChange@QScrollBar@@MEAAXW4SliderChange@QAbstractSlider@@@Z
 ?sort@QSortFilterProxyModel@@UEAAXHW4SortOrder@Qt@@@Z
 ?sortByColumn@QTableView@@QEAAXHW4SortOrder@Qt@@@Z
+?sortByColumn@QTreeView@@QEAAXHW4SortOrder@Qt@@@Z
 ?sortIndicatorOrder@QHeaderView@@QEBA?AW4SortOrder@Qt@@XZ
 ?sortIndicatorSection@QHeaderView@@QEBAHXZ
 ?sourceModel@QAbstractProxyModel@@QEBAPEAVQAbstractItemModel@@XZ
@@ -4997,21 +4988,21 @@ $schemasystem/schema_enable_defines.h
 ?ysB
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08@HPX`hpx
-@08N
+@08N\
+@2Pl
 @HPX
 @HPX&I
+@HPX`hv
 @\n\fSingleObject
 @\n\vserver_type
 @\tV_isnand
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 @^8U)zj
+@htp
 A new location must be selected in order to save the file.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 A>pP&
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
-AFloat
-ANTLR3_EXCEPTION number %d (%08X).\n
-ANTLR3_EXCEPTION: %s\n
 ARRAY_MEMBERS_VIA_PARENT
 ARRAY_PARENT_ONLY
 A\n!NETWORK_DISCONNECT_REJECT_NOLOBBY
@@ -5032,7 +5023,6 @@ ActivateAndClose
 ActivateSelectedAndClose
 ActivateSubWindow
 Active Window Widget
-Actually dude, we didn't seem to be expecting anything here, or at least\n
 Add Failed
 Add Failed.
 AddClicked
@@ -5043,15 +5033,12 @@ Adding %d file(s).  Please wait...
 Addr
 Address
 Album Image
-Alias
 Alignment
 All itemsets must have names.
 All lootlists must have names.
 Alternate icon '%s' > '%s' must define '%s'
 Alternate icon definition index %d must be greater than or equal to zero
 Alternate icon definition index '%s' (%llu) must be greater than zero
-Ambient Occlusion
-Animation Cycle
 AnimgraphPicker()
 Anodized
 Anodized Airbrushed
@@ -5082,7 +5069,6 @@ Asset Browser
 AssetBrowse(
 AssetBrowse( 
 AssetBrowse( %s )
-AssetBrowse( jpg, png, psd, tga )
 AssetBrowse( png )
 AssetBrowse( txt )
 AssetBrowse( vmat )
@@ -5093,7 +5079,6 @@ AssetBrowse( wav )
 Associated Discrete Set
 Attempting to register the command %s for context %s multiple times\n
 Attribute
-Attribute Name
 Attribute definition %d: Duplicate name "%s"
 Attribute definition %s: Asset class export rule '%s' is incompatible
 Attribute definition %s: Cannot use "asset_class_bucket" on class-level attributes
@@ -5105,7 +5090,6 @@ Attribute definition %s: bad setting for 'stored_as_integer' = '%s'
 Attribute definition index %d must be greater than or equal to zero
 Attribute.%s.%s
 AuditData
-BACKSLASH_CHAR
 BC?>6t9^\tc:>
 BF>^G
 BUTTON
@@ -5125,37 +5109,10 @@ Bad metadata for %s
 Bad variable description
 Bad variable long name
 Bad verticalPolicy "%s"
-Base recognizer function 'alreadyParsedRule' called by unknown parser type - provide override for this function\n
-Base recognizer function 'consumeUntil' called by unknown parser type - provide override for this function\n
-Base recognizer function 'consumeUntilSet' called by unknown parser type - provide override for this function\n
-Base recognizer function 'match' called by unknown parser type - provide override for this function\n
-Base recognizer function 'matchAny' called by unknown parser type - provide override for this function\n
-Base recognizer function 'mismatch' called by unknown parser type - provide override for this function\n
-Base recognizer function 'synPred' called by unknown parser type - provide override for this function\n
-Base recognizer function antlr3RecognitionExceptionNew called by unknown parser type - provide override for this function\n
-Base recognizer function consumeUntilSet called by unknown parser type - provide override for this function\n
-Base recognizer function displayRecognitionError called by unknown parser type - provide override for this function\n
-Base recognizer function recover called by unknown parser type - provide override for this function\n
-Base recognizer function recoverFromMismatchedSet called by unknown parser type - provide override for this function\n
-Base recognizer function recoverFromMismatchedToken called by unknown parser type - provide override for this function\n
 BaseEditor
 BaseTextureOverride
 Begin mouse capture [%i]: %s\n
 Between the attribute label and editor
-BinAdd
-BinDiv
-BinEq
-BinGt
-BinGtE
-BinInvalid
-BinLogAnd
-BinLogOr
-BinLt
-BinLtE
-BinMod
-BinMul
-BinNe
-BinSub
 BindCmd_Copy
 BindCmd_Create
 BindCmd_FilterWithItems
@@ -5169,8 +5126,6 @@ BindCmd_Undo
 Binding removed due to active drag: %s
 Bomb Planted
 Bomb Ten Second Countdown
-BoneConstraintList
-Boolean
 Build
 Build Game Items...
 Build Game Items: Completed.
@@ -5222,7 +5177,6 @@ CCaseUnusualContents
 CCaseUnusualPaintKit
 CClientHeaderOverwatchEvidence
 CCollectionPaintKit
-CCompositeMaterialEditorDoc
 CDataGCCStrike15_v2_MatchInfo
 CDiscreteLootList_KeychainKit
 CDiscreteLootList_PaintKit
@@ -5248,9 +5202,6 @@ CKeyValues3Array::InsertMultipleBefore
 CKeyValues3Array::RemoveMultiple
 CKeyValues3Context::Root
 CKeyValues3Table::EnsureMemberCapacity
-CLOSE_BRACE
-CLOSE_BRACKET
-CLOSE_PAREN
 CMsgAccountDetails
 CMsgAcknowledgeRentalExpiration
 CMsgAdjustEquipSlot
@@ -5355,32 +5306,10 @@ CNETMsg_SpawnGroup_Load
 CNETMsg_SpawnGroup_Unload
 CNETMsg_SplitScreenUser
 CNETMsg_StringCmd
-COMMA
 COMMAND_TEXT_MODE_BUTTON
 COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
-COMPMATSYSVAR_COMPOSITETIME
-COMPMATSYSVAR_EMPTY_RESOURCE_SPACER
-COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_EXISTS
-COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_VALUE_EQUALS
-COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_VALUE_EXISTS
-COMP_MAT_PROPERTY_MUTATOR_CONDITIONAL_MUTATORS
-COMP_MAT_PROPERTY_MUTATOR_COPY_KEYS_WITH_SUFFIX
-COMP_MAT_PROPERTY_MUTATOR_COPY_MATCHING_KEYS
-COMP_MAT_PROPERTY_MUTATOR_COPY_PROPERTY
-COMP_MAT_PROPERTY_MUTATOR_DRAW_TEXT
-COMP_MAT_PROPERTY_MUTATOR_GENERATE_TEXTURE
-COMP_MAT_PROPERTY_MUTATOR_INIT
-COMP_MAT_PROPERTY_MUTATOR_POP_INPUT_QUEUE
-COMP_MAT_PROPERTY_MUTATOR_RANDOM_ROLL_INPUT_VARIABLES
-COMP_MAT_PROPERTY_MUTATOR_SET_VALUE
-CONTAINER_SOURCE_TYPE_LOOSE_VARIABLES
-CONTAINER_SOURCE_TYPE_MATERIAL_FROM_TARGET_ATTR
-CONTAINER_SOURCE_TYPE_SPECIFIC_MATERIAL
-CONTAINER_SOURCE_TYPE_TARGET_INSTANCE_MATERIAL
-CONTAINER_SOURCE_TYPE_TARGET_MATERIAL
-CONTAINER_SOURCE_TYPE_VARIABLE_FROM_TARGET_ATTR
 CORD
 CPipRankData: First rank should be rank 1, was %d\n
 CPipRankData: No ranks found
@@ -5557,6 +5486,8 @@ CSOLobbyInvite
 CSOPartyInvite
 CSOPersonaDataPublic
 CSOQuestProgress
+CSOVolatileItemClaimedRewards
+CSOVolatileItemOffer
 CSVCMsgList_GameEvents
 CSVCMsg_GameEvent
 CSouvenirPaintKit
@@ -5616,7 +5547,6 @@ CancelClicked
 Cannot Debug
 Cannot add multiple root layouts to the same widget
 Cannot break - no debugger attached!
-Cannot deduce for class
 Cannot find required music kit file: '%s'.\n
 Cannot load map %s, the compiled map does not exist.\n
 Cannot overwrite read-only file '%s'.
@@ -5627,7 +5557,6 @@ Cannot split dock - sibling QDockWidget not found (%s)
 Cannot tabify dock - sibling QDockWidget not found (%s)
 CapToggle
 Caps
-Capture in RenderDoc
 Case Hardening
 Case Key
 Case Key ID
@@ -5649,7 +5578,6 @@ Checkout Failed
 Checkout Failed.
 Checkout was NOT successful! To save you must select a different file.
 Checkout?
-Child Model
 Children
 Choose Team
 Circular visibility dependency '%s' found in '%s'.\n
@@ -5669,55 +5597,25 @@ CloseSelected
 Collapse
 Collapse All
 Collection
-Color4
 Command Filter
 Command Name
 Command.%s.%s
 Community Case
 Community Case ID
-CompMatMutatorCondition_t
-CompMatPropertyMutatorConditionType_t
-CompMatPropertyMutatorType_t
-CompMatPropertyMutator_t
 CompareStringEx
 Compiled %s
 Complex achievement %s must have an Items key or a DefIndex field
-Composite Generation Time
-Composite Inputs
 Composite Material
-Composite Material Assembly
-Composite Material Assembly Procedures
-CompositeMaterialAssemblyProcedure_t
-CompositeMaterialEditorPoint_t
-CompositeMaterialInputContainerSourceType_t
-CompositeMaterialInputContainer_t
-CompositeMaterialInputLooseVariableType_t
-CompositeMaterialInputLooseVariable_t
-CompositeMaterialInputTextureType_t
-CompositeMaterialKVInspector
-CompositeMaterialMatchFilterType_t
-CompositeMaterialMatchFilter_t
-CompositeMaterialTextureViewer
-CompositeMaterialUserModelStateSetting
-CompositeMaterialVarSystemVar_t
-CompositeMaterial_t
 CompositeTime
-Condition
-Conditions
+Compression Format
 Container Does NOT Exist: %s
 Container Exists: %s
-Container Name
-Container to Init With
-Container to Pop
 Context
 Context '%s': Attribute "%s" could not parse value "%s"!
 Context '%s': Attribute "%s" in "attributes" did not match any attribute definitions
 Copy
-Copy Keys with Suffix
-Copy Matching Keys From
 Copy Modified Path
 Copy Original Path
-Copy Property From
 CorExitProcess
 CornerWidget:%s
 Could not add file(s): %s
@@ -5727,7 +5625,6 @@ Could not resolve item type to root folder.
 Coupon Index
 Coupons
 Courier
-Create
 Create %1
 Create Copy
 Create Copy From '%1'
@@ -5744,11 +5641,6 @@ Custom Paint Job
 Custom Paint Job Extended
 CustomCharacter
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
-DIGIT
-DOUBLE_AND
-DOUBLE_OR
-DOUBLE_QUOTED_STRING
-DOUBLE_QUOTE_CHAR
 D\n\vreservation
 DataCenterPing
 DataOffset
@@ -5789,7 +5681,6 @@ DevOnly Tag
 Development Only
 Didn't expect '=' for non-flags non-choices variable %s
 DirectoryEntries
-Disallowed variable name: %s
 Discrete Loot List
 Discrete Set
 Do not show in the row (but maybe show in context menu)
@@ -5799,14 +5690,11 @@ Done.
 Down
 DownArrowPressed
 DragFinished
-DragOffsetDeltaEdited
 DragOffsetRelativeEnd
-DragOffsetRelativeLock
 DragOffsetRelativeStart
 DragOffsetRelativeUpdate
 DragStarted
 DragUpdated
-Draw Text
 Drop Chance
 DropInfo
 DummyNoOp
@@ -5846,8 +5734,6 @@ ENetworkDisconnectionReason
 EProtoDebugVisiblity
 ERROR: Failed to open file for key bindings:\n%1\n
 ERROR: Failed to read key bindings from:\n%1\n
-ESCAPE_CHAR
-ESCAPE_CODE
 ESOMsg
 ET5>
 EXEC-BEGIN (UNSUPRESSED): %s
@@ -5859,12 +5745,10 @@ EXEC-END_SUPPRESSED: %s
 EXEC-HELD: %s
 EXEC-INVALID-END: %s
 EXEC-REMOVE-END: %s
-EXPONENT
 E\n NETWORK_DISCONNECT_REJECT_BANNED
 E\n\fongoingmatch
 E\n\rtarget_entity
 E\r?endsWith@QByteArray@@QEBA_ND@Z
-Early exit
 EatEscapeKeyPress
 Edit
 EditingCancelled
@@ -5874,15 +5758,13 @@ Element.%s
 Element.CompMatMutatorCondition_t
 Element.CompMatPropertyMutator_t
 Element.CompositeMaterialAssemblyProcedure_t
+Element.CompositeMaterialEditorPoint_t
 Element.CompositeMaterialInputContainer_t
 Element.CompositeMaterialInputLooseVariable_t
 Element.CompositeMaterialMatchFilter_t
 Element.CompositeMaterial_t
 Element.GeneratedTextureHandle_t
 EmitEditingFinishedOnDrop
-Empty Resource Spacer
-Enable Child Model
-Enabled
 EncodePointer
 End mouse capture [%i] due to hidden widget\n
 End mouse capture [%i]: %s\n
@@ -5949,28 +5831,19 @@ Expecting numbers 'max_x' 'max_y' 'max_z'
 Expecting numbers 'min_x' 'min_y' 'min_z'
 Expecting tag name
 ExploreWClass
-Expose Externally
-Exposed Fixed Range
-Exposed Friendly Group
-Exposed Friendly Name
-Exposed SetHidden When True
-Exposed SetVisible When True
-Exposed Value List
 Expression syntax error %s found in '%s'.\n
 ExtensionRange
 External Modification - %1
-Extraneous token
 FEMh\f
 FGD Variable %s has bad default value %d (has bits set that are not valid choices)
 FOLDER
 FORCE_NOT_USED
 F\n%NETWORK_DISCONNECT_DISCONNECT_BY_USER
+F\nPl
 F\n\foptimize_for
 F\n\rroundstatsall
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 Failed Schema resevervation!\n\nSchema Type="%1" Schema Instance="%2".
-Failed to allocate a lexer for '%s'. (Out of memory?)
-Failed to allocate a parser for '%s'. (Out of memory?)
 Failed to allocate a token stream for '%s'. (Out of memory?)
 Failed to build preview block for icon '%s'\n
 Failed to build preview block: %s\n
@@ -5994,7 +5867,7 @@ Failed to setup Econ Item Schema from '%s'.\n
 Failed to zip file '%s'.\n
 Failure.
 Fast Asset Search
-FeetSettings
+FastAssetPicked
 FieldDescriptorProto
 File '%s' not found.\n
 FileDescriptorProto
@@ -6005,7 +5878,6 @@ Filter with dependent items
 Filter:
 Filtering
 Final K Vs
-Find Suffix
 Find:
 FindClose
 FindFirstFileExW
@@ -6018,10 +5890,6 @@ First valid class must be less than or equal to last valid class.
 First valid item slot must be less than or equal to last valid item slot.
 Fixed
 Flag sets do not have long names
-Float( %f )
-Float2
-Float3
-Float4
 FlsAlloc
 FlsFree
 FlsGetValue
@@ -6043,15 +5911,12 @@ FocusOut
 FolderName
 FoliageAnimation
 Follow user preference
-Font
-Fp9?
 FreeEnvironmentStringsW
 FreeLibrary
 Friendly Name
 From EconItems
 From Schema
 Full song. 2-5+ minutes.
-Functions not supported in this evaluator (%s)
 GC Reservation
 GCClientLauncherType
 GCClientLauncherType_DEFAULT
@@ -6080,13 +5945,7 @@ Generate All Capsule Icons
 Generate All Keychain Icons
 Generate All Sticker Icons
 Generate Icon
-Generate Texture
-Generated Composite Material
-Generated Composite Materials
-Generated Texture
-Generated Textures
 GeneratedCodeInfo
-GeneratedTextureHandle_t
 Generates a new seed for randomization during Inspect/Preview.
 GetACP
 GetActiveWindow
@@ -6168,26 +6027,14 @@ HydroGraphic
 Hydrographic
 Hydrographic Extended
 I ?toggleViewAction@QDockWidget@@QEBAPEAVQAction@@XZ
-I could not work out what I was expecting, like so many of us these days!\n
 IAssetFileListener
-ICON
 IDEMPOTENCY_UNKNOWN
-ID_CHAR
-IEconItemInterface
 IGNORE
 IHelpChangeListener
 IIconGenerationCallback
 IND)ind)"
 INITY
 INLINE
-INPUT_TEXTURE_TYPE_AO
-INPUT_TEXTURE_TYPE_COLOR
-INPUT_TEXTURE_TYPE_DEFAULT
-INPUT_TEXTURE_TYPE_MASKS
-INPUT_TEXTURE_TYPE_NORMALMAP
-INPUT_TEXTURE_TYPE_PEARLESCENCE_MASK
-INPUT_TEXTURE_TYPE_ROUGHNESS
-INVALID
 IScreenshotCallback
 IToolAttrDomainListener
 IToolFrameListener
@@ -6225,19 +6072,12 @@ Include Price - $2.49
 Include StatTrak
 Include StatTrak Coupon
 Include Unpainted Knifes
-Includes
 Including
 IndicateEditorStateModified
-InfoForResourceTypeCCompositeMaterialKit
-InfoForResourceTypeCModel
-InfoForResourceTypeCTextureBase
-InfoForResourceTypeIMaterial2
 Information
-Init With
 InitIncrementalOperation
 InitOnceBeginInitialize
 InitOnceComplete
-Initial Container
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
 InitializeSListHead
@@ -6249,15 +6089,8 @@ Initializing Post...
 Initializing Schema %s...
 Initializing Session...
 Input Binding Error
-Input Container
-Input Container Exists
-Input Container Property
-Input Container Source
-Input Container Variable Exists
-Input Container Variable Exists and Equals
 Input Debugger [%1]
 Input Sequence
-Input Vars
 InputBindSystem
 Inspect
 Inspect '%1'
@@ -6271,10 +6104,6 @@ InspectBackground_t::INSPECT_GRAY
 InspectBackground_t::INSPECT_GREEN
 InspectBackground_t::INSPECT_SCENERY
 InspectBackground_t::INSPECT_TRANSPARENT
-Integer
-Integer2
-Integer3
-Integer4
 InterlockedFlushSList
 InterlockedPushEntrySList
 Invalid 'dockWidgetArea (%s)
@@ -6310,7 +6139,6 @@ Item '%s' (%s) has no 'keychains' setting for keychain capability
 Item '%s' (%s) has no 'stickers' setting but has stickers capability
 Item Collection Craft Reward (%d) specifies invalid item def
 Item Description
-Item Name
 Item Set %s: Bundle definition "%s" was not found
 Item Set %s: Set contains no items
 Item Set %s: item locname tokens must be #CSGO_%s
@@ -6343,6 +6171,7 @@ KERNEL32.dll
 KV3 save transfer failed: %s
 KV3 syntax error: %s
 KV3 syntax error: %s while parsing @entitygroup %s
+KV3DefaultTestFnName
 K\n!NETWORK_DISCONNECT_INTERNAL_ERROR
 K\n#NETWORK_DISCONNECT_TICKMSG_OVERFLOW
 K\n$NETWORK_DISCONNECT_STEAM_AUTHINVALID
@@ -6378,26 +6207,8 @@ LCIDToLocaleName
 LCMapStringEx
 LCMapStringW
 LEFT
-LINE_CONTINUATION
-LITERAL_FALSE
-LITERAL_TRUE
 LMouse
 LMouseDoubleClick
-LOOSE_VARIABLE_TYPE_BOOLEAN
-LOOSE_VARIABLE_TYPE_COLOR4
-LOOSE_VARIABLE_TYPE_FLOAT1
-LOOSE_VARIABLE_TYPE_FLOAT2
-LOOSE_VARIABLE_TYPE_FLOAT3
-LOOSE_VARIABLE_TYPE_FLOAT4
-LOOSE_VARIABLE_TYPE_INTEGER1
-LOOSE_VARIABLE_TYPE_INTEGER2
-LOOSE_VARIABLE_TYPE_INTEGER3
-LOOSE_VARIABLE_TYPE_INTEGER4
-LOOSE_VARIABLE_TYPE_PANORAMA_RENDER
-LOOSE_VARIABLE_TYPE_RESOURCE_MATERIAL
-LOOSE_VARIABLE_TYPE_RESOURCE_TEXTURE
-LOOSE_VARIABLE_TYPE_STRING
-LOOSE_VARIABLE_TYPE_SYSTEMVAR
 LT?pixel@QImage@@QEBAIHH@Z
 LT_KEYCHAIN_KITS
 LT_PAINT_KITS
@@ -6416,14 +6227,9 @@ Last perforce error was: "%s"\n
 LaunchEngineTool
 Layout Side To Side
 Layout Top To Bottom
-Layout XML
 LeaveCriticalSection
-Left
-Length
-Lexer encountered %d error(s)
 LightmapUV
 LightmapUVW
-Line: 
 LinkedEntityClass
 List Type
 LoadLibraryExW
@@ -6433,8 +6239,6 @@ LocaleNameToLCID
 Location
 Lock Seed
 Lock seed for randomization on ranged attributes.
-LookAtList
-Loose Variables
 Loot List %s: "match_highlight_reel_keychain" block refers to unknown keychain '%s'.\n
 Loot List %s: Looking for attribute template "%s" that couldn't be found in "random_attribute_templates" block.\n
 Loot List %s: Missing required field "chance" in the "random_attributes" block.
@@ -6454,15 +6258,7 @@ Lost Round
 M/d/yyyy h:mm AP
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
-MATCH_FILTER_MATERIAL_ATTRIBUTE_EQUALS
-MATCH_FILTER_MATERIAL_ATTRIBUTE_EXISTS
-MATCH_FILTER_MATERIAL_NAME_SUBSTR
-MATCH_FILTER_MATERIAL_PROPERTY_EQUALS
-MATCH_FILTER_MATERIAL_PROPERTY_EXISTS
-MATCH_FILTER_MATERIAL_SHADER
 MENU
-MGetKV3ClassDefaults
-ML_COMMENT
 MM/dd/yy
 MMouse
 MMouseDoubleClick
@@ -6470,13 +6266,10 @@ MPropertyAttrStateCallback
 MPropertyAttributeEditor
 MPropertyAttributeRange
 MPropertyAutoRebuildOnChange
-MPropertyDescription
 MPropertyElementNameFn
-MPropertyFriendlyName
 MPropertyGroupName
 MPropertyHideField
 MPropertyProvidesEditContextString
-MPropertySuppressEnumerator
 MWheelDn
 MWheelLeft
 MWheelRight
@@ -6494,12 +6287,7 @@ M\t?canDropMimeData@QAbstractProxyModel@@UEBA_NPEBVQMimeData@@W4DropAction@Qt@@H
 M\v?event@QListWidget@@MEAA_NPEAVQEvent@@@Z
 Main Menu
 MapViewOfFile
-Masks
-Match Filters
-Match Type
 MatchEndItemUpdates
-Material
-Material from Target Material Attr
 Maximum
 MethodDescriptorProto
 MinSize
@@ -6508,22 +6296,14 @@ Minimum
 MinimumExpanding
 Minumum 1024x1024.
 MirrorPattern
-Mismatched Token Exception
-Mismatched set
 Missing Music Kit File
 Missing expression dependency '%s' in '%s'.\n
-Missing token
-Missing token %s
 MissionTemplateList
-Model
-Model Preview State
 ModelMaterialGroupName()
 Mouse4
 Mouse4DoubleClick
 Mouse5
 Mouse5DoubleClick
-MovementGaitId_t
-MovementSettings
 MultiByteToWideChar
 Music
 Music Kit
@@ -6537,8 +6317,6 @@ Music definition %s: missing "name"
 Music definition %s: name must be a positive integer
 Music kit file not found.
 MusicKit_MissingFile
-Mutator Command
-Mutators
 Mute Game (In Tools)
 Mute Tools
 N?green@QColor@@QEBAHXZ
@@ -6551,7 +6329,6 @@ N?horizontalAdvance@QFontMetrics@@QEBAHAEBVQString@@H@Z
 N?index@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
 NAN(IND)
 NAN(SNAN)
-NEGATIVE_TOK
 NETWORK_DISCONNECT_BADDELTATICK
 NETWORK_DISCONNECT_BANADDED
 NETWORK_DISCONNECT_DISCONNECTED
@@ -6580,9 +6357,7 @@ NETWORK_DISCONNECT_STEAM_TICKET
 NETWORK_DISCONNECT_TIMEDOUT
 NETWORK_DISCONNECT_UNUSUAL
 NETWORK_DISCONNECT_USERCMD
-NEWLINE
 NO COMMAND TARGET
-NONE
 NOT_ARRAY_MEMBERS
 NO_SIDE_EFFECTS
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
@@ -6596,7 +6371,6 @@ NamePart
 NavSystem001
 Never close the group automatically (used to indicate an error like the process exiting unexpectedly)
 New Item Type
-NewFiles
 NewValueAccepted
 NextSession
 No %s specified. Expected '=' '[' <%s> ']'
@@ -6609,16 +6383,13 @@ No Reservation.
 No Widget Under Mouse
 No Widget Under Mouse @(%1,%2)
 No conversion from KV3 to variant type %d (%s)
-No expression!
 No game simulation API available
-No input data for '%s'. (Empty buffer.)
 No randomization on ranged attributes. Use thumb slider values as shown.
 No signal '%s'
 No slot '%s'
 No: Do not checkout.
 NoAttr
 Node type change not allowed.
-Normal Map
 Not a valid save target.\n\n'%s' is also saving to '%s'.
 Not synced to latest revision
 Nothing to do!\n
@@ -6642,10 +6413,6 @@ NumToggle
 Number of Start Action Cues
 Number of Start Round Cues
 OP?isNull@QIcon@@QEBA_NXZ
-OPEN_BRACE
-OPEN_BRACKET
-OPEN_PAREN
-OP_EQUAL
 OZQ%
 O\n%NETWORK_DISCONNECT_REJECT_BADPASSWORD
 O\n%NETWORK_DISCONNECT_REJECT_LANRESTRICT
@@ -6787,22 +6554,19 @@ OperationalStatisticElement
 OperationalStatisticsPacket
 OperationalVarValue
 Optional properties not fully supported in property editor (text editor required)
-Orientation
 OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P08@J
+P08@Jp
 P08J
-P08N
-P6P@?
+P08N\
+P2Pl
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
 P@HPX`hpx\f
-POS_FLOATLITERAL
-POS_INTLITERAL
 PPNe
 PROXY
 PX`hpx
@@ -6840,21 +6604,17 @@ PaintKit_SolidColorExtended
 PaintKit_SprayPaint
 PaintKit_SprayPaintExtended
 PaintKit_SprayPaintHalftone
-Panorama Render
 PanoramaImage
 PanoramaImage()
 PanoramaLayout()
 PanoramaStyle()
 PanoramaVideo()
-Parser encountered %d error(s)
 Particle system index %d greater than zero
+ParticleCompileBinaryIdenticalHack_underlying_struct
 PartnerItemPaymentRule
-Pass when True
-Path
 Path Overflow, must be less than 260 characters.
 Patina
 Patina Extended
-Pearlescence Mask
 Pedestal Model
 PerVertexLighting
 PgDn
@@ -6862,24 +6622,20 @@ PgUp
 Physics
 Picks
 PivotPaint
-Player
+PjPl
 PlayerCommendationInfo
 PlayerDecalDigitalSignature
 PlayerMedalsInfo
 PlayerQuestData
 PlayerRankingInfo
 Policy
-Pop Input Variable Queue
 PopupClosed
-Position
 Pre Generation K Vs
-Pre-Generated Output Material
 Preferred
 PreloadDirectoryEntries
 Preview
 Preview '%1'
 Preview Map
-Preview Model
 Preview: %s\n
 PreviousSession
 Pro-player entry '%s' doesn't have a valid AccountID
@@ -6894,7 +6650,6 @@ PropEdSpecificAttr_t
 PropWorldOrigin
 Properties
 Property '%s.%s' not writable
-Property Mutators
 Publish
 Publish '%1'
 Publish: %s\n
@@ -6977,15 +6732,12 @@ RDO_AB
 RIGHT
 RMouse
 RMouseDoubleClick
-ROOT
 RSDS
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
-RaiseException
-Random Roll Input Variables
 Random attributes '%s': Attribute definition "%s" was not found
 RangedFloat
 RangedFloat( {range_min=0.0 range_max=1.0 range_editable=false range_step=0.1} )
@@ -7004,19 +6756,14 @@ Read-Only
 ReadFile
 Really delete this widget?<br><br>***THIS MAY CRASH THE PROGRAM***<br>
 RebuildOutliner
-RecentFiles
 Recipe definition %d: Missing required field "input_items"
 Recipe definition %d: Missing required field "output_items"
 Recipe definition index %d must be greater than or equal to zero
-Recognition Exception
-Recognition exception
 Redo
 ReleaseMutex
 ReleaseSRWLockExclusive
 Reloading...
 Render All Windows
-Render Resolution
-Replace Suffix
 Request Icon: '%s'\n
 Requesting Icon for '%s'
 Requesting Icons...
@@ -7033,7 +6780,6 @@ Reserved Loot List Index
 Reset to Default
 Reset to default.
 Resettable
-Resolution
 Resource Compile Items...
 Resource Compile Items: Completed.
 Resource Compile Items: Failed. (Error: %d)\n
@@ -7051,8 +6797,6 @@ Reverting %d file(s).  Please wait...
 Revolving lootlist %d '%s' already exists, cannot add '%s'.
 RichItemList_Accept
 RichItemList_Reject
-Right
-Roughness
 Round MVP Anthem
 Round Ten Second Countdown
 RtlCaptureContext
@@ -7065,7 +6809,6 @@ S?movePosition@QTextCursor@@QEAA_NW4MoveOperation@1@W4MoveMode@1@H@Z
 S?name@QColor@@QEBA?AVQString@@XZ
 S?openUrl@QDesktopServices@@SA_NAEBVQUrl@@@Z
 S?paint@QIcon@@QEBAXPEAVQPainter@@AEBVQRect@@V?$QFlags@W4AlignmentFlag@Qt@@@@W4Mode@1@W4State@1@@Z
-SEMICOLON
 SIGNONSTATE_CHALLENGE
 SIGNONSTATE_CHANGELEVEL
 SIGNONSTATE_CONNECTED
@@ -7080,9 +6823,6 @@ SIG_Finished
 SIG_LogHeader
 SIG_LogMessage
 SIG_ValuesChanged
-SINGLE_LINE_COMMENT
-SINGLE_QUOTED_STRING
-SINGLE_QUOTE_CHAR
 SLIDER_BACKFILL_EMPTY
 SLIDER_BACKFILL_HARD
 SLIDER_BACKFILL_HILL
@@ -7112,7 +6852,6 @@ SPAWN_GROUP_LOAD_STREAMING_DATA
 SPAWN_GROUP_SYNCHRONOUS_SPAWN
 SPEED
 STANDIN: %1
-STRING_CHAR
 S\n!NETWORK_DISCONNECT_REMOTE_TIMEOUT
 S\n%NETWORK_DISCONNECT_CONNECTION_FAILURE
 S\n'NETWORK_DISCONNECT_DELTAENTMSG_OVERFLOW
@@ -7138,11 +6877,9 @@ Scenery Blurred
 ScoreLeaderboardData
 ScrLk
 ScrToggle
-Scratch Target
 Screenshot
 Screenshot Failure: Could not locate screenshot: %s\n
 Seed
-Seed Input Var
 Seed Mode
 SeedMode_t::SEED_FOLLOW
 SeedMode_t::SEED_IGNORE
@@ -7150,6 +6887,7 @@ SeedMode_t::SEED_SHUFFLE
 SelectAllOnClickFocus
 SelectFirstItemAfterFilter
 SelectionChanged
+Send Gift API
 ServerHltvInfo
 ServiceDescriptorProto
 SessionCycleWidget
@@ -7157,7 +6895,6 @@ Set Description
 Set Icon
 Set Icon Small
 Set Name
-Set Value
 SetBackFillEmpty
 SetBackFillHill
 SetBackFillRamp
@@ -7227,18 +6964,13 @@ Sort By Description
 Sort By Item Name
 Sort By Rarity
 Sound material definition %s: Missing required field "value"
-SoundPicker()
 SourceAppID
 SourceCodeInfo
 Souvenir
 Souvenir ID
 Space
 SpawnGroupFlags_t
-Specific Material
-Specified Material
 Specified class '%s' is a base class, @exclude cannot be used for base classes
-Specify Min/Max
-Splat Debug info on Texture
 Spray
 Spray Description
 Spray ID
@@ -7260,6 +6992,7 @@ Start Round 2
 Start Round 3
 Start of Match
 StatTrak
+StatTrak Enabled
 Status
 Sticker
 Sticker Capsule
@@ -7275,11 +7008,11 @@ Sticker kit '%s' scale range is not valid %f:%f
 StickerCapsule
 StickerKit_
 StickerKit_%s
-String( %s )
 Style
 Stylesheet
 SubmitClicked
 SubscribedType
+SurfacePropPicker()
 SwitchToEngineWindow
 SyncClicked
 SyncFileToHeadRevision
@@ -7287,12 +7020,10 @@ SyncToHeadRevision - SyncFile failed: %s\n
 Synced %d file(s).
 Synced %d file(s).  %d file(s) were not synced!
 Syncing %d file(s).  Please wait...
-System Variable
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
-TOK_COLON
 TT?pixelSize@QFont@@QEBAHXZ
 TUUUU
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
@@ -7311,21 +7042,10 @@ Tabbed Mode
 TanFrameQuat
 Target Attr: '%s' != '%s'
 Target Attr: '%s' == '%s'
-Target Instance Material
 Target K Vs
-Target Material
-Target Material Attribute Equals
-Target Material Attribute Exists
-Target Material Name SubStr
-Target Material Property Equals
-Target Material Property Exists
-Target Material Shader Name
-Target Model
 Target NOT must have Property: '%s'
-Target Property
 Target Property: '%s' != '%s'
 Target Property: '%s' == '%s'
-Target Texture Param
 Target must NOT have Attr: '%s'
 Target must NOT use Shader: '%s'
 Target must have Attr: '%s'
@@ -7335,17 +7055,10 @@ Target name must NOT contain: '%s'
 Target name must contain: '%s'
 TermIncrementalOperation
 TerminateProcess
-TernaryConditional
 TexCoord
-Text Color
-Text Position
-TextBlock()
 TextProgramaticallyChanged
-Texture
 Texture Compilation Vtex Template
-Texture Generation Instructions
 Texture Runtime Resource Path
-Texture Type
 The bundle "%s" contains some, but not all pack items required specified by pack bundle "%s."
 The editor was not launched properly for Workshop Item Submissions.\n
 The file <pre>"%s"</pre> is in a directory which cannot be modified.<br>%s
@@ -7378,6 +7091,7 @@ Tool '%s' missing required type.
 ToolAttr command '%s' failed.
 ToolBarArea
 ToolEvents
+ToolFramework
 ToolSystem2_001
 Tools  
 Tools audio currently muted
@@ -7388,7 +7102,6 @@ TournamentTeam
 Track Mouse & Focus
 TryAcquireSRWLockExclusive
 TrySendVNotify - SendKV3 failed\n
-Type
 U:\thirdpartycode\nonredist\protobuf\protobuf-3.21.8\src\google/protobuf/descriptor.h
 U:\thirdpartycode\nonredist\protobuf\protobuf-3.21.8\src\google/protobuf/dynamic_message.h
 U:\thirdpartycode\nonredist\protobuf\protobuf-3.21.8\src\google/protobuf/extension_set_inl.h
@@ -7423,7 +7136,6 @@ U?qt_metacast@QDoubleValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QRegExpValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 U?qt_metacast@QTextDocument@@UEAAPEAXPEBD@Z
-UNRECOGNIZED
 URLString
 URLString()
 USER32.dll
@@ -7434,9 +7146,6 @@ U\n&NETWORK_DISCONNECT_SERVERINFO_OVERFLOW
 U\n&NETWORK_DISCONNECT_SERVER_INCOMPATIBLE
 U\n(NETWORK_DISCONNECT_REJECT_INVALIDCERTLEN
 U\r?home@QTextBrowser@@UEAAXXZ
-UnInvalid
-UnNegate
-UnNot
 Unable to create writable CONTENT path at '%s'.
 Unable to delete file '%s'.
 Unable to delete read-only file '%s'.
@@ -7457,12 +7166,7 @@ Undefined base class '%s
 UnderMouse
 Undo
 Undo/Redo failed to find: %s\n
-Unexpected character
-Unexpected character '%c' (0x%02X)
 Unexpected end of input
-Unexpected node
-Unexpected token
-Unexpected token '%s' %s
 Unhandled/unrecognized child entry (Must have a _class, or be a special entry like: vbox=[] hbox=[] grid=[[],[]] flowing=[] spacing=NUM stretch=NUM
 UnhandledExceptionFilter
 UninterpretedOption
@@ -7472,9 +7176,7 @@ Unknown class '%s' specified by @exclude
 Unknown error (%d)
 Unknown exception
 Unknown item type %d.
-Unknown property %s
 Unknown string variable '%s'.\n
-Unknown variable %s
 UnmapViewOfFile
 Unrecognized action class '%s'
 Unrecognized meta key: %s
@@ -7482,7 +7184,6 @@ Unrecognized property '%s.%s'
 Unrecognized section name %s
 Unrecognized widget class %s
 Unusual Loot List
-Unwanted token '%s' %s
 UpArrowPressed
 UpdateAttributesFromEditor_AutomaticOneShotOrIncremental_IfModified
 UpdateAttributesFromEditor_AutomaticOneShotOrIncremental_Unconditional
@@ -7533,11 +7234,6 @@ Var %s.%s == %s
 Var Does NOT Exist: %s.%s
 Var Exists: %s.%s
 Variable %s has bad default value %s (no choices with that name or value)
-Variable Name
-Variable Value
-Variable from Target Material Attr
-Variables
-Vector2D
 VertexElementAnnotation
 VertexGenericIntegerData
 VertexPaintBlendParams
@@ -7548,9 +7244,6 @@ Vis:0
 Vis:1 
 Visit Developer Help URL
 Visit the developer help URL (%1)
-W Max
-W Min
-W Value
 W?resetTransform@QPainter@@QEAAXXZ
 W?rowCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 W?save@QPainter@@QEAAXXZ
@@ -7594,9 +7287,6 @@ Writable
 WriteConsoleW
 WriteFile
 Writeable
-X Max
-X Min
-X Value
 X/4B
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrushOrigin@QPainter@@QEAAXAEBVQPoint@@@Z
@@ -7615,12 +7305,8 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-X`hr`
-Xf@7?
+X`hrPl
 XpProgressData
-Y Max
-Y Min
-Y Value
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
 Y?setDecimals@QDoubleValidator@@QEAAXH@Z
@@ -7638,9 +7324,6 @@ Y\n*NETWORK_DISCONNECT_STRINGTABLEMSG_OVERFLOW
 Y\n0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 Yes: Checkout, resolve conflicts later.
-Z Max
-Z Min
-Z Value
 Z-google.golang.org/protobuf/types/descriptorpb
 Z0000
 Z?setItalic@QFont@@QEAAX_N@Z
@@ -7677,7 +7360,6 @@ Zip system failure.\n
 [?setTextWidth@QTextDocument@@QEAAXN@Z
 [Default] Determine a lifespan based on the warning/error state of the group
 [Default] General information
-[Index: 
 [NO_ACTION]
 [NoWidget]
 [\n+NETWORK_DISCONNECT_REJECT_INVALIDCONNECTION
@@ -7703,6 +7385,7 @@ Zip system failure.\n
 \f?detach@QListData@@QEAAPEAUData@1@H@Z
 \f?detach_grow@QListData@@QEAAPEAUData@1@PEAHH@Z
 \f?detach_helper@QHashData@@QEAAPEAU1@P6AXPEAUNode@1@PEAX@ZP6AX0@ZHH@Z
+\f?disconnect@QObject@@SA_NAEBVConnection@QMetaObject@@@Z
 \f?disconnect@QObject@@SA_NPEBV1@PEBD01@Z
 \f?disconnectImpl@QObject@@CA_NPEBV1@PEAPEAX01PEBUQMetaObject@@@Z
 \f?disconnectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
@@ -7738,8 +7421,6 @@ Zip system failure.\n
 \f\f?columnCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n?deselect@QLineEdit@@QEAAXXZ
-\fp\vP8
-\n    near %s\n    
 \n CMsgItemAcknowledged__DEPRECATED
 \n CSVCMsg_GameSessionConfiguration
 \n google/protobuf/descriptor.proto
@@ -8187,6 +7868,7 @@ Zip system failure.\n
 \n\venemy_kills
 \n\verror_code1
 \n\verror_code2
+\n\vfaux_itemid
 \n\vfile_report
 \n\vfinal_batch
 \n\vflash_count
@@ -8244,6 +7926,7 @@ Zip system failure.\n
 \n\vvalue_bytes
 \n\vxp_category
 \n\vyoutube_url
+\nqXW
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -8280,8 +7963,6 @@ Zip system failure.\n
 \r\n\tTYPE_ENUM
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
 \r\tV_atoi
-\rtext
-\t The lexer was matching from line %d, offset %d, which\n\t 
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
 \t?alphaF@QColor@@QEBANXZ
@@ -8308,6 +7989,8 @@ Zip system failure.\n
 \tV_vsnprintf
 \tWarning
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t_MakeGlobalSymbol
+\t_MakeGlobalSymbolCaseSensitive
 \t_V_ComposeFileName
 \t_V_StrSubst
 \t_V_StringAfterPrefix
@@ -8318,7 +8001,6 @@ Zip system failure.\n
 \t_V_strncpy
 \t_V_strnicmp_fast
 \tcQr
-\tg_bUpdateStringTokenDatabase
 \tg_pMemAlloc
 \tkE>fvw
 \v?clear@QStandardItemModel@@QEAAXXZ
@@ -8408,15 +8090,19 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
+`2Pl
+`96W
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `RTTI
-`YLW
+`YtW
 `\tV_powf
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `adjustor{
 `anonymous namespace'
+`bPl
 `copy constructor closure'
+`dPl
 `default constructor closure'
 `dynamic atexit destructor for '
 `dynamic initializer for '
@@ -8429,6 +8115,7 @@ _toolsautosave
 `generic-method-parameter-
 `generic-type-
 `hp\nU
+`htp
 `local static destructor helper'
 `local static guard'
 `local static thread guard'
@@ -8464,9 +8151,11 @@ _toolsautosave
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
+`yGW
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
+aBv\
 a\tV_qsort
 abandon
 abandoned_match
@@ -8484,7 +8173,6 @@ actions
 active_section_id
 active_survey_id
 active_tournament_eventid
-activity
 actual
 add_class_usage_to_output
 add_set_to_output
@@ -8602,8 +8290,8 @@ autoexpand
 autoexpand_self
 autoexpand_self_class
 autograph
-axis
 b ?topLevelChanged@QDockWidget@@QEAAX_N@Z
+b0x 
 bR?metaObject@QDoubleValidator@@UEBAPEBUQMetaObject@@XZ
 b\fp\v0
 b\tV_qsort_s
@@ -8651,7 +8339,6 @@ bools
 boost
 bottom
 brass_eject_model
-break
 broken pipe
 bucketed
 bundle
@@ -8819,7 +8506,6 @@ custom_type
 customorigin
 customorigin_follow
 customplayer
-customplayer_
 cvars
 d8L2
 d\f?deleteLater@QObject@@QEAAXXZ
@@ -8879,7 +8565,6 @@ desc_rare
 desc_strange
 desc_uncommon
 desc_unusual
-description
 description_format
 description_string
 description_tag
@@ -9003,7 +8688,6 @@ explorer.exe
 exposed_param.
 exposed_param.%s
 exposed_params.
-expr
 extended
 extended_timeout
 extendee
@@ -9064,9 +8748,7 @@ firstperson_hide_default_gloves
 fixed_height
 fixed_size
 fixed_width
-flMax
 flMaximum
-flMin
 flMinimum
 flValue
 flVaue
@@ -9214,8 +8896,8 @@ gs_location_id
 gs_ping
 gungameprogressive
 gungametrbomb
-h-RW
 h0'D
+hAsW
 h\n,NETWORK_DISCONNECT_REMOTE_TIMEOUT_CONNECTING
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
@@ -9252,6 +8934,7 @@ host_computationtime
 host_frame_dropped_pct_x10
 host_unfiltered_frametime
 hours
+hpzp
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
@@ -9286,13 +8969,11 @@ in_use
 inappropriate io control operation
 include
 index
-info
 inherit_attr
 initial_inventory
 initial_quantity
 initiator_steam_id
 inity
-input
 input_item_dupe_counts
 input_items
 input_items_criteria
@@ -9322,7 +9003,6 @@ ios_base::eofbit set
 ios_base::failbit set
 iostream stream error
 is a directory
-is also the end of the line, so you must check your lexer rules\n
 is commodity
 is_background_map
 is_collection
@@ -9332,12 +9012,12 @@ is_loadsavegame
 is_multiplayer
 is_optional
 is_pack_bundle
+is_polymorphic
 is_texture
 is_variable_alert_set_func
 is_variable_hidden_func
 ishltv
 italic
-item
 item_%d
 item_1_item_id
 item_2_item_id
@@ -9605,8 +9285,8 @@ k_EMsgGCTrading_SetReadiness
 k_EMsgGCTrading_StartSession
 k_EMsgGCTrading_TradeChatMsg
 k_EMsgGCTrading_UpdateTradeInfo
-k_EMsgGCUnlockCrate
 k_EMsgGCUnlockCrateResponse
+k_EMsgGCUnlockCrate_DEPRECATED
 k_EMsgGCUnlockItemStyle
 k_EMsgGCUnlockItemStyleResponse
 k_EMsgGCUnwrapGiftRequest
@@ -9697,12 +9377,10 @@ legacy_steamdatagram_routing
 level
 level_data
 leveltransition
-lexer->mTokens(): Error: No lexer rules were added to the lexer yet!\n
 lifespan
 limit_description_to_number_rnd
 limited
 link
-list
 list_type
 loadondemand
 lobby_id
@@ -9727,7 +9405,6 @@ logo_rotation
 logo_scale
 logocolor%i
 long 
-looks like this:\n\t\t%.*s\n
 loot_list
 loot_list_name
 loot_lists
@@ -9753,22 +9430,17 @@ m_CaseKey
 m_CasePaintKits
 m_CasePaintKits/%d/m_Name
 m_CaseUnusual
-m_ChildModelName
 m_ChooseTeam
 m_CollectionPaintKits
 m_CollectionPaintKits/%d/m_Name
-m_Command
 m_Context
 m_DeathCam
-m_Description
 m_DescriptionTag
 m_DevOnlyTag
 m_EndOfMatch
-m_FinalKVs
 m_FirstSaleDate
 m_FriendlyName
 m_Image
-m_Input
 m_InputMacros
 m_ItemDescription
 m_ItemName
@@ -9777,8 +9449,6 @@ m_ItemSetDescription
 m_ItemSetFriendlyName
 m_ItemSetImage
 m_ItemSetImageSmall
-m_KVModelStateChoices
-m_KVthumbnail
 m_KeyName
 m_KeychainKitName
 m_KeychainKitNameFriendly
@@ -9792,15 +9462,12 @@ m_LostRound
 m_MainMenu
 m_MapName
 m_Model
-m_ModelName
 m_MusicKitName
 m_MusicKits
 m_MusicKits/%d/m_Name
 m_PaintKitName
 m_PaintKits
 m_PaintKits/%d/m_Name
-m_Points
-m_PreGenerationKVs
 m_Rarity
 m_RevenueShare
 m_RoundMVPAnthem
@@ -9825,7 +9492,6 @@ m_StickerKits/%d/m_Name
 m_Style
 m_Style != ""
 m_StyleTooltipOverride
-m_TargetKVs
 m_Timing
 m_UnusualContents
 m_UnusualName
@@ -9835,14 +9501,9 @@ m_WonRound
 m_WorkshopURL
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
-m_bCaptureInRenderDoc
 m_bDrawLast
-m_bEnableChildModel
-m_bExposeExternally
-m_bExposedVariableIsFixedRange
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
-m_bHasFloatBounds
 m_bHiddenSet
 m_bIdleAnimation
 m_bIncludeCoupon
@@ -9851,115 +9512,32 @@ m_bIncludeStatTrak
 m_bIncludeStatTrakCoupon
 m_bIncludeUnpaintedKnifes
 m_bIsNotMatchedToMaterial
-m_bIsScratchTarget
 m_bNoShadow
 m_bOnlyShadow
-m_bPassWhenTrue
+m_bSendGiftAPI
 m_bShowNameTag
 m_bShowStatTrak
-m_bSplatDebugInfo
+m_bStatTrakEnabled
 m_bUseCompressedNormalTangent
-m_bValueBoolean
-m_cValueColor4
-m_colDrawText_Color
-m_flCycle
+m_bUseShadowFastPath
 m_flRevenueShare
-m_flValueFloatW
-m_flValueFloatW_Max
-m_flValueFloatW_Min
-m_flValueFloatX
-m_flValueFloatX_Max
-m_flValueFloatX_Min
-m_flValueFloatY
-m_flValueFloatY_Max
-m_flValueFloatY_Min
-m_flValueFloatZ
-m_flValueFloatZ_Max
-m_flValueFloatZ_Min
 m_flWearStep
-m_nCompositeMaterialInputContainerSourceType
-m_nCompositeMaterialMatchFilterType
 m_nDisplaySeed
 m_nDropChance
 m_nInspectBackground
-m_nItemIndex
 m_nListType
-m_nMutatorCommandType
-m_nMutatorCondition
 m_nNumStartActions
 m_nNumStartRounds
-m_nPanoramaRenderRes
 m_nReservedCouponIndex
 m_nReservedLootListIndex
 m_nReservedStatTrakCouponIndex
 m_nReservedStatTrakItemIndex
 m_nReservedStatTrakLootListIndex
-m_nResolution
-m_nSeed
 m_nSeedMode
-m_nSequenceIndex
-m_nSetValue_Value
-m_nValueIntW
-m_nValueIntX
-m_nValueIntY
-m_nValueIntZ
-m_nValueSystemVar
-m_nVariableType
-m_nVersion
 m_nWorkshopOwnerAccountId
 m_nWorkshopPublishedFileId
-m_sId
-m_strAlias
-m_strAttrName
-m_strAttrNameForVar
-m_strBitmapName
-m_strCopyKeysWithSuffix_FindSuffix
-m_strCopyKeysWithSuffix_InputContainerSrc
-m_strCopyKeysWithSuffix_ReplaceSuffix
-m_strCopyMatchingKeys_InputContainerSrc
-m_strCopyProperty_InputContainerProperty
-m_strCopyProperty_InputContainerSrc
-m_strCopyProperty_TargetProperty
-m_strDrawText_Font
-m_strDrawText_InputContainerProperty
-m_strDrawText_InputContainerSrc
-m_strExposedFriendlyGroupName
-m_strExposedFriendlyName
-m_strExposedHiddenWhenTrue
-m_strExposedValueList
-m_strExposedVisibleWhenTrue
-m_strGenerateTexture_InitialContainer
-m_strGenerateTexture_TargetParam
-m_strInitWith_Container
-m_strMatchFilter
-m_strMatchValue
-m_strMutatorConditionContainerName
-m_strMutatorConditionContainerVarName
-m_strMutatorConditionContainerVarValue
-m_strName
-m_strPanoramaPanelPath
-m_strPopInputQueue_Container
-m_strRandomRollInputVars_SeedInputVar
-m_strResourceMaterial
-m_strSpecificContainerMaterial
-m_strString
-m_strTextureCompilationVtexTemplate
-m_strTextureContentAssetPath
-m_strTextureRuntimeResourcePath
-m_vecCompMatIncludes
-m_vecCompositeInputContainers
-m_vecCompositeMaterialAssemblyProcedures
-m_vecCompositeMaterials
-m_vecConditionalMutators
-m_vecConditions
-m_vecDrawText_Position
-m_vecGeneratedTextures
-m_vecLooseVariables
-m_vecMatchFilters
-m_vecPropertyMutators
-m_vecRandomRollInputVars_InputVarsToRoll
+m_strCompressionFormat
 m_vecStickerWear
-m_vecTexGenInstructions
 m_vecWear
 magazine model
 main_menu
@@ -9967,7 +9545,6 @@ manifestincomplete
 manifestloadpriority
 map/set too long
 map_id
-map_name
 map_token
 mapid
 mapkeys
@@ -10001,23 +9578,19 @@ max_num_patches not set!
 max_num_stickers
 max_num_stickers not set!
 max_ping
-maximum
+maximum_size_bytes
 medals
 medium
 melee
 menu
 menuAction
 menus
-mesh_calculate_curvature_smooth_invert
-mesh_calculate_curvature_smooth_pass_count
-mesh_calculate_curvature_smooth_weight
 message size
 message_set_wire_format
 method
 minValue
 min_client_limit
 min_ilevel
-minimum
 misc
 misc0
 misc1
@@ -10030,6 +9603,7 @@ mission_templates
 missionlbsdata
 missions
 missions_completed
+model_ag2
 model_attachment
 model_attribute
 model_bodygroup
@@ -10038,7 +9612,6 @@ model_breakpiece
 model_cloth_effect
 model_cloth_node
 model_cloth_vertex_map
-model_default_preview_sequence_name
 model_inventory
 model_morphchannel
 model_physics_shape
@@ -10074,13 +9647,13 @@ my_current_event_stages
 my_current_event_teams
 my_current_team
 n03>Pu
+n0I?
 nBuildError
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
 nColumn
 nDelayInMS
 nExitCode
-nIndex
 nRow
 nToolId
 nX?setBold@QFont@@QEAAX_N@Z
@@ -10089,13 +9662,10 @@ n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
 name='%s'
 nameable
-names
 nan(ind)
 nan(snan)
 navlink
 navlinkclass
-near '%c' :\n
-near char(%#02X) :\n
 negative
 negative_int_value
 net_DebugOverlay
@@ -10137,7 +9707,6 @@ no_help_info
 no_standard_descriptor_accessor
 no_steam_server
 node_dest
-node_id
 node_id_List
 node_name
 not a directory
@@ -10193,7 +9762,6 @@ original
 outliner_filter
 outliner_settings
 outofdate_subscribed_caches
-output
 output_items
 output_items_criteria
 overhead_follow
@@ -10207,14 +9775,15 @@ owcaseid
 owner dead
 owner_only
 owns_polymorphic_data
-p08@H^
+p08@H^\
 p0p@
+p20x 
+p2Pl
 p@HPX`h\f
 pButton
 pCurrentFocusWidget
 pEvent
 pFilter
-pItem
 pPrevFocusWidget
 pResultKV
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
@@ -10275,6 +9844,7 @@ payload
 payment_row_usd
 payment_rules/0/workshop_revenue_share
 payment_us_usd
+pbPl
 pearlescent
 pedestal display model
 pedestal_display_model
@@ -10342,7 +9912,6 @@ price
 price_sheet_version
 pricesheet_version
 primary_toolbar
-priority
 private: 
 pro_players
 process
@@ -10389,6 +9958,7 @@ quester_account_id
 questid
 queue_position
 quiet
+r0t 
 r\tVr.>T
 random_attribute_templates
 random_attributes
@@ -10463,11 +10033,11 @@ response
 response_result
 restrict(
 restriction
-result
 result out of range
 retry
 revenue_percentage
 revolving_loot_lists
+reward
 reward_drop_list
 reward_item_attr_def_idx
 reward_item_attr_reward_idx
@@ -10501,7 +10071,6 @@ sHF'
 sO?insertRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 same_name_family_aggregate
 savegamefilename
-scale
 scale_bone_relative
 scale_world
 scene
@@ -10532,12 +10101,11 @@ sections
 seed
 self
 self_opening_purchase
+sendgiftapi
 separator
-sequence
 serialized_ticket
 server_address
 server_exec
-server_game_time
 server_hibernation
 server_ip_address
 server_ipaddress_mask
@@ -10646,7 +10214,6 @@ stacked_one
 stage
 stageid
 stamp
-start
 startOfCentralDirOffset
 start_action1
 start_action2
@@ -10665,6 +10232,7 @@ startpos
 startround_01
 startround_02
 startround_03
+stat_trak_enabled
 state not recoverable
 static 
 stattrak
@@ -10757,10 +10325,8 @@ tag_group
 tag_list
 tag_list_dynamic
 tag_value
-tags
 tangent
 tangentu_signv
-target
 target_destination
 target_game_server_ip
 target_game_server_port
@@ -10771,7 +10337,6 @@ target_steam_id
 taxonomy
 taxonomy/table_display
 taxonomy/wall_display
-team
 team_id
 team_spawn_count
 team_tag
@@ -10785,7 +10350,6 @@ terrorists
 text file busy
 textColor
 text_block
-texture
 thirdperson_default
 thirdperson_hide_default_gloves
 throttleseconds
@@ -10800,7 +10364,6 @@ time_last_update
 time_next_cycle
 time_period_seconds
 timed out
-timeleft
 timeplayedconsecutively
 times
 timing
@@ -10897,7 +10460,6 @@ undefined
 underline
 union 
 uniqueid
-unknown exception
 unlocalized_name
 unlock
 unordered_map/set too long
@@ -10953,7 +10515,6 @@ value_max
 value_min
 valuelist
 values
-valve_01
 valve_map_field
 vbox
 vcenter
@@ -11024,7 +10585,6 @@ wear
 wear_remap_max
 wear_remap_min
 week_id
-weight
 widgetPos
 will_produce_stattrak
 wins

@@ -1,4 +1,25 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"_class": "CParticleAnimTag",
+//	"m_name": "Unnamed Tag",
+//	"m_sComment": "",
+//	"m_group": "",
+//	"m_tagID":
+//	{
+//		"m_id": 4294967295
+//	},
+//	"m_bIsReferenced": false,
+//	"m_hParticleSystem": "",
+//	"m_particleSystemName": "",
+//	"m_configName": "",
+//	"m_bDetachFromOwner": false,
+//	"m_bAggregate": false,
+//	"m_bStopWhenTagEnds": false,
+//	"m_bTagEndStopIsInstant": false,
+//	"m_attachmentName": "",
+//	"m_attachmentType": "PATTACH_POINT_FOLLOW",
+//	"m_attachmentCP1Name": "",
+//	"m_attachmentCP1Type": "PATTACH_INVALID"
+//}
 // MPropertyFriendlyName = "Particle Tag"
 class CParticleAnimTag : public CAnimTagBase
 {
@@ -11,6 +32,8 @@ class CParticleAnimTag : public CAnimTagBase
 	CUtlString m_configName;
 	// MPropertyFriendlyName = "Detach From Owner"
 	bool m_bDetachFromOwner;
+	// MPropertyFriendlyName = "Attempt to Aggregate"
+	bool m_bAggregate;
 	// MPropertyFriendlyName = "Stop on Tag End"
 	// MPropertyGroupName = "Ending"
 	bool m_bStopWhenTagEnds;

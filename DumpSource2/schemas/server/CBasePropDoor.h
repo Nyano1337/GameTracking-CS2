@@ -1,4 +1,3 @@
-// MNetworkExcludeByName = "m_flAnimTime"
 // MNetworkExcludeByName = "m_flexWeight"
 // MNetworkExcludeByName = "m_blinktoggle"
 // MNetworkExcludeByUserGroup = "m_flPoseParameter"
@@ -7,6 +6,7 @@
 // MNetworkIncludeByName = "m_spawnflags"
 // MNetworkVarNames = "DoorState_t m_eDoorState"
 // MNetworkVarNames = "bool m_bLocked"
+// MNetworkVarNames = "bool m_bNoNPCs"
 // MNetworkVarNames = "Vector m_closedPosition"
 // MNetworkVarNames = "QAngle m_closedAngles"
 // MNetworkVarNames = "CHandle< CBasePropDoor> m_hMaster"
@@ -21,6 +21,8 @@ class CBasePropDoor : public CDynamicProp
 	// MNetworkEnable
 	bool m_bLocked;
 	// MNetworkEnable
+	bool m_bNoNPCs;
+	// MNetworkEnable
 	Vector m_closedPosition;
 	// MNetworkEnable
 	QAngle m_closedAngles;
@@ -28,7 +30,7 @@ class CBasePropDoor : public CDynamicProp
 	bool m_bFirstBlocked;
 	locksound_t m_ls;
 	bool m_bForceClosed;
-	Vector m_vecLatchWorldPosition;
+	VectorWS m_vecLatchWorldPosition;
 	CHandle< CBaseEntity > m_hActivator;
 	CUtlSymbolLarge m_SoundMoving;
 	CUtlSymbolLarge m_SoundOpen;

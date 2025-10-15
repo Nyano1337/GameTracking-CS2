@@ -1,7 +1,10 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"m_nType": "PM_TYPE_INVALID",
+//	"m_NamedValue": "",
+//	"m_nControlPoint": -1
+//}
 // MPropertyCustomEditor = "ModelInput()"
-// MClassIsParticleModel
-// MParticleCustomFieldDefaultValue (UNKNOWN FOR PARSER)
+// MCustomFGDMetadata = "{ KV3DefaultTestFnName = 'CParticleModelInputDefaultTestFunc' }"
 class CParticleModelInput : public CParticleInput
 {
 	ParticleModelType_t m_nType;

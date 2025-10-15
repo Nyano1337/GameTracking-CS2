@@ -23,6 +23,7 @@ class CCSPlayerController_InventoryServices : public CPlayerControllerComponent
 	// MNetworkEnable
 	int32 m_nPersonaDataXpTrailLevel;
 	uint32[1] m_unEquippedPlayerSprayIDs;
+	uint64 m_unCurrentLoadoutHash;
 	// MNetworkEnable
 	// MNetworkUserGroup = "LocalPlayerExclusive"
 	CUtlVectorEmbeddedNetworkVar< ServerAuthoritativeWeaponSlot_t > m_vecServerAuthoritativeWeaponSlots;

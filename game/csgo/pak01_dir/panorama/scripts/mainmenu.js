@@ -11,6 +11,7 @@
 /// <reference path="vanity_pet_info.ts" />
 /// <reference path="particle_controls.ts" />
 /// <reference path="video_setting_recommendations.ts" />
+$.LogChannel('p.mainmenu', "LV_OFF");
 var MainMenu;
 (function (MainMenu) {
     const _m_bPerfectWorld = (MyPersonaAPI.GetLauncherType() === "perfectworld");
@@ -362,6 +363,7 @@ var MainMenu;
     function _OnShowPauseMenu() {
         const elContextPanel = $.GetContextPanel();
         elContextPanel.AddClass('MainMenuRootPanel--PauseMenuMode');
+        elContextPanel.SetHasClass('MainMenuRootPanel--PauseMenuDuringDemoPlayback', GameStateAPI.IsDemoOrHltv());
         const bQueuedMatchmaking = GameStateAPI.IsQueuedMatchmaking();
         const bGotvSpectating = elContextPanel.IsGotvSpectating();
         const bIsCommunityServer = !_m_bPerfectWorld && MatchStatsAPI.IsConnectedToCommunityServer();
@@ -373,6 +375,7 @@ var MainMenu;
     }
     function _OnHidePauseMenu() {
         $.GetContextPanel().RemoveClass('MainMenuRootPanel--PauseMenuMode');
+        $.GetContextPanel().SetHasClass('MainMenuRootPanel--PauseMenuDuringDemoPlayback', false);
         _DeletePauseMenuMissionPanel();
         OnHomeButtonPressed();
     }
@@ -905,8 +908,23 @@ var MainMenu;
         }
     }
     function OnEscapeKeyPressed() {
-        if (_m_activeTab)
+        if (_m_activeTab) {
+            if (_m_activeTab === 'JsMainMenuStore') {
+                const xpStoreMenu = _m_elContentPanel.FindChildInLayoutFile('JsMainMenuStore').FindChildInLayoutFile('id-store-page-xpshop');
+                if (xpStoreMenu && xpStoreMenu.IsValid()) {
+                    const xpShopNavBar = xpStoreMenu.FindChildInLayoutFile('id-xpshop-top-nav');
+                    if (xpShopNavBar && xpShopNavBar.IsValid()) {
+                        const navBtns = xpShopNavBar.Children();
+                        let selectedTab = navBtns.filter(btn => btn.checked === true);
+                        if (selectedTab[0].id !== navBtns[0].id) {
+                            $.DispatchEvent('Activated', navBtns[0], 'mouse');
+                            return;
+                        }
+                    }
+                }
+            }
             OnHomeButtonPressed();
+        }
         else
             GameInterfaceAPI.ConsoleCommand("gameui_hide");
     }
@@ -987,7 +1005,7 @@ var MainMenu;
                 elPanel.SetHasClass('hide-for-lootlist', false);
             }
         });
-        UiToolkitAPI.ShowCustomLayoutPopupParameters('', 'file://{resources}/layout/popups/popup_inventory_inspect.xml', 'itemid=' + id +
+        UiToolkitAPI.ShowCustomLayoutPopupParameters('popup-lootlist-item-inspect-' + id, 'file://{resources}/layout/popups/popup_inventory_inspect.xml', 'itemid=' + id +
             '&' + 'inspectonly=true' +
             '&' + 'allowsave=false' +
             '&' + 'showallitemactions=false' +
@@ -1340,14 +1358,24 @@ var MainMenu;
         contextMenuPanel.AddClass("ContextMenu_NoArrow");
     }
     MainMenu.ShowVote = ShowVote;
-    function _HideStoreStatusPanel() {
+    function _HasStoreStatusPanelTrapPopups() {
+        let elStorePanels = $.GetContextPanel().FindChildInLayoutFile('PopupManager').
+            Children().filter(panel => panel.BHasClass('ShowStoreStatusPanelHandler'));
+        return (elStorePanels && (elStorePanels.length > 0));
+    }
+    function _HideStoreStatusPanelInternal() {
         if (_m_storePopupElement && _m_storePopupElement.IsValid()) {
             _m_storePopupElement.DeleteAsync(0);
         }
         _m_storePopupElement = null;
     }
+    function _HideStoreStatusPanel() {
+        if (_HasStoreStatusPanelTrapPopups())
+            return;
+        _HideStoreStatusPanelInternal();
+    }
     function _ShowStoreStatusPanel(strText, bAllowClose, bCancel, strOkCmd) {
-        _HideStoreStatusPanel();
+        _HideStoreStatusPanelInternal();
         let paramclose = '0';
         if (bAllowClose) {
             paramclose = '1';
@@ -1356,6 +1384,8 @@ var MainMenu;
         if (bCancel) {
             paramcancel = '1';
         }
+        if (_HasStoreStatusPanelTrapPopups())
+            return;
         _m_storePopupElement = UiToolkitAPI.ShowCustomLayoutPopupParameters('store_popup', 'file://{resources}/layout/popups/popup_store_status.xml', 'text=' + strText +
             '&' + 'allowclose=' + paramclose +
             '&' + 'cancel=' + paramcancel +

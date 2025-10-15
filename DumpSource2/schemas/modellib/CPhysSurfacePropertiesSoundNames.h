@@ -1,4 +1,17 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"impactsoft": "",
+//	"impacthard": "",
+//	"scrapesmooth": "",
+//	"scraperough": "",
+//	"bulletimpact": "",
+//	"rolling": "",
+//	"break": "",
+//	"strain": "",
+//	"meleeimpact": "",
+//	"pushoff": "",
+//	"skidstop": "",
+//	"resonant": ""
+//}
 class CPhysSurfacePropertiesSoundNames
 {
 	// MKV3TransferName = "impactsoft"
@@ -23,4 +36,6 @@ class CPhysSurfacePropertiesSoundNames
 	CUtlString m_pushOff;
 	// MKV3TransferName = "skidstop"
 	CUtlString m_skidStop;
+	// MKV3TransferName = "resonant"
+	CUtlString m_resonant;
 };

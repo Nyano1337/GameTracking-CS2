@@ -974,6 +974,7 @@ CSGOMainMenu.PopupBackgroundBlur.pet-event-blur #MainMenuInput
 .mainmenu-content__container VerticalScrollBar
 {
 	margin-right: 16px;
+	z-index: 2;
 }
 
 .mainmenu-content--hidden
@@ -1600,6 +1601,16 @@ RadioButton.content-navbar__tabs__btn--small Label
 .MainMenuRootPanel--PauseMenuMode .PauseMenuModeOnly
 {
 	visibility: visible;
+}
+
+.DisableDuringDemoPlayback
+{
+	visibility: visible;
+}
+
+.MainMenuRootPanel--PauseMenuDuringDemoPlayback .DisableDuringDemoPlayback
+{
+	visibility: collapse;
 }
 
 .settings-notification

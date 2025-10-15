@@ -1,5 +1,5 @@
-// MNetworkVarNames = "Vector m_vOrigin"
-// MNetworkVarNames = "Vector m_vStart"
+// MNetworkVarNames = "VectorWS m_vOrigin"
+// MNetworkVarNames = "VectorWS m_vStart"
 // MNetworkVarNames = "Vector m_vNormal"
 // MNetworkVarNames = "QAngle m_vAngles"
 // MNetworkVarNames = "CEntityHandle m_hEntity"
@@ -12,7 +12,7 @@
 // MNetworkVarNames = "uint32 m_nDamageType"
 // MNetworkVarNames = "uint8 m_nPenetrate"
 // MNetworkVarNames = "uint16 m_nMaterial"
-// MNetworkVarNames = "uint16 m_nHitBox"
+// MNetworkVarNames = "int16 m_nHitBox"
 // MNetworkVarNames = "uint8 m_nColor"
 // MNetworkVarNames = "uint8 m_fFlags"
 // MNetworkVarNames = "AttachmentHandle_t m_nAttachmentIndex"
@@ -23,10 +23,10 @@ class CEffectData
 {
 	// MNetworkEnable
 	// MNetworkEncoder = "coord_integral"
-	Vector m_vOrigin;
+	VectorWS m_vOrigin;
 	// MNetworkEnable
 	// MNetworkEncoder = "coord_integral"
-	Vector m_vStart;
+	VectorWS m_vStart;
 	// MNetworkEnable
 	// MNetworkEncoder = "normal"
 	Vector m_vNormal;
@@ -62,7 +62,7 @@ class CEffectData
 	// MNetworkEnable
 	uint16 m_nMaterial;
 	// MNetworkEnable
-	uint16 m_nHitBox;
+	int16 m_nHitBox;
 	// MNetworkEnable
 	uint8 m_nColor;
 	// MNetworkEnable

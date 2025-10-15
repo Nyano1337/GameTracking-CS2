@@ -3,17 +3,18 @@
 /// <reference path="inspect.ts" />
 /// <reference path="mainmenu_store_fullscreen.ts" />
 /// <reference path="common/prime_button_action.ts" />
+/// <reference path="common/xpshop_tile_weapon_camera_settings.ts" />
 /// <reference path="popups/popup_acknowledge_item.ts" />
 /// <reference path="common/icon.ts" />
 /// <reference path="xpshop_track.ts" />
 /// <reference path="particle_controls.ts" />
+$.LogChannel('p.armory', "LV_OFF");
 var XpShop;
 (function (XpShop) {
     const m_tileWidth = 260;
     const m_tileHeight = 120;
-    const m_keychainTileWidth = 180;
-    const m_keychainTileHeight = m_keychainTileWidth - 10;
     const m_stickerTileWidth = 160;
+    const m_keychainTileHeight = m_stickerTileWidth - 10;
     const m_elContentPanel = $.GetContextPanel().FindChildInLayoutFile('id-xpshop-content');
     let m_nTrack;
     let m_nPass;
@@ -21,44 +22,6 @@ var XpShop;
     let m_showTimeoutScheduleHandle;
     const m_passDefName = 'XpShopTicket1';
     const m_passId = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(InventoryAPI.GetItemDefinitionIndexFromDefinitionName(m_passDefName), 0);
-    let m_CameraSettingsPerWeapon = [
-        { type: 'weapon_awp', camera: '1' },
-        { type: 'weapon_aug', camera: '2' },
-        { type: 'weapon_sg556', camera: '0' },
-        { type: 'weapon_ssg08', camera: '1' },
-        { type: 'weapon_ak47', camera: '0' },
-        { type: 'weapon_m4a1_silencer', camera: '1' },
-        { type: 'weapon_famas', camera: '0' },
-        { type: 'weapon_g3sg1', camera: '1' },
-        { type: 'weapon_galilar', camera: '2' },
-        { type: 'weapon_m4a1', camera: '0' },
-        { type: 'weapon_scar20', camera: '1' },
-        { type: 'weapon_mp5sd', camera: '0' },
-        { type: 'weapon_mac10', camera: '5' },
-        { type: 'weapon_xm1014', camera: '2' },
-        { type: 'weapon_m249', camera: '1' },
-        { type: 'weapon_ump45', camera: '0' },
-        { type: 'weapon_bizon', camera: '2' },
-        { type: 'weapon_mag7', camera: '2' },
-        { type: 'weapon_nova', camera: '1' },
-        { type: 'weapon_sawedoff', camera: '2' },
-        { type: 'weapon_negev', camera: '1' },
-        { type: 'weapon_p90', camera: '3' },
-        { type: 'weapon_mp9', camera: '5' },
-        { type: 'weapon_mp7', camera: '5' },
-        { type: 'weapon_usp_silencer', camera: '4' },
-        { type: 'weapon_cz75a', camera: '6' },
-        { type: 'weapon_elite', camera: '5' },
-        { type: 'weapon_tec9', camera: '5' },
-        { type: 'weapon_revolver', camera: '6' },
-        { type: 'weapon_fiveseven', camera: '7' },
-        { type: 'weapon_p250', camera: '7' },
-        { type: 'weapon_glock', camera: '7' },
-        { type: 'weapon_deagle', camera: '6' },
-        { type: 'weapon_hkp2000', camera: '6' },
-        { type: 'weapon_c4', camera: '2' },
-        { type: 'weapon_taser', camera: '5' },
-    ];
     function Init() {
         m_nTrack = MissionsAPI.GetSeasonalOperationXpShopIndex();
         if (!m_nTrack || m_nTrack === 0) {
@@ -267,9 +230,12 @@ var XpShop;
     }
     function _UpdateShopGoods(m_nTrack) {
         let nCount = MissionsAPI.GetSeasonalOperationRedeemableGoodsCount(m_nTrack);
+        let aShopItemsData = [];
+        let itemsInRows = {};
         for (let i = 0; i < nCount; i++) {
             let ShopEntry = {
                 ui_order: 0,
+                items_in_row: 0,
                 nav_order: 0,
                 flags: 0,
                 ui_image: "",
@@ -288,17 +254,16 @@ var XpShop;
             };
             for (let key in ShopEntry) {
                 let field_value = MissionsAPI.GetSeasonalOperationRedeemableGoodsSchema(m_nTrack, i, key);
-                //@ts-ignore
+                //@ts-expect-error this is hacky
                 ShopEntry[key] = field_value;
             }
             ShopEntry.shop_index = i;
+            itemsInRows[ShopEntry.ui_order] = !itemsInRows[ShopEntry.ui_order] ? 1 : ++itemsInRows[ShopEntry.ui_order];
             if (ShopEntry.item_name.startsWith('lootlist:')) {
                 ShopEntry.entry_type = 'lootlist';
                 ShopEntry.lootlist = _GetLootListForReward(ShopEntry.item_name);
                 ShopEntry.lootlist_item_type = ItemInfo.IsWeapon(ShopEntry.lootlist[0]) ? 'weapon' : ItemInfo.IsKeychain(ShopEntry.lootlist[0]) ? 'keychain' : 'sticker';
-                ShopEntry.tile_width = ShopEntry.lootlist_item_type === 'keychain' ?
-                    m_keychainTileWidth : ShopEntry.lootlist_item_type === 'sticker' ?
-                    m_stickerTileWidth : m_tileWidth;
+                ShopEntry.tile_width = ShopEntry.lootlist_item_type === 'keychain' || ShopEntry.lootlist_item_type === 'sticker' ? m_stickerTileWidth : m_tileWidth;
                 ShopEntry.tile_height = ShopEntry.lootlist_item_type === 'weapon' ? m_tileHeight : ShopEntry.lootlist_item_type === 'keychain' ? m_keychainTileHeight : ShopEntry.tile_width;
                 ShopEntry.on_item_activate = _OpenFullScreenInspectItem;
                 let strSetName = InventoryAPI.GetTag(ShopEntry.lootlist[0], 'ItemSet');
@@ -332,9 +297,13 @@ var XpShop;
                 if (numSecondsRemaining <= 0)
                     continue;
             }
-            _MakeShopTile(ShopEntry);
-            _MakeNavButton(ShopEntry);
+            aShopItemsData.push(ShopEntry);
         }
+        aShopItemsData.forEach((element) => {
+            element.items_in_row = itemsInRows[element.ui_order];
+            _MakeShopTile(element);
+            _MakeNavButton(element);
+        });
         let elParent = $.GetContextPanel().FindChildInLayoutFile('id-xpshop-top-nav');
         let aNavButtons = elParent.Children();
         aNavButtons.forEach((element, idx) => {
@@ -383,12 +352,11 @@ var XpShop;
                 let numDaysRemaining = StoreAPI.GetSecondsUntilTimestamp(parseInt(ShopEntry.limited_until));
                 numDaysRemaining = Math.floor(numDaysRemaining / (24 * 3600));
                 elPanelLimitedTimer.SetDialogVariableInt('daysremaining', numDaysRemaining);
-                let strTimer = $.Localize((numDaysRemaining > 0) ? '#SFUI_Store_Offer_Days_Remaining' : '#SFUI_Store_Last_Chance', elPanelLimitedTimer);
+                let strTimer = '#SFUI_Store_Offer_Days_Remaining' +
+                    ((numDaysRemaining > 0) ? '' : '_last') +
+                    (ShopEntry.bidding_cycle ? '_bid' : '_claim');
+                strTimer = $.Localize(strTimer, elPanelLimitedTimer);
                 elPanelLimitedTimer.SetDialogVariable('limitedtimeleft', strTimer);
-                let elPanelLabelBuy = elPanelLimitedTimer.FindChildInLayoutFile('id-xpshop-tile-limitedtimer-tag-buy');
-                let elPanelLabelBid = elPanelLimitedTimer.FindChildInLayoutFile('id-xpshop-tile-limitedtimer-tag-bid');
-                elPanelLabelBuy.SetHasClass('hidden', ShopEntry.bidding_cycle ? true : false);
-                elPanelLabelBid.SetHasClass('hidden', ShopEntry.bidding_cycle ? false : true);
             }
             elTile.style.backgroundImage = 'url("file://{images}/' + ShopEntry.ui_image_thumbnail + '.png")';
             elTile.style.backgroundPosition = '50% 50%';
@@ -407,13 +375,13 @@ var XpShop;
             else if (ShopEntry.lootlist && ShopEntry.lootlist.length > 1) {
                 let elCarousel = elTile.FindChildInLayoutFile('id-xpshop-tile-carousel');
                 let elPanel;
-                const numItemsPerTile = (ShopEntry.lootlist_item_type === "keychain" || ShopEntry.lootlist_item_type === "sticker") ? 4 : 1;
-                let numScrollingTilesToAdd = (ShopEntry.lootlist_item_type === "keychain" || ShopEntry.lootlist_item_type === "sticker") ? Math.floor((ShopEntry.lootlist.length + numItemsPerTile - 1) / numItemsPerTile) : 6;
+                const numItemsPerTile = ((ShopEntry.lootlist_item_type === "keychain" || ShopEntry.lootlist_item_type === "sticker") && ShopEntry.items_in_row < 5) ? 4 : 1;
+                let numScrollingTilesToAdd = ((ShopEntry.lootlist_item_type === "keychain" || ShopEntry.lootlist_item_type === "sticker") && numItemsPerTile > 1) ? Math.floor((ShopEntry.lootlist.length + numItemsPerTile - 1) / numItemsPerTile) : 6;
                 let shuffledArray = [...ShopEntry.lootlist];
                 shuffledArray.sort((a, b) => 0.5 - Math.random());
                 for (let iScrollingTile = 0; iScrollingTile < numScrollingTilesToAdd; ++iScrollingTile) {
                     for (let iTileItem = 0; iTileItem < numItemsPerTile; ++iTileItem) {
-                        if (ShopEntry.lootlist_item_type === "keychain" || ShopEntry.lootlist_item_type === "sticker") {
+                        if ((ShopEntry.lootlist_item_type === "keychain" || ShopEntry.lootlist_item_type === "sticker") && ShopEntry.items_in_row < 5) {
                             let entry = shuffledArray[((iScrollingTile * numScrollingTilesToAdd) + iTileItem) % shuffledArray.length];
                             if (iTileItem === 0) {
                                 elPanel = $.CreatePanel('Panel', elCarousel, '', { class: 'xpshop__item-tile__carousel-multi-image' });
@@ -499,6 +467,11 @@ var XpShop;
                     return;
                 }
                 if (ShopEntry.lootlist?.length === 1) {
+                    elModel = elShopTile.FindChildInLayoutFile('ItemPreviewPanel');
+                    if (elModel.PanZoomEnabled()) {
+                        elGrid.defaultfocus = 'ItemPreviewPanel';
+                        elGrid.SetAcceptsFocus(true);
+                    }
                     return;
                 }
                 elModel.SetActiveItem(0);
@@ -548,6 +521,14 @@ var XpShop;
                 let elLimitedItem = elGrid.FindChildInLayoutFile(ShopEntry.lootlist[0]);
                 if (elLimitedItem && elLimitedItem.IsValid()) {
                     InspectModelImage.Init(elLimitedItem, ShopEntry.lootlist[0]);
+                }
+            }
+            if (ShopEntry.lootlist?.length === 1) {
+                let elModel = elGrid.FindChildInLayoutFile('ItemPreviewPanel');
+                if (elModel.PanZoomEnabled()) {
+                    elGrid.defaultfocus = 'ItemPreviewPanel';
+                    elGrid.SetAcceptsFocus(true);
+                    elModel.ResetPanZoom();
                 }
             }
         }
@@ -795,9 +776,13 @@ var XpShop;
         let initialYTranslate = (baseHeight / 2);
         let finalYTranslate = 0;
         let contentPanelHeight = Math.floor(m_elContentPanel.actuallayoutheight / m_elContentPanel.actualuiscale_y);
-        let bottomOffset = 64;
-        if ((tilePosY + zoomHeight) > (contentPanelHeight - 40)) {
+        let bottomOffset = 32 + 48;
+        let topOffset = 92;
+        if ((tilePosY + zoomHeight) > (contentPanelHeight - bottomOffset)) {
             finalYTranslate = (tilePosY - (contentPanelHeight - zoomHeight)) + bottomOffset;
+        }
+        else if ((tilePosY - baseHeight / 2) < topOffset) {
+            finalYTranslate = 0;
         }
         else {
             finalYTranslate = initialYTranslate;
@@ -815,22 +800,39 @@ var XpShop;
         }
         let nRows = 0;
         let nTileY = 0;
-        let itemsPerRow = ShopEntry.lootlist_item_type === 'weapon' ? 4 : ShopEntry.lootlist_item_type === 'sticker' ? 7 : 6;
-        let contentPanelWidth = Math.floor(elTilesContainer.actuallayoutwidth / elTilesContainer.actualuiscale_x);
-        let contentPanelHeight = Math.floor(elTilesContainer.actuallayoutheight / elTilesContainer.actualuiscale_y);
-        let tileWidth = ShopEntry.tile_width;
-        let tileHeight = ShopEntry.tile_height;
-        let aChildren = elTilesContainer.Children();
-        let xOffset = (contentPanelWidth - (tileWidth * itemsPerRow)) / 2;
-        let yOffset = (contentPanelHeight - (tileHeight * (aChildren.length / itemsPerRow))) / 2;
+        const aChildren = elTilesContainer.Children();
+        const nPanelsCount = aChildren.length;
+        const nMaxColumns = ShopEntry.lootlist_item_type === 'weapon' ? 4 : ShopEntry.lootlist_item_type === 'sticker' ? 8 : 7;
+        const oRowsAndColumns = StickerItemsPerRow(nPanelsCount, nMaxColumns);
+        const nTotalRows = oRowsAndColumns.rows;
+        const nColumns = oRowsAndColumns.cols;
+        const contentPanelWidth = Math.floor(elTilesContainer.actuallayoutwidth / elTilesContainer.actualuiscale_x);
+        const contentPanelHeight = Math.floor(elTilesContainer.actuallayoutheight / elTilesContainer.actualuiscale_y);
+        const tileWidth = ShopEntry.tile_width;
+        const tileHeight = ShopEntry.tile_height;
+        const xOffset = (contentPanelWidth - (tileWidth * nColumns)) / 2;
+        const yOffset = (contentPanelHeight - (tileHeight * nTotalRows)) / 2;
         aChildren.forEach((element, idx) => {
-            if (idx % itemsPerRow === 0) {
+            if (idx % nColumns === 0) {
                 nTileY = tileHeight * nRows;
                 nRows++;
             }
-            element.style.x = (idx % itemsPerRow * tileWidth) + xOffset + 'px';
+            element.style.x = (idx % nColumns * tileWidth) + xOffset + 'px';
             element.style.y = (nTileY + yOffset) + 'px';
         });
+    }
+    function StickerItemsPerRow(nPanelsCount, maxColumn) {
+        const maxRows = 4;
+        if (nPanelsCount >= 32) {
+            return { rows: maxRows, cols: maxColumn };
+        }
+        let cols = Math.min(maxColumn, Math.ceil(Math.sqrt(nPanelsCount)));
+        let rows = Math.ceil(nPanelsCount / cols);
+        if (rows > maxRows) {
+            rows = maxRows;
+            cols = Math.ceil(nPanelsCount / rows);
+        }
+        return { rows: rows, cols: cols };
     }
     function CreateShopTile(elTilesContainer, itemId, ShopEntry) {
         let sStyle = 'xpshop__inspect-grid__tile';
@@ -849,7 +851,7 @@ var XpShop;
         else {
             const defName = InventoryAPI.GetItemDefinitionName(itemId);
             elPanel.Data().defName = defName;
-            let cameraData = m_CameraSettingsPerWeapon.find(({ type }) => type === defName);
+            let cameraData = XpShopWeaponCameraSettings.CameraSettings.find(({ type }) => type === defName);
             let cameraSuffix = cameraData !== undefined ? cameraData.camera : '0';
             let camera = 'camera_' + ShopEntry.lootlist_item_type + '_' + cameraSuffix;
             MakeMapItemPreviewPanel(elPanel, camera, mapName, ShopEntry);

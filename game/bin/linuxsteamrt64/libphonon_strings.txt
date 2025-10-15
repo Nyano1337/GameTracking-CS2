@@ -564,6 +564,9 @@ $|9tJ
 (e3:gN
 (e;oAV
 (f;k2
+(inputs->deviationModel)
+(inputs->deviationModel)->callback
+(inputs->deviationModel)->type
 (l9X
 (q;WkE
 (qF;F
@@ -686,10 +689,13 @@ $|9tJ
 *SN=F
 *Ua=Wf
 *Um<bn
-*ZN3ipl13BakedPathDataC4ERKNS_6ISceneERKNS_10ProbeBatchEifffffbRKNS_7Vector3IfEEbiRNS_10ThreadPoolERSt6atomicIbEPFvfPvESG_EUliSF_E_
+*ZN3ipl13BakedPathDataC4ERKNS_6ISceneERKNS_10ProbeBatchEifffffbRKNS_7Vector3IfEEbiRNS_10ThreadPoolERSt6atomicIbEPFvfPvESG_EUlfE1_
+*ZN3ipl13BakedPathDataC4ERKNS_6ISceneERKNS_10ProbeBatchEifffffbRKNS_7Vector3IfEEbiRNS_10ThreadPoolERSt6atomicIbEPFvfPvESG_EUlfE_
+*ZN3ipl13BakedPathDataC4ERKNS_6ISceneERKNS_10ProbeBatchEifffffbRKNS_7Vector3IfEEbiRNS_10ThreadPoolERSt6atomicIbEPFvfPvESG_EUliSF_E0_
 *ZN3ipl13ProbeClustersC4ERKNS_10ProbeArrayERKNS_9ProbeTreeERKNS_6ISceneERKNS_23ProbeClusteringSettingsEEUliRSt6atomicIbEE_
 *ZN3ipl19ReflectionSimulator8simulateERKNS_6ISceneEiPKNS_16CoordinateSpace3IfEEiS7_PKNS_11DirectivityEiififPKPNS_11EnergyFieldERNS_8JobGraphEEUliRSt6atomicIbEE_
 *ZN3ipl19ReflectionSimulator8simulateERKNS_6ISceneEiPKNS_16CoordinateSpace3IfEEiS7_PKNS_11DirectivityEiififRNS_5ArrayIfLm2EEERNS_8JobGraphEEUliRSt6atomicIbEE_
+*ZN3ipl20ProbeVisibilityGraphC4ERKNS_6ISceneERKNS_10ProbeBatchERKNS_21ProbeVisibilityTesterEfffiRNS_8JobGraphERSt6atomicIbEPFvfPvESF_EUliSE_E_
 *ZN3ipl25EmbreeReflectionSimulator8simulateERKNS_6ISceneEiPKNS_16CoordinateSpace3IfEEiS7_PKNS_11DirectivityEiififPKPNS_11EnergyFieldERNS_8JobGraphEEUliRSt6atomicIbEE_
 *ZN3ipl25EmbreeReflectionSimulator8simulateERKNS_6ISceneEiPKNS_16CoordinateSpace3IfEEiS7_PKNS_11DirectivityEiififRNS_5ArrayIfLm2EEERNS_8JobGraphEEUliRSt6atomicIbEE_
 *ZN3ipl26BatchedReflectionSimulator8simulateERKNS_6ISceneEiPKNS_16CoordinateSpace3IfEEiS7_PKNS_11DirectivityEiififPKPNS_11EnergyFieldERNS_8JobGraphEEUliRSt6atomicIbEE_
@@ -10036,6 +10042,7 @@ IPLAmbisonicsType
 IPLAudioEffectState
 IPLBakedDataType
 IPLBakedDataVariation
+IPLDeviationModelType
 IPLDirectEffectFlags
 IPLDirectSimulationFlags
 IPLDistanceAttenuationModelType
@@ -10681,6 +10688,7 @@ L<c6
 L<iWj<
 L<m8
 L<pA
+L=33
 L=E7
 L>aM
 L>qa
@@ -13522,6 +13530,7 @@ St23_Sp_counted_ptr_inplaceIN3ipl14OverlapSaveFIRENS0_9allocatorIS1_EELN9__gnu_c
 St23_Sp_counted_ptr_inplaceIN3ipl14SimulationDataENS0_9allocatorIS1_EELN9__gnu_cxx12_Lock_policyE2EE
 St23_Sp_counted_ptr_inplaceIN3ipl15DirectSimulatorENS0_9allocatorIS1_EELN9__gnu_cxx12_Lock_policyE2EE
 St23_Sp_counted_ptr_inplaceIN3ipl15ImpulseResponseENS0_9allocatorIS1_EELN9__gnu_cxx12_Lock_policyE2EE
+St23_Sp_counted_ptr_inplaceIN3ipl15PathQueryResultENS0_9allocatorIS1_EELN9__gnu_cxx12_Lock_policyE2EE
 St23_Sp_counted_ptr_inplaceIN3ipl15ProbeClusterMapENS0_9allocatorIS1_EELN9__gnu_cxx12_Lock_policyE2EE
 St23_Sp_counted_ptr_inplaceIN3ipl15ReverbEstimatorENS0_9allocatorIS1_EELN9__gnu_cxx12_Lock_policyE2EE
 St23_Sp_counted_ptr_inplaceIN3ipl16EmbreeStaticMeshENS0_9allocatorIS1_EELN9__gnu_cxx12_Lock_policyE2EE
@@ -17077,7 +17086,6 @@ ecj;2
 ed<9i2
 eeu<M
 ef$;TE
-effect
 effectSettings
 effectSettings->hrtf
 effectSettings->irSize
@@ -18563,7 +18571,20 @@ iplPathEffectGetTailSize
 iplPathEffectRelease
 iplPathEffectReset
 iplPathEffectRetain
+iplPathQueryResultCreate
+iplPathQueryResultGetParent
+iplPathQueryResultGetSoundPath
+iplPathQueryResultRelease
+iplPathQueryResultReset
+iplPathQueryResultRetain
+iplPathSimulatorCalcAmbisonicsCoeffs
+iplPathSimulatorCalcAvgDirection
+iplPathSimulatorCalcDistanceRatio
+iplPathSimulatorCalcEQ
 iplPathSimulatorCreate
+iplPathSimulatorFindAllShortestPaths
+iplPathSimulatorFindPaths
+iplPathSimulatorFindShortestPath
 iplPathSimulatorRelease
 iplPathSimulatorRetain
 iplPathSimulatorSimulate
@@ -18603,6 +18624,7 @@ iplProbeBatchRemoveProbe
 iplProbeBatchRetain
 iplProbeBatchSave
 iplProbeBatchUpdateEndpoint
+iplProbeBatchUpdatePathVisibility
 iplProbeBatchUpdateProbePosition
 iplProbeBatchUpdateProbeRadius
 iplProbeClusterMapCreate
@@ -18620,12 +18642,14 @@ iplProbeNeighborhoodGetNumValidProbes
 iplProbeNeighborhoodGetProbe
 iplProbeNeighborhoodGetProbeBatch
 iplProbeNeighborhoodGetProbeIndex
+iplProbeNeighborhoodNormalizeWeights
 iplProbeNeighborhoodRelease
 iplProbeNeighborhoodReset
 iplProbeNeighborhoodResize
 iplProbeNeighborhoodRetain
 iplProbeNeighborhoodSetProbeBatch
 iplProbeNeighborhoodSetProbeIndex
+iplProbeNeighborhoodSetProbeWeight
 iplRadeonRaysDeviceCreate
 iplRadeonRaysDeviceRelease
 iplRadeonRaysDeviceRetain
@@ -18673,6 +18697,8 @@ iplReverbEstimatorCreate
 iplReverbEstimatorEstimate
 iplReverbEstimatorRelease
 iplReverbEstimatorRetain
+iplSceneAnyHit
+iplSceneClosestHit
 iplSceneCommit
 iplSceneCreate
 iplSceneLoad
@@ -18714,6 +18740,7 @@ iplStaticMeshRelease
 iplStaticMeshRemove
 iplStaticMeshRetain
 iplStaticMeshSave
+iplStaticMeshSetMaterial
 iplTrueAudioNextDeviceCreate
 iplTrueAudioNextDeviceRelease
 iplTrueAudioNextDeviceRetain
@@ -20739,7 +20766,6 @@ reconstructor
 removeData
 removeProbe
 removeProbeBatch
-result
 result.center.x
 result.center.y
 result.center.z
@@ -20945,7 +20971,6 @@ sah_fast_spatial
 sah_presplit
 saveOBJ
 sc9u
-scale
 scaleAccum
 scene not committed
 scene_flags
@@ -21190,7 +21215,6 @@ start_threads
 staticMesh
 std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()
 std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()
-std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_weak_release()
 std::_Sp_counted_ptr_inplace<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>, std::allocator<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()
 std::_Sp_counted_ptr_inplace<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>, std::allocator<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
 std::_Sp_counted_ptr_inplace<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>, std::allocator<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)
@@ -21409,7 +21433,6 @@ tyj=t
 typeinfo for std::_Mutex_base<(__gnu_cxx::_Lock_policy)2>
 typeinfo for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>
 typeinfo for std::_Sp_counted_ptr_inplace<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>, std::allocator<std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>>, (__gnu_cxx::_Lock_policy)2>
-typeinfo for std::_Sp_make_shared_tag
 typeinfo for std::bad_weak_ptr
 typeinfo for std::thread::_Impl<std::_Bind_simple<std::_Mem_fn<void (ipl::ThreadPool::*)(int)> (ipl::ThreadPool*, int)>>
 typeinfo for std::thread::_Impl_base

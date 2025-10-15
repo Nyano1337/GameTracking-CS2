@@ -22,7 +22,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -150,7 +150,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -284,7 +284,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -421,7 +421,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -560,7 +560,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -679,8 +679,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.FireInTheHole"
-			WEAPON_SOUND_SINGLE = soundevent:"HEGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Fire_in_the_hole"
 		m_nPrimaryAmmoType = "AMMO_TYPE_HEGRENADE"
@@ -710,7 +708,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -852,7 +850,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -992,7 +990,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -1136,7 +1134,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -1275,7 +1273,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -1411,7 +1409,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -1550,7 +1548,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -1689,7 +1687,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -1828,7 +1826,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 4.666667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.388808
 		m_flRecoveryTimeStand = 0.544331
@@ -1984,7 +1982,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.033333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.150000
 		m_flRecoveryTimeStand = 0.300000
@@ -2138,7 +2136,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.592093
 		m_flRecoveryTimeStand = 0.828931
@@ -2292,7 +2290,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.300000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.120000
 		m_flRecoveryTimeStand = 0.250000
@@ -2450,7 +2448,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.133333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.242100
 		m_flRecoveryTimeStand = 0.338941
@@ -2605,7 +2603,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.566667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.285521
 		m_flRecoveryTimeStand = 0.399729
@@ -2759,7 +2757,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.266667
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.666667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.246710
 		m_flRecoveryTimeStand = 0.345390
@@ -2915,7 +2913,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.366667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.265784
 		m_flRecoveryTimeStand = 0.372098
@@ -3069,7 +3067,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.166670
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.305520
 		m_flRecoveryTimeStand = 0.429727
@@ -3235,7 +3233,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.966667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.312494
 		m_flRecoveryTimeStand = 0.437491
@@ -3392,7 +3390,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.466667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.305257
 		m_flRecoveryTimeStand = 0.368000
@@ -3703,7 +3701,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.200000
 		m_flRecoveryTimeStand = 0.200000
@@ -3865,7 +3863,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.433333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.236837
 		m_flRecoveryTimeStand = 0.331572
@@ -4019,7 +4017,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.500000
 		m_nSpreadSeed = 19899236
 		m_flRecoveryTimeCrouch = 0.285521
 		m_flRecoveryTimeStand = 0.399729
@@ -4175,7 +4173,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.250000
 		m_flRecoveryTimeStand = 0.300000
@@ -4487,7 +4485,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.566667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.315000
 		m_flRecoveryTimeStand = 0.391000
@@ -4641,7 +4639,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.000000
 		m_flRecoveryTimeStand = 0.000000
@@ -4748,7 +4746,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.291277
 		m_flRecoveryTimeStand = 0.349532
@@ -4902,7 +4900,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.166667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.312494
 		m_flRecoveryTimeStand = 0.437491
@@ -5057,7 +5055,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.200000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.133333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.184207
 		m_flRecoveryTimeStand = 0.257890
@@ -5367,7 +5365,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.287823
 		m_flRecoveryTimeStand = 0.345388
@@ -5525,7 +5523,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.388808
 		m_flRecoveryTimeStand = 0.544331
@@ -5681,7 +5679,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.379204
 		m_flRecoveryTimeStand = 0.452886
@@ -5847,7 +5845,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.055783
 		m_flRecoveryTimeStand = 0.142096
@@ -6003,7 +6001,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -6154,7 +6152,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -6273,7 +6271,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Flashbang"
-			WEAPON_SOUND_SINGLE = soundevent:"Flashbang.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Flashbang_in_the_hole"
@@ -6307,7 +6304,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.200000
 		m_flRecoveryTimeStand = 0.200000
@@ -6465,7 +6462,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -6584,8 +6581,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.FireInTheHole"
-			WEAPON_SOUND_SINGLE = soundevent:"HEGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Fire_in_the_hole"
 		m_nPrimaryAmmoType = "AMMO_TYPE_HEGRENADE"
@@ -6619,7 +6614,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.437491
 		m_flRecoveryTimeStand = 0.524989
@@ -6779,7 +6774,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -6898,8 +6893,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Smoke"
-			WEAPON_SOUND_SINGLE = soundevent:"SmokeGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Smoke_in_the_hole"
 		m_szName = "weapon_smokegrenade"
@@ -6938,7 +6931,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -7058,7 +7051,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Molotov"
-			WEAPON_SOUND_SINGLE = soundevent:"MolotovGrenade.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Molotov_in_the_hole"
@@ -7092,7 +7084,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.466667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.249995
 		m_flRecoveryTimeStand = 0.349993
@@ -7246,7 +7238,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -7365,7 +7357,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Decoy"
-			WEAPON_SOUND_SINGLE = soundevent:"Decoy.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Decoy_in_the_hole"
@@ -7399,7 +7390,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -7519,8 +7510,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Incendiary"
-			WEAPON_SOUND_SINGLE = soundevent:"IncGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Incendiary_in_the_hole"
 		m_szName = "weapon_incgrenade"
@@ -7553,7 +7542,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.233333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -7705,7 +7694,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -7862,7 +7851,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.133333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.242100
 		m_flRecoveryTimeStand = 0.338941
@@ -8028,7 +8017,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.200000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.291277
 		m_flRecoveryTimeStand = 0.349532
@@ -8194,7 +8183,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.833330
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.733333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.227500
 		m_flRecoveryTimeStand = 0.242500
@@ -8349,7 +8338,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.166667
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.700000
 		m_flRecoveryTimeStand = 0.900000
@@ -8512,7 +8501,7 @@
 		m_flInaccuracyJumpApex = 0.331550
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.200000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.449927
 		m_flRecoveryTimeStand = 0.811200
@@ -8662,7 +8651,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -8818,7 +8807,7 @@
 		m_flInaccuracyJumpApex = 0.331550
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.200000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.449927
 		m_flRecoveryTimeStand = 0.811200
@@ -8969,7 +8958,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.437491
 		m_flRecoveryTimeStand = 0.524989
@@ -9130,7 +9119,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.200000
 		m_flRecoveryTimeStand = 0.200000
@@ -9289,7 +9278,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.200000
 		m_flRecoveryTimeStand = 0.200000
@@ -9452,7 +9441,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.466667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.305257
 		m_flRecoveryTimeStand = 0.368000
@@ -9607,7 +9596,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.166670
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.305520
 		m_flRecoveryTimeStand = 0.429727
@@ -9774,7 +9763,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.266667
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.666667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.246710
 		m_flRecoveryTimeStand = 0.345390
@@ -9931,7 +9920,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.300000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.120000
 		m_flRecoveryTimeStand = 0.250000
@@ -10090,7 +10079,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 4.666667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.388808
 		m_flRecoveryTimeStand = 0.544331
@@ -10247,7 +10236,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.033333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.150000
 		m_flRecoveryTimeStand = 0.300000
@@ -10402,7 +10391,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.592093
 		m_flRecoveryTimeStand = 0.828931
@@ -10557,7 +10546,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.133333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.242100
 		m_flRecoveryTimeStand = 0.338941
@@ -10713,7 +10702,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.566667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.285521
 		m_flRecoveryTimeStand = 0.399729
@@ -10868,7 +10857,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.366667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.265784
 		m_flRecoveryTimeStand = 0.372098
@@ -11023,7 +11012,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.966667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.312494
 		m_flRecoveryTimeStand = 0.437491
@@ -11181,7 +11170,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.466667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.249995
 		m_flRecoveryTimeStand = 0.349993
@@ -11494,7 +11483,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.433333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.236837
 		m_flRecoveryTimeStand = 0.331572
@@ -11649,7 +11638,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.500000
 		m_nSpreadSeed = 19899236
 		m_flRecoveryTimeCrouch = 0.285521
 		m_flRecoveryTimeStand = 0.399729
@@ -11806,7 +11795,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.250000
 		m_flRecoveryTimeStand = 0.300000
@@ -12120,7 +12109,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.566667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.315000
 		m_flRecoveryTimeStand = 0.391000
@@ -12275,7 +12264,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.000000
 		m_flRecoveryTimeStand = 0.000000
@@ -12383,7 +12372,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.291277
 		m_flRecoveryTimeStand = 0.349532
@@ -12538,7 +12527,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.166667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.312494
 		m_flRecoveryTimeStand = 0.437491
@@ -12694,7 +12683,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.200000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.133333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.184207
 		m_flRecoveryTimeStand = 0.257890
@@ -13006,7 +12995,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.287823
 		m_flRecoveryTimeStand = 0.345388
@@ -13165,7 +13154,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.388808
 		m_flRecoveryTimeStand = 0.544331
@@ -13322,7 +13311,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.379204
 		m_flRecoveryTimeStand = 0.452886
@@ -13489,7 +13478,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.055783
 		m_flRecoveryTimeStand = 0.142096
@@ -13646,7 +13635,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -13798,7 +13787,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -13917,7 +13906,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Flashbang"
-			WEAPON_SOUND_SINGLE = soundevent:"Flashbang.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Flashbang_in_the_hole"
@@ -13953,7 +13941,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -14072,8 +14060,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.FireInTheHole"
-			WEAPON_SOUND_SINGLE = soundevent:"HEGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Fire_in_the_hole"
 		m_nPrimaryAmmoType = "AMMO_TYPE_HEGRENADE"
@@ -14109,7 +14095,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -14228,8 +14214,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Smoke"
-			WEAPON_SOUND_SINGLE = soundevent:"SmokeGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Smoke_in_the_hole"
 		m_szName = "weapon_smokegrenade"
@@ -14270,7 +14254,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -14390,7 +14374,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Molotov"
-			WEAPON_SOUND_SINGLE = soundevent:"MolotovGrenade.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Molotov_in_the_hole"
@@ -14426,7 +14409,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -14545,7 +14528,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Decoy"
-			WEAPON_SOUND_SINGLE = soundevent:"Decoy.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Decoy_in_the_hole"
@@ -14581,7 +14563,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -14701,8 +14683,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Incendiary"
-			WEAPON_SOUND_SINGLE = soundevent:"IncGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Incendiary_in_the_hole"
 		m_szName = "weapon_incgrenade"
@@ -14737,7 +14717,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.233333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -14890,7 +14870,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -15031,7 +15011,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -15172,7 +15152,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -15311,7 +15291,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -15449,7 +15429,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -15590,7 +15570,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -15730,7 +15710,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -15890,7 +15870,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -16042,7 +16022,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.133333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.242100
 		m_flRecoveryTimeStand = 0.338941
@@ -16209,7 +16189,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.200000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.291277
 		m_flRecoveryTimeStand = 0.349532
@@ -16376,7 +16356,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.833330
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.733333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.227500
 		m_flRecoveryTimeStand = 0.242500
@@ -16532,7 +16512,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.166667
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.700000
 		m_flRecoveryTimeStand = 0.900000
@@ -16696,7 +16676,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -16848,7 +16828,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -17000,7 +16980,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -17152,7 +17132,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -17304,7 +17284,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -17456,7 +17436,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -17608,7 +17588,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -17760,7 +17740,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -17912,7 +17892,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -18064,7 +18044,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -18216,7 +18196,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -18368,7 +18348,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -18520,7 +18500,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -18672,7 +18652,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -18824,7 +18804,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -18976,7 +18956,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -19128,7 +19108,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -19280,7 +19260,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -19432,7 +19412,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -19584,7 +19564,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -19736,7 +19716,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -19888,7 +19868,7 @@
 		m_flInaccuracyJumpApex = 0.331550
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.200000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.449927
 		m_flRecoveryTimeStand = 0.811200
@@ -20039,7 +20019,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.166667
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.700000
 		m_flRecoveryTimeStand = 0.900000
@@ -20203,7 +20183,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.437491
 		m_flRecoveryTimeStand = 0.524989
@@ -20364,7 +20344,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.200000
 		m_flRecoveryTimeStand = 0.200000
@@ -20523,7 +20503,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.833330
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.733333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.227500
 		m_flRecoveryTimeStand = 0.242500
@@ -20679,7 +20659,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.200000
 		m_flRecoveryTimeStand = 0.200000
@@ -20842,7 +20822,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.466667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.305257
 		m_flRecoveryTimeStand = 0.368000
@@ -20997,7 +20977,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.166670
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.305520
 		m_flRecoveryTimeStand = 0.429727
@@ -21164,7 +21144,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.266667
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.666667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.246710
 		m_flRecoveryTimeStand = 0.345390
@@ -21321,7 +21301,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.300000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.120000
 		m_flRecoveryTimeStand = 0.250000
@@ -21480,7 +21460,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 4.666667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.388808
 		m_flRecoveryTimeStand = 0.544331
@@ -21637,7 +21617,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.033333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.150000
 		m_flRecoveryTimeStand = 0.300000
@@ -21792,7 +21772,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.592093
 		m_flRecoveryTimeStand = 0.828931
@@ -21947,7 +21927,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.133333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.242100
 		m_flRecoveryTimeStand = 0.338941
@@ -22103,7 +22083,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.133333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.242100
 		m_flRecoveryTimeStand = 0.338941
@@ -22270,7 +22250,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.566667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.285521
 		m_flRecoveryTimeStand = 0.399729
@@ -22425,7 +22405,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.366667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.265784
 		m_flRecoveryTimeStand = 0.372098
@@ -22580,7 +22560,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.466667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.249995
 		m_flRecoveryTimeStand = 0.349993
@@ -22893,7 +22873,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.433333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.236837
 		m_flRecoveryTimeStand = 0.331572
@@ -23048,7 +23028,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.500000
 		m_nSpreadSeed = 19899236
 		m_flRecoveryTimeCrouch = 0.285521
 		m_flRecoveryTimeStand = 0.399729
@@ -23205,7 +23185,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.100000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.250000
 		m_flRecoveryTimeStand = 0.300000
@@ -23519,7 +23499,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.566667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.315000
 		m_flRecoveryTimeStand = 0.391000
@@ -23674,7 +23654,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.000000
 		m_flRecoveryTimeStand = 0.000000
@@ -23782,7 +23762,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.291277
 		m_flRecoveryTimeStand = 0.349532
@@ -23937,7 +23917,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.200000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.291277
 		m_flRecoveryTimeStand = 0.349532
@@ -24104,7 +24084,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.166667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.312494
 		m_flRecoveryTimeStand = 0.437491
@@ -24260,7 +24240,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.966667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.312494
 		m_flRecoveryTimeStand = 0.437491
@@ -24418,7 +24398,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.200000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.133333
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.184207
 		m_flRecoveryTimeStand = 0.257890
@@ -24730,7 +24710,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.266667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.287823
 		m_flRecoveryTimeStand = 0.345388
@@ -24889,7 +24869,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.066667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.388808
 		m_flRecoveryTimeStand = 0.544331
@@ -25046,7 +25026,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 2.766667
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.379204
 		m_flRecoveryTimeStand = 0.452886
@@ -25213,7 +25193,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 3.700000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 0.055783
 		m_flRecoveryTimeStand = 0.142096
@@ -25370,7 +25350,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -25489,8 +25469,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.FireInTheHole"
-			WEAPON_SOUND_SINGLE = soundevent:"HEGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Fire_in_the_hole"
 		m_nPrimaryAmmoType = "AMMO_TYPE_HEGRENADE"
@@ -25525,7 +25503,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -25644,8 +25622,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Smoke"
-			WEAPON_SOUND_SINGLE = soundevent:"SmokeGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Smoke_in_the_hole"
 		m_szName = "weapon_smokegrenade"
@@ -25685,7 +25661,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -25804,7 +25780,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Flashbang"
-			WEAPON_SOUND_SINGLE = soundevent:"Flashbang.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Flashbang_in_the_hole"
@@ -25839,7 +25814,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -25959,7 +25934,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Molotov"
-			WEAPON_SOUND_SINGLE = soundevent:"MolotovGrenade.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Molotov_in_the_hole"
@@ -25994,7 +25968,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -26114,8 +26088,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Incendiary"
-			WEAPON_SOUND_SINGLE = soundevent:"IncGrenade.Throw"
-			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Incendiary_in_the_hole"
 		m_szName = "weapon_incgrenade"
@@ -26149,7 +26121,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -26268,7 +26240,6 @@
 		m_aShootSounds = 
 		{
 			WEAPON_SOUND_RADIO_USE = soundevent:"Radio.Decoy"
-			WEAPON_SOUND_SINGLE = soundevent:"Decoy.Throw"
 			WEAPON_SOUND_NEARLYEMPTY = soundevent:"Default.nearlyempty"
 		}
 		m_szUseRadioSubtitle = "#SFUI_TitlesTXT_Decoy_in_the_hole"
@@ -26303,7 +26274,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -26461,7 +26432,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.000000
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000
@@ -26612,7 +26583,7 @@
 		m_flInaccuracyJumpApex = 0.000000
 		m_flInaccuracyReload = 0.000000
 		m_flDeployDuration = 1.233333
-		m_flDisallowAttackAfterReloadStartDuration = 100.000000
+		m_flDisallowAttackAfterReloadStartDuration = 5.000000
 		m_nSpreadSeed = 0
 		m_flRecoveryTimeCrouch = 1.000000
 		m_flRecoveryTimeStand = 1.000000

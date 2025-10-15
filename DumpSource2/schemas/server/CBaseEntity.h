@@ -17,6 +17,7 @@
 // MNetworkVarNames = "MoveCollide_t m_MoveCollide"
 // MNetworkVarNames = "MoveType_t m_MoveType"
 // MNetworkVarNames = "EntitySubclassID_t m_nSubclassID"
+// MNetworkUserGroupProxy = "CBaseEntity"
 // MNetworkVarNames = "float32 m_flAnimTime"
 // MNetworkVarNames = "float32 m_flSimulationTime"
 // MNetworkVarNames = "GameTime_t m_flCreateTime"
@@ -39,6 +40,7 @@
 // MNetworkVarNames = "float32 m_flGravityScale"
 // MNetworkVarNames = "float32 m_flTimeScale"
 // MNetworkVarNames = "float m_flWaterLevel"
+// MNetworkVarNames = "bool m_bGravityDisabled"
 // MNetworkVarNames = "bool m_bAnimatedEveryTick"
 // MNetworkVarNames = "GameTime_t m_flNavIgnoreUntilTime"
 // MNetworkVarNames = "BloodType m_nBloodType"
@@ -95,7 +97,7 @@ class CBaseEntity : public CEntityInstance
 	// MNetworkEnable
 	// MNetworkPriority = 0
 	// MNetworkSerializer = "animTimeSerializer"
-	// MNetworkSendProxyRecipientsFilter (UNKNOWN FOR PARSER)
+	// MNetworkUserGroup = "AnimTime"
 	float32 m_flAnimTime;
 	// MNetworkEnable
 	// MNetworkPriority = 1
@@ -164,7 +166,6 @@ class CBaseEntity : public CEntityInstance
 	// MNetworkEncoder = "coord"
 	float32 m_flElasticity;
 	// MNetworkEnable
-	// MNetworkUserGroup = "LocalPlayerExclusive"
 	float32 m_flGravityScale;
 	// MNetworkEnable
 	// MNetworkUserGroup = "LocalPlayerExclusive"
@@ -177,7 +178,11 @@ class CBaseEntity : public CEntityInstance
 	// MNetworkEncodeFlags = 8
 	float32 m_flWaterLevel;
 	// MNetworkEnable
+	bool m_bGravityDisabled;
+	// MNetworkEnable
 	bool m_bAnimatedEveryTick;
+	float32 m_flActualGravityScale;
+	bool m_bGravityActuallyDisabled;
 	bool m_bDisableLowViolence;
 	uint8 m_nWaterType;
 	int32 m_iEFlags;
@@ -191,10 +196,10 @@ class CBaseEntity : public CEntityInstance
 	QAngle m_vecAngVelocity;
 	bool m_bNetworkQuantizeOriginAndAngles;
 	bool m_bLagCompensate;
-	float32 m_flOverriddenFriction;
 	CHandle< CBaseEntity > m_pBlocker;
 	float32 m_flLocalTime;
 	float32 m_flVPhysicsUpdateLocalTime;
 	// MNetworkEnable
 	BloodType m_nBloodType;
+	CPulseGraphInstance_ServerEntity* m_pPulseGraphInstance;
 };

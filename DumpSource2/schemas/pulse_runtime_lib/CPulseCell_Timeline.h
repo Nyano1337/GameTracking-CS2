@@ -1,8 +1,24 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
-// MCellForDomain = "BaseDomain"
+// MGetKV3ClassDefaults = {
+//	"_class": "CPulseCell_Timeline",
+//	"m_nEditorNodeID": -1,
+//	"m_TimelineEvents":
+//	[
+//	],
+//	"m_bWaitForChildOutflows": true,
+//	"m_OnFinished":
+//	{
+//		"m_SourceOutflowName": "",
+//		"m_nDestChunk": -1,
+//		"m_nInstruction": -1
+//	},
+//	"m_OnCanceled":
+//	{
+//		"m_SourceOutflowName": "",
+//		"m_nDestChunk": -1,
+//		"m_nInstruction": -1
+//	}
+//}
 // MPulseCellMethodBindings (UNKNOWN FOR PARSER)
-// MPulseCellOutflowHookInfo (UNKNOWN FOR PARSER)
-// MPulseCellWithCustomDocNode
 class CPulseCell_Timeline : public CPulseCell_BaseYieldingInflow
 {
 	CUtlVector< CPulseCell_Timeline::TimelineEvent_t > m_TimelineEvents;

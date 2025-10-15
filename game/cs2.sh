@@ -9,6 +9,8 @@
 GAMEROOT=$(cd "${0%/*}" && echo $PWD)
 SCRIPTNAME=$(basename $0)
 
+[[ "$*" == *"-dedicated"* ]] && DEDICATED_SERVER=1 || DEDICATED_SERVER=0
+
 #determine platform
 UNAMEPATH=`command -v uname`
 if [ -z $UNAMEPATH ]; then
@@ -28,9 +30,10 @@ if [ "$UNAME" == "Darwin" ]; then
    # prepend our lib path to LD_LIBRARY_PATH
    export DYLD_LIBRARY_PATH="${GAMEROOT}"/bin/osx64:$DYLD_LIBRARY_PATH
 elif [ "$UNAME" == "Linux" ]; then
-    # CS2 requires the sniper container runtime
+    # CS2 client requires the sniper container runtime
+    # We only enforce this for the client, the dedicated server has fewer dependencies and is meant to run on any reasonably up to date glibc distribution.
     . /etc/os-release
-    if [ "$VERSION_CODENAME" != "sniper" ]; then
+    if [ "$DEDICATED_SERVER" == "0" ] && [ "$VERSION_CODENAME" != "sniper" ]; then
         # a dialog box (zenity?) would be nice, but at this point we do not really know what is available to us
         echo
         echo "FATAL: It appears $SCRIPTNAME was not launched within the Steam for Linux sniper runtime environment."
@@ -64,6 +67,17 @@ cd "$GAMEROOT"
 if [ "$UNAME" == "Linux" ]; then
 	export ENABLE_PATHMATCH=1
 fi
+
+# There is Wayland support in SDL but a recent (7/30/2025) attempt at
+# allowing SDL to default to Wayland caused a number of customer issues so
+# keep the default at X11 for now. Don't override any user setting so
+# people can easily use Wayland if they want.
+if [ "$UNAME" == "Linux" ]; then
+	if [ -z "$SDL_VIDEO_DRIVER" ]; then
+		export SDL_VIDEO_DRIVER=x11
+	fi
+fi
+
 
 # Do the following for strace:
 # 	GAME_DEBUGGER="strace -f -o strace.log"

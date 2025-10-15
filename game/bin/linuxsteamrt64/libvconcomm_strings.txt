@@ -1,5 +1,4 @@
 %2.2d:%2.2d:%2.2d.%3.3d
--dev
 -nofocus
 14CBaseAppSystemI9IVConCommE
 15CTier0AppSystemI9IVConCommLx0EE
@@ -20,7 +19,6 @@
 9CVConComm
 9IVConComm
 <Unknown Shutdown Context>
-<Unknown>
 =============== End VConsole Buffered Messages ===============\n
 =============== Prior Messages Discarded at %d bytes ===============\n
 =============== VConsole Buffered Messages ===============\n

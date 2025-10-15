@@ -1,11 +1,6 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
-// MPropertyElementNameFn (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = Could not parse KV3 Defaults
+// MPropertyAutoExpandSelf
+// MPropertyPolymorphicClass
 class CSosGroupActionSchema
 {
-	// MPropertyFriendlyName = "Name"
-	CUtlString m_name;
-	// MPropertyFriendlyName = "Action Type"
-	ActionType_t m_actionType;
-	// MPropertySuppressField
-	ActionType_t m_actionInstanceType;
 };

@@ -4,7 +4,6 @@
 'is active'
 -------------------- PollInputState_SDL (frame %llu, elapsed ms = %.2f) --------------------\n
 --> SDL_PumpEvents - %d new events (elapsed time from last pump %.2f ms)\n
--inputss_update_spew
 .bmp
 /cursor.res
 12CInputSystem
@@ -75,7 +74,6 @@ CLEAR
 CLEARAGAIN
 COLON
 COMPUTER
-COPY
 COPYRIGHT_SIGN
 CRSEL
 CTRL
@@ -295,7 +293,7 @@ MOUSE2
 MOUSE3
 MOUSE4
 MOUSE5
-MOUSEWHEEL delta %d (raw %g)\n
+MOUSEWHEEL delta %g\n
 MOUSE_WHEEL
 MOUSE_X
 MOUSE_Y
@@ -465,11 +463,9 @@ SDL_TOUCH_MOUSE_EVENTS
 SDL_WINDOWS_CLOSE_ON_ALT_F4
 SECTION_SIGN
 SELECT
-SEMICOLON
 SEPARATOR
 SHARP_S
 SHIFT
-SLEEP
 SPACE
 START
 STICK1

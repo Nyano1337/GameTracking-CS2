@@ -11,8 +11,6 @@
 // MNetworkIncludeByName = "m_pMovementServices"
 // MNetworkVarTypeOverride = "CCSPlayer_WaterServices m_pWaterServices"
 // MNetworkIncludeByName = "m_pWaterServices"
-// MNetworkVarTypeOverride = "CCSPlayer_ViewModelServices m_pViewModelServices"
-// MNetworkIncludeByName = "m_pViewModelServices"
 // MNetworkVarTypeOverride = "CCSPlayer_CameraServices m_pCameraServices"
 // MNetworkIncludeByName = "m_pCameraServices"
 // MNetworkVarTypeOverride = "CCSPlayer_WeaponServices m_pWeaponServices"
@@ -24,7 +22,7 @@
 // MNetworkVarNames = "bool m_bInBuyZone"
 // MNetworkVarNames = "QAngle m_aimPunchAngle"
 // MNetworkVarNames = "QAngle m_aimPunchAngleVel"
-// MNetworkVarNames = "int m_aimPunchTickBase"
+// MNetworkVarNames = "GameTick_t m_aimPunchTickBase"
 // MNetworkVarNames = "float m_aimPunchTickFraction"
 // MNetworkVarNames = "bool m_bInHostageRescueZone"
 // MNetworkVarNames = "bool m_bInBombZone"
@@ -78,6 +76,9 @@
 // MNetworkVarNames = "uint16 m_unFreezetimeEndEquipmentValue"
 // MNetworkVarNames = "CEntityIndex m_nLastKillerIndex"
 // MNetworkVarNames = "PredictedDamageTag_t m_PredictedDamageTags"
+// MNetworkVarNames = "GameTime_t m_fImmuneToGunGameDamageTime"
+// MNetworkVarNames = "bool m_bGunGameImmunity"
+// MNetworkVarNames = "float m_fMolotovDamageTime"
 class C_CSPlayerPawn : public C_CSPlayerPawnBase
 {
 	// MNetworkEnable
@@ -116,7 +117,7 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	// MNetworkBitCount = 32
 	QAngle m_aimPunchAngleVel;
 	// MNetworkEnable
-	int32 m_aimPunchTickBase;
+	GameTick_t m_aimPunchTickBase;
 	// MNetworkEnable
 	float32 m_aimPunchTickFraction;
 	CUtlVector< QAngle > m_aimPunchCache;
@@ -169,6 +170,7 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	bool m_bLastHeadBoneTransformIsValid;
 	GameTime_t m_lastLandTime;
 	bool m_bOnGroundLastTick;
+	CHandle< C_CS2HudModelArms > m_hHudModelArms;
 	// MNetworkEnable
 	QAngle m_qDeathEyeAngles;
 	bool m_bSkipOneHeadConstraintUpdate;
@@ -279,4 +281,34 @@ class C_CSPlayerPawn : public C_CSPlayerPawnBase
 	C_UtlVectorEmbeddedNetworkVar< PredictedDamageTag_t > m_PredictedDamageTags;
 	GameTick_t m_nPrevHighestReceivedDamageTagTick;
 	int32 m_nHighestAppliedDamageTagTick;
+	bool m_bShouldAutobuyDMWeapons;
+	// MNetworkEnable
+	GameTime_t m_fImmuneToGunGameDamageTime;
+	// MNetworkEnable
+	bool m_bGunGameImmunity;
+	GameTime_t m_fImmuneToGunGameDamageTimeLast;
+	// MNetworkEnable
+	float32 m_fMolotovDamageTime;
+	Vector m_vecLastAliveLocalVelocity;
+	float32[4] m_fRenderingClipPlane;
+	int32 m_nLastClipPlaneSetupFrame;
+	Vector m_vecLastClipCameraPos;
+	Vector m_vecLastClipCameraForward;
+	bool m_bClipHitStaticWorld;
+	bool m_bCachedPlaneIsValid;
+	C_CSWeaponBase* m_pClippingWeapon;
+	ParticleIndex_t m_nPlayerInfernoBodyFx;
+	// MNetworkEnable
+	// MNetworkEncoder = "qangle_precise"
+	// MNetworkChangeCallback = "playerEyeAnglesChanged"
+	// MNetworkPriority = 32
+	QAngle m_angEyeAngles;
+	GameTime_t[4] m_arrOldEyeAnglesTimes;
+	QAngle[4] m_arrOldEyeAngles;
+	QAngle m_angEyeAnglesVelocity;
+	CEntityIndex m_iIDEntIndex;
+	CountdownTimer m_delayTargetIDTimer;
+	CEntityIndex m_iTargetItemEntIdx;
+	CEntityIndex m_iOldIDEntIndex;
+	CountdownTimer m_holdTargetIDTimer;
 };

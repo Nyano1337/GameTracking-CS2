@@ -47,12 +47,17 @@
 -assertonce
 -assertstack
 -cpumonitoringstart
+-debugbreak
+-etwprofile
 -forcesbhsizemb 
 -fullmemdumpallowed
 -fullmemdumprequiregb
 -internalbuild
 -mpi_worker
+-noassert
+-profile
 -sbhcompactdisabled 
+-steam
 .00cfg
 .?AVBasicStatStructFieldDesc@@
 .?AVCCommandLine@@
@@ -733,7 +738,6 @@ MultiByteToWideChar
 NAN(IND)
 NAN(SNAN)
 NtQuerySystemInformation
-Occlusion
 OpenEventA
 OpenThread
 Other_Model_Rendering
@@ -785,7 +789,6 @@ Plat_getwd
 Plat_localtime
 Plat_timegm
 Platform_gmtime
-Player
 Pool %3i: (%5u-byte) blocks used:%16s (%2d%%) free:%16s (%2d%%) commit:%16s (bytes:%16s)\n
 Pool %3i: (%5u-byte) not used\n
 Pool %3i: (size: %5u) blocks: allocated:%16s (%2d%%) free:%16s (%2d%%) committed:%16s (committed size:%16s)\n
@@ -798,7 +801,6 @@ PushMiniProfilerTS
 QueryPerformanceCounter
 QueryPerformanceFrequency
 RSDSH;U
-RaiseException
 ReadConsoleW
 ReadFile
 RegCloseKey
@@ -876,7 +878,6 @@ SleepConditionVariableSRW
 Small block heap is corrupt (primary)\n 
 Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%s
 Sorry -- no stats saved to file memstats.txt when the heap allocator is enabled.\n
-Sound
 StackToolsNotify_LoadedLibrary
 StackTraceDatabaseSizeInMB
 StackWalk64
@@ -923,6 +924,7 @@ Thread %u now owns lock %p\n
 Thread %u now owns lock 0x%p\n
 Thread %u releasing lock 0x%p\n
 Thread exited immediately\n
+Thread failed to initialize\n
 Thread failed to respond, probably exited\n
 Thread(%p/%p)
 ThreadFinishInitOnce

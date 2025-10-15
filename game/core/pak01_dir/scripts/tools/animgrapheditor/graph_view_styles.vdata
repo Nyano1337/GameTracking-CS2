@@ -23,6 +23,22 @@
 	{
 		Visibility = "COLLAPSE"
 	}
+	NodeFloatingCommentContainer = 
+	{
+		HAlign = "STRETCH"
+		VAlign = "TOP"
+		LayoutChildren = "HBOX"
+		Positioning = "OUTSIDE_PARENT"
+		Margin_Bottom = "8px"
+		ParticipatesInBoxSelection = false
+	}
+	NodeFloatingCommentBlock = 
+	{
+		Background_Color = "#c8c8c8"
+		Foreground_Color = "#484848"
+		Padding = "4px"
+		BorderRadius = "4px"
+	}
 	NodeBg = 
 	{
 		LayoutChildren = "VBOX"
@@ -120,8 +136,8 @@
 	BlendSpaceDebug2D = 
 	{
 		HAlign = "CENTER"
-		FixedSizeX = 200
-		FixedSizeY = 200
+		FixedSizeX = 350
+		FixedSizeY = 350
 		Background_Color = "#232323"
 	}
 	PinRegion = 
@@ -259,7 +275,7 @@
 		Font = "SegoeUI,12,12,12,0,0,0,0,0,Bold"
 		Foreground_Color = "#00FF00"
 	}
-	StateEventLabelExecute = 
+	StateEventLabelFullyInState = 
 	{
 		Font = "SegoeUI,12,12,12,0,0,0,0,0,Bold"
 		Foreground_Color = "#FFFF00"

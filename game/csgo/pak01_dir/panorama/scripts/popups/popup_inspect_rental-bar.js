@@ -118,7 +118,7 @@ var InspectRentalBar;
             $.GetContextPanel().SetDialogVariable('time-remaining', sTimeRemainingString);
             $.GetContextPanel().SetDialogVariable('name', InventoryAPI.GetItemName(m_itemId));
             $.GetContextPanel().SetDialogVariable('expiration-time', $.Localize(sTimeRemainingString));
-            UiToolkitAPI.ShowGenericPopupOk('#popup_container_confirm_title_rent', $.Localize('#popup_container_confirm_already_rented', $.GetContextPanel()), '', function () { () => { $.DispatchEvent('UIPopupButtonClicked', ''); }; });
+            UiToolkitAPI.ShowGenericPopupOk('#popup_container_confirm_title_rent', $.Localize('#popup_container_confirm_already_rented', $.GetContextPanel()), '', () => $.DispatchEvent('UIPopupButtonClicked', ''));
         }
         else {
             OpenConfirmPopup(type);
@@ -138,7 +138,7 @@ var InspectRentalBar;
             $.DispatchEvent('StartDecodeableAnim');
             return;
         }
-        InventoryAPI.UseToolWithIntArg(m_itemToUseId, m_itemId, 1);
+        InventoryAPI.UseToolWithIntArg(m_itemToUseId, m_itemId, 5318008);
         $.DispatchEvent('StartRentalAnim');
         $.Schedule(2.75, ShowRentalInspect);
     }

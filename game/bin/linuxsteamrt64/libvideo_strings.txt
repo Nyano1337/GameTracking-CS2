@@ -839,6 +839,8 @@ $d`D-laM
 -\n(k_EMsgGCRegisterWebInterfaces_Deprecated
 -\n(k_EMsgGSGetUserAchievementStatusResponse
 -\n(k_EMsgUCMPublishedFilePreviewAddResponse
+-debugbreak
+-noassert
 -nocrashdialog
 .%.-.3.7.9.?.W.[.o.y.
 ../include/libparsifal/optcfg.h
@@ -1011,7 +1013,6 @@ $d`D-laM
 /data/src/vstdlib/strtools.cpp
 /data/src/vstdlib/strtools_unicode.cpp
 /dev/hwrng
-/dev/random
 /dev/srandom
 /dev/tty
 /etc/pki/tls/cert.pem
@@ -1323,6 +1324,7 @@ $d`D-laM
 21CHTTPClientConnection
 21CHTTPClientWorkThread
 21COpenSSLCachedSession
+21CUtlCStringConversion
 21VideoRepresentation_t
 22CBaseScheduledFunction
 22CClanMatchEventByRange
@@ -1556,7 +1558,6 @@ $d`D-laM
 <from memory buffer>
 <html><body>Fake captive portal</body></html>
 <html>\n<head>\n<title>%d %s</title>\n</head>\n<body>\n<h1>%s</h1>\n</body>\n</html>
-<invalid>
 <local>
 <unsupported>
 = or is NULL
@@ -2133,7 +2134,6 @@ Billing name is invalid because it looks like it contains credit card data
 Biometric Info
 BitCash
 Bitcoin
-Blocked
 Blocked because user is not a commercial partner
 Blocked by U.S. government regulations
 BoaCompra Gold
@@ -2751,7 +2751,6 @@ Can't see w/o segment size
 Can't seek w/o init segment size
 Can't use datagrams with SSL connections, SSL requires reliability.
 Cancel
-Canceled
 Canceled by new transaction
 Cancelled by Admin
 Cancelled by Friendly Fraud Lock
@@ -2878,7 +2877,6 @@ Controller Binding
 ControllerBindings
 Convars
 Convenient Store Voucher
-Cookie
 Copyright Violation
 Corrupt depot cache
 Corrupt disk
@@ -2938,7 +2936,6 @@ DB Lookup CD-Key
 DBF-
 DBG_PATHMATCH
 DD.9
-DEFAULT
 DEK-Info:
 DEK-Info: %s,
 DELETE
@@ -3152,7 +3149,6 @@ Disk read failure
 Disk write failure
 DispatchCompletedItem
 DispatchCompletedItem - error
-Distance
 Does not own required app
 Domain
 Doom3 CD-Key
@@ -3777,11 +3773,8 @@ IGNORE
 IMPLICIT
 IMetricsFactory
 INADEQUATE_SECURITY
-INCLUDE
-INT32
 INT64
 INTERNAL_ERROR
-INVALID
 INVALID_SOCKET != hSocket
 INVALID_SOCKET != m_hSocket
 INVALID_SOCKET == m_hSocket
@@ -3867,7 +3860,6 @@ Internal Error
 Internal Server Error
 Internal error
 International Organizations
-Invalid
 Invalid %s declaration
 Invalid CD-Key
 Invalid CEG Submission
@@ -3949,7 +3941,6 @@ Items
 Items_Mtx
 Items_ReadyToUse
 J:xrG
-JArray
 JN5\fgm
 JOINT-ISO-ITU-T
 JSType
@@ -4301,7 +4292,6 @@ Non Repudiation
 Non-Authoritative Information
 NonMembers
 Nonce
-Normal
 Not Acceptable
 Not After: 
 Not Before: 
@@ -4492,7 +4482,6 @@ Option1
 Option2
 Option3
 Order: 
-Origin
 Other abortable transaction in progress
 Other session playing
 OtherAudio
@@ -4823,7 +4812,6 @@ Priority None
 Priority Paused
 Priority Up
 Priority User Initiated
-Private
 Private Key
 Private-Key
 Private-Key: (%d bit, %d primes)\n
@@ -4992,7 +4980,6 @@ RSA_verify_PKCS1_PSS_mgf1
 RST_STREAM: stream in idle
 RST_STREAM: stream_id == 0
 RackSystem
-Range
 Range request upper bound is less than lower bound
 RankedByAveragePlaytimeTrend
 RankedByBanContentCheck
@@ -5454,7 +5441,6 @@ SocketAlreadyClosed
 SocketFail
 Sofort
 Software
-Solo
 Someone called ClearWritingMinidump without holding the minidump lock.
 Someone called SetWritingMinidump without holding the minidump lock.
 SourceCodeInfo
@@ -5500,7 +5486,6 @@ Strong Extranet ID
 Subject Information Access
 Submiting threaded work item for HTTP request to %s\n
 Subscribed
-Succeeded
 Success
 Success! http%s://%s%s\n
 SuggestedFriend
@@ -5822,6 +5807,7 @@ This turns on the spew in SPEW_MISC at level 4, still need to adjust spew levels
 Thread "%s" (ID %d) failed to shut down\n
 Thread cannot be joined with self
 Thread did nothing but sleep during profile period.\n
+Thread failed to initialize\n
 Thread pool rejected HTTP work item, bad news.
 Thread synchronization object is unuseable
 Thread(0x%p/0x%p/0x%x)
@@ -5871,7 +5857,6 @@ Trustpay
 Try another CM
 Two-factor activation code mismatch
 Two-factor code mismatch
-Type
 Type=
 U$qk.
 U(Px(
@@ -5887,7 +5872,6 @@ UDPSocket::BSend received error %d (%s) from WSASendTo\n
 UGC Image
 UI lib
 UI routines
-UINT32
 UINT64
 UI_construct_prompt
 UI_create_method
@@ -6517,7 +6501,6 @@ _Sat
 _TbF~
 __bss_start
 __ctype_tolower_loc
-__ctype_toupper_loc
 __fdelt_chk
 __fread_chk
 __lxstat
@@ -7091,6 +7074,7 @@ base64 decode error
 base64 encoding
 basicConstraints
 basicOCSPResponse
+basic_ios::clear
 before SSL initialization
 begin
 bellcanada
@@ -8167,7 +8151,6 @@ des-ofb
 des3
 des3-wrap
 des_ede3_wrap_cipher
-description
 dest != NULL
 destCapacity != 0
 destinationIndicator
@@ -8877,7 +8860,6 @@ h\44Q
 h\f90
 h`TM
 handshake failure
-hardware
 has_adult_content
 has_adult_content_sex
 has_adult_content_violence
@@ -9365,7 +9347,6 @@ index too small
 indexRange
 indirectCRL
 infinite
-info
 info.m_pReplacementString == 0
 info.m_pTreeInUseConnections->Element(iIndexConnection) == pConnection
 info.m_pTreeWaitingConnections->Element(iIndexConnection) == pConnection
@@ -9379,7 +9360,6 @@ initialization
 initialization error
 initials
 inlen == 0
-input
 input not initialized
 input not reduced
 insert_link_dep
@@ -11189,7 +11169,6 @@ m_strCertPEMFile
 m_strCodecs
 m_strContentType
 m_strDomain
-m_strFileName
 m_strFilename
 m_strFilenameToUnlink
 m_strFilenameToUpdateLRUFor
@@ -11199,7 +11178,6 @@ m_strInit
 m_strLastUserProxyHostString
 m_strMedia
 m_strMimeType
-m_strName
 m_strPath
 m_strPathCertPEMFile
 m_strPathPrivKeyPEMFile
@@ -11340,7 +11318,6 @@ maxLen == 0 || pDest != NULL
 maxLenInBytes >= 0
 max_early_data
 max_protocol
-maximum
 maxmem_bytes
 maxsize=
 mb@}b
@@ -11392,7 +11369,6 @@ mime-mhs-headings
 mimeType
 min-fresh
 min_protocol
-minimum
 minimumUpdatePeriod
 minsize=
 minute
@@ -12460,9 +12436,6 @@ pthread_condattr_setclock
 pthread_exit
 pthread_rwlock_destroy
 pthread_rwlock_init
-pthread_rwlock_rdlock
-pthread_rwlock_unlock
-pthread_rwlock_wrlock
 pthread_setschedparam
 pub: 
 pubData
@@ -13307,7 +13280,6 @@ sslv3 rollback attack
 stable_get
 stackpath
 stalledlink
-start
 startNumber
 startup
 stat
@@ -13411,7 +13383,6 @@ t\lHBW
 tag=
 tagids_curated
 tagids_filtered
-tags
 targetInformation
 target_job_name
 taskus.com
@@ -13423,7 +13394,6 @@ telexNumber
 teliasonera
 telus
 tencent
-test
 text/html
 text/html,*/*;q=0.9
 text/plain
@@ -13925,7 +13895,6 @@ unsupported ssl version
 unsupported status type
 unsupported type
 unsupported version
-unused
 unverified
 unwrap error
 unwrap failure

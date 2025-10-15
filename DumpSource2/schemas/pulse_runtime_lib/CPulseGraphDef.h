@@ -1,10 +1,45 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"m_DomainIdentifier": "",
+//	"m_DomainSubType": "PVAL_VOID",
+//	"m_ParentMapName": "",
+//	"m_ParentXmlName": "",
+//	"m_Chunks":
+//	[
+//	],
+//	"m_Cells":
+//	[
+//	],
+//	"m_Vars":
+//	[
+//	],
+//	"m_PublicOutputs":
+//	[
+//	],
+//	"m_InvokeBindings":
+//	[
+//	],
+//	"m_CallInfos":
+//	[
+//	],
+//	"m_Constants":
+//	[
+//	],
+//	"m_DomainValues":
+//	[
+//	],
+//	"m_BlackboardReferences":
+//	[
+//	],
+//	"m_OutputConnections":
+//	[
+//	]
+//}
 class CPulseGraphDef
 {
-	CUtlSymbolLarge m_DomainIdentifier;
-	CUtlSymbolLarge m_ParentMapName;
-	CUtlSymbolLarge m_ParentXmlName;
-	CUtlVector< CUtlSymbolLarge > m_vecGameBlackboards;
+	PulseSymbol_t m_DomainIdentifier;
+	CPulseValueFullType m_DomainSubType;
+	PulseSymbol_t m_ParentMapName;
+	PulseSymbol_t m_ParentXmlName;
 	CUtlVector< CPulse_Chunk* > m_Chunks;
 	CUtlVector< CPulseCell_Base* > m_Cells;
 	CUtlVector< CPulse_Variable > m_Vars;

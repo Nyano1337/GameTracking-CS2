@@ -1,4 +1,4 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = Could not parse KV3 Defaults
 class CAnimParameterBase
 {
 	// MPropertyFriendlyName = "Name"
@@ -9,14 +9,16 @@ class CAnimParameterBase
 	// MPropertySortPriority = -100
 	CUtlString m_sComment;
 	// MPropertyReadOnly
+	// MPropertySortPriority = -90
 	CUtlString m_group;
 	// MPropertyReadOnly
+	// MPropertySortPriority = -90
 	AnimParamID m_id;
-	// MPropertyHideField
-	// MPropertyAttrChangeCallback (UNKNOWN FOR PARSER)
+	// MPropertySuppressField
+	// MPropertyAutoRebuildOnChange
 	CUtlString m_componentName;
-	// MPropertyHideField
+	// MPropertySuppressField
 	bool m_bNetworkingRequested;
-	// MPropertyHideField
+	// MPropertySuppressField
 	bool m_bIsReferenced;
 };

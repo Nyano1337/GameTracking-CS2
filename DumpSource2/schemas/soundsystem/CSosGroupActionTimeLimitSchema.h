@@ -1,6 +1,9 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"_class": "CSosGroupActionTimeLimitSchema",
+//	"m_flMaxDuration": -1.000000
+//}
+// MPropertyFriendlyName = "Time Limiter"
 class CSosGroupActionTimeLimitSchema : public CSosGroupActionSchema
 {
-	// MPropertyFriendlyName = "Max Time"
 	float32 m_flMaxDuration;
 };

@@ -557,7 +557,6 @@ GetStartupInfoW
 GetSystemTimeAsFileTime
 GetTempPath2W
 GetTempPathW
-High
 Host
 InitOnceBeginInitialize
 InitOnceComplete
@@ -595,11 +594,9 @@ NOTE: main blitter/copy engine is not available\n
 No arguments provided and braces not escaped!
 No compute queue available/allowed.
 No global offset extension found on this driver\n
-Normal
 Only empty braces are allowed!
 P08~F
 ParamName=%d(0x%x)\n
-Parameter
 Parsing error: no valid log level for string '
 Parsing error: no valid sink for string '
 Peak Slabs in Pool
@@ -931,7 +928,6 @@ _Cnd_destroy_in_situ
 _Cnd_init_in_situ
 _Cnd_signal
 _Cnd_wait
-_CxxThrowException
 _Mbrtowc
 _Mtx_destroy_in_situ
 _Mtx_init_in_situ
@@ -967,7 +963,6 @@ _initterm
 _initterm_e
 _invalid_parameter_noinfo_noreturn
 _lock_file
-_purecall
 _putenv_s
 _register_onexit_function
 _seh_filter_dll
@@ -1053,7 +1048,6 @@ list too long
 map/set too long
 native_cpu
 nvptx64
-output
 pi2urImageCopyFlags: Unsupported use case
 pi2urImageInfoFlags: Unsupported use case
 piContextCreate

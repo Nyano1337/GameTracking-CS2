@@ -1,7 +1,15 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"m_nType": "PT_TYPE_CONTROL_POINT",
+//	"m_NamedValue": "",
+//	"m_bFollowNamedValue": false,
+//	"m_bSupportsDisabled": false,
+//	"m_bUseOrientation": true,
+//	"m_nControlPoint": 0,
+//	"m_nControlPointRangeMax": 0,
+//	"m_flEndCPGrowthTime": 0.000000
+//}
 // MPropertyCustomEditor = "TransformInput()"
-// MClassIsParticleTransform
-// MParticleCustomFieldDefaultValue (UNKNOWN FOR PARSER)
+// MCustomFGDMetadata = "{ KV3DefaultTestFnName = 'CParticleTransformInputDefaultTestFunc' }"
 class CParticleTransformInput : public CParticleInput
 {
 	ParticleTransformType_t m_nType;

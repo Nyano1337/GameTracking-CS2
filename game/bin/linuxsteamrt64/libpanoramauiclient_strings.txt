@@ -106,14 +106,11 @@
 *ZN8panorama15CDelayLoadPanelC4EPNS_8CPanel2DEPKcEUlPS0_E_
 *ZN8panorama8CPanel2D12SortChildrenIZNS_14CDelayLoadList22EventLoadVisiblePanelsEjiiEUlPKS0_S4_E_EEvOT_EUlPNS_8IUIPanelES9_E_
 , %sdeg
--avx
 -s2-mix-blend-mode
--sse2
--sse3
--sse4
 ../public/panorama/controls/panel2d.h
 .com
 /usr/bin/xdg-open
+0(!LnV
 0x%4.4x 
 11CCallResultIN8panorama5CHTMLE19HTML_BrowserReady_tE
 12CRefCounted1I12IVideoPlayer20CRefCountServiceBaseI6CRefMTEE
@@ -174,8 +171,10 @@
 <a href="\1\3">\1\3</a>
 <span class="%s"> %s="</span>
 <span class="%s"> address="</span>
+<span class="%s"> context="</span>
 <span class="%s"> styleflags="</span>
 <span class="%s">"</span>
+<span class="%s">%llu</span>
 <span class="%s">%p</span>
 <span class="%s">%s</span>
 <span class="%s">0x%x</span>
@@ -374,16 +373,11 @@ CopyStringToClipboard( %s, #UI_Paste_URL )
 Could not find style file set
 Could not replace defines
 Couldn't open captions file '%s'.\n
-Countdown
-CountdownActive
-CountdownAfterEnd
-CountdownBeforeStart
 CreateDebuggerWindow
 CreatePanelWithCurrentContext
 CreateVideoPlayer
 CuesContainer
 CycleButton
-Daisy wheel input mode: RS | ABXY
 DaisyInputTypeABXY
 DaisyInputTypePIN
 DaisyInputTypeRS
@@ -737,9 +731,7 @@ LoadingThrobber
 LocalizationChanged
 MatchesSearch
 MaxButton
-Maximum velocity for a drag scroll flick
 MinButton
-Minimum velocity that the mouse must be moving as mouse up time to qualify as a drag scroll flick
 MouseDown
 MousePanning
 MousePanningImage
@@ -782,7 +774,6 @@ MoviePlayerTogglePlayPause
 MoviePlayerUIVisible
 MoviePlayerVolumeControl
 MoviePlaying
-N8panorama10CCountdownE
 N8panorama10CDragPanelE
 N8panorama10CScrollBarE
 N8panorama10CTabButtonE
@@ -1088,7 +1079,6 @@ PanoramaUIEngine interface not set up\n
 PanoramaUIEngine setup failed\n
 PanoramaVideoPlayer
 ParentWithProperties
-Pause
 Picked
 PlaceholderText
 Play
@@ -1156,7 +1146,6 @@ Repaint Rate
 ResetCarouselMouseWheelCounts
 ResetToDefaultValue
 ResizeDragTarget
-Resolution
 ReverseSorted
 RevertButton
 RightArrow
@@ -1205,7 +1194,6 @@ SelectAll
 SelectedPanelName
 Selection Pos
 SelectionGroup
-Selector
 Set focus to this panel.
 Set whether any child panels are :selected.
 Set whether this panel is :selected.
@@ -1306,7 +1294,6 @@ Shorthand for setting the right panel border. Specify width, style, and color.  
 Shorthand for setting the top panel border. Specify width, style, and color.  Supported styles are: solid, dashed, none.<br><br><b>Examples:</b><pre>border-top: 2px solid #111111FF;</pre>
 Shorthand for specifying all the border-image related properties at once.\nTechnical syntax is: &lt;border-image-source&gt; || &lt;border-image-slice&gt; [ / &lt;border-image-width&gt;? [ / &lt;border-image-outset&gt; ]? ]? || &lt;border-image-repeat&gt;, see the explanations for individual properties for details on each.<br><br><b>Examples:</b><pre>border-image: url( "file://message_border.png" ) 25% repeat;\nborder-image: url( "file://message_border.png" ) 25% / 1 / 20px repeat;</pre>
 Shorthand to set border radius for all corners at once.  Border radius rounds off corners of the panel, adjusting the border to smoothly round and also clipping background image/color and contents to the specified elliptical or circular values.  In this shorthand version you may specify a single value for all raddi, or horizontal / vertical separated by the '/' character.  For both horizontal and vertical you may specify 1 to 4 values in pixels or %, they will be taken in order as top-left, top-right, bottom-right, bottom-left radii values.<br><br><b>Examples:</b><pre>// 2 px circular corners on all sides\nborder-radius: 2px;\n// Perfect circular or elliptical panel (circular if box was square)\nborder-radius: 50% / 50%;\n// 2 px horizontal radii 4px vertical elliptical corners on all sides\nborder-radius: 2px / 4px;\n// All corners fully specified \nborder-radius: 2px 3px 4px 2px / 2px 3px 3px 2px;</pre>
-Should labels try to wrap text before using text-overflow: shrink
 ShowCaptions
 ShowChildren
 ShowDebugAttributes
@@ -1339,6 +1326,7 @@ SortedBy
 Source2 HTML
 Specifies a 'wash' color, which means a color that will be blended over the panel and all it's children at composition time, tinting them.  The alpha value of the color determines the intensity of the tinting.<br><br><b>Example:</b><pre>wash-color: #39b0d325;</pre>
 Specifies a clip region within the panel, where contents will be clipped at render time. This clipping has no impact on layout, and is fast and supported for transitions/animations. Radial clip mode takes a center point, start angle and angular width of the revealed sector.<br><br><b>Example:</b><pre>clip: rect( 10%, 90%, 90%, 10% );\nclip: radial( 50% %50, 0deg, 90deg );</pre>
+Specifies a fixed time between frames in order to simulate a lower framerate for stylistic reasons. Default is 0s.<br><br><b>Examples:</b><pre>transition-frame-time: 0.2s;\ntransition-frame-time: 0.2s, 0.0s;</pre>
 Specifies a scale to apply to this panel's layout and all descendants. This scale happens at the layout level ratherthan the bitmap level, so things like text will increase their font size rather than just bitmap scaling. <br><br><b>Examples:</b><pre>ui-scale: 150%; // 150% scaling for X, Y, and Z.\nui-scale: 50% 100% 150%; // 50% scaling for X, 100% for Y. 150% for Z.</pre>
 Specifies a sound name to play when this selector is applied.<br><br><b>Example:</b><pre>sound: "whoosh_in";</pre>
 Specifies a sound name to play when this selector is removed.<br><br><b>Example:</b><pre>sound-out: "whoosh_out";</pre>
@@ -1362,7 +1350,7 @@ Specifies border-radius for bottom-right corner which rounds off border and clip
 Specifies border-radius for top-left corner which rounds off border and clips background/foreground content to rounded edge.  Takes 1 or 2 values in px or %, first value is horizontal radii for elliptical corner, second is vertical radii, if only one is specified then horizontal/vertical will both be set and corner will be circular.<br><br><b>Examples:</b><pre>border-top-left-radius: 2px 2px;\nborder-top-left-radius: 5%;</pre>
 Specifies border-radius for top-right corner which rounds off border and clips background/foreground content to rounded edge.  Takes 1 or 2 values in px or %, first value is horizontal radii for elliptical corner, second is vertical radii, if only one is specified then horizontal/vertical will both be set and corner will be circular.<br><br><b>Examples:</b><pre>border-top-right-radius: 2px 2px;\nborder-top-right-radius: 5%;</pre>
 Specifies how the top/right/bottom/left/middle images of the 9 slice regions are stretched to fit the available space.  Options are stretch, repeat, round or space.  Stretch/repeat are self explanatory, round means tile (repeat) but scale firstto ensure that a whole number of tiles is used with no partial tile at the edge of the space, space means tile (repeat) but add padding between tiles to ensure a whole number of tiles with no partial tile at the edge is needed.\nTwo values are specified, the first applies to how we stretch the top/middle/bottom horizontally to fill space, the second applies to how we stretch the left/middle/right vertically to fill space.<br><br><b>Examples:</b><pre>border-image-repeat: stretch stretch;\nborder-image-outset: repeat;\nborder-image-outset: round;\nborder-image-outset: stetch space;</pre>
-Specifies image shadows.  The shadow shape will match the image the panel can generate,and this is only meaningful for images.  Syntax takes horizontal offset pixels, vertical offset pixels, blur radius pixels, strength, and then shadow color.<br><br><b>Example:</b><pre>img-shadow: 2px 2px 8px 3.0 #333333b0;</pre>
+Specifies image shadows.  The shadow shape will match the image the panel can generate,and this is only meaningful for images.  Syntax takes horizontal offset pixels, vertical offset pixels, blur radius pixels, strength, shadow color and then an optional texture sample mode (alpha-only, legacy, or point).<br><br><b>Example:</b><pre>img-shadow: 2px 2px 8px 3.0 #333333b0 alpha-only;</pre>
 Specifies shadows for boxes, or inset shadows/glows.  The shadow shape will match the border box for the panel,so use border-radius to affect rounding.  Syntax takes optional shape 'inset', 'fill', or 'hollow', then color, horizontal offset pixels, vertical offset pixels, blur radius pixels, and spread distance in pixels. Inset means the shadow is an inner shadow/glow, fill is a a shadow behind the entire box, hollow means clipping it to outside the border area only (before offset). A negative blur radius will give a hard-edged look to the shadow, effectively a rounded outline of the same size as the blur.<br><br><b>Examples:</b><pre>box-shadow: #ffffff80 4px 4px 8px 0px; // outer, filled\nbox-shadow: hollow #ffffff80 4px 4px 8px 0px; // outer, hollow\nbox-shadow: inset #333333b0 0px 0px 8px 12px; // inner</pre>
 Specifies text shadows.  The shadow shape will match the text the panel can generate,and this is only meaningful for labels.  Syntax takes horizontal offset pixels, vertical offset pixels, blur radius pixels, strength, and then shadow color.<br><br><b>Example:</b><pre>text-shadow: 2px 2px 8px 3.0 #333333b0;</pre>
 Specifies the amount by which the border image should draw outside of the normal content/border box, this allows the border image to extend into the margin area and draw outside the panels bounds.  This may still result in clipping of the image by a parent panel if the parents bounds are too close to the edges of the panel with the border-image.  Values are specified as px or % in top, right, bottom, left order with the 2nd through 4th values optional.<br><br><b>Examples:</b><pre>border-image-outset: 0px;\nborder-image-outset: 20px 20px 20px 20px;</pre>
@@ -1480,7 +1468,7 @@ TopLevelWindowVisibilityChanged
 TriggerClass
 TriggerStyle
 UIEngine()
-Underlying object is deleted!
+Underlying panel is deleted!
 Unknown SVG attribute type\n
 UnloadMovie
 UnreadyForDisplay
@@ -1548,7 +1536,6 @@ actualuiscale_x
 actualuiscale_y
 actualxoffset
 actualyoffset
-additive
 aliceblue
 align
 all-scroll
@@ -1563,6 +1550,7 @@ animation-delay
 animation-direction
 animation-duration
 animation-fill-mode
+animation-frame-time
 animation-iteration-count
 animation-name
 animation-timing-function
@@ -1636,7 +1624,6 @@ bottom
 bottomright
 box-shadow
 brazilian
-brightness
 brown
 buffer-async
 buffer-sync
@@ -1651,7 +1638,6 @@ cell
 center_nopixelsnap
 chartreuse
 checked
-child
 chocolate
 class, duration, pre-delay
 class, eventToFire
@@ -1692,11 +1678,8 @@ copy
 coral
 cornflowerblue
 cornsilk
-countdown_state
-countdown_time
 cover
 crimson
-crosshair
 cubic-bezier
 cue contains cue-id, but is missing cuetimes or cue text
 cue-text line contains unescaped timestamp separator '-->'
@@ -1766,8 +1749,6 @@ edge
 ellipsis
 email
 embedded
-end-time
-endTime
 error allocating object
 error-text
 evenodd
@@ -1858,7 +1839,6 @@ height-percentage
 height-percentage( %s )
 hittest
 hittestchildren
-hollow
 hollow 
 honeydew
 horizontal
@@ -1918,6 +1898,7 @@ layoutfailed
 layoutfile
 left
 left-wrap
+legacy
 lemonchiffon
 letter-spacing
 libpanoramauiclient.so
@@ -1944,7 +1925,6 @@ limegreen
 line
 line-height
 line-through
-linear
 linen
 loadbehavior
 loading-text
@@ -2013,7 +1993,6 @@ ne-resize
 nesw-resize
 no-drop
 no-repeat
-noclip
 none 
 nonzero
 not set
@@ -2084,21 +2063,6 @@ paneltype
 panorama/browser/webkit.css
 panorama/fonts/
 panorama/panorama_config.txt
-panorama_console_max_autocomplete
-panorama_console_max_history
-panorama_console_max_lines
-panorama_console_position_and_size
-panorama_daisy_wheel
-panorama_debug_movies
-panorama_debug_overlay_opacity
-panorama_debug_overlay_opacity_max
-panorama_debug_overlay_opacity_min
-panorama_debugger_theme
-panorama_dragscroll_maxflickvelocity
-panorama_dragscroll_minflickvelocity
-panorama_label_wrap_before_shrink
-panorama_movie_async_load_size_bytes
-panorama_movie_force_not_ready_behavior
 panoramasymbol
 panoramasymbol.cpp
 papayawhip
@@ -2206,13 +2170,11 @@ square
 squish
 srcset
 srcset_current
-start
-start-time
-startTime
 startingscale
 startzoomed
 static
 std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()
+std::_Sp_counted_ptr<std::nullptr_t, (__gnu_cxx::_Lock_policy)2>::_M_dispose()
 std::_Sp_make_shared_tag::_S_ti()::__tag
 steamcode
 steelblue
@@ -2256,7 +2218,6 @@ svgstrokewidth
 sw-resize
 tabid
 tabindex
-target
 targetid
 tchinese
 teal
@@ -2281,8 +2242,6 @@ texturewidth
 texturewidth and textureheight can be used to override the size of vector graphics. Default value of -1 indicates texture width/height to be determined from source file
 thin
 thistle
-time-dialog-variable
-timeDialogVariable
 title
 tomato
 tooltip-arrow-position
@@ -2298,6 +2257,7 @@ transform-origin
 transition
 transition-delay
 transition-duration
+transition-frame-time
 transition-high-framerate
 transition-property
 transition-timing-function
@@ -2351,8 +2311,6 @@ unlocalized
 unrecognized webvtt-cue-setting
 unset
 up-wrap
-update-interval
-updateInterval
 uppercase
 uppervalue
 url( 
@@ -2423,7 +2381,6 @@ very long tag-comment
 violet
 visibility
 visible
-volume
 vscroll
 vsvg
 w-resize

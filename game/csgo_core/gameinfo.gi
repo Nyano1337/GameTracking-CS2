@@ -495,6 +495,15 @@
 		"models_gamedata"			"models_gamedata.fgd"
 		"features"					"cs2;modelconfig;animgraph;animgraph_compatibility_force;editorconfig;gamepreview"
 		"firstpersoncamerapreview"	"1"
+		"disallowed_materials"
+		{
+			"material" "materials/debug/debugempty.vmat"
+		}
+		"content_consider_warnings_as_errors"
+		{
+			"substr" "phase2/characters/models/"
+			"substr" "phase2/weapons/models/"
+		}
 	}
 
 	RenderSystem
@@ -505,8 +514,8 @@
 		"VulkanOnly"								"1"	[ $LINUX || $OSX ] // No OpenGL or D3D9/11 fallback on Linux or OSX, only Vulkan is supported.
 		"VulkanRequireSubgroupWaveOpSupport"			"1"	[ !$OSX ]
 		"VulkanRequireDescriptorIndexing"			"1"	[ !$OSX ]
+		"VulkanDefrag"								"1"
 		"VulkanAdditionalShaderCache"				"csgo_shaders.foz"	[ $OSX ]
-		//"AlwaysPreloadTexturesInGame"				"1"
 		//"MaxPreloadTextureResolution"				"256"
 		"GraphicsPipelineLibrary"					"1"
 		"IndexBufferPoolSizeMB"						"64"
@@ -524,13 +533,13 @@
 
 	Physics
 	{
-		"BuildMeshWings" "1"
+		"BuildMeshWings" "0"
 	}
 	PostProcessingEditor
 	{
 		"supports_local_contrast"	"1"
 		"filmic_linear_scale" 		"1"
-		"compute_bloom"				"1"
+		"compute_bloom"				"0"
 
 	}
 

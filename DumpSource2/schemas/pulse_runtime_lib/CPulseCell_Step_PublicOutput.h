@@ -1,8 +1,9 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
-// MCellForDomain = "BaseDomain"
+// MGetKV3ClassDefaults = {
+//	"_class": "CPulseCell_Step_PublicOutput",
+//	"m_nEditorNodeID": -1,
+//	"m_OutputIndex": -1
+//}
 // MPulseCellMethodBindings (UNKNOWN FOR PARSER)
-// MPulseCellOutflowHookInfo (UNKNOWN FOR PARSER)
-// MPulseCellWithCustomDocNode
 class CPulseCell_Step_PublicOutput : public CPulseCell_BaseFlow
 {
 	PulseRuntimeOutputIndex_t m_OutputIndex;

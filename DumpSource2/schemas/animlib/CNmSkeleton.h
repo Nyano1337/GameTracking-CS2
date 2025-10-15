@@ -1,4 +1,26 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"m_ID": "",
+//	"m_boneIDs":
+//	[
+//	],
+//	"m_parentIndices":
+//	[
+//	],
+//	"m_parentSpaceReferencePose":
+//	[
+//	],
+//	"m_modelSpaceReferencePose":
+//	[
+//	],
+//	"m_numBonesToSampleAtLowLOD": 0,
+//	"m_maskDefinitions":
+//	[
+//	],
+//	"m_secondarySkeletons":
+//	[
+//	],
+//	"m_bIsPropSkeleton": false
+//}
 class CNmSkeleton
 {
 	CGlobalSymbol m_ID;
@@ -7,5 +29,7 @@ class CNmSkeleton
 	CUtlVector< CTransform > m_parentSpaceReferencePose;
 	CUtlVector< CTransform > m_modelSpaceReferencePose;
 	int32 m_numBonesToSampleAtLowLOD;
-	CUtlLeanVector< CNmBoneMask > m_boneMasks;
+	CUtlLeanVector< NmBoneMaskSetDefinition_t > m_maskDefinitions;
+	CUtlLeanVector< CNmSkeleton::SecondarySkeleton_t > m_secondarySkeletons;
+	bool m_bIsPropSkeleton;
 };

@@ -7,7 +7,7 @@
 {
 	"templates#include"
 	{
-		"classic"
+		"competitive"
 		{
 			"mg_de_dust2"		"1"
 			"mg_de_mirage"		"2"
@@ -18,8 +18,27 @@
 			"mg_de_overpass"	"7"
 			"mg_de_anubis"		"8"
 			"mg_de_vertigo"		"9"
-			"mg_de_jura"		"10"
-			"mg_de_grail"		"11"
+			"mg_de_palacio"		"10"
+			"mg_de_golden"		"11"
+			"mg_cs_agency"		"12"
+
+			// hostage
+			"mg_cs_office"		"13"
+			"mg_cs_italy"		"14"
+		}
+		"casual"
+		{
+			"mg_de_dust2"		"1"
+			"mg_de_mirage"		"2"
+			"mg_de_inferno"		"3"
+			"mg_de_ancient_night" "4"
+			"mg_de_nuke"		"5"
+			"mg_de_train"		"6"
+			"mg_de_overpass"	"7"
+			"mg_de_anubis"		"8"
+			"mg_de_vertigo"		"9"
+			"mg_de_palacio"		"10"
+			"mg_de_golden"		"11"
 			"mg_cs_agency"		"12"
 
 			// hostage
@@ -28,12 +47,11 @@
 		}
 		"2v2"
 		{
-			"mg_de_brewery"		"0"
-			"mg_de_dogtown"		"1"
-			"mg_de_overpass"	"2"
-			"mg_de_vertigo"		"3"
-			"mg_de_nuke"		"4"
-			"mg_de_inferno"		"5"
+			"mg_de_rooftop"		"0"
+			"mg_de_overpass"	"1"
+			"mg_de_vertigo"		"2"
+			"mg_de_nuke"		"3"
+			"mg_de_inferno"		"4"
 		}
 		"sddh"
 		{
@@ -85,7 +103,7 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"template#include"		"classic"
+						"template#include"		"casual"
 					}
 
 					// Map groups for online modesw
@@ -132,13 +150,13 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"template#include"		"classic"
+						"template#include"		"competitive"
 					}
 
 					// Map groups for online modes
 					"mapgroupsMP"
 					{
-						"template#include"		"classic"
+						"template#include"		"competitive"
 					}
 
 
@@ -229,13 +247,13 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"template#include"		"classic"
+						"template#include"		"competitive"
 					}
 
 					// Map groups for online modes
 					"mapgroupsMP"
 					{
-						"template#include"		"classic"
+						"template#include"		"competitive"
 					}
 				}
 				"new_user_training"
@@ -312,7 +330,8 @@
 					{
 						"mg_ar_baggage"		"0"
 						"mg_ar_shoots"		"1"
-						"mg_ar_pool_day"    "2"
+						"mg_ar_shoots_night" "2"
+						"mg_ar_pool_day"    "3"
 					}
 
 					// Map groups for online modes
@@ -422,7 +441,7 @@
 					// Map groups for offline modes
 					"mapgroupsSP"
 					{
-						"template#include"		"classic"
+						"template#include"		"casual"
 					}
 
 					// Map groups for online modes
@@ -825,14 +844,14 @@
 			"imagename"				"mapgroup-casualcharlie"
 			"nameID"				"#SFUI_Mapgroup_casualcharlie"
 			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_CasualCharlie"
-			"tooltipMaps"			"de_jura,de_grail,cs_agency"
+			"tooltipMaps"			"de_palacio,de_golden,cs_agency"
 			"name"					"mg_casualcharlie"
 			"grouptype"				"reserves"
 			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
 			"maps"
 			{
-				"de_jura"		""
-				"de_grail"		""
+				"de_palacio"		""
+				"de_golden"		""
 				"cs_agency"		""
 			}
 		}
@@ -842,7 +861,7 @@
 			"imagename"				"mapgroup-casualdelta"
 			"nameID"				"#SFUI_Mapgroup_casualdelta"
 			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_CasualDelta"
-			"tooltipMaps"			"de_train,de_anubis,de_ancient,de_overpass,de_nuke"
+			"tooltipMaps"			"de_train,de_anubis,de_ancient_night,de_overpass,de_nuke"
 			"name"					"mg_casualdelta"
 			"grouptype"				"reserves"
 			"icon_image_path"		"map_icons/mapgroup_icon_reserves"
@@ -850,7 +869,7 @@
 			{
 				"de_train"		""
 				"de_anubis"		""
-				"de_ancient"	""
+				"de_ancient_night" ""
 				"de_overpass"	""
 				"de_nuke"		""
 			}
@@ -962,12 +981,13 @@
 			"imagename"				"mapgroup-armsrace"
 			"nameID"				"#SFUI_Mapgroup_armsrace"
 			"tooltipID"				"#SFUI_MapGroup_Tooltip_Desc_Armsrace"
-			"tooltipMaps"			"ar_shoots,ar_baggage"
+			"tooltipMaps"			"ar_shoots,ar_shoots_night,ar_baggage,ar_pool_day"
 			"name"					"mg_armsrace"
 			"icon_image_path"		"map_icons/mapgroup_icon_armsrace"
 			"maps"
 			{
 				"ar_shoots"			""
+				"ar_shoots_night"	""
 				"ar_baggage"		""
 				"ar_pool_day"		""
 			}
@@ -1147,6 +1167,7 @@
 			{
 				"ar_baggage"	"armsrace"
 				"ar_shoots"		"armsrace"
+				"ar_shoots_night" "armsrace"
 				"ar_pool_day"	"armsrace"
 			}
 		}
@@ -1383,7 +1404,7 @@
 		{
 			"imagename"				"map-overpass-overall"
 			"nameID"				"#SFUI_Map_de_overpass"
-			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Active_Op_over"
 			"name"					"mg_de_overpass"
 			"icontag"				"bomb"
 			"grouptype"				"active"
@@ -2047,7 +2068,7 @@
 			}
 		}
 
-				"mg_de_grail"
+		"mg_de_grail"
 		{
 			"imagename"				"map-grail-overall"
 			"nameID"				"#SFUI_Map_de_grail"
@@ -2092,7 +2113,67 @@
 			}
 		}
 
+		"mg_de_palacio"
+		{
+			"imagename"				"map-palacio-overall"
+			"nameID"				"#SFUI_Map_de_palacio"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
+			"descriptionID"			"#SFUI_Map_Tooltip_Desc_palacio"
+			"authorID"				"Community Made"
+			"name"					"mg_de_palacio"
+			"icontag"				"bomb"
+			"grouptype"				"reserves"
+			"icon_image_path"		"map_icons/map_icon_de_palacio"
+			"maps"
+			{
+				"de_palacio"		""
+			}
+		}
 
+		"mg_de_golden"
+		{
+			"imagename"				"map-golden-overall"
+			"nameID"				"#SFUI_Map_de_golden"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
+			"descriptionID"			"#SFUI_Map_Tooltip_Desc_golden"
+			"authorID"				"Community Made"
+			"name"					"mg_de_golden"
+			"icontag"				"bomb"
+			"grouptype"				"reserves"
+			"icon_image_path"		"map_icons/map_icon_de_golden"
+			"maps"
+			{
+				"de_golden"		""
+			}
+		}
+
+		"mg_de_rooftop"
+		{
+			"imagename"				"map-rooftop-overall"
+			"nameID"				"#SFUI_Map_de_rooftop"
+			"authorID"				"Community Made"
+			"name"					"mg_de_rooftop"
+			"icontag"				"bomb"
+			"icon_image_path"		"map_icons/map_icon_de_rooftop"
+			"maps"
+			{
+				"de_rooftop"			""
+			}
+		}
+
+		"mg_de_transit"
+		{
+			"imagename"				"map-transit-overall"
+			"nameID"				"#SFUI_Map_de_transit"
+			"authorID"				"(Redacted)"
+			"name"					"mg_de_transit"
+			"icontag"				"bomb"
+			"icon_image_path"		"map_icons/map_icon_de_transit"
+			"maps"
+			{
+				"de_transit"			""
+			}
+		}
 		// Community maps
 
 		"mg_de_calavera"
@@ -2242,6 +2323,23 @@
 			}
 		}
 
+		"mg_de_ancient_night"
+		{
+			"imagename"				"map-ancient_night-overall"
+			"nameID"				"#SFUI_Map_de_ancient_night"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Active_Op_over"
+			"descriptionID"			"#SFUI_Map_Tooltip_Desc_ancient"
+			"authorID"				"-"
+			"name"					"mg_de_ancient_night"
+			"icontag"				"bomb"
+			"grouptype"				"active"
+			"icon_image_path"		"map_icons/map_icon_de_ancient_night"
+			"maps"
+			{
+				"de_ancient_night"		""
+			}
+		}
+
 		"mg_de_tuscan"
 		{
 			"imagename"				"map-tuscan-overall"
@@ -2263,7 +2361,7 @@
 		{
 			"imagename"				"map-anubis-overall"
 			"nameID"				"#SFUI_Map_de_anubis"
-			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Active_Op_over"
+			"tooltipID"				"#SFUI_Map_Tooltip_Desc_Reserves"
 			"descriptionID"			"#SFUI_Map_Tooltip_Desc_anubis"
 			"authorID"				"-"
 			"name"					"mg_de_anubis"
@@ -3169,6 +3267,18 @@
 			"maps"
 			{
 				"ar_shoots"		""
+			}
+		}
+
+		"mg_ar_shoots_night"
+		{
+			"imagename"				"map-vietnam-overall"
+			"nameID"				"#SFUI_Map_ar_shoots_night"
+			"name"					"mg_ar_shoots_night"
+			"icon_image_path"		"map_icons/map_icon_ar_shoots_night"
+			"maps"
+			{
+				"ar_shoots_night"		""
 			}
 		}
 
@@ -5957,6 +6067,60 @@
 			}
 		}
 
+		"de_rooftop"
+		{
+			"nameID"				"#SFUI_Map_de_rooftop"
+			"name"					"de_rooftop"
+			"imagename"				"map-rooftop-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms_phoenix.vmdl"
+			"t_models"
+			{
+				"tm_phoenix"		""
+				"tm_phoenix_variantA"	""
+				"tm_phoenix_variantB"	""
+				"tm_phoenix_variantC"	""
+				"tm_phoenix_variantD"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_fbi.vmdl"
+			"ct_models"
+			{
+				"ctm_fbi"		""
+				"ctm_fbi_variantA"	""
+				"ctm_fbi_variantE"	""
+				"ctm_fbi_variantC"	""
+				"ctm_fbi_variantD"	""
+			}
+		}
+
+		"de_transit"
+		{
+			"nameID"				"#SFUI_Map_de_transit"
+			"name"					"de_transit"
+			"imagename"				"map-transit-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms_phoenix.vmdl"
+			"t_models"
+			{
+				"tm_phoenix"		""
+				"tm_phoenix_variantA"	""
+				"tm_phoenix_variantB"	""
+				"tm_phoenix_variantC"	""
+				"tm_phoenix_variantD"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_fbi.vmdl"
+			"ct_models"
+			{
+				"ctm_fbi"		""
+				"ctm_fbi_variantA"	""
+				"ctm_fbi_variantE"	""
+				"ctm_fbi_variantC"	""
+				"ctm_fbi_variantD"	""
+			}
+		}
+
 		//Community Maps
 
 		"de_ancient"
@@ -5964,6 +6128,33 @@
 			"nameID"				"#SFUI_Map_de_ancient"
 			"name"					"de_ancient"
 			"imagename"				"map-ancient-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms.vmdl"
+			"t_models"
+			{
+				"tm_leet_variantA"		""
+				"tm_leet_variantB"		""
+				"tm_leet_variantC"		""
+				"tm_leet_variantD"		""
+				"tm_leet_variantE"		""
+			}
+			"ct_arms"			"models/weapons/ct_arms_gign.vmdl"
+			"ct_models"
+			{
+				"ctm_gign"		""
+				"ctm_gign_variantA"	""
+				"ctm_gign_variantB"	""
+				"ctm_gign_variantC"	""
+				"ctm_gign_variantD"	""
+			}
+		}
+
+		"de_ancient_night"
+		{
+			"nameID"				"#SFUI_Map_de_ancient_night"
+			"name"					"de_ancient_night"
+			"imagename"				"map-ancient_night-overall"
 			"default_game_type"		"0" // classic
 			"default_game_mode"		"0" // casual
 			"t_arms"				"models/weapons/t_arms.vmdl"
@@ -6153,6 +6344,60 @@
 			"nameID"				"#SFUI_Map_de_grail"
 			"name"					"de_grail"
 			"imagename"				"map-grail-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms.vmdl"
+			"t_models"
+			{
+				"tm_leet_variantA"		""
+				"tm_leet_variantB"		""
+				"tm_leet_variantC"		""
+				"tm_leet_variantD"		""
+				"tm_leet_variantE"		""
+			}
+			"ct_arms"			"models/weapons/ct_arms_gign.vmdl"
+			"ct_models"
+			{
+				"ctm_gign"		""
+				"ctm_gign_variantA"	""
+				"ctm_gign_variantB"	""
+				"ctm_gign_variantC"	""
+				"ctm_gign_variantD"	""
+			}
+		}
+
+		"de_palacio"
+		{
+			"nameID"				"#SFUI_Map_de_palacio"
+			"name"					"de_palacio"
+			"imagename"				"map-palacio-overall"
+			"default_game_type"		"0" // classic
+			"default_game_mode"		"0" // casual
+			"t_arms"				"models/weapons/t_arms.vmdl"
+			"t_models"
+			{
+				"tm_leet_variantA"		""
+				"tm_leet_variantB"		""
+				"tm_leet_variantC"		""
+				"tm_leet_variantD"		""
+				"tm_leet_variantE"		""
+			}
+			"ct_arms"			"models/weapons/ct_arms_gign.vmdl"
+			"ct_models"
+			{
+				"ctm_gign"		""
+				"ctm_gign_variantA"	""
+				"ctm_gign_variantB"	""
+				"ctm_gign_variantC"	""
+				"ctm_gign_variantD"	""
+			}
+		}
+
+		"de_golden"
+		{
+			"nameID"				"#SFUI_Map_de_golden"
+			"name"					"de_golden"
+			"imagename"				"map-golden-overall"
 			"default_game_type"		"0" // classic
 			"default_game_mode"		"0" // casual
 			"t_arms"				"models/weapons/t_arms.vmdl"
@@ -6671,6 +6916,33 @@
 		{
 			"nameID"				"#SFUI_Map_ar_shoots"
 			"name"					"ar_shoots"
+			"imagename"				"map-vietnam-overall"
+			"default_game_type"		"1" // GunGame
+			"default_game_mode"		"0" // Progressive
+			"t_arms"				"models/weapons/t_arms_pirate.vmdl"
+			"t_models"
+			{
+				"tm_pirate"		""
+				"tm_pirate_variantA"	""
+				"tm_pirate_variantC"	""
+				"tm_pirate_variantD"	""
+				"tm_pirate_variantB"	""
+			}
+			"ct_arms"			"models/weapons/ct_arms_gign.vmdl"
+			"ct_models"
+			{
+				"ctm_gign"		""
+				"ctm_gign_variantA"	""
+				"ctm_gign_variantB"	""
+				"ctm_gign_variantC"	""
+				"ctm_gign_variantD"	""
+			}
+		}
+		
+		"ar_shoots_night"
+		{
+			"nameID"				"#SFUI_Map_ar_shoots_night"
+			"name"					"ar_shoots_night"
 			"imagename"				"map-vietnam-overall"
 			"default_game_type"		"1" // GunGame
 			"default_game_mode"		"0" // Progressive

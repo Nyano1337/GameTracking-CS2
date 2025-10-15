@@ -1,4 +1,15 @@
-// MGetKV3ClassDefaults (UNKNOWN FOR PARSER)
+// MGetKV3ClassDefaults = {
+//	"_class": "CSosGroupActionMemberCountEnvelopeSchema",
+//	"m_nBaseCount": 0,
+//	"m_nTargetCount": 1,
+//	"m_flBaseValue": 0.000000,
+//	"m_flTargetValue": 0.000000,
+//	"m_flAttack": 1.000000,
+//	"m_flDecay": 1.000000,
+//	"m_resultVarName": "envelope_result",
+//	"m_bSaveToGroup": false
+//}
+// MPropertyFriendlyName = "Count Envelope"
 class CSosGroupActionMemberCountEnvelopeSchema : public CSosGroupActionSchema
 {
 	// MPropertyFriendlyName = "Min Threshold Count"
