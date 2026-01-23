@@ -169,6 +169,8 @@ var PopupMajorHub;
         _m_cp.FindChildInLayoutFile('id-major-logo').SetImage('file://{images}/tournaments/events/tournament_logo_' + _m_eventId + '.svg');
     }
     function _SetBackgroundImages() {
+        if (!_m_eventId)
+            return;
         let bgImage = "url( 'file://{images}/tournaments/backgrounds/pickem_bg_" + _m_eventId + ".png')";
         if (_m_eventId !== 24) {
             _m_cp.FindChildInLayoutFile('id-graffiti-block').style.backgroundImage = bgImage;
@@ -530,8 +532,13 @@ var PopupMajorHub;
         });
     }
     function OpenPassActivate(itemId) {
-        UiToolkitAPI.ShowCustomLayoutPopupParameters('', 'file://{resources}/layout/popups/popup_capability_decodable.xml', 'key-and-case=,' + itemId +
+        const elPanel = UiToolkitAPI.ShowCustomLayoutPopupParameters('', 'file://{resources}/layout/popups/popup_capability_decodable.xml', 'key-and-case=,' + itemId +
             '&' + 'asyncworktype=decodeable');
+        let oSettings = {
+            item_id: itemId,
+            work_type: 'decodeable'
+        };
+        elPanel.Data().oSettings = oSettings;
     }
     function DeleteDragItem() {
         if (PopupMajorHub.m_elDragImage && PopupMajorHub.m_elDragImage.IsValid()) {
@@ -611,6 +618,9 @@ var SavePicksButton;
     }
     SavePicksButton.UpdateBtn = UpdateBtn;
     function ShowHideNoActivePassWarning(oPageData, bHide = false) {
+        if (!oPageData.panel || oPageData.panel.IsValid() === false) {
+            return;
+        }
         let elWarning = oPageData.panel.FindChildInLayoutFile('id-predictions-apply-btn').FindChild('id-apply-warning');
         let tournamentCoinItemId = InventoryAPI.GetActiveTournamentCoinItemId(SavePicksButton._m_eventId);
         elWarning.visible = (!tournamentCoinItemId || tournamentCoinItemId === '0') && !bHide;

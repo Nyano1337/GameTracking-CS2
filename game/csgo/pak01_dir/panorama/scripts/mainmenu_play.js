@@ -448,7 +448,7 @@ var PlayMenu;
                 isAvailable = true;
             }
             else if (MyPersonaAPI.GetCurrentLevel() < 2) {
-                isAvailable = (gameMode == 'deathmatch' || gameMode == 'casual' || gameMode == 'gungameprogressive');
+                isAvailable = (gameMode == 'deathmatch' || gameMode == 'casual' || gameMode == 'gungameprogressive' || gameMode == 'retakes');
             }
         }
         else if (!_IsValveOfficialServer(serverType)) {
@@ -1356,7 +1356,7 @@ var PlayMenu;
         let bAnnotationAvailable = GameInterfaceAPI.IsMapAnnotationAvailable(m_selectedPracticeMap);
         let bAnnotationSelected = GameInterfaceAPI.GetSettingString('ui_playsettings_listen_annotations') === '1';
         let elAnnotationDropDown = $('#id-play-menu-practicesettings-annotations-dropdown');
-        elAnnotationDropDown.RebuildOptions(m_selectedPracticeMap);
+        elAnnotationDropDown.RebuildOptions(m_selectedPracticeMap, false);
         let elAnnotationsDropDown = elPracticeSettingsContainer.FindChildTraverse('id-play-menu-practicesettings-annotations-dropdown');
         for (let elChild of elPracticeSettingsContainer.Children()) {
             if (!elChild.id.startsWith('id-play-menu-practicesettings-'))

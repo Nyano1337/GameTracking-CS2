@@ -13,13 +13,10 @@
  #Valve_Reject_Reserved_For_Lobby
  (%d remaining)...
  (08@HPX`hpx
- (08@HPX`jPl
- (08@HPXbp
- (08@HPZPl
- (08@HRp
- (08@JPl
- (08@Jp
- (0X`hpzp
+ (08@HPX`j
+ (08@HPXb 
+ (08@HPZ
+ (0X`hpz 
  (Boosted +1)
  (repeat)
  - IsCheckedOut: %s\n
@@ -288,6 +285,7 @@
 #\n?columnCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 #\n\rinterior_item
 #\r?hide@QWidget@@QEAAXXZ
+#\tV_fseek
 #ebe2ca
 $#?windowIcon@QWidget@@QEBA?AVQIcon@@XZ
 $#GameUI_Disconnect_BadServerPassword
@@ -307,7 +305,6 @@ $\n\fsignon_state
 $\n\tpostmatch
 $\n\tword_list
 $\n\vorientation
-$\tV_fmodd
 $schemasystem/schema_enable_defines.h
 % ?timerEvent@QMenu@@MEAAXPEAVQTimerEvent@@@Z
 %#GameUI_Disconnect_BadClientDeltaTick
@@ -351,6 +348,7 @@ $schemasystem/schema_enable_defines.h
 %\n!k_EGCMsgGetAccountDetailsResponse
 %\n!k_ESOMsg_CacheSubscriptionRefresh
 %\n\tword_type
+%\tV_ftell
 %]?sibling@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
 %d, %d, %d, %d
 %d_%d_%d_%d_%d.tmp
@@ -371,6 +369,7 @@ $schemasystem/schema_enable_defines.h
 %sPop Input Queue: %s
 %sRandom Roll Input Variables
 %sSet Value '%s' to '%s'
+%s_1355_37
 %s_large
 %s_nodrips
 %s_nodrips.%s
@@ -435,7 +434,7 @@ $schemasystem/schema_enable_defines.h
 '\n#k_EProtoDebugVisibility_ValveServer
 '\n\fglobal_stats
 '\n\fworldgroupid
-'\tV_fopenUTF8
+'\tV_fwrite
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
 (#GameUI_Disconnect_LoopLevelLoadActivate
@@ -444,25 +443,22 @@ $schemasystem/schema_enable_defines.h
 (#Player_DisconnectReason_InputAutomation
 ((6"8(:,<*>
 (0`hpx
-(10W
-(1cW
-(58W
-(5BW
-(5KW
-(5SW
-(5tW
-(9LW
-(9mW
-(A2W
-(AVW
-(AnW
+(1HX
+(5dX
+(9gX
+(A8X
+(ASX
 (Documents Filter - Use | for OR, space for AND)
 (Filter)
-(I5W
-(ITW
-(MlW
+(IuX
 (No Active Session)
 (Outliner Filter)
+(QjX
+(U4X
+(ULX
+(UOX
+(UQX
+(YJX
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -538,7 +534,6 @@ $schemasystem/schema_enable_defines.h
 (\t"\r\n\vCNETMsg_NOP"'\n
 (\t"u\n-CCommunity_GetGamePersonalDataEntries_Request
 (\t"z\n1CMsgGCCStrike15_v2_ServerVarValueNotificationInfo
-(\tV_fpclassifyd
 (\v2 .CMsgSerializedSOCache.TypeCache
 (\v2 .google.protobuf.DescriptorProto
 (\v2!.google.protobuf.EnumValueOptions"
@@ -614,20 +609,22 @@ $schemasystem/schema_enable_defines.h
 (\v2\v.CMsgVector
 (\v2\v.CMsg_CVars:
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aHW
-(aNW
-(adW
+(aCX
+(akX
 (default)
-(efW
+(eDX
+(elX
+(i7X
+(iRX
+(ibX
+(idX
 (null)
-(qJW
-(qVW
-(qWW
-(qmW
-(uhW
-(yCW
-(ybW
-(ynW
+(q5X
+(q6X
+(qaX
+(u1X
+(u9X
+(uBX
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -654,7 +651,6 @@ $schemasystem/schema_enable_defines.h
 )\n\nEGCItemMsg
 )\r?hideEvent@QComboBox@@MEAAXPEAVQHideEvent@@@Z
 )\t?buddy@QAbstractItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
-)\tV_fprintf
 )\v?createData@QMapDataBase@@SAPEAU1@XZ
 )\v?enterEvent@QWidget@@MEAAXPEAVQEvent@@@Z
 * ?timerEvent@QTextEdit@@MEAAXPEAVQTimerEvent@@@Z
@@ -727,7 +723,6 @@ $schemasystem/schema_enable_defines.h
 ,\n'k_EMsgGCCStrike15_v2_ClientReportServer
 ,\n(k_ECommunityItemAttribute_StorePackageID
 ,\n?atEnd@QTextCursor@@QEBA_NXZ
-,\tV_fread
 ,j.b0^2`4^6`8^:f<
 - Add Active Code: %s
 - Remove Active Code: %s
@@ -779,6 +774,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_FriendlyName@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_FriendlyName@?1??GetAttributeTable_CCS2EconNode_Rarity@CCS2EconNode_Rarity@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Image@?1??GetAttributeTable_CCS2EconNode_CaseKey@CCS2EconNode_CaseKey@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_Image@?1??GetAttributeTable_CCS2EconNode_Coin@CCS2EconNode_Coin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Image@?1??GetAttributeTable_CCS2EconNode_CommunityCase@CCS2EconNode_CommunityCase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Image@?1??GetAttributeTable_CCS2EconNode_KeychainKit@CCS2EconNode_KeychainKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Image@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -791,6 +787,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_ItemDescription@?1??GetAttributeTable_CCS2EconNode_MusicKitBox@CCS2EconNode_MusicKitBox@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_ItemDescription@?1??GetAttributeTable_CCS2EconNode_StickerCapsule@CCS2EconNode_StickerCapsule@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_ItemNameFriendly@?1??GetAttributeTable_CCS2EconNode_CaseKey@CCS2EconNode_CaseKey@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_ItemNameFriendly@?1??GetAttributeTable_CCS2EconNode_Coin@CCS2EconNode_Coin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_ItemNameFriendly@?1??GetAttributeTable_CCS2EconNode_CommunityCase@CCS2EconNode_CommunityCase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_ItemNameFriendly@?1??GetAttributeTable_CCS2EconNode_KeychainKit@CCS2EconNode_KeychainKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_ItemNameFriendly@?1??GetAttributeTable_CCS2EconNode_MusicKitBox@CCS2EconNode_MusicKitBox@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -819,6 +816,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_LostRound@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_MainMenu@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_MapName@?1??GetAttributeTable_CEconItemPreviewAttrs@CEconItemPreviewAttrs@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_Model@?1??GetAttributeTable_CCS2EconNode_Coin@CCS2EconNode_Coin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Model@?1??GetAttributeTable_CCS2EconNode_CommunityCase@CCS2EconNode_CommunityCase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Model@?1??GetAttributeTable_CCS2EconNode_KeychainKit@CCS2EconNode_KeychainKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_Model@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -891,7 +889,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_bIncludePrice@?1??GetAttributeTable_CCS2EconNode_StickerCapsule@CCS2EconNode_StickerCapsule@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bIncludeStatTrak@?1??GetAttributeTable_CCS2EconNode_MusicKitBox@CCS2EconNode_MusicKitBox@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bIncludeStatTrakCoupon@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
-.?AUCAttr_m_bIncludeUnpaintedKnifes@?1??GetAttributeTable_CCS2EconNode_UnusualLootList@CCS2EconNode_UnusualLootList@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_bIncludeUnpainted@?1??GetAttributeTable_CCS2EconNode_UnusualLootList@CCS2EconNode_UnusualLootList@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bIsScratchTarget@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPassWhenTrue@?1??GetAttributeTable_Impl@CompMatMutatorCondition_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_bPassWhenTrue@?1??GetAttributeTable_Impl@CompositeMaterialMatchFilter_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -959,6 +957,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_nVariableType@?1??GetAttributeTable_Impl@CompositeMaterialInputLooseVariable_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nWorkshopOwnerAccountId@?1??GetAttributeTable_CCS2ItemEditorNode@CCS2ItemEditorNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_nWorkshopPublishedFileId@?1??GetAttributeTable_CCS2ItemEditorNode@CCS2ItemEditorNode@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_m_sUnusualSetup@?1??GetAttributeTable_CCS2EconNode_UnusualLootList@CCS2EconNode_UnusualLootList@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strAlias@?1??GetAttributeTable_Impl@CompositeMaterialInputContainer_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strAttrName@?1??GetAttributeTable_Impl@CompositeMaterialInputContainer_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_strAttrNameForVar@?1??GetAttributeTable_Impl@CompositeMaterialInputContainer_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1013,6 +1012,7 @@ $schemasystem/schema_enable_defines.h
 .?AUCAttr_m_vecTexGenInstructions@?1??GetAttributeTable_Impl@CompMatPropertyMutator_t@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_vecWear@?1??GetAttributeTable_CEconItemPreviewAttrs@CEconItemPreviewAttrs@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CCS2EconNode_CaseKey@CCS2EconNode_CaseKey@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
+.?AUCAttr_no_member@?2??GetAttributeTable_CCS2EconNode_Coin@CCS2EconNode_Coin@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CCS2EconNode_CommunityCase@CCS2EconNode_CommunityCase@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_no_member@?2??GetAttributeTable_CCS2EconNode_DiscreteSet@CCS2EconNode_DiscreteSet@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -1121,6 +1121,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@HUCompositeMaterialEditorPoint_t@@@@
 .?AV?$CBaseConcreteToolAttr@HUCompositeMaterialInputLooseVariable_t@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_CaseKey@@@@
+.?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_Coin@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CBaseConcreteToolAttr@HVCCS2EconNode_MusicKit@@@@
@@ -1207,6 +1208,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@UCompositeMaterialMatchFilter_t@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@UGeneratedTextureHandle_t@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_CaseKey@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_Coin@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_Collection@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_Color@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_CommunityCase@@@@
@@ -1220,6 +1222,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_SprayKit@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_StickerCapsule@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_StickerKit@@@@
+.?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2EconNode_UnusualLootList@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCS2ItemEditorNode@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCapsuleStickerKit@@@@
 .?AV?$CBaseConcreteToolAttr@VCUtlString@@VCCaseKey@@@@
@@ -1270,6 +1273,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttrValue@HUCompositeMaterialEditorPoint_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@HUCompositeMaterialInputLooseVariable_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_CaseKey@@@@
+.?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_Coin@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@HVCCS2EconNode_MusicKit@@@@
@@ -1307,6 +1311,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@UCompositeMaterialMatchFilter_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@UGeneratedTextureHandle_t@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_CaseKey@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_Coin@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_Collection@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_Color@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_CommunityCase@@@@
@@ -1320,6 +1325,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_SprayKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_StickerCapsule@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_StickerKit@@@@
+.?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2EconNode_UnusualLootList@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCS2ItemEditorNode@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCapsuleStickerKit@@@@
 .?AV?$CBaseConcreteToolAttrValue@VCUtlString@@VCCaseKey@@@@
@@ -1373,6 +1379,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@HUCompositeMaterialEditorPoint_t@@X@@
 .?AV?$CConcreteToolAttr@HUCompositeMaterialInputLooseVariable_t@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_CaseKey@@X@@
+.?AV?$CConcreteToolAttr@HVCCS2EconNode_Coin@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_CommunityCase@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_KeychainKit@@X@@
 .?AV?$CConcreteToolAttr@HVCCS2EconNode_MusicKit@@X@@
@@ -1459,6 +1466,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@VCUtlString@@UCompositeMaterialMatchFilter_t@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@UGeneratedTextureHandle_t@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_CaseKey@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_Coin@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_Collection@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_Color@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_CommunityCase@@X@@
@@ -1472,6 +1480,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_SprayKit@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_StickerCapsule@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_StickerKit@@X@@
+.?AV?$CConcreteToolAttr@VCUtlString@@VCCS2EconNode_UnusualLootList@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCS2ItemEditorNode@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCapsuleStickerKit@@X@@
 .?AV?$CConcreteToolAttr@VCUtlString@@VCCaseKey@@X@@
@@ -1579,6 +1588,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttrGetForModify@VCCaseKey@@VCCS2EconNode_CommunityCase@@@@
 .?AV?$CConcreteToolAttrGetForModify@VCCaseUnusual@@VCCS2EconNode_CommunityCase@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_CaseKey@@@@
+.?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_Coin@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CConcreteToolAttrGetSet@HVCCS2EconNode_MusicKit@@@@
@@ -1602,6 +1612,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttrGetSet@MVCEconItemPreviewAttrs@@@@
 .?AV?$CConcreteToolAttrGetSet@V?$Vec3D@M@@VCEconItemPreviewAttrs@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_CaseKey@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_Coin@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_Collection@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_Color@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_CommunityCase@@@@
@@ -1615,6 +1626,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_SprayKit@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_StickerCapsule@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_StickerKit@@@@
+.?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2EconNode_UnusualLootList@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCS2ItemEditorNode@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCapsuleStickerKit@@@@
 .?AV?$CConcreteToolAttrGetSet@VCUtlString@@VCCaseKey@@@@
@@ -1654,6 +1666,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CDefaultToolAttrTableForStruct@UCompositeMaterial_t@@@@
 .?AV?$CDefaultToolAttrTableForStruct@UGeneratedTextureHandle_t@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCCS2EconNode_CaseKey@@@@
+.?AV?$CDefaultToolAttrTableForStruct@VCCS2EconNode_Coin@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCCS2EconNode_Collection@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCCS2EconNode_Color@@@@
 .?AV?$CDefaultToolAttrTableForStruct@VCCS2EconNode_CommunityCase@@@@
@@ -1798,6 +1811,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CToolAttrGetForModifyAccess@VCCaseKey@@VCCS2EconNode_CommunityCase@@@@
 .?AV?$CToolAttrGetForModifyAccess@VCCaseUnusual@@VCCS2EconNode_CommunityCase@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_CaseKey@@@@
+.?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_Coin@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_CommunityCase@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_KeychainKit@@@@
 .?AV?$CToolAttrGetSetAccess@HVCCS2EconNode_MusicKit@@@@
@@ -1821,6 +1835,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CToolAttrGetSetAccess@MVCEconItemPreviewAttrs@@@@
 .?AV?$CToolAttrGetSetAccess@V?$Vec3D@M@@VCEconItemPreviewAttrs@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_CaseKey@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_Coin@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_Collection@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_Color@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_CommunityCase@@@@
@@ -1834,6 +1849,7 @@ $schemasystem/schema_enable_defines.h
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_SprayKit@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_StickerCapsule@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_StickerKit@@@@
+.?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2EconNode_UnusualLootList@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCS2ItemEditorNode@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCapsuleStickerKit@@@@
 .?AV?$CToolAttrGetSetAccess@VCUtlString@@VCCaseKey@@@@
@@ -2114,6 +2130,7 @@ $schemasystem/schema_enable_defines.h
 .?AVCBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CQSessionCycleWidget@@SAPEAVCBindTargetDescriptorBase@@XZ@
 .?AVCBufferStream@@
 .?AVCCS2EconNode_CaseKey@@
+.?AVCCS2EconNode_Coin@@
 .?AVCCS2EconNode_Collection@@
 .?AVCCS2EconNode_Color@@
 .?AVCCS2EconNode_CommunityCase@@
@@ -2674,6 +2691,7 @@ $schemasystem/schema_enable_defines.h
 .?AVIToolFrameworkAudioSettingsListener@@
 .?AVIToolSystem2@@
 .?AVIUndoable@@
+.?AVIVDataExternalToolContextProvider@@
 .?AVIWriteStream@@
 .?AVIZip@@
 .?AVImplicitWeakMessage@internal@protobuf@google@@
@@ -2863,6 +2881,7 @@ $schemasystem/schema_enable_defines.h
 .CRT$XIZ
 .CRT$XLA
 .CRT$XLC
+.CRT$XLD
 .CRT$XLZ
 .CRT$XPA
 .CRT$XPX
@@ -3003,6 +3022,7 @@ $schemasystem/schema_enable_defines.h
 /\n*k_EMsgGCCStrike15_v2_GC2ClientNotifyXPShop
 /\n+k_ECommunityItemAttribute_CommunityItemType
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
+/\tV_isdigit_str
 /keychains
 /musickits
 /paintkits
@@ -3012,9 +3032,8 @@ $schemasystem/schema_enable_defines.h
 /weapons/customization/paints_gloves/
 0$2z4
 08@HP
-08@HRPl
-08@Jp
-08BPl
+08@HR
+08@J 
 08\fj
 0:<\n\fdelta_ignore
 0T.Q
@@ -3151,7 +3170,6 @@ $schemasystem/schema_enable_defines.h
 1\n-k_EClientReportingVersion_SupportsTrustedMode
 1\n?doItemsLayout@QHeaderView@@UEAAXXZ
 1\n\fmatchentries
-1\tV_fseek
 1aboutQt()
 1accept()
 1cascadeSubWindows()
@@ -3171,8 +3189,6 @@ $schemasystem/schema_enable_defines.h
 2*.google.protobuf.FieldDescriptorProto.Type
 2+.google.protobuf.FieldDescriptorProto.Label
 2/.google.protobuf.MethodOptions.IdempotencyLevel:
-20t 
-20x 
 2DownArrowPressed()
 2OnDownPressed()
 2SIG_DragStarted()
@@ -3195,8 +3211,8 @@ $schemasystem/schema_enable_defines.h
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\n\nline_items
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
+2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vptH>
 2aboutToShow()
 2activated( int )
 2changed()
@@ -3239,7 +3255,6 @@ $schemasystem/schema_enable_defines.h
 3\n/k_ECommunityItemAttribute_ProfileModiferEnabled
 3\n?doItemsLayout@QTableView@@UEAAXXZ
 3\n\fper_map_rank
-3\tV_ftell
 3_?tip@QStatusTipEvent@@QEBA?AVQString@@XZ
 4*p0
 4\n/k_EGCItemCustomizationNotification_ApplySticker
@@ -3268,13 +3283,10 @@ $schemasystem/schema_enable_defines.h
 5\n\tkeychains
 5\n\vnested_type
 5\n\vtype_caches
-5\tV_fwrite
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
-605?
-606?
-6PJ?
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\n1k_EGCItemCustomizationNotification_CasketContents
+6\n1k_EGCItemCustomizationNotification_ExtractSticker
 6\n1k_EGCItemCustomizationNotification_GraffitiUnseal
 6\n1k_EGCItemCustomizationNotification_RemoveItemName
 6\n1k_EGCItemCustomizationNotification_RemoveKeychain
@@ -3288,7 +3300,6 @@ $schemasystem/schema_enable_defines.h
 6\n\nvariations
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
-6pA?
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
 7\n2k_EGCItemCustomizationNotification_XpShopAckTracks
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
@@ -3296,11 +3307,7 @@ $schemasystem/schema_enable_defines.h
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
 7\n\tenum_type
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
-85aW
 8@HP:
-8@JPl
-8B0x 
-8BPl
 8Csinf
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
@@ -3308,7 +3315,6 @@ $schemasystem/schema_enable_defines.h
 8\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
 8\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
-8\nPl
 8\n\textension
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
@@ -3324,6 +3330,7 @@ $schemasystem/schema_enable_defines.h
 9\n\vFantasySlot
 :9\n\tkey_field
 :\f?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
+:\n5k_EGCItemCustomizationNotification_EncapsulateSticker
 :\n5k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse
 :\n5k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames
 :\n5k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate
@@ -3334,14 +3341,14 @@ $schemasystem/schema_enable_defines.h
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
 ;\n\nPerMapRank
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureAmbientOcclusion"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "ao"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureAmbientOcclusion"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureMasks1"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureMasks1"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureNormal"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "normal"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "NormalizeNormals"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI2N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rg"\n\t\t\t"m_dstChannels" "string" "rg"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "HemiOctIsoRoughness_RG_B"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureNormal"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePaintRoughness"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "rough"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePaintRoughness"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePattern"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePattern"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePattern"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "srgb"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "srgb"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePattern"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePearlescenceMask"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "mask"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePearlescenceMask"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
-<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePosition"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "RGBA16161616F"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePosition"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bCreateLinearColorSpaceApiTexture" "bool" "1"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureAmbientOcclusion"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "ao"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureAmbientOcclusion"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureMasks1"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureMasks1"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TextureNormal"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "normal"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "NormalizeNormals"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI2N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rg"\n\t\t\t"m_dstChannels" "string" "rg"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "HemiOctIsoRoughness_RG_B"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TextureNormal"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePaintRoughness"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "rough"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePaintRoughness"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePattern"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePattern"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePattern"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "srgb"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "BC7"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "srgb"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePattern"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePearlescenceMask"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" "mask"\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" ""\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "ATI1N"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "r"\n\t\t\t"m_dstChannels" "string" "r"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePearlescenceMask"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
+<!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePosition"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "RGBA16161616F"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePosition"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
 </font>
 <Multiple Different Values>
 <UNKNOWN>
@@ -3365,9 +3372,9 @@ $schemasystem/schema_enable_defines.h
 =87M
 =\n NETWORK_DISCONNECT_CLIENT_NO_MAP
 =\n8k_EGCItemCustomizationNotification_ActivateOperationCoin
-=\tV_isdigit_str
 =cQ6
 =imb;D
+=m_bUseShadowFastPath
 =texcoord
 >%1</td></tr></table><br>
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -3383,8 +3390,6 @@ $schemasystem/schema_enable_defines.h
 ??0?$CUniformRandomStreamImpl@VCThreadNullMutex@@@@QEAA@XZ
 ??0CCountedStringPool_CI@@QEAA@XZ
 ??0CExpressionEvaluator@@QEAA@XZ
-??0CTSListBase@@QEAA@XZ
-??0CThreadMutex@@QEAA@PEBD@Z
 ??0CThreadRWLock_FastRead@@QEAA@XZ
 ??0CUtlBuffer@@QEAA@HHW4BufferFlags_t@0@@Z
 ??0CUtlString@@QEAA@AEBVCBufferString@@@Z
@@ -3393,6 +3398,7 @@ $schemasystem/schema_enable_defines.h
 ??0Connection@QMetaObject@@QEAA@XZ
 ??0KeyValues@@QEAA@PEBD00@Z
 ??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
+??0KeyValues@@QEAA@PEBDW4KV_DISPOSABLE_STRING_TABLE_STATE@0@@Z
 ??0QAction@@QEAA@PEAVQObject@@@Z
 ??0QBrush@@QEAA@AEBVQColor@@W4BrushStyle@Qt@@@Z
 ??0QBrush@@QEAA@AEBVQPixmap@@@Z
@@ -3532,7 +3538,6 @@ $schemasystem/schema_enable_defines.h
 ??1CCountedStringPool_CI@@UEAA@XZ
 ??1CExpressionEvaluator@@QEAA@XZ
 ??1CThreadEvent@@QEAA@XZ
-??1CThreadMutex@@QEAA@XZ
 ??1CThreadSemaphore@@QEAA@XZ
 ??1CUtlSymbolTable@@QEAA@XZ
 ??1Connection@QMetaObject@@QEAA@XZ
@@ -3662,6 +3667,7 @@ $schemasystem/schema_enable_defines.h
 ??YQString@@QEAAAEAV0@PEBD@Z
 ?@En[vP
 ?Acquire@CUtlString@@QEAAXPEAVCBufferString@@_N@Z
+?AcquireLock@CAtomicMutex@@AEAAXI@Z
 ?ActivateByteSwapping@CUtlBuffer@@QEAAX_N@Z
 ?AddNullTermination@CUtlBuffer@@IEAAXXZ
 ?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
@@ -3671,13 +3677,13 @@ $schemasystem/schema_enable_defines.h
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
 ?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
 ?CheckGet@CUtlBuffer@@IEAA_NH@Z
 ?CheckPut@CUtlBuffer@@IEAA_NH@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?Count@KeyValues@@QEBAHXZ
 ?CreateNewKey@KeyValues@@QEAAPEAV1@XZ
-?Detach@CTSListBase@@QEAAPEAUTSLNodeBase_t@@XZ
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
 ?DirName@CUtlString@@QEBA?AV1@XZ
@@ -3731,10 +3737,9 @@ $schemasystem/schema_enable_defines.h
 ?LoadFromFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1P6A_N1PEAX@Z21@Z
 ?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z
 ?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDAEBUKV3ID_t@@2I@Z
-?LoadKV3FromFile@@YA_NPEAVCKeyValues3Context@@PEAVCUtlString@@PEBD2AEBUKV3ID_t@@I@Z
+?LoadKV3FromFile@@YA_NPEAVCKV3Arena@@PEAVCUtlString@@PEBD2AEBUKV3ID_t@@I@Z
 ?LoadKV3FromFile@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBD2AEBUKV3ID_t@@I@Z
 ?LoadKV3Text_NoHeader@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDAEBUKV3ID_t@@2I@Z
-?Lock@CThreadMutex@@QEAAXPEBDH@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?Make@CUtlStringToken@@SA?AV1@PEBD_N@Z
 ?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
@@ -3775,6 +3780,7 @@ $schemasystem/schema_enable_defines.h
 ?SetFloat@KeyValues@@QEAAXPEBDM@Z
 ?SetInt@KeyValues@@QEAAXPEBDH@Z
 ?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetLength@CUtlString@@QEAAXH@Z
 ?SetName@KeyValues@@QEAAXPEBD@Z
 ?SetSeed@?$CUniformRandomStreamImpl@VCThreadNullMutex@@@@QEAAXH@Z
 ?SetString@KeyValues@@QEAAXPEBD0@Z
@@ -3791,9 +3797,11 @@ $schemasystem/schema_enable_defines.h
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
 ?StripTrailingSlash@CUtlString@@QEAAXXZ
 ?SwapFieldsToTargetEndian@CByteswap@@QEAAXPEAX0PEAUdatamap_t@@@Z
+?ThreadAtomicNotifyOne@@YAXPEAI@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?ToLowerFast@CUtlString@@QEAAXXZ
 ?ToUpperFast@CUtlString@@QEAAXXZ
+?Trim@CBufferString@@QEAAPEBDPEBD@Z
 ?Trim@CUtlString@@QEAAXPEBD@Z
 ?TrimLeft@CUtlString@@QEAAXPEBD@Z
 ?TrimRight@CUtlString@@QEAAXPEBD@Z
@@ -3801,7 +3809,6 @@ $schemasystem/schema_enable_defines.h
 ?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
 ?TruncateAt@CBufferString@@QEAAPEBDPEBD_N@Z
 ?UUUUUU
-?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnqualifiedFilenameAlloc@CUtlString@@QEBA?AV1@XZ
 ?UsesEscapeSequences@KeyValues@@QEAAX_N@Z
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@_N@Z
@@ -4988,17 +4995,14 @@ $schemasystem/schema_enable_defines.h
 ?ysB
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08@HPX`hpx
-@08N\
-@2Pl
+@08N
 @HPX
 @HPX&I
-@HPX`hv
+@HPX`hv0
 @\n\fSingleObject
 @\n\vserver_type
-@\tV_isnand
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
 @^8U)zj
-@htp
 A new location must be selected in order to save the file.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 A>pP&
@@ -5008,6 +5012,7 @@ ARRAY_PARENT_ONLY
 A\n!NETWORK_DISCONNECT_REJECT_NOLOBBY
 A\n<k_EGCItemCustomizationNotification_ClientRedeemMissionReward
 A\n\nannotation
+A\tV_log10f
 A`?translate@QPainter@@QEAAXAEBVQPoint@@@Z
 About &Qt 
 About...
@@ -5039,6 +5044,7 @@ All lootlists must have names.
 Alternate icon '%s' > '%s' must define '%s'
 Alternate icon definition index %d must be greater than or equal to zero
 Alternate icon definition index '%s' (%llu) must be greater than zero
+AnimGraph2Clip()
 AnimgraphPicker()
 Anodized
 Anodized Airbrushed
@@ -5141,15 +5147,13 @@ C:\buildworker\csgo_rel_win64\build\src\game\shared\econ_csgo_legacy\econ_item_s
 C:\buildworker\csgo_rel_win64\build\src\mathlib\extended\generic_expr.g
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utldict.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlsymboltablelarge.h
-C:\buildworker\csgo_rel_win64\build\src\public\zip\zip_utils.cpp
-C:\buildworker\csgo_rel_win64\build\src\qcontrols\qimagecache.cpp
-C:\buildworker\csgo_rel_win64\build\src\tier0_perproject\vnotifyapi.cpp
+C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolattr_propertydomain.cpp
 CAttribute_String
 CBaseEditorSession::Revert - Perforce unavailable: %s\n
 CBaseEditorSession::Revert - RevertFile failed: %s\n
 CBaseEditorSession::UpdateFileStatus - Failed to get file info: %s\n
 CCS2EconNode_CaseKey
+CCS2EconNode_Coin
 CCS2EconNode_Collection
 CCS2EconNode_Color
 CCS2EconNode_CommunityCase
@@ -5197,10 +5201,10 @@ CGCToGCMsgRoutedReply
 CGlobalHotkeyCommands
 CHECK failed: map_iter->iter_ != nullptr: 
 CInputBindManager::HandleInputCode recursion depth got too deep.\n
+CKV3Arena::Root
 CKeyValues3Array::EnsureElementCapacity
 CKeyValues3Array::InsertMultipleBefore
 CKeyValues3Array::RemoveMultiple
-CKeyValues3Context::Root
 CKeyValues3Table::EnsureMemberCapacity
 CMsgAccountDetails
 CMsgAcknowledgeRentalExpiration
@@ -5491,6 +5495,7 @@ CSOVolatileItemOffer
 CSVCMsgList_GameEvents
 CSVCMsg_GameEvent
 CSouvenirPaintKit
+CToolAttrPropertyDomain::GetVDataChoiceFriendlyNameForValue
 CType
 CUnusualLootListContents
 CUnusualLootListPaintKit
@@ -5535,8 +5540,6 @@ CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,class CProPlayerData *,class C
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct AchievementAward_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct AchievementAward_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct AchievementAward_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct kill_eater_score_type_t,class CDefLess<unsigned int>,unsigned short>::Node_t,class CUtlOrderedMapBase<unsigned int,struct kill_eater_score_type_t,class CDefLess<unsigned int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct kill_eater_score_type_t,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTreeBase
-CUtlString
-CUtlSymbolTableLargeBase
 CVar
 CWeakHandle
 CabinetWClass
@@ -5594,6 +5597,8 @@ Close the group automatically when the associated parent process exits (good for
 CloseAndSetActiveSession
 CloseHandle
 CloseSelected
+Coin
+Coin ID
 Collapse
 Collapse All
 Collection
@@ -5838,7 +5843,6 @@ FGD Variable %s has bad default value %d (has bits set that are not valid choice
 FOLDER
 FORCE_NOT_USED
 F\n%NETWORK_DISCONNECT_DISCONNECT_BY_USER
-F\nPl
 F\n\foptimize_for
 F\n\rroundstatsall
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
@@ -5910,6 +5914,7 @@ FocusOut
 FolderName
 FoliageAnimation
 Follow user preference
+Fpv?
 FreeEnvironmentStringsW
 FreeLibrary
 Friendly Name
@@ -5942,6 +5947,7 @@ Game audio muted while tools are active
 GameServerPing
 Generate All Capsule Icons
 Generate All Keychain Icons
+Generate All Slab Icons
 Generate All Sticker Icons
 Generate Icon
 GeneratedCodeInfo
@@ -5985,6 +5991,7 @@ GetTempPath2W
 GetTimeFormatEx
 GetUserDefaultLCID
 GetUserDefaultLocaleName
+GetVDataChoiceFriendlyNameForValue
 GetWindowTextA
 GiftLeaderboardEntry
 Global
@@ -6070,7 +6077,7 @@ Include Price - $0.99
 Include Price - $2.49
 Include StatTrak
 Include StatTrak Coupon
-Include Unpainted Knifes
+Include Unpainted
 Including
 IndicateEditorStateModified
 Information
@@ -6140,8 +6147,14 @@ Item Collection Craft Reward (%d) specifies invalid item def
 Item Description
 Item Set %s: Bundle definition "%s" was not found
 Item Set %s: Set contains no items
+Item Set %s: duplicate unusuals quality "%s"\n
+Item Set %s: empty unusuals lootlist value for "%s"\n
+Item Set %s: failed to resolve unusuals quality "%s"\n
 Item Set %s: item locname tokens must be #CSGO_%s
+Item Set %s: mismatching unusuals lootlist for "%s" (%s != %s)\n
+Item Set %s: must start with unique unusuals quality "%s"\n
 Item Set %s: no localized name
+Item Set %s: unexpected unusuals upgrade quality "%s"\n
 Item definition %i "%s" used in both wearable and not wearable slots!
 Item definition %s: "max_ilevel" must be greater than or equal to 0
 Item definition %s: "min_ilevel" must be greater than or equal to 0
@@ -6196,6 +6209,8 @@ Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
 Keychain definition %s: unsupported item_quality '%s'
 KeychainKit_%s
+KeychainKit_Default
+KeychainKit_Missinglink
 KillEaterRank
 Kit "[%s]" specified, but doesn't exist!! You're probably missing an entry in items_paintkits.txt or items_stickerkits.txt or need to run with -use_local_item_data\n
 L>ev
@@ -6269,6 +6284,7 @@ MPropertyElementNameFn
 MPropertyGroupName
 MPropertyHideField
 MPropertyProvidesEditContextString
+MVDataOutlinerLeafNameFn
 MWheelDn
 MWheelLeft
 MWheelRight
@@ -6297,7 +6313,9 @@ Minumum 1024x1024.
 MirrorPattern
 Missing Music Kit File
 Missing expression dependency '%s' in '%s'.\n
+Missinglink
 MissionTemplateList
+ModelAnimGraph2Identifier()
 ModelMaterialGroupName()
 Mouse4
 Mouse4DoubleClick
@@ -6421,7 +6439,6 @@ O\n%NETWORK_DISCONNECT_SOUNDSMSG_OVERFLOW
 O\n(NETWORK_DISCONNECT_REJECT_BACKGROUND_MAP
 O\n(NETWORK_DISCONNECT_STEAM_AUTHALREADYUSED
 O\n\nAnnotation
-O\tV_log10f
 Oa?width@QImage@@QEBAHXZ
 OkClicked
 OnAbout
@@ -6557,10 +6574,9 @@ OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P08@Jp
+P08@J 
 P08J
-P08N\
-P2Pl
+P08N
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
@@ -6575,6 +6591,7 @@ P\n#NETWORK_DISCONNECT_RELIABLEOVERFLOW
 P\n#NETWORK_DISCONNECT_SNAPSHOTOVERFLOW
 P\n\nattributes
 Pack item "%s" included in more than one pack bundle - not allowed!
+PackedBlobNormal
 Paint Kit
 Paint Kit Description
 Paint Kit ID
@@ -6616,12 +6633,12 @@ Patina
 Patina Extended
 Pedestal Model
 PerVertexLighting
+Pf t?
 PgDn
 PgUp
 Physics
 Picks
 PivotPaint
-PjPl
 PlayerCommendationInfo
 PlayerDecalDigitalSignature
 PlayerMedalsInfo
@@ -6735,6 +6752,7 @@ RSDS
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
+R\tV_powf
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Random attributes '%s': Attribute definition "%s" was not found
@@ -6856,6 +6874,7 @@ S\n%NETWORK_DISCONNECT_CONNECTION_FAILURE
 S\n'NETWORK_DISCONNECT_DELTAENTMSG_OVERFLOW
 S\n'NETWORK_DISCONNECT_REJECT_FAILEDCHANNEL
 S\n,NETWORK_DISCONNECT_STEAM_LOGGED_IN_ELSEWHERE
+S\tV_qsort
 Save
 Save '%1'
 Save '%1' As
@@ -7036,6 +7055,7 @@ T\n)NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
 T\n+NETWORK_DISCONNECT_STEAM_VAC_CHECK_TIMEDOUT
 T\n\tlanguages
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
+T\tV_qsort_s
 TabStyle_t
 Tabbed Mode
 TanFrameQuat
@@ -7182,6 +7202,7 @@ Unrecognized meta key: %s
 Unrecognized property '%s.%s'
 Unrecognized section name %s
 Unrecognized widget class %s
+Unusual Configuration
 Unusual Loot List
 UpArrowPressed
 UpdateAttributesFromEditor_AutomaticOneShotOrIncremental_IfModified
@@ -7212,7 +7233,6 @@ VNotify Abandoned (Not enabled)\n
 VNotify Sent\n
 VNotify StartProcess failed!\n
 VNotify: %s\n
-VNotify_Internal_PostOrLaunchIfNeeded
 VTOOLDICTIONARY003
 V\n&NETWORK_DISCONNECT_KICKED_NOSTEAMLOGIN
 V\n&NETWORK_DISCONNECT_PURESERVER_MISMATCH
@@ -7304,7 +7324,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-X`hrPl
+X`hr
 XpProgressData
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -7321,6 +7341,7 @@ YYYY-MM-DD hh:mm:ss
 Y\n)NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
 Y\n*NETWORK_DISCONNECT_STRINGTABLEMSG_OVERFLOW
 Y\n0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
+Y\tV_roundf
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 Yes: Checkout, resolve conflicts later.
 Z-google.golang.org/protobuf/types/descriptorpb
@@ -7419,7 +7440,9 @@ Zip system failure.\n
 \fV4U
 \f\f?columnCount@QStandardItemModel@@UEBAHAEBVQModelIndex@@@Z
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
+\f\n EGCItemCustomizationNotification
 \f\n?deselect@QLineEdit@@QEAAXXZ
+\fp\vPX
 \n CMsgItemAcknowledged__DEPRECATED
 \n CSVCMsg_GameSessionConfiguration
 \n google/protobuf/descriptor.proto
@@ -7755,7 +7778,6 @@ Zip system failure.\n
 \n\rupgrade_level
 \n\rutility_count
 \n\rvalidate_only
-\n\tV_atof
 \n\taccountid
 \n\tattribute
 \n\tcode_type
@@ -7925,7 +7947,6 @@ Zip system failure.\n
 \n\vvalue_bytes
 \n\vxp_category
 \n\vyoutube_url
-\nqXW
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -7961,7 +7982,6 @@ Zip system failure.\n
 \r\n\tTYPE_BOOL
 \r\n\tTYPE_ENUM
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
-\r\tV_atoi
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
 \t?alphaF@QColor@@QEBANXZ
@@ -7983,6 +8003,11 @@ Zip system failure.\n
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 \tV_atoui64
 \tV_fclose
+\tV_fmodd
+\tV_fopenUTF8
+\tV_fpclassifyd
+\tV_fprintf
+\tV_fread
 \tV_tier0_strchr
 \tV_tmpnam
 \tV_vsnprintf
@@ -8027,8 +8052,6 @@ Zip system failure.\n
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\v\n EGCItemCustomizationNotification
-\v\tV_atofloat32
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
 ]\n,NETWORK_DISCONNECT_REJECT_INVALIDRESERVATION
 ]\r?horizontalOffset@QListView@@MEBAHXZ
@@ -8039,6 +8062,7 @@ Zip system failure.\n
 ^\n*NETWORK_DISCONNECT_LOCALPROBLEM_MANYRELAYS
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
 _%s.tmp
+_1355_37.png
 _?texture@QBrush@@QEBA?AVQPixmap@@XZ
 _CustomCommand
 _CustomCommand%d
@@ -8089,19 +8113,14 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
-`2Pl
-`96W
+`5fX
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `RTTI
-`YtW
-`\tV_powf
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `adjustor{
 `anonymous namespace'
-`bPl
 `copy constructor closure'
-`dPl
 `default constructor closure'
 `dynamic atexit destructor for '
 `dynamic initializer for '
@@ -8114,7 +8133,6 @@ _toolsautosave
 `generic-method-parameter-
 `generic-type-
 `hp\nU
-`htp
 `local static destructor helper'
 `local static guard'
 `local static thread guard'
@@ -8150,12 +8168,9 @@ _toolsautosave
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
-`yGW
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
-aBv\
-a\tV_qsort
 abandon
 abandoned_match
 abcdefghijklmnopqrstuvwxyz
@@ -8209,6 +8224,8 @@ ancient
 anim_class
 anim_slot
 animgraph
+animgraph2_clip
+animgraph2_identifier
 animgraph_enum
 announcement_title
 antlr3BaseRecognizerNew
@@ -8290,10 +8307,8 @@ autoexpand_self
 autoexpand_self_class
 autograph
 b ?topLevelChanged@QDockWidget@@QEAAX_N@Z
-b0x 
 bR?metaObject@QDoubleValidator@@UEBAPEBUQMetaObject@@XZ
 b\fp\v0
-b\tV_qsort_s
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
 b_switched_teams
 background
@@ -8342,13 +8357,14 @@ broken pipe
 bucketed
 bundle
 button_zone
+bytestring
+c\tV_snprintf
 c\v?event@QSplitterHandle@@MEAA_NPEAVQEvent@@@Z
 cableclass
 caches
 campaign
 campaign_definitions
 canSupportSet
-can_be_restored
 can_collect
 can_craft_count
 can_craft_mark
@@ -8360,6 +8376,7 @@ can_keychain
 can_patch
 can_stattrack_swap
 can_sticker
+can_wrap_sticker
 cannot_trade
 capabilities
 case_key
@@ -8404,6 +8421,7 @@ client_steam_id
 client_streaming
 client_version
 clientreportversion
+clip
 clothing
 clothing1
 clothing2
@@ -8414,6 +8432,7 @@ clothing7
 clothing8
 clothing_hands
 coclass 
+coin_
 cointerface 
 collection_item_id
 collision_property
@@ -8536,7 +8555,6 @@ decodable
 defaultAction
 default_color
 default_drop_quantity
-default_knife
 defidx
 defindex
 dependent_path
@@ -8722,6 +8740,7 @@ file://{images}/econ/set_icons/%s.png
 file://{images}/econ/set_icons/%s_small.png
 file://{images}/econ/set_icons/set_%s.png
 file://{images}/econ/set_icons/set_%s_small.png
+file://{images}/econ/status_icons/coin_%s.png
 file://{images}/econ/stickers/%s.png
 file://{images}/econ/tools/crate_key_%s.png
 file://{images}/econ/weapon_cases/crate_%s.png
@@ -8765,6 +8784,7 @@ float>=
 float_floor_to_integer
 flowing
 flying_courier_effect
+fmod
 fontfamily
 fontstyle
 force_gc_to_generate
@@ -8781,7 +8801,6 @@ function not supported
 fvalue
 g\r?enumerator@QMetaObject@@QEBA?AVQMetaEnum@@H@Z
 g\r?horizontalScrollbarAction@QTableView@@MEAAXH@Z
-g\tV_roundf
 game:
 game:tools/cs2_item_editor/cs2_capsule
 game:tools/cs2_item_editor/cs2_case
@@ -8873,6 +8892,7 @@ geometry
 gift__potential_targets
 gifts
 global
+gloves
 google.protobuf"G\n
 graffiti
 graffiti_tints
@@ -8896,7 +8916,6 @@ gs_ping
 gungameprogressive
 gungametrbomb
 h0'D
-hAsW
 h\n,NETWORK_DISCONNECT_REMOTE_TIMEOUT_CONNECTING
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
@@ -8933,12 +8952,13 @@ host_computationtime
 host_frame_dropped_pct_x10
 host_unfiltered_frametime
 hours
-hpzp
+hpz 
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
 i\r?enumerator@QMetaProperty@@QEBA?AVQMetaEnum@@XZ
 i\r?horizontalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
+i\tV_sscanf
 i\v?event@QTableWidget@@MEAA_NPEAVQEvent@@@Z
 icon
 icon_default_image
@@ -8967,6 +8987,7 @@ important
 in_use
 inappropriate io control operation
 include
+include_unpainted
 index
 inherit_attr
 initial_inventory
@@ -9323,6 +9344,7 @@ k_UnlockStyle_Failed_CantAfford
 k_UnlockStyle_Failed_CantCommit
 k_UnlockStyle_Failed_PreReq
 k_UnlockStyle_Succeeded
+kc_sticker_display_case
 key_data
 key_name
 key_t
@@ -9331,6 +9353,7 @@ keychain_%d
 keychain_definitions
 keychain_kits
 keychain_material
+keychainkit_
 keychains
 keyframe
 keyframeclass
@@ -9343,6 +9366,7 @@ killeaterscoretype
 killeatervalue
 killer_account_id
 kills
+knives
 l\n?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
 l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
 label
@@ -9393,6 +9417,7 @@ loc_name
 loc_rules
 local_point
 localaxis
+localization_required
 localization_token
 localnamefixup
 location
@@ -9509,7 +9534,7 @@ m_bIncludeCoupon
 m_bIncludePrice
 m_bIncludeStatTrak
 m_bIncludeStatTrakCoupon
-m_bIncludeUnpaintedKnifes
+m_bIncludeUnpainted
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
@@ -9518,7 +9543,6 @@ m_bShowNameTag
 m_bShowStatTrak
 m_bStatTrakEnabled
 m_bUseCompressedNormalTangent
-m_bUseShadowFastPath
 m_flRevenueShare
 m_flWearStep
 m_nDisplaySeed
@@ -9535,6 +9559,7 @@ m_nReservedStatTrakLootListIndex
 m_nSeedMode
 m_nWorkshopOwnerAccountId
 m_nWorkshopPublishedFileId
+m_sUnusualSetup
 m_vecStickerWear
 m_vecWear
 magazine model
@@ -9546,7 +9571,9 @@ map_id
 map_token
 mapid
 mapkeys
+mapkeys_choice_name
 mapkeys_is_suggestion
+mapkeys_suggestion_name
 maps\
 match_duration
 match_end_quest_data
@@ -9601,7 +9628,6 @@ mission_templates
 missionlbsdata
 missions
 missions_completed
-model_ag2
 model_attachment
 model_attribute
 model_bodygroup
@@ -9620,6 +9646,7 @@ model_world
 modelanimevent
 modelbreakcommand
 modelgamedata
+models/inventory_items/coin_%s.vmdl
 models/inventory_items/music_kits
 models/inventory_items/music_kits/music_kit_%s.vmdl
 models/props/crates/csgo_drop_crate_%s.vmdl
@@ -9645,7 +9672,7 @@ my_current_event_stages
 my_current_event_teams
 my_current_team
 n03>Pu
-n0I?
+n0w?
 nBuildError
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
@@ -9657,6 +9684,7 @@ nToolId
 nX?setBold@QFont@@QEAAX_N@Z
 n\n0NETWORK_DISCONNECT_KICKED_VACNETABNORMALBEHAVIOR
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
+n\tV_stricmp_fast
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
 name='%s'
 nameable
@@ -9773,21 +9801,24 @@ owcaseid
 owner dead
 owner_only
 owns_polymorphic_data
-p08@H^\
+p08@H^
+p0jp
 p0p@
-p20x 
-p2Pl
+p6`s?
 p@HPX`h\f
 pButton
 pCurrentFocusWidget
+pData
 pEvent
 pFilter
+pFpv?
 pPrevFocusWidget
 pResultKV
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pWidget
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\rP\f0
+p\tV_strlower_fast
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
 package
@@ -9800,6 +9831,7 @@ paintable
 paintable_team_colors
 paintable_unusual
 paintkit
+panorama/dynamic_images_lv.vpdi
 panorama/images/
 panorama/images/%s
 panorama/images/econ/music_kits
@@ -9825,6 +9857,7 @@ partner_accountflags
 partner_accountid
 partner_accounts
 party_id
+patch_
 patch_material
 patches
 pathclass
@@ -9842,7 +9875,6 @@ payload
 payment_row_usd
 payment_rules/0/workshop_revenue_share
 payment_us_usd
-pbPl
 pearlescent
 pedestal display model
 pedestal_display_model
@@ -9937,7 +9969,6 @@ purecall
 py_generic_services
 qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
-q\tV_snprintf
 q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 qualities
 quality
@@ -9956,7 +9987,6 @@ quester_account_id
 questid
 queue_position
 quiet
-r0t 
 r\tVr.>T
 random_attribute_templates
 random_attributes
@@ -10032,6 +10062,7 @@ response_result
 restrict(
 restriction
 result out of range
+retakes
 retry
 revenue_percentage
 revolving_loot_lists
@@ -10071,7 +10102,6 @@ same_name_family_aggregate
 savegamefilename
 scale_bone_relative
 scale_world
-scene
 schema_description
 schema_friendly_name
 schema_suppress_enumerator
@@ -10252,6 +10282,7 @@ steamml_is_timestamp
 steamml_max_entries
 sticker
 sticker_%d
+sticker_display_case
 sticker_item_id
 sticker_kits
 sticker_lists
@@ -10463,6 +10494,8 @@ unlock
 unordered_map/set too long
 unsigned 
 unusual
+unusual_setup
+unusuals
 unverified_lazy
 upgrade_item_id
 upgraded_defidx
@@ -10520,6 +10553,7 @@ vcompmat
 vdata
 vdata_choice
 vdata_editor
+vdata_outliner_name_expr
 vdataderived
 vecline
 vector too long
@@ -10547,6 +10581,7 @@ vmdl
 vmesh
 vmt_overrides
 vmt_path
+vnmclip
 vnotify_ui
 void 
 volatile 
@@ -10561,7 +10596,6 @@ vsncheck_account_id_sessions
 vtex
 w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PEBHPEBU3@@Z
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-w\tV_sscanf
 waiting_account_id_sessions
 waiting_group
 warn
@@ -10577,6 +10611,7 @@ weapon_case
 weapon_case_key
 weapon_knife
 weapons/keychains
+weapons/keychains/workshop_blanks/kc_%s_default.vmdl
 weapons/keychains/workshop_blanks/kc_missinglink_default.vmdl
 weapons/paints
 wear
@@ -10605,6 +10640,7 @@ world_offset_pos
 world_point
 worldgroupname
 worldorigin
+wrapped_sticker
 wrapping
 writable_func
 wrong protocol type
@@ -10633,8 +10669,7 @@ zoom_out_sound
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
 {flat}
 {for 
+{images}/
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
-|\tV_stricmp_fast
 }\n?dragMoveEvent@QAbstractItemView@@MEAAXPEAVQDragMoveEvent@@@Z
 ~\n?dragMoveEvent@QAbstractScrollArea@@MEAAXPEAVQDragMoveEvent@@@Z
-~\tV_strlower_fast

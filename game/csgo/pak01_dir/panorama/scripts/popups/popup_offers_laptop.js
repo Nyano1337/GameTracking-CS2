@@ -12,7 +12,6 @@ var OffersLaptop;
 (function (OffersLaptop) {
     let m_aItemsInLootlist = [];
     let m_itemid = '';
-    let m_caseAttributes = '';
     let m_isOpen = false;
     let m_InspectPanel = $.GetContextPanel();
     let m_unusualItemImagePath = '';
@@ -54,7 +53,7 @@ var OffersLaptop;
         }
     }
     function Init() {
-        m_itemid = $.GetContextPanel().GetAttributeString("id", "");
+        m_itemid = InspectShared.GetPopupSetting('item_id');
         m_InspectPanel.RegisterForReadyEvents(true);
         m_bReadyForDisplay = m_InspectPanel.BReadyForDisplay();
         $.RegisterEventHandler('ReadyForDisplay', m_InspectPanel, _OnHandleReadyForDisplay.bind(undefined, true));
@@ -76,30 +75,19 @@ var OffersLaptop;
     }
     OffersLaptop.Init = Init;
     function _SetUpClosedLaptop() {
-        $.GetContextPanel().SetAttributeString('decodeablekeyless', 'true');
-        $.GetContextPanel().SetAttributeString('asyncworkitemwarning', 'yes');
-        $.GetContextPanel().SetAttributeString('asyncactiondescription', 'yes');
-        _SetUpAsyncActionBar(m_itemid);
-        _SetupHeader(m_itemid);
+        InspectShared.SetPopupSetting('is_keyless', true);
+        InspectShared.SetPopupSetting('show_work_type_warning', true);
+        InspectShared.SetPopupSetting('override_async_bar_desc', true);
+        InspectAsyncActionBar.Init();
+        CapabilityHeader.Init();
         _SetCaseModelImage(m_itemid, 'PopUpInspectModelOrImage');
         _SetLootListItems(m_itemid);
     }
-    function _SetupHeader(itemId) {
-        m_InspectPanel.SetAttributeString('', 'SFUI_InvUse_Warning_use_laptop');
-        let elCapabilityHeaderPanel = $.GetContextPanel().FindChildInLayoutFile('PopUpCapabilityHeader');
-        CapabilityHeader.Init(elCapabilityHeaderPanel, itemId, _GetSettingCallback);
-    }
-    function _GetSettingCallback(settingname, defaultvalue) {
-        return m_InspectPanel.GetAttributeString(settingname, defaultvalue);
-    }
     function _SetCaseModelImage(caseId, PanelId) {
         let elItemModelImagePanel = $.GetContextPanel().FindChildInLayoutFile(PanelId);
-        InspectModelImage.Init(elItemModelImagePanel, caseId, _GetCameraSettingCallback, m_caseAttributes);
+        elItemModelImagePanel.Data().isLapTopOpening = m_isOpen;
+        InspectModelImage.Init(elItemModelImagePanel, caseId);
         m_elCaseModelImagePanel = InspectModelImage.GetModelPanel();
-    }
-    function _SetUpAsyncActionBar(itemId) {
-        let elAsyncActionBarPanel = $.GetContextPanel().FindChildInLayoutFile('PopUpInspectAsyncBar');
-        InspectAsyncActionBar.Init(elAsyncActionBarPanel, itemId, _GetSettingCallback);
     }
     function _SetLootListItems(itemId) {
         let count = InventoryAPI.GetLootListItemsCount(itemId);
@@ -148,22 +136,9 @@ var OffersLaptop;
         _HidePanelForLootlistItemPreview();
         $.DispatchEvent("LootlistItemPreview", itemid, caseId + ',' + caseId);
     }
-    let _m_handlerForHideEvent = null;
     function _HidePanelForLootlistItemPreview() {
         if (!m_InspectPanel.IsValid())
             return;
-        if (!_m_handlerForHideEvent) {
-            _m_handlerForHideEvent = $.RegisterEventHandler('PropertyTransitionEnd', m_InspectPanel, (panel, propertyName) => {
-                if (m_InspectPanel.id === panel.id && propertyName === 'opacity') {
-                    if (m_InspectPanel.visible === true && m_InspectPanel.BIsTransparent()) {
-                        m_InspectPanel.visible = false;
-                        return true;
-                    }
-                }
-                return false;
-            });
-        }
-        m_InspectPanel.SetHasClass('hide-for-lootlist', true);
     }
     function _ViewOnMarket(id) {
         SteamOverlayAPI.OpenURL(ItemInfo.GetMarketLinkForLootlistItem(id));
@@ -260,7 +235,7 @@ var OffersLaptop;
     }
     function ItemUnlocked(numericType, type, itemId) {
         if (itemId && InventoryAPI.IsValidItemID(itemId) && type === 'crate_unlock') {
-            $.GetContextPanel().SetAttributeString('id', itemId);
+            InspectShared.SetPopupSetting('item_id', itemId);
             InventoryAPI.SetItemSessionPropertyValue(itemId, 'recent', '1');
             InventoryAPI.AcknowledgeNewItembyItemID(itemId);
             _SetUpOpenLaptop(itemId);
@@ -287,11 +262,6 @@ var OffersLaptop;
             LaptopSoundPlayOnce('UI.Laptop.Open');
             $.GetContextPanel().FindChildInLayoutFile('id-laptop-screen').SetHasClass('show', true);
         });
-    }
-    function _GetCameraSettingCallback(settingname, defaultvalue) {
-        if (settingname === 'isLapTopOpening' && m_isOpen)
-            return 'true';
-        return 'false';
     }
     function _ItemAcquired(ItemId) {
         LaptopSoundPlayOnce("rename_purchaseSuccess");

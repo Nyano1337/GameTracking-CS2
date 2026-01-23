@@ -315,6 +315,8 @@
 		{
 			PerDrawCullingData      "1"
 			EncodeVertexBuffer      "1"
+            EncodeVertexBufferVersion   "1"
+            EncodeVertexBufferLevel     "3"
 			EncodeIndexBuffer       "1"
 			UseMikkTSpace           "1"
 			MeshletConeWeight       ".15"
@@ -533,7 +535,7 @@
 
 	Physics
 	{
-		"BuildMeshWings" "0"
+		"BuildMeshWings" "1"
 	}
 	PostProcessingEditor
 	{
@@ -560,6 +562,7 @@
 	{
         "cl_joystick_enabled" "0"
         "panorama_joystick_enabled" "0"
+        "demo_max_consecutive_skip_packets" "2500"
 
 		"spec_replay_enable"
 		{
