@@ -7364,22 +7364,24 @@ $prefix_element$
 /yQA
 0 0 0
 0 0 0 255
-00H@
 0123456789abcdefghijklmnopqrstuvwxyz
 016@
 019@
 02P@
 02w@
 031@
+03H@
+04H@
 04a@
 073@
+07H@
 07b@
 08T@
 09w@
 0A8@
 0AW@
-0BH@
 0BT@
+0DH@
 0E>X
 0ET@
 0EZ@
@@ -13136,7 +13138,6 @@ Overrides the target VSNAP resource (defaults to "particles/models/%model_name%/
 Overwrite all bone data
 Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
-P0H@
 P0R@
 P1w@
 P2M@
@@ -13144,7 +13145,6 @@ P2v@
 P3N@
 P46@
 P4File
-P4H@
 P58@
 P6M@
 P6v@
@@ -13173,7 +13173,6 @@ PATTACH_RENDERORIGIN_FOLLOW
 PATTACH_ROOTBONE_FOLLOW
 PATTACH_WATERWAKE
 PATTACH_WORLDORIGIN
-PBH@
 PBM@
 PBW@
 PCW@
@@ -20404,19 +20403,21 @@ owM&
 owner dead
 ownerlog
 owns_polymorphic_data
+p0H@
 p10@
+p1H@
 p2S@
 p3a@
 p3b@
 p46@
-p4H@
 p4lib
 p5F@
 p71@
-p7H@
 p7b@
 p8H@
 p9T@
+pBH@
+pCH@
 pCT@
 pCheckpointName
 pDescription

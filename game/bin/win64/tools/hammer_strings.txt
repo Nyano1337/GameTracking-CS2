@@ -347,7 +347,6 @@
 "%s": Bad mode
 "%s": Information lost writing value (%g) as (unsigned) RATIONAL
 "-\n\nCMsgQAngle
-"04M
 "2MR
 "; boundary="----%s"%s%s
 "<\n CNETMsg_SpawnGroup_LoadCompleted
@@ -446,7 +445,6 @@
 ##GameUI_Disconnect_BadRelayPassword
 ##GameUI_Disconnect_ReliableOverflow
 ##GameUI_Disconnect_SnapshotOverflow
-#04M
 #?ModifyFlag@FbxProperty@fbxsdk@@QEAAXW4EFlags@FbxPropertyFlags@2@_N@Z
 #?MultNormalize@FbxMatrix@fbxsdk@@QEBA?AVFbxVector4@2@AEBV32@@Z
 #?Normalize@FbxVector4@fbxsdk@@QEAAXXZ
@@ -14998,9 +14996,11 @@ $worldspacetype
 08\fj
 08bX
 09,h
+0: WE
 0:<\n\fdelta_ignore
 0;Q5[
 0<cz
+0>97I
 0E>X
 0M2~@p
 0T.Q
@@ -15011,7 +15011,6 @@ $worldspacetype
 0\f?focusOutEvent@QGraphicsView@@MEAAXPEAVQFocusEvent@@@Z
 0\r%0t
 0\r0#0)070;0U0Y0[0g0q0y0}0
-0dlG
 0e\r8
 0iN>/
 0pp@5tqE?|sO541
@@ -15756,7 +15755,6 @@ $worldspacetype
 1update()
 1xT$
 1}oP
-2 VE
 2#.google.protobuf.FieldOptions.CType:
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2$.google.protobuf.FieldOptions.JSType:\tJS_NORMAL
@@ -15768,6 +15766,8 @@ $worldspacetype
 2+.google.protobuf.FieldDescriptorProto.Label
 2+~,@\r;Zj09
 2/.google.protobuf.MethodOptions.IdempotencyLevel:
+20>B
+20WE
 20t\f
 24U\n
 27;C
@@ -15857,7 +15857,6 @@ $worldspacetype
 2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
 2\vp!J
-2\vpdlG
 2^pV
 2_BONE_IK
 2a"l
@@ -16082,7 +16081,6 @@ $worldspacetype
 6l13
 6lkc
 6myY;
-6p\vI
 6qo~
 6r-m_v
 6r1ij
@@ -16179,6 +16177,7 @@ $worldspacetype
 9r#xV
 : Add
 :':+:1:K:Q:[:c:g:m:y:
+:0WE
 :: <NO TARGET BONE>
 :BAD OBJECT
 :Blowfish part of OpenSSL 1.0.2j  26 Sep 2016
@@ -16194,6 +16193,8 @@ $worldspacetype
 :eaI
 :gN(dq
 :mIR
+:p3B
+:p5B
 :w4v
 ; tris:
 ;!;#;-;9;E;S;Y;_;q;{;
@@ -21785,7 +21786,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CPulse_InstructionDebug
 CQ2DCanvas
 CQAddPropertyDialog
 CQAdjustableDateInput
@@ -22182,7 +22182,6 @@ CRtxSampledRenderer-m_hVarianceImage
 CSPName
 CSVCMsgList_GameEvents
 CSVCMsg_GameEvent
-CSceneObjectData::RTProxyDrawDescriptor_t
 CScenePointCloud
 CScenePointCloud::Init
 CSelectionSetDataElement
@@ -24360,7 +24359,6 @@ DepthBuffer
 DeregisterEventSource
 Derived must implement
 Desaturate
-Description
 Description cannot be empty.
 DescriptorProto
 DescriptorProtosH
@@ -25832,7 +25830,6 @@ F'pY
 F+Zb
 F,mZq
 F/o4
-F0\tI
 F2M+
 F6tr
 F7!z
@@ -27440,7 +27437,6 @@ Incremental Shapes "%s" & "%s" cannot have the same Peak value %.2g
 Incremental Vertex Reduction
 Independent
 Independent Windows
-Index
 Index  Version  RefCount  Map File\n
 Index for source probe when visualizing source dependent data. Editing disabled for listener-centric data like baked reverb.
 Index of the cluster which the probe belongs to and looks up reverb from.
@@ -27542,7 +27538,6 @@ Instance Index
 InstanceCount
 InstanceIndex
 Instances
-Instant Stop
 Instead of referencing the mesh directly in this LOD group, instead copy it and apply a simplification operation.\n(The resulting mesh will be automatically added to any bodygroups that reference the original mesh.)
 Insufficient data length.\n
 Insufficient data size for attributes.\n
@@ -27723,7 +27718,6 @@ J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
 J\tV_modfd
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
 J`KL
-Jan 19 2026
 JawD
 JawH
 JawV
@@ -28323,13 +28317,6 @@ MEMORY_LOCK
 MEM_READ
 MEM_WRITE
 MENU
-MESH_BUFFER_USAGE_ADJACENCY
-MESH_BUFFER_USAGE_IB
-MESH_BUFFER_USAGE_MESHLET_TRIS
-MESH_BUFFER_USAGE_NONE
-MESH_BUFFER_USAGE_RT_PROXY
-MESH_BUFFER_USAGE_VB
-MESH_BUFFER_USAGE_VERTEX_ALBEDO
 MEntitySubclassScopeFile
 MFgdHelper
 MGF1
@@ -28912,7 +28899,6 @@ Model conversion: %d conversions in %.3fsec (%.3fms each)\n
 Model to be displayed.
 ModelAnimGraph2Identifier
 ModelAnimGraph2Identifier()
-ModelAnimGraph2Ref_t
 ModelAnimName
 ModelAnimName()
 ModelAnimNameWithDeltas
@@ -28954,7 +28940,6 @@ ModelInstance
 ModelMaterialGroupName
 ModelMaterialGroupName()
 ModelMesh
-ModelMeshBufferUsage_t
 ModelModifierList
 ModelModifier_DisableMorph
 ModelModifier_ScaleAndMirror
@@ -29082,7 +29067,6 @@ Movement Skin to Bones
 Movement Skin to Bones Rigid
 Movement Speed: %0.*fx   [%s] to reset
 Movement Tolerance
-MovementCapability_t
 MovementSettings
 MovementSettingsEditor
 Movement_Active_Navlink
@@ -30482,7 +30466,7 @@ P-256
 P-384
 P-521
 P08@J
-P08J
+P08J 
 P08N
 P1\t98"
 P4CopyFile
@@ -30677,6 +30661,7 @@ PKEY_RSA_VERIFYRECOVER
 PKEY_SET_TYPE
 PKEY_USAGE_PERIOD
 PKIX
+PLM<
 PLUG_TYPE_INPUT
 PLUG_TYPE_OUTPUT
 PLUG_TYPE_RELAY_OMNIDIRECTIONAL_LEGACY
@@ -31107,7 +31092,6 @@ Plane
 Plane Normal
 Plane Primitive
 Plant Type
-Planted Turn
 Plants
 Plastic
 Plasticity
@@ -31119,7 +31103,6 @@ Please make sure you deleted history on the mesh before exporting.\nThe mesh app
 Please move your current gameinfo.gi agent settings to a %s file and create a %s file with a 'default' entry containing all the nav nulls. Then add "NavHullsPreset" "default" to your gameinfo.gi file. For now we'll continue to load the agent settings but this path is deprecated ( antonioc@ ).
 Pm8A?
 PmR"H?
-PnP I
 Point 0
 Point 1
 Point Bones At
@@ -31770,7 +31753,6 @@ R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\tV_powf
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R\vp!6
-R\vpdlG
 R]Di
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
@@ -33762,7 +33744,6 @@ Shrink Selection
 Shrink the selection by removing components that border unselected components.
 ShrinkGizmo
 ShrinkSelection
-Shuffle
 Shutdown
 Side
 SideFX
@@ -34325,7 +34306,6 @@ StopSendingCameraTo
 StopSound
 StoreFileRemapping: Unable to calc relative path for file %s\n
 Stores metadata for groom meshes.
-Strafe
 Stray Boundary Radius
 Stray Boundary Spring
 Stray Box
@@ -34396,7 +34376,6 @@ Suppress warnings when bodygroups specify meshes that do not exist. This is usef
 Suppressed Shapes
 Surface Bias
 Surface Normal
-Surface Offset
 Surface Offset: 
 Surface Property
 Surface Property Override
@@ -35341,7 +35320,6 @@ Trying to concatenate meshes with incompatible attribute sets!\n
 Trying to find a flex controller (%s) that doesn't actually exist in the model.\n
 Trying to load model data from a non-model resource: %s\n
 Tu\t(OR
-Turn
 Turn off animation compression for this animation.<p><span style="color:#aa0000"><b>NOTE</b></span>: This significantly increases the size of the animation data.<p>Normally it should be false but if there are obvious compression artifacts, typically in tiny rotations, disabling compression may fix those.
 Turns on gpu preview lighting for a view
 Turns on gpu ray tracing for a view
@@ -35845,9 +35823,6 @@ VDataChoice( scripts/navlinks.vdata )
 VDataModelVersion001
 VDmElementFrameworkVersion001
 VDmSerializers001
-VERTEX_ALBEDO_565
-VERTEX_ALBEDO_8888
-VERTEX_ALBEDO_NONE
 VF+c
 VGG@
 VIDEOTEXSTRING
@@ -36000,7 +35975,6 @@ Vertex normals of selected faces are only unified if they meet at this angle (in
 Vertex to Edge
 Vertex to Face
 Vertex-Vertex Only
-VertexAlbedoFormat_t
 VertexColorUVPos_t
 VertexElementAnnotation
 VertexGenericIntegerData
@@ -36921,7 +36895,6 @@ Z~wl
 \f]ne3
 \fdhWTh
 \fiaR
-\fp\v`dlG
 \ful2
 \fy&3Gl
 \game
@@ -37100,13 +37073,14 @@ Z~wl
 \ng default\n
 \nh?oT
 \nk>oB
-\np6B
+\np3B
 \nqYu
 \ntM(ie-V
 \particles
 \prefabs
 \prefabs\
 \r!\r+\r-\r=\r?\rO\rU\ri\ry\r
+\r0H6
 \r?AddChild@FbxNode@fbxsdk@@QEAA_NPEAV12@@Z
 \r?AddMaterial@FbxNode@fbxsdk@@QEAAHPEAVFbxSurfaceMaterial@2@@Z
 \r?AddNodeAttribute@FbxNode@fbxsdk@@QEAA_NPEAVFbxNodeAttribute@2@PEAVFbxStatus@2@@Z
@@ -37249,7 +37223,7 @@ Z~wl
 \t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "inputTexture%i"\n\t\t\t"m_fileName" "string" "%s"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_typeString" "string" "CUBE"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t]\n\t\t}%s\n
 \t\t\t\t"inputTexture%i"%s\n
 \t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tvmt
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t%hu
 \t\t\t]\n\t\t}\n\t]\n\t"m_bHiddenAssetFlag" "bool" "1"\n}\n
 \t]\n\t"m_outputTypeString" "string" "%s"\n\t"m_outputFormat" "string" "%s"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "%s"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "%s"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n
 \t_MakeGlobalSymbol
@@ -37337,7 +37311,6 @@ Z~wl
 \v\vTSG
 \vj0k
 \vjC7
-\vplQ<
 ]1h=bfz
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
@@ -37537,6 +37510,7 @@ _zero
 _zero_percent_distance
 _}eOk
 `28)fk
+`:00B
 `:zQF
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -39279,6 +39253,7 @@ cylinder
 cz>Sp
 d e not congruent to 1
 d"?validate@QDoubleSpinBox@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+d(0`K
 d.allOrFirstTier
 d.authenticatedData
 d.certificate
@@ -39320,7 +39295,6 @@ d.v1AttrCert
 d.v2AttrCert
 d.x400Address
 d/rRw
-d2\n0
 d2i ecpkparameters failure
 d2i ts resp int failed
 d2i_ASN1_BOOLEAN
@@ -39795,18 +39769,11 @@ eContent
 eContentType
 eF>t
 eGenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!\n
-eIdleTurn
-eInstantStop
 eLK(w
 eN.d\tA
 eNULL
 eO@R
 eODj
-ePlantedTurn
-eShuffle
-eStart
-eStop
-eStrafe
 eTU\n
 eXQd
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
@@ -40302,7 +40269,6 @@ fBB\fy
 fC\tc
 fD>b
 fL\ri
-fO:I
 fP;y
 fSelectionOverlayAlpha
 fToolsVisSSAOPowerScale
@@ -42045,8 +42011,6 @@ inner_angle
 innerconeangle
 input not initialized
 input not reduced
-input volume maximum
-input volume minimum
 inputName
 inputTexture0
 input_axis
@@ -42823,8 +42787,6 @@ m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
 m_Deformers
 m_DeltaTransform
-m_DetailLayerStrings
-m_DetailLayers
 m_DirectionVector
 m_DisallowedMaterialAttributes
 m_DisplayColor
@@ -42884,7 +42846,6 @@ m_InputVector
 m_InputVectorA
 m_InputVectorB
 m_Inputs
-m_InstructionDebugInfos
 m_Int
 m_IntArray
 m_InterfaceName
@@ -42912,7 +42873,6 @@ m_MetaData
 m_Mod
 m_Models
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
-m_NodeStrayBoxes
 m_Normals
 m_Options
 m_OriginSpace
@@ -42967,8 +42927,6 @@ m_SelectionMode
 m_SelectionMode != GRADIENT_LOCATION
 m_SelectionMode != SPECIFIC_COLOR
 m_SelectionMode == SPECIFIC_COLOR
-m_SelfCollisionLayers
-m_SequencePointName
 m_Sky
 m_SourceFile
 m_Special
@@ -43011,7 +42969,6 @@ m_VariableValue.m_TargetName
 m_VariableValues
 m_WeakReferenceList
 m_WorkingDir
-m_animGraph2Refs
 m_assetName
 m_attachments
 m_bAlignOrientation
@@ -43055,7 +43012,6 @@ m_bDiscardIfUknown
 m_bDisplayModel
 m_bDoNotWarnAboutLargeAssetBatches
 m_bDrawLast
-m_bEnableEyeBulgeDeformation
 m_bEnd
 m_bEnforceLimits
 m_bEnforceLimits == false
@@ -43170,7 +43126,6 @@ m_curvePointsB
 m_curvePointsG
 m_curvePointsR
 m_curvePointsRGB
-m_drawDesc
 m_dstChannels
 m_eRbfType
 m_elements
@@ -43245,7 +43200,6 @@ m_flOrder12
 m_flOrientToSurface
 m_flParamaterMaxValue
 m_flParamaterMinValue
-m_flParentReaction
 m_flPathingDistanceRatio
 m_flPositionRadiusInner
 m_flPositionRadiusOuter
@@ -43287,7 +43241,6 @@ m_inputTextureArray
 m_iszNPC
 m_layers
 m_lut
-m_mWorldFromLocal
 m_materialsValues
 m_meshFile
 m_meshList
@@ -43309,7 +43262,6 @@ m_nBrightnessMagenta
 m_nBrightnessMaster
 m_nBrightnessRed
 m_nBrightnessYellow
-m_nBufferUsage
 m_nCP1Parent
 m_nCP2Parent
 m_nCP3Parent
@@ -43345,7 +43297,6 @@ m_nDim
 m_nDisplayRectHeight
 m_nDisplayRectWidth
 m_nDrawCall
-m_nEndIdx
 m_nFieldDataStates
 m_nFileCRC
 m_nFingerprint
@@ -43361,7 +43312,6 @@ m_nHueMagenta
 m_nHueMaster
 m_nHueRed
 m_nHueYellow
-m_nIncludeDetailLayerCount
 m_nInputBlackPointB
 m_nInputBlackPointG
 m_nInputBlackPointR
@@ -43426,11 +43376,6 @@ m_nTintColorB
 m_nTintColorG
 m_nTintColorR
 m_nUserData
-m_nValueNodeID
-m_nVertexAlbedoFormat
-m_nVertexAlbedoOffset
-m_nVertexAlbedoStride
-m_nVertexAlbedoVB
 m_nVibrance
 m_outputClearColor
 m_outputColorSpace
@@ -43447,9 +43392,8 @@ m_rbfParameters
 m_reverbScales
 m_reverbTimes
 m_rgbColor
-m_rtProxyDrawCalls
+m_sAnimGraphNavlinkType
 m_sHardwareModel
-m_sIdentifier
 m_sLabel
 m_sSmartProp
 m_sTemplateName
@@ -43496,8 +43440,8 @@ m_vTargetPos
 m_vTraceDirection
 m_vUpDirection
 m_vUpPos
+m_vecAnimgraphVars
 m_vecNavLinkMovementNames
-m_vecNmSkeletonRefs
 ma\v\r01!
 mac absent
 mac generation error
@@ -44648,6 +44592,7 @@ p.ppBasis
 p.prime
 p.tpBasis
 p08@H^
+p0j 
 p0p@
 p2{l
 p4 fstat -Op %s
@@ -44655,6 +44600,7 @@ p4Z3
 p5Z3
 p5\nL,
 p618
+p>e6I
 p@0pqE5tsO?|1
 p@HPX`h\f
 pAction
@@ -44674,6 +44620,7 @@ pEvent
 pFilter
 pG_*h
 pIp 
+pLM<
 pLightRigButton
 pMapNode
 pMaterialGroupName
@@ -44827,7 +44774,6 @@ pbeWithSHA1And40BitRC4
 pbeWithSHA1AndDES-CBC
 pbeWithSHA1AndRC2-CBC
 pcPathLengthConstraint
-pdlG
 peak_attr
 peak_cycle
 peaktailend
@@ -45777,7 +45723,6 @@ scripts/npc_units.vdata
 scripts/physics_particles.vdata!%s
 scripts/population.txt
 scripts/propdata.txt
-scripts/scenes.vdata
 scripts/vscripts/
 scroll_widget
 scsv received when renegotiating
@@ -47755,8 +47700,6 @@ vEnd
 vF'l
 vForward
 vHandleOffset
-vMax
-vMin
 vModelScale
 vOrigin
 vPathOffset

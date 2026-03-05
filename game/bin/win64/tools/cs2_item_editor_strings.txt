@@ -13,9 +13,10 @@
  #Valve_Reject_Reserved_For_Lobby
  (%d remaining)...
  (08@HPX`hpx
- (08@HPX`j
+ (08@HPX`j0k
  (08@HPXb 
- (08@HPZ
+ (08@HPZ0k
+ (08@J0k
  (0X`hpz 
  (Boosted +1)
  (repeat)
@@ -443,22 +444,21 @@ $schemasystem/schema_enable_defines.h
 (#Player_DisconnectReason_InputAutomation
 ((6"8(:,<*>
 (0`hpx
-(1HX
-(5dX
-(9gX
-(A8X
-(ASX
+(14X
+(5KX
+(9WX
+(9bX
 (Documents Filter - Use | for OR, space for AND)
 (Filter)
-(IuX
+(I8X
+(M6X
 (No Active Session)
 (Outliner Filter)
-(QjX
-(U4X
-(ULX
-(UOX
-(UQX
-(YJX
+(QEX
+(QIX
+(QgX
+(QxX
+(UjX
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
@@ -513,7 +513,6 @@ $schemasystem/schema_enable_defines.h
 (\r"b\n2CMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 (\r"f\n(CMsgGCCStrike15_v2_ClientPlayerDecalSign
 (\r"j\n'CCommunity_GamePersonalDataCategoryInfo
-(\r"l\n\rCMsgOpenCrate
 (\r"o\n-CMsgGCCStrike15_v2_GC2ServerReservationUpdate
 (\r"o\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm
 (\r"q\n"CMsgGCDev_SchemaReservationRequest
@@ -609,22 +608,21 @@ $schemasystem/schema_enable_defines.h
 (\v2\v.CMsgVector
 (\v2\v.CMsg_CVars:
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aCX
-(akX
+(a7X
+(aAX
 (default)
-(eDX
-(elX
-(i7X
-(iRX
-(ibX
-(idX
+(e3X
+(eBX
+(eMX
+(i4X
+(ilX
+(iwX
+(m2X
 (null)
-(q5X
-(q6X
-(qaX
-(u1X
-(u9X
-(uBX
+(qTX
+(qnX
+(uHX
+(uaX
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -3032,8 +3030,9 @@ $schemasystem/schema_enable_defines.h
 /weapons/customization/paints_gloves/
 0$2z4
 08@HP
-08@HR
+08@HR0k
 08@J 
+08B0k
 08\fj
 0:<\n\fdelta_ignore
 0T.Q
@@ -3307,9 +3306,14 @@ $schemasystem/schema_enable_defines.h
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
 7\n\tenum_type
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
+81fX
+85ZW
 8@HP:
+8@J0k
+8B0k
 8Csinf
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
+8\n0k
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
 8\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2
@@ -3318,6 +3322,9 @@ $schemasystem/schema_enable_defines.h
 8\n\textension
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
+8]qX
+8meX
+8muW
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -4996,9 +5003,11 @@ $schemasystem/schema_enable_defines.h
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @08@HPX`hpx
 @08N
+@20k
 @HPX
 @HPX&I
 @HPX`hv0
+@HdR
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -5675,7 +5684,6 @@ Delete '%1'
 Delete - '%1'
 Delete Widget
 DeleteCriticalSection
-Description
 Description cannot be empty.
 DescriptorProto
 DescriptorProtosH
@@ -5843,6 +5851,7 @@ FGD Variable %s has bad default value %d (has bits set that are not valid choice
 FOLDER
 FORCE_NOT_USED
 F\n%NETWORK_DISCONNECT_DISCONNECT_BY_USER
+F\n0k
 F\n\foptimize_for
 F\n\rroundstatsall
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
@@ -5914,10 +5923,9 @@ FocusOut
 FolderName
 FoliageAnimation
 Follow user preference
-Fpv?
+Fpw?
 FreeEnvironmentStringsW
 FreeLibrary
-Friendly Name
 From EconItems
 From Schema
 Full song. 2-5+ minutes.
@@ -6577,6 +6585,7 @@ OverlayProjectionDirection
 P08@J 
 P08J
 P08N
+P20k
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
@@ -6633,12 +6642,13 @@ Patina
 Patina Extended
 Pedestal Model
 PerVertexLighting
-Pf t?
+Pf u?
 PgDn
 PgUp
 Physics
 Picks
 PivotPaint
+Pj0k
 PlayerCommendationInfo
 PlayerDecalDigitalSignature
 PlayerMedalsInfo
@@ -7324,7 +7334,7 @@ X\n\tTeamStats
 X\n\vFantasyTeam
 X\r?horizontalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 X\v?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
-X`hr
+X`hr0k
 XpProgressData
 Y?setData@QStandardItem@@UEAAXAEBVQVariant@@H@Z
 Y?setData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -7547,6 +7557,7 @@ Zip system failure.\n
 \nInvalid item name '%1'.\n\n%2\n
 \nNo modified item assets. Nothing to save.\n
 \nOpened By: 
+\nQZW
 \nS?moveTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 \nThis assigns a permanent Schema reservation with the GC required for shipping.\n\nAre you sure?\n
 \nThis will delete '%1' from the tree.\n\nAre you sure?\n
@@ -7712,6 +7723,7 @@ Zip system failure.\n
 \n\nviewangles
 \n\nvote_phase
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
+\n\rCMsgOpenCrate
 \n\rCSOItemRecipe
 \n\rMethodOptions
 \n\rQuestItemData
@@ -7982,6 +7994,7 @@ Zip system failure.\n
 \r\n\tTYPE_BOOL
 \r\n\tTYPE_ENUM
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
+\rtext
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
 \t?alphaF@QColor@@QEBANXZ
@@ -8113,14 +8126,17 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
-`5fX
+`20k
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `RTTI
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `adjustor{
 `anonymous namespace'
+`awY
+`b0k
 `copy constructor closure'
+`d0k
 `default constructor closure'
 `dynamic atexit destructor for '
 `dynamic initializer for '
@@ -9672,7 +9688,7 @@ my_current_event_stages
 my_current_event_teams
 my_current_team
 n03>Pu
-n0w?
+n0x?
 nBuildError
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
@@ -9804,14 +9820,15 @@ owns_polymorphic_data
 p08@H^
 p0jp
 p0p@
-p6`s?
+p20k
+p6`t?
 p@HPX`h\f
 pButton
 pCurrentFocusWidget
 pData
 pEvent
 pFilter
-pFpv?
+pFpw?
 pPrevFocusWidget
 pResultKV
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
@@ -9875,6 +9892,7 @@ payload
 payment_row_usd
 payment_rules/0/workshop_revenue_share
 payment_us_usd
+pb0k
 pearlescent
 pedestal display model
 pedestal_display_model
@@ -10585,6 +10603,7 @@ vnmclip
 vnotify_ui
 void 
 volatile 
+volatile_limit
 vote
 vote_phase_length
 vote_phase_start

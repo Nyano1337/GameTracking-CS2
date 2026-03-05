@@ -141,6 +141,8 @@
 ' is non-numeric for plural :>
 (%s from %u files; %s not file-based)\n
 *.txt
++Inf
+-Inf
 /resource/valve_
 12CRefCounted1I23ILocalizeCompiledString20CRefCountServiceBaseI6CRefMTEE
 14CBaseAppSystemI9ILocalizeE
@@ -154,6 +156,7 @@
 34CLocalizeCompiledStringSinglePlain
 35CLocalizeCompiledStringLocVariables
 36CLocalizeCompiledStringMessageFormat
+4k4$
 9CLocalize
 9ILocalize
 :help
@@ -195,6 +198,7 @@ ConstructMFString
 ConstructString
 Czech
 Danish
+DisallowTokenContexts
 Duplicate load of loc file '%s'\n
 DuplicateFileLoadFail
 DuplicateTokensAssert
@@ -328,6 +332,7 @@ es-419
 es_419
 es_ES
 fi_FI
+file://
 finnish
 fr_FR
 french
@@ -363,6 +368,7 @@ missing required gender category
 missing required integer after '='
 missing required selection type (ie., 'plural') after comma
 missing required substitution variable name
+mission-points
 nl_NL
 no_NO
 norwegian

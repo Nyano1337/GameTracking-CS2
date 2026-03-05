@@ -123032,3 +123032,17 @@ panorama/images/map_icons/map_icon_de_sanctum.vsvg
 panorama/images/map_icons/map_icon_de_stronghold.vsvg
 panorama/images/map_icons/map_icon_de_warden.vsvg
 panorama/videos/limited_edition_variations.webm
+scripts/workshop_cvar_whitelist.txt
+maps/editor/zoo/scripts/input.vjs
+panorama/images/econ/status_icons/maptoken_alpine_png.vtex
+panorama/images/econ/status_icons/maptoken_alpine_small_png.vtex
+panorama/images/econ/status_icons/maptoken_poseidon_png.vtex
+panorama/images/econ/status_icons/maptoken_poseidon_small_png.vtex
+panorama/images/econ/status_icons/maptoken_sanctum_png.vtex
+panorama/images/econ/status_icons/maptoken_sanctum_small_png.vtex
+panorama/images/econ/status_icons/maptoken_stronghold_png.vtex
+panorama/images/econ/status_icons/maptoken_stronghold_small_png.vtex
+panorama/images/econ/status_icons/maptoken_warden_png.vtex
+panorama/images/econ/status_icons/maptoken_warden_small_png.vtex
+materials/models/inventory_items/music_kit/label_cs2.vmat
+materials/models/inventory_items/music_kit/label_cs2_color_psd_ad840642.vtex

@@ -144,9 +144,15 @@ var ItemTile;
     }
     ;
     function _SetRecentLabel(id) {
+        let elLabel = $.GetContextPanel().FindChildInLayoutFile('JsRecent');
+        let unProtectedEscrowValue = InventoryAPI.GetItemAttributeValue(id, '{uint32}trade protected escrow date');
+        if ((unProtectedEscrowValue !== undefined) && (unProtectedEscrowValue == 0)) {
+            elLabel.RemoveClass('hidden');
+            elLabel.text = $.Localize('#inv_session_prop_marketlisting');
+            return;
+        }
         let isRecentValue = InventoryAPI.GetItemSessionPropertyValue(id, 'recent');
         let isUpdatedValue = InventoryAPI.GetItemSessionPropertyValue(id, 'updated');
-        let elLabel = $.GetContextPanel().FindChildInLayoutFile('JsRecent');
         if (isUpdatedValue === '1' || isRecentValue === '1') {
             let locString = 'recent';
             if (isRecentValue === '1') {
@@ -258,14 +264,7 @@ var ItemTile;
                 UiToolkitAPI.UnregisterJSCallback(updateItemListCallback);
             }
             updateItemListCallback = UiToolkitAPI.RegisterJSCallback(SelectItemForCapability.UpdateSort);
-            const elPanel = UiToolkitAPI.ShowCustomLayoutPopupParameters('', 'file://{resources}/layout/popups/popup_inventory_inspect.xml', 'itemid=' + id +
-                '&' + 'inspectonly=true' +
-                '&' + 'insidecasketid=' + oCapabilityInfo.initialItemId +
-                '&' + 'capability=' + oCapabilityInfo.capability +
-                '&' + 'showallitemactions=false' +
-                '&' + 'allowsave=false' +
-                '&' + 'isselected=' + $.GetContextPanel().BHasClass('capability_multistatus_selected') +
-                '&' + 'callback=' + updateItemListCallback);
+            const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('', 'file://{resources}/layout/popups/popup_inventory_inspect.xml');
             let oSettings = {
                 item_id: id,
                 inspect_only: true,

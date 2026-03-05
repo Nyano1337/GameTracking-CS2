@@ -350,7 +350,7 @@ var PopupMajorHub;
         _m_cp.SetDialogVariableInt('redeems', m_redeemAvailable);
         let elPanel = _m_cp.FindChildInLayoutFile('id-coin-status-charges');
         elPanel.visible = m_redeemAvailable > 0;
-        let sTooltip = $.Localize('#popup_redeem_souvenir_desc', _m_cp);
+        let sTooltip = $.Localize('#popup_redeem_souvenir_desc:f', _m_cp);
         elPanel.SetPanelEvent('onmouseover', () => { UiToolkitAPI.ShowTextTooltip('id-coin-status-charges', sTooltip); });
         elPanel.SetPanelEvent('onmouseout', () => { UiToolkitAPI.HideTextTooltip(); });
     };
@@ -532,8 +532,7 @@ var PopupMajorHub;
         });
     }
     function OpenPassActivate(itemId) {
-        const elPanel = UiToolkitAPI.ShowCustomLayoutPopupParameters('', 'file://{resources}/layout/popups/popup_capability_decodable.xml', 'key-and-case=,' + itemId +
-            '&' + 'asyncworktype=decodeable');
+        const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('', 'file://{resources}/layout/popups/popup_capability_decodable.xml');
         let oSettings = {
             item_id: itemId,
             work_type: 'decodeable'

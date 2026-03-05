@@ -807,8 +807,8 @@
 #TF_UnknownStyle
 #Team_Cash_Award_Bonus_Shorthanded
 #Team_Cash_Award_Custom
-#Team_Cash_Award_Dead_CTs
-#Team_Cash_Award_Dead_Terrorists
+#Team_Cash_Award_Dead_CTs:p
+#Team_Cash_Award_Dead_Terrorists:p
 #Team_Cash_Award_Elim_Bomb
 #Team_Cash_Award_Elim_Hostage
 #Team_Cash_Award_Generic
@@ -827,66 +827,66 @@
 #Team_Cash_Award_Win_Time
 #UniqueString:Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table.
 #ebe2ca
-#funfact_best_accuracy
-#funfact_best_counterterrorist_accuracy
-#funfact_best_terrorist_accuracy
-#funfact_blind_kills
-#funfact_bomb_carriers
-#funfact_bots_assumed
-#funfact_broke_windows
-#funfact_ct_accuracy
-#funfact_ct_win_no_casualties
-#funfact_ct_win_no_kills
-#funfact_ct_win_time
-#funfact_damage_multiple_enemies
-#funfact_damage_no_kills
-#funfact_damage_with_grenade
-#funfact_default_weapon
-#funfact_defended_bomb
-#funfact_defuse_was_close_call_hundredths
-#funfact_defuse_was_close_call_tenths
-#funfact_defuse_was_close_call_thousandths
-#funfact_defused_with_dropped_kit
-#funfact_died_from_multiple_attackers
-#funfact_domination
-#funfact_donated_weapons
-#funfact_empty_guns
-#funfact_fall_damage
-#funfact_first_blood
-#funfact_first_kill
-#funfact_grenades_thrown
-#funfact_items_dropped_value
-#funfact_items_purchased
-#funfact_kill_defuser
-#funfact_kill_rescuer
-#funfact_kill_wounded_enemies
-#funfact_killed_enemies
-#funfact_kills_grenades
-#funfact_kills_headshots
-#funfact_kills_with_last_round
-#funfact_kills_with_single_grenade
-#funfact_kills_with_stattrak_weapon
-#funfact_knife_in_gunfight
-#funfact_knife_kills
-#funfact_knife_without_ammo
-#funfact_molotov_burns
-#funfact_money_spent
-#funfact_num_times_jumped
-#funfact_number_of_overkills
-#funfact_posthumous_kills_with_grenade
-#funfact_revenge
-#funfact_rounds_without_dying
-#funfact_short_round
-#funfact_shots_fired
-#funfact_survived_multiple_attackers
-#funfact_t_win_no_casualties
-#funfact_t_win_no_kills
-#funfact_taser_kill
-#funfact_ter_win_time
-#funfact_terrorist_accuracy
-#funfact_used_all_ammo
-#funfact_used_multiple_weapons
-#funfact_won_as_last_member
+#funfact_best_accuracy:f
+#funfact_best_counterterrorist_accuracy:f
+#funfact_best_terrorist_accuracy:f
+#funfact_blind_kills:f
+#funfact_bomb_carriers:f
+#funfact_bots_assumed:f
+#funfact_broke_windows:f
+#funfact_ct_accuracy:f
+#funfact_ct_win_no_casualties:f
+#funfact_ct_win_no_kills:f
+#funfact_ct_win_time:f
+#funfact_damage_multiple_enemies:f
+#funfact_damage_no_kills:f
+#funfact_damage_with_grenade:f
+#funfact_default_weapon:f
+#funfact_defended_bomb:f
+#funfact_defuse_was_close_call_hundredths:f
+#funfact_defuse_was_close_call_tenths:f
+#funfact_defuse_was_close_call_thousandths:f
+#funfact_defused_with_dropped_kit:f
+#funfact_died_from_multiple_attackers:f
+#funfact_domination:f
+#funfact_donated_weapons:f
+#funfact_empty_guns:f
+#funfact_fall_damage:f
+#funfact_first_blood:f
+#funfact_first_kill:f
+#funfact_grenades_thrown:f
+#funfact_items_dropped_value:f
+#funfact_items_purchased:f
+#funfact_kill_defuser:f
+#funfact_kill_rescuer:f
+#funfact_kill_wounded_enemies:f
+#funfact_killed_enemies:f
+#funfact_kills_grenades:f
+#funfact_kills_headshots:f
+#funfact_kills_with_last_round:f
+#funfact_kills_with_single_grenade:f
+#funfact_kills_with_stattrak_weapon:f
+#funfact_knife_in_gunfight:f
+#funfact_knife_kills:f
+#funfact_knife_without_ammo:f
+#funfact_molotov_burns:f
+#funfact_money_spent:f
+#funfact_num_times_jumped:f
+#funfact_number_of_overkills:f
+#funfact_posthumous_kills_with_grenade:f
+#funfact_revenge:f
+#funfact_rounds_without_dying:f
+#funfact_short_round:f
+#funfact_shots_fired:f
+#funfact_survived_multiple_attackers:f
+#funfact_t_win_no_casualties:f
+#funfact_t_win_no_kills:f
+#funfact_taser_kill:f
+#funfact_ter_win_time:f
+#funfact_terrorist_accuracy:f
+#funfact_used_all_ammo:f
+#funfact_used_multiple_weapons:f
+#funfact_won_as_last_member:f
 #game_nextmap
 #hostagerescuetime
 $$CChoreoEvent::FIRETRIGGER
@@ -1063,6 +1063,7 @@ $light_emissive
 %s finished post idle at %0.2f\n
 %s follows %s
 %s has no hitboxes\n
+%s hit the sellback limit.\n
 %s is a priority script and cannot be kicked out of the queue\n
 %s is abstract but didn't have any networkable descendents [found %d possibles], make (at least) one of these leaf classes networkable!!!\n
 %s is already preloading!\n
@@ -1377,6 +1378,7 @@ $light_emissive
 (Output drawable)
 (SERVER) Inventory for account (%d):\n
 (WIPE AND EXTRACT)
+(ammo:number)
 (callback: function)
 (className: string)
 (color)
@@ -1391,6 +1393,7 @@ $light_emissive
 (config:{text: string, x: number, y: number, duration: number, color: Color})
 (connectionId:number)
 (damage: number, info?: Object)
+(data: string)
 (debug)
 (default)
 (duration: number)
@@ -1398,6 +1401,7 @@ $light_emissive
 (hInflictor, hAttacker, flDamage) - Allocate a damageinfo object, used as an argument to TakeDamage(). Call DestroyDamageInfo( hInfo ) to free the object.
 (health: number)
 (immunityColor: color)
+(inputs:number)
 (int iIndex, int iPoint, Vector vOrigin, QAngle qAngles ) - Set the transform for a control on a particle effect
 (int iIndex, int iPoint, Vector vOrigin, Vector vecForward ) - Set the origin and forward direction for a control on a particle effect
 (int iIndex, int iPoint, Vector vecOffset ) - Set the linear offset for a control on a particle effect
@@ -1971,8 +1975,6 @@ $light_emissive
 0 180
 0 == ( pInstance->GetOwnerEntity()->GetEntityIdentity()->GetFlags() & EF_IN_STAGING_LIST )
 0.5 = 50% speed\n1 = 100% speed\n2 = 200% speed\n(Only editable when Fixed Length is false)
-0: (V0) Legacy save format, 1: (V1) KeyValues3 save format, 2: (V2) KV3Transfer saves
-0:off | 1: view-only | 2: edit.
 0@NX^b!/@P\b
 0AOY_c"2CQ[c
 0Mc\t\n
@@ -2727,6 +2729,7 @@ $light_emissive
 15CCSHitboxSystem
 15CCSObserverPawn
 15CCSPetPlacement
+15CCSScriptSystem
 15CCSUsrMsg_Shake
 15CCSUsrMsg_Train
 15CCSWeaponSystem
@@ -5498,6 +5501,7 @@ $light_emissive
 22CUserMessageScreenTilt
 22CUserMessageWaterShake
 22CUserMessage_DllStatus
+22IAddonListChangeNotify
 22IBoneTransformOverride
 22IEconItemSetDefinition
 22IEventRegisterCallback
@@ -5713,6 +5717,7 @@ $light_emissive
 24CGameSystemStaticFactoryI14CGameTimescaleS0_E
 24CGameSystemStaticFactoryI15CCSAddonManagerS0_E
 24CGameSystemStaticFactoryI15CCSHLTVDirectorS0_E
+24CGameSystemStaticFactoryI15CCSScriptSystemS0_E
 24CGameSystemStaticFactoryI15CCSWeaponSystemS0_E
 24CGameSystemStaticFactoryI15CItemGenerationS0_E
 24CGameSystemStaticFactoryI16CFuncMoverSystemS0_E
@@ -7079,7 +7084,6 @@ ACTION_COMPLETED
 ACTIVATE_TYPE_DATAUPDATE_CREATION
 ACTIVATE_TYPE_INITIAL_CREATION
 ACTIVATE_TYPE_ONRESTORE
-ACTIVE
 ACTOR
 ACT_FEED
 ACT_GLIDE
@@ -7127,7 +7131,6 @@ AES-256-CTR
 AES-256-ECB
 AES-256-OFB
 AES-256-XTS
-AG2_OnAnimGraphSerializationContextInvalidated
 AG2_OnResourceChanged   - %s - %s entity %d (%s) to recreate the %sgraph instance\n
 AG2_OnResourcePreReload - %s - %s entity %d (%s) deleted %sgraph instance\n
 AIRBOAT
@@ -7148,7 +7151,9 @@ APPSYSTEM: In ConnectGameInterfaces(), tried to use different connection modes!\
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!\n
 AREA_DAMAGE
 ASN1 lib
+ATTACK
 ATTACK END\n
+ATTACK2
 ATTACKING: %s
 AVOID
 AVelocity: %.2f %.2f %.2f
@@ -7188,7 +7193,6 @@ Add Filter
 Add R%d <- R%d + R%d
 Add Velocity To All Entities Within Radius
 Add Velocity To Entity
-Add a request to the scene coordinator
 Add an output
 Add linear and angular velocity to the physics object
 Add markup volume (%s)
@@ -7232,6 +7236,8 @@ Additive Blend
 Additive Blend (Masked): %.2f%%
 Additive Blend: %.2f%%
 AdditiveAnims
+Addon save file exceeds max size setting (%s)\n
+Addon save file reached max size for this server (%s)\n
 Adds CSS class(es) to the panel
 Adds a team (by index) to the broadcast list
 Adds an I/O connection that will call the named function on the passed entity when the specified output fires.
@@ -7258,7 +7264,6 @@ All lootlists must have names.
 Allies Chat
 Allocate
 AllocateEntityIdentity
-Allow jump speed to exceed 1.1x max speed
 AllowMovableNavMeshDockingOnEntireEntity
 Allowing
 Alpha 0-255
@@ -7312,7 +7317,6 @@ AnimateThink
 AnimateUntilDead
 Animated characters who have vertex flex capability.
 Animation 2
-AnimationAlgorithm_t
 AnimationLoopMode
 AnimationSystem: IK
 Animgraph Parameters (%d)
@@ -7430,7 +7434,6 @@ Authority Information Access
 Auto-Following %s\n
 AutoRideSpeed
 Automated Action
-Automatically start AG2 recording when an entity with this name (wildcard) or id is created.
 Available: 
 AvatarOverrideManager
 Avelocity: %.2f %.2f %.2f
@@ -7440,6 +7443,7 @@ AwardText
 Axis
 AxisAngleToQuaternion
 B-Spline
+BACK
 BADFUNCTIONPOINTER
 BANG!
 BAddToMessage
@@ -7584,7 +7588,6 @@ Bloodlvl6
 Body Component Scriptdesc
 BodyGameSystem
 BodyGroup: %s => %d
-BodySectionAuthority_t
 Bogus constraint %s (attaches %s to ENTITY NOT FOUND:%s)\n
 Bogus constraint %s (attaches ENTITY NOT FOUND:%s to %s)\n
 Bogus teleport notification!!\n
@@ -7692,7 +7695,6 @@ CAnimGraph2ParamAutoResetOptionalRef
 CAnimGraph2ParamAutoResetRef
 CAnimGraph2ParamOptionalRef
 CAnimGraph2ParamRef
-CAnimGraphControllerManager
 CAnimGraphParamAutoResetRef
 CAnimGraphParamRef
 CAnimGraphTagOptionalRef
@@ -7706,8 +7708,6 @@ CAttachmentNameSymbolWithStorage
 CAttributeContainerPlayer
 CBaseAnimGraphController::SequenceDuration( %d ) NULL CModel on %s!\n
 CBaseAnimGraphController::SequenceDuration( %d ) out of range\n
-CBaseAnimGraphDestructibleParts_GraphController
-CBaseAnimGraphVariationUserData
 CBaseCombatCharacter::UpdateLastKnownNav
 CBaseEntity::InputKill()
 CBaseEntity::TakeDamageOld: damagetype %d with info.GetDamageForce() == Vector::vZero\n
@@ -7874,8 +7874,6 @@ CCSPlayerController_ActionTrackingServices *
 CCSPlayerController_DamageServices *
 CCSPlayerController_InGameMoneyServices *
 CCSPlayerController_InventoryServices *
-CCSPlayerLegacyJump
-CCSPlayerModernJump
 CCSPlayerPawnBase: MVP override ( %s -> %s )\n
 CCSPlayerPawnBase::SwitchTeam( %d ) - invalid team index.\n
 CCSPlayerPawn_Minimal_server
@@ -7898,6 +7896,7 @@ CCSPointPulseAPI::OnRoundEnd
 CCSPointPulseAPI::OnRoundFreezeEnd
 CCSPointPulseAPI::OnRoundStart
 CCSPointPulseSystem
+CCSScriptSystem
 CCSUsrMsg_AdjustMoney_t
 CCSUsrMsg_CallVoteFailed_t
 CCSUsrMsg_CurrentRoundOdds_t
@@ -7960,7 +7959,6 @@ CChoreoEvent_SECTION
 CChoreoEvent_SEQUENCE
 CChoreoEvent_SPEAK
 CChoreoEvent_STOPPOINT
-CChoreoInfoTarget
 CChoreoObjectBase
 CChoreoScene
 CClientMsg_ClientUIEvent_t
@@ -8021,7 +8019,6 @@ CEconQuestProgress
 CEconRecurringMission
 CEmbeddedSubclass
 CEmbeddedSubclassGeneric
-CEmptyGraphController
 CEngineServiceRegistry::RegisterEngineServices()
 CEntities
 CEntity2SaveRestore::AutoSaveDangerousIsSafe
@@ -8055,7 +8052,6 @@ CFilterMultipleAPI::AddFilter
 CFilterMultipleAPI::RemoveFilter
 CFuncMoveLinear::NavMovableThink
 CFuncMoveLinear::NavObstacleThink
-CFuncMover::FollowConstraint_t
 CFuncMover::LerpToNewPosition
 CFuncMoverAPI::GetCurrentMoverSpeed
 CFuncMoverSystem
@@ -8163,7 +8159,6 @@ CInferno::CheckExpired (check lifetimes)
 CInferno::InfernoThink
 CInferno::InfernoThink (damage)
 CInferno::InfernoThink (spread)
-CInfoInteraction
 CItemGeneration
 CJobMgr -- Dispatch completed work items
 CJobMgr::BResumeSleepingJobs
@@ -8330,22 +8325,14 @@ CNetworkUtlVectorFull
 CNetworkedQuantizedFloat
 CNetworkedQuantizedFloat:  called before encoder initialized, use DECLARE_NETWORK_QUANTIZED_FLOAT_NETWORKVAR or DECLARE_NETWORK_QUANTIZED_FLOAT to make sure the encoder is initialized;\n
 CNmAdditiveBlendTask - Trying to blend additively, using a non-additive pose\n
-CNmBoneMaskSwitchNode::CDefinition
-CNmExternalPoseNode::CDefinition
-CNmGraphDefinition::ExternalPoseSlot_t
 CNmGraphInstance
 CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::ExecutePostPhysicsPoseTasks
 CNmGraphInstance::ExecutePrePhysicsPoseTasks
 CNmGraphInstance::GetCurrentGraphTimingInfo
-CNmGraphVariationUserData
-CNmIsExternalGraphSlotFilledNode::CDefinition
-CNmIsExternalPoseSetNode::CDefinition
-CNmTargetSelectorNode::CDefinition
 CNmTaskSystem::SerializeTasks
 CNmTaskSystem::UpdatePostPhysics
 CNmTaskSystem::UpdatePrePhysics
-CNmTwoBoneIKTask
 CNullGameJournal
 COLLECT_HOSTAGES
 COMMENTARY_SAVE_RESTORE_VERSION
@@ -8358,10 +8345,7 @@ CPath::ComputePathCore
 CPath::ComputePathDetails
 CPath::ComputePathPosToPosCore
 CPath::GetNearestNavAreaAndGroundHeight
-CPathMoverEntitySpawn
-CPathMoverEntitySpawner
 CPathMoverEntitySpawner::SpawnThink
-CPathNode
 CPathQueryComponent::Storage_t
 CPathQueryComponentReferenced
 CPathQueryComponentReferencedPtr
@@ -8372,7 +8356,6 @@ CPathSimpleAPI::GetDirAtTValue
 CPathSimpleAPI::GetDistanceBetweenEntitiesAlongPath
 CPathSimpleAPI::GetPosAtTValue
 CPathSimpleAPI::SetEntityAtTValue
-CPathWithDynamicNodes
 CPathfindMulti::FindBestGoal
 CPathfindMulti::MultiPathfind_Core
 CPawnListGameSystem
@@ -8638,7 +8621,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CPulse_InstructionDebug
 CQ %s: removed %d, max: %d, %d ticks this frame\n
 CQ limits set to conflicting conflicting values\n
 CRAWL_HEIGHT
@@ -8666,6 +8648,7 @@ CS2Bullets
 CS2ClientPerfData
 CSDamageFlags
 CSDamageType
+CSDamageTypes
 CSForceTeamThink
 CSGO Compute AI Data\n
 CSGO: CSGO: Compute Hiding spots [ disabled for survival maps ]\n
@@ -8677,6 +8660,7 @@ CSGO: Compute Hiding spots
 CSGOVScriptGameSystem
 CSGearSlot
 CSHitGroup
+CSInputs
 CSLoadoutSlot
 CSMovementVelocityQuantizer_t
 CSObserverPawn
@@ -8689,7 +8673,6 @@ CSVCMsg_UserCommands_t
 CSWeaponAttackType
 CSWeaponBase
 CSWeaponData
-CSWeaponNameID
 CSWeaponSystem
 CSaveMemory
 CSceneCoordinator
@@ -8707,8 +8690,6 @@ CSceneEntity::GenerateSceneForSequence:  Couldn't determine duration of %s\n
 CSceneEntity::GenerateSceneForSound: Couldn't determine duration of %s\n
 CSceneManager
 CSceneManager::AddCaptionFile( %s )\n
-CScenePayloadVData
-CSceneRequest
 CScriptConvarAccessor
 CScriptConvarAccessor::GetBool failed to parse convar '%s' (value '%s') as bool\n
 CScriptConvarAccessor::GetFloat failed to parse convar '%s' (value '%s') as float\n
@@ -8730,7 +8711,6 @@ CShatterGlassShardMgr::ReadRestoreHeaders skipping shards due to version mismatc
 CSimThinkManager
 CSkeletonInstance::SetAnimationController can only be called once!\n
 CSmartPtr
-CSoundEventConeEntity
 CSoundEventEntity::SoundFinishedThink
 CSoundEventName
 CSoundOpGameSystem::SetLibraryStackField: Faied library stack message to: %s, %s, %s\n
@@ -9087,7 +9067,6 @@ CheckPoint
 CheckSpawnThink
 CheckStuffThink
 CheckThreadID
-CheckedSub
 Checking nearby threatening enemy gunfire!\n
 Checking out where our friend was killed\n
 Checks if entity a and entity b are in hierarchy together
@@ -9158,7 +9137,6 @@ Co-dependent physics tasks detected!
 Coaches/%u
 Code Signing
 Code forced %s(%s), to be the target of scripted sequence %s, but it can't play it.\n
-CodeGenAABB_t
 CollapseToForcePoint
 CollectedEntities.txt
 Collide
@@ -9433,11 +9411,11 @@ DES-EDE3-CFB8
 DES-EDE3-OFB
 DES-OFB
 DESX-CBC
-DFLAG_ALLOW_NON_AUTHORITATIVE
-DFLAG_SUPPRESS_SCREENSPACE_DAMAGE_FX
 DH lib
 DIRECT
 DISABLED
+DISALLOWED WORKSHOP COMMANDS: %s\n
+DISALLOWED WORKSHOP CONVAR: %s\n
 DISMOUNT
 DISSOLVE
 DISTANCE: %6.2f inches (%6.2f feet)\n
@@ -9458,6 +9436,7 @@ DSA-SHA1-old
 DSA-old
 DSO lib
 DSO support routines
+DUCK
 DUCKING 
 DVCS
 DX11
@@ -9535,7 +9514,6 @@ DecGlobalCounter
 DecalEmitterSystem
 DecalGameSystem
 DecalGameSystemManifest_server
-DecalRtEncoding_t
 Decals
 DecoratorPickerBlockedBySmoke
 DecoratorRouteServiceStrategyArray
@@ -9587,7 +9565,6 @@ DestroyParticle
 DestroyWeapon
 DestroyWeapons
 Destructible Hit Group Destroy Up To Damage Level
-DestructiblePartDestructionRequest_t
 Detach
 Detach R%d
 Detach from its parent
@@ -9716,7 +9693,6 @@ Draw an axis with the given position (and eventually rotation) in world space
 Draw pretty debug text (x, y, lineOffset, text, r, g, b, a, duration, font, size, bBold)
 Draw text in 3d (origin, text, bViewCheck, duration)
 Draw text with a line offset (x, y, lineOffset, text, r, g, b, a, duration)
-Draw the boundaries of the 3d nav space. 1 = draw flying space, 2 = draw swimming space
 DrawDistance
 DrawTickMarkedLine
 Draws 2D text. Specify origin in world space.
@@ -9839,7 +9815,6 @@ ERROR: path_track (%s) refers to itself as a target!\n
 ESCAPE_FROM_BOMB
 ESCAPE_FROM_DANGER_ZONEMOVE_TO_PLAY_AREA
 ESCAPE_FROM_FLAMES
-ESceneRequestState_t
 ET:  AccumulateElapsedTime %u seconds to %u, now at %s\n
 ET:  AccumulateElapsedTime( %s ) at %d\n
 ET:  Init from comment string to %u seconds, now at %s\n
@@ -10108,9 +10083,6 @@ Extended OCSP Status
 Extension Request
 External Slot[%d]:[%s]
 External Slots##AG2
-ExternalAnimGraphHandle_t
-ExternalAnimGraphInactiveBehavior_t
-ExternalAnimGraph_t
 ExternalGraphHandle
 ExternalGraphInactiveBehavior
 ExternalGraphOwnerHandle
@@ -10143,10 +10115,9 @@ FIRST
 FLASH
 FLASHBANG: %0.2f \n
 FOLLOW
-FOLLOW_CONSTRAINT_DISTANCE
-FOLLOW_CONSTRAINT_SPRING
 FORCE_DEATH
 FORCE_NOT_USED
+FORWARD
 FOV2D
 FPlayerCanRespawn: pPlayer=0
 FX_FireBullets: GetCSWeaponDataFromItem failed for weapon %s\n
@@ -10218,6 +10189,7 @@ Failed to load %s\n
 Failed to load KV3 AI Data\n
 Failed to load cs_script "%s"\n
 Failed to load file: %s\n
+Failed to load map save file %s\n
 Failed to open file
 Failed to play server side instructor hint: no player specified for hint\n
 Failed to precache script entity %s of type %s: script entity instance is null\n
@@ -10238,6 +10210,8 @@ Failed to start replay, requires HTLV to be enabled to work\n
 Failed to update networkable loadout\n
 Failed to update on remove script entity %s of type %s: script entity instance is null\n
 Failed to write %s!\n
+Failed to write '%s' to steam cloud\n
+Failed to write map save file to %s\n
 Failed with no pGoalArea and no pGoalPos
 Failed with no pStartArea
 Failing to submit row for a grenade detonation: Grenade has no weapon info!\n
@@ -10369,7 +10343,6 @@ Fixed
 Fixed Length
 Fixed Section
 FixedLength
-FixedSection
 Flags: 
 Flags: %X (%X)
 FlameThink
@@ -10404,7 +10377,6 @@ Follow Bone
 FollowEntity
 FollowEntityMerge
 FollowingSir
-For subtick jumps, if this much time or less has elapsed since the last time the user has pressed the jump key, pretend they hadn't. Lowering this makes bunnyhopping easier.
 ForAllAreasOverlappingExtent
 Force Spawn
 Force Spawn At Location
@@ -10697,6 +10669,7 @@ Get vector to center of object - absolute coords
 Get vector to eye position - absolute coords.
 Get whether the hostage is currently being carried or not
 GetAbsAngles
+GetAbsAngularVelocity
 GetAbsOrigin
 GetAbsScale
 GetAbsVelocity
@@ -10731,6 +10704,7 @@ GetClassName
 GetClassNameAsCStr
 GetClassNameOverride
 GetClassname
+GetClipAmmo
 GetColor
 GetCommandClient
 GetCommandClient() : returns the player who issued this console command.
@@ -10808,8 +10782,10 @@ GetMaterialGroupHash
 GetMaterialGroupHash(): Get the material group hash of this entity.
 GetMaterialGroupMask
 GetMaterialGroupMask(): Get the mesh group mask of this entity.
+GetMaxClipAmmo
 GetMaxHealth
 GetMaxOutputDelay
+GetMaxReserveAmmo
 GetModelName
 GetModelScale
 GetMoveParent
@@ -10888,9 +10864,11 @@ GetRenderAlpha(): Get the alpha modulation of this entity.
 GetRenderColor
 GetRenderColor(): Get the render color of the entity.
 GetReportedPosition
+GetReserveAmmo
 GetRightVector
 GetRootMoveParent
 GetRoundsPlayed
+GetSaveData
 GetSceneByIndex
 GetScore
 GetScriptClassForDesignerName
@@ -11192,7 +11170,6 @@ I'm rescuing hostages\n
 I'm securing the hostages for a human to rescue\n
 I'm sniping an initial encounter area\n
 IANA
-IAnimationGraphInstance
 ICC or token signature
 ID Param was of wrong type %s!
 ID%d
@@ -11202,6 +11179,7 @@ IDEA-ECB
 IDEA-OFB
 IGNORED due to being marked "Dont save".\n
 IGNORED, no across_transition flag & no globalname\n
+IGNORE_ARMOR
 IGNORE_ENEMIES
 IGameSystem::Init( %-80s ) %8.3f msec
 IGameSystem::PostInit( %-80s ) %8.3f msec
@@ -11209,7 +11187,6 @@ IKV3TransferInterface_AllowRawStringTokenTransfer
 IKV3TransferInterface_ResourceSave
 IKV3TransferInterface_UtlSymbolLarge
 IMsgNetPacketFromCNetPacket: malformed packet, size %d bytes\n
-INACTIVE
 INTERACTIVE
 INVALID CGameEventStartTouchCollideAdaptor
 IN_PROGRESS
@@ -11867,7 +11844,6 @@ Instance.TraceSphere invoked with bad start value.\n
 InstanceData = %s
 InstancedAutoGeneratedSequenceScene:  Expecting non-NULL pActor for sound %s\n
 InstancedAutoGeneratedSoundScene:  Expecting non-NULL pActor for sound %s\n
-Instant Stop
 Int Param was of wrong type %s!
 Integer Divide
 Integer division - unlike the divide (/) node, this will truncate any remainder (floor) and return an integer.
@@ -11919,6 +11895,7 @@ Invalid request for mesh %d in model %s with %d entry remapping start table\n
 Invalid request for mesh %d in model %s with no remapping table starts\n
 Invalid request for mesh %d in model %s with no remapping table\n
 Invalid return type from Instance.OnBeforePlayerDamage.\n
+Invalid return type from Instance.OnModifyPlayerDamage.\n
 Invalid save, failed to open file\n
 Invalid script. No valid imports found.\n
 Invalid skirmish '%s' in mp_endmatch_votenextmap_wargames_modes\n
@@ -11966,6 +11943,8 @@ IsConnected
 IsCrouched
 IsCrouching
 IsDedicatedServer
+IsDucked
+IsDucking
 IsEnabled
 IsEnemyPartVisible
 IsFakeClient
@@ -11973,6 +11952,7 @@ IsFreezePeriod
 IsGlowing
 IsGrabbable
 IsInToolsMode
+IsInputPressed
 IsLineBlockedBySmoke
 IsMarkedForDeletion
 IsMaster
@@ -12100,12 +12080,14 @@ LADDER
 LARGE_CENTERED_HULL
 LARGE_HULL
 LATE 
+LEFT
 LEFTARM
 LEFTLEG
 LEVEL DESIGN ERROR: Divide by zero in math_value\n
 LEVEL DESIGN ERROR: Entity %s is parented to itself!\n
 LOCKED
 LOOK_AT_SPOT
+LOOK_AT_WEAPON
 LOOK_TOWARDS_SPOT
 LOS check failed.  Obstructed.
 LOST DAMAGE:\t\t
@@ -12204,6 +12186,7 @@ LoadNavMesh: unable to read movable meshes setting 'gravity follows rotation'.\n
 LoadSubclasses
 LoadThink
 Loaded %d rays\n
+Loaded existing workshop save file from %s\n
 Loaded server checkpoint %s, starting match with score %d:%d after round %d\n
 Loading custom game "%s" with map "%s"\n
 Loading script "%s"\n
@@ -12598,7 +12581,6 @@ MoveToPlayArea
 MoveToPosition
 MoveType
 MoveWithoutPushingBlockers
-MovementCapability_t
 MovementSettings
 Movers
 Moveto: %s
@@ -13089,7 +13071,6 @@ NULL CELL
 NULL Ent in GiveNamedItem: %s!\n
 NULL entity in global entity list!\n
 Name Matches
-Name for this damage level.  Presently only used for debugging/display - one day may be used in code to allow destroying by name.
 Names
 NativeFunctions
 Natural logarithm (base e)
@@ -13448,6 +13429,7 @@ OnMinPlayerDist2
 OnMinPlayerDist3
 OnMinPlayerDistAll
 OnMixed
+OnModifyPlayerDamage
 OnMoneySpent
 OnMoneySpentFail
 OnMotionEnabled
@@ -13520,7 +13502,6 @@ OnScriptInput
 OnScriptReload
 OnScriptReload:after
 OnScriptReload:before
-OnSecondarySkeletonsChanged
 OnShowMessage
 OnSidesPicked
 OnSimulate
@@ -13593,7 +13574,6 @@ OpenAwayFrom
 OpenAwayFromActivator
 OpenDoor
 OpenSaveFileAndExtractLevels() failed for save file: %s\n
-Opens the graph and starts live debugging the AG2 graph for a given entity\n\tArguments: entityName\n\tArguments:   \t{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
 Option
 Option1
 Option2
@@ -13821,7 +13801,6 @@ Place
 PlaceDecalEvent_t
 Plant bomb on floor
 PlantBomb
-Planted Turn
 PlantedBombPlace
 PlantingBomb
 Plastic.Large
@@ -13930,7 +13909,6 @@ Plays/modifies a sound from this entity. changes sound if nPitch and/or flVol or
 Please move your current gameinfo.gi agent settings to a %s file and create a %s file with a 'default' entry containing all the nav nulls. Then add "NavHullsPreset" "default" to your gameinfo.gi file. For now we'll continue to load the agent settings but this path is deprecated ( antonioc@ ).
 Please specify 0 or 1 with the -stream Parameter\n
 Please wait for broadcast to start ...
-PlusOneTick
 Point entity.
 PointAtEntity
 PointTemplate
@@ -14097,6 +14075,7 @@ RC5-CFB
 RC5-ECB
 RC5-OFB
 RDO_AB
+RELOAD
 REMOVENORAGDOLL
 RESCUE_HOSTAGES
 RESOURCE_HANDLE_INVALID
@@ -14119,10 +14098,10 @@ RIFLE1
 RIFLE2
 RIFLE3
 RIFLE4
+RIGHT
 RIGHTARM
 RIGHTLEG
 RIPEMD160
-ROTATE_LOOK_AT_TARGET_ONLY_YAW
 RR: could not apply operator %s to prior value %s\n
 RR:%s
 RSA Data Security, Inc.
@@ -14485,6 +14464,7 @@ SHA512
 SHOCK
 SHOTGUN
 SHOULD_BE_DESTROYED
+SHOW_SCORES
 SKIP (no prior visit of '%s')
 SLASH
 SLOWBURN
@@ -14600,11 +14580,12 @@ SaveRestoreIO
 SaveRestoreIOFiltered
 SaveRestoreSyncIO
 SaveThink
+Saved to '%s' steam cloud\n
+Saving existing workshop save file from %s\n
 Saving game to %s...\n
 Saving money for next round.\n
 Scale INV R%d <- R%d / R%d
 Scale R%d <- R%d * R%d
-Scale on the force wind applies to physics bodies
 ScaleDamage
 ScaredEmote
 Scene %s has %d actors, but scene entity only has %d actors\n
@@ -14617,7 +14598,6 @@ SceneNode Hierarchy For %d:\n
 ScenePayloadTypeSystem
 ScenePayloadTypesManifest_global_server
 ScenePrint
-SceneRequestHandle_t
 Scenes
 Schedule Cleared
 Schedule the next think for the entity that this graph is running on.
@@ -15079,7 +15059,6 @@ SetAttacker
 SetAutoConvertBackFromDebris
 SetBarrier
 SetBlackboardReference BR%d (%s) <- R%d 
-SetBodyGroupAndCollisionState
 SetBodygroup
 SetBodygroupByName
 SetBool(name, val) : sets the value of the convar to the bool.
@@ -15089,6 +15068,7 @@ SetBrightness
 SetBrightnessDelta
 SetBrightnessScale
 SetCamera
+SetClipAmmo
 SetClipPrimary
 SetClipSecondary
 SetColor
@@ -15318,11 +15298,13 @@ SetRenderMode
 SetRenderMode( int ): Sets the render mode of the entity.
 SetRenderingEnabled
 SetReportedPosition
+SetReserveAmmo
 SetReserveAmmoAmount
 SetRestLength
 SetRotateType
 SetRotationDistance
 SetRotatorTarget
+SetSaveData
 SetScale
 SetScriptOwnerEntity
 SetScrollSpeed
@@ -15436,7 +15418,6 @@ ShowWorldLayerAndSpawnEntities
 Showing only (%s)
 Shows this layer
 Shrapnel.Explode
-Shuffle
 Shutdown
 Sign Float
 Sign Int
@@ -15700,7 +15681,6 @@ Start PC
 Start Position
 Start Reverse
 Start Reverse [calcstop=%i calctimes=%i moveimmediate=%i]
-Start Source2 TV replay: replay_start <delay>|stash [<player name or index>]
 Start Time
 Start Time: %f
 Start a screenshake with the following parameters. vecCenter, flAmplitude, flFrequency, flDuration, flRadius, eCommand( SHAKE_START = 0, SHAKE_STOP = 1 ), bAirShake
@@ -15757,7 +15737,6 @@ Started off the nav mesh - moving to closest nav area...\n
 Starting Freeze period\n
 StartingAnim
 StartingAnimationLoopMode
-Starts live debugging & recording the AG2 graph for a given entity\n\tArguments: entityName\n\tArguments:   \t{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
 State
 State: %s
 Statement obsolete - removing.\n
@@ -15815,7 +15794,6 @@ Stops a named sound playing from this entity.
 Stops a sound event
 Stops a sound event with optional delivery
 Stops a sound event with reliable delivery
-Strafe
 StreamEntitiesToFile
 Stress: %.2f (%.2f / %.2f)
 StrikeOnce
@@ -16145,7 +16123,6 @@ Ts won by ELIMINATION\n
 Ts won by TIME\n
 Ts won, but the reason is UNKNOWN!!!\n
 TumbleThink
-Turn
 Turn a userid integer (typically, fields named 'userid' in game events) to an HScript representing the associated player controller's script instance.
 Turn an entity index integer to an HScript representing that entity's script instance.
 TurnMotorOff
@@ -16445,74 +16422,9 @@ WARNING: item_generic '%s' - allowpickup callback '%s' not found!\n
 WARNING: item_generic '%s' - allowpickup callback '%s' should return a bool!\n
 WARNING: item_generic '%s' - cannot have a trigger radius without a pickup radius - disabling trigger behavior!\n
 WARNING: item_generic '%s' - pickup radius of %f is larger than trigger radius of %f - disabling trigger behavior!\n
-WEAPONID_AK47
-WEAPONID_AUG
-WEAPONID_AWP
-WEAPONID_BAYONET
-WEAPONID_BIZON
-WEAPONID_C4
-WEAPONID_CZ75A
-WEAPONID_DEAGLE
-WEAPONID_DECOY
-WEAPONID_ELITE
-WEAPONID_FAMAS
-WEAPONID_FIVESEVEN
-WEAPONID_FLASHBANG
-WEAPONID_G3SG1
-WEAPONID_GALILAR
-WEAPONID_GLOCK
-WEAPONID_HEALTHSHOT
-WEAPONID_HEGRENADE
-WEAPONID_HKP2000
-WEAPONID_INCGRENADE
-WEAPONID_KNIFE
-WEAPONID_KNIFE_BUTTERFLY
-WEAPONID_KNIFE_CANIS
-WEAPONID_KNIFE_CORD
-WEAPONID_KNIFE_CSS
-WEAPONID_KNIFE_FALCHION
-WEAPONID_KNIFE_FLIP
-WEAPONID_KNIFE_GUT
-WEAPONID_KNIFE_GYPSY_JACKKNIFE
-WEAPONID_KNIFE_KARAMBIT
-WEAPONID_KNIFE_KUKRI
-WEAPONID_KNIFE_M9_BAYONET
-WEAPONID_KNIFE_OUTDOOR
-WEAPONID_KNIFE_PUSH
-WEAPONID_KNIFE_SKELETON
-WEAPONID_KNIFE_STILETTO
-WEAPONID_KNIFE_SURVIVAL_BOWIE
-WEAPONID_KNIFE_T
-WEAPONID_KNIFE_TACTICAL
-WEAPONID_KNIFE_URSUS
-WEAPONID_KNIFE_WIDOWMAKER
-WEAPONID_M249
-WEAPONID_M4A1
-WEAPONID_M4A1_SILENCER
-WEAPONID_MAC10
-WEAPONID_MAG7
-WEAPONID_MOLOTOV
-WEAPONID_MP5SD
-WEAPONID_MP7
-WEAPONID_MP9
-WEAPONID_NEGEV
-WEAPONID_NOVA
-WEAPONID_P250
-WEAPONID_P90
-WEAPONID_REVOLVER
-WEAPONID_SAWEDOFF
-WEAPONID_SCAR20
-WEAPONID_SG556
-WEAPONID_SMOKEGRENADE
-WEAPONID_SSG08
-WEAPONID_TASER
-WEAPONID_TEC9
-WEAPONID_UMP45
-WEAPONID_UNKNOWN
-WEAPONID_USP_SILENCER
-WEAPONID_XM1014
 WIDE_HUMAN_HULL
 WOL: 0x%p (%s)
+WORKSHOP COMMAND: %s does not exist, ignoring\n
 WPN_ACTION_COMPLETE
 WPN_BLOCK_INSPECT
 WPN_BOMB_STAGE
@@ -16558,6 +16470,8 @@ Warp XY
 Warp XYZ
 Warp Z
 Warp attempted for animation with invalid warp events!
+WasInputJustPressed
+WasInputJustReleased
 Water.PlayerEnter
 Water.PlayerExit
 Water: Level %0.3f\n
@@ -16584,11 +16498,9 @@ Weight
 Welcome message contained %s twice\n
 WeldVertices
 What model to use for the physics hull. Will not be drawn.
-When an animgraph is reloaded, should the underlying system restore all params?
 When specifying keyvalues to spawn or precache, you must specify a classname!\n
 WhereIsTheBomb
 Whether or not the debug text will follow the entity around as it moves
-Whether or not to use the pre-2026 jump code.
 Will loop preidle[%s] action[%s] postidle[%s]
 Will not attempt to establish session with GC.\n
 Will synch post idles
@@ -16708,6 +16620,7 @@ ZN30CheckAreasOverlappingBreakable6SearchEvEUlR8CNavAreaE_
 ZN9CSNavMesh19FindMinimumCostAreaINS_26FarAwayFromPositionFunctorEEEP8CNavAreaS3_RT_EUlRS2_E_
 ZNK19CNavObstacleOverlap22AppendElemsForObstacleEyP23CUtlVectorFixedGrowableIjLm64EiEEUlRKjE_
 ZNK19CNavObstacleOverlap22AppendObstaclesForElemEjP23CUtlVectorFixedGrowableIyLm32EiEEUlRKyE_
+ZOOM
 Z]_abcTZ\_bcLTV[`c@FJS]c-27AQc
 Z^`bccUY\`ccMPU\acADIR\c./4=Oc
 Zero Pose Task
@@ -17225,7 +17138,6 @@ aes-256-gcm
 aes-256-ofb
 aes-256-xts
 after
-ag2_preserve_params_on_reload
 against
 agent
 aggregate
@@ -17290,6 +17202,7 @@ altpath
 always tradable
 always_known
 ambient_generic
+ammo
 ammo_grenade_limit_total 5\n
 ammobalancing_removable
 amount
@@ -17308,6 +17221,7 @@ ang_yaw
 ang_z
 angles: %g %g %g
 angularLimit
+angularVelocity
 angular_damping_ratio_x
 angular_damping_ratio_y
 angular_damping_ratio_z
@@ -18697,33 +18611,16 @@ dz_frostbite
 dz_junglety
 dz_sirocco
 dz_vineyard
-eAnimGraph1
-eAnimGraph2
-eAnimGraph2Secondary
-eDecalProjectToBackfaces
 eFlinchHeading
 eFlinches
 eFootIKMoveMode
 eFootIKState
-eFullBody
 eIdleAngleSelector
-eIdleTurn
 eIkChoice
-eInstantStop
 eJumpType
-eLowerBody
 eMoverBonemaskChoice
-ePlantedTurn
 eRunMode
 eRunWalkCrouch
-eSequence
-eShuffle
-eStart
-eStop
-eStrafe
-eUnbind
-eUnbindAndDelete
-eUpperBody
 e_body_idle
 e_face_idle
 earliestoccupytime
@@ -18821,8 +18718,6 @@ enginesound
 enhancedSearchGuide
 ensure_on_navmesh_on_finish
 entName
-ent_animgraph2_open_graph
-ent_animgraph2_record
 ent_grab: found %s @{%g,%g,%g}\n
 ent_grab: nothing to grab there.\n
 ent_grab: strange - there was a hit but there's no rigid body there\n
@@ -19377,7 +19272,6 @@ func_ladder
 func_monitor
 func_movelinear
 func_mover
-func_mover_debug_extra_text
 func_nav_avoidance_obstacle
 func_nav_blocker
 func_nav_dynamic_connections
@@ -19602,7 +19496,6 @@ hEntityParent
 hIgnoreEntity
 hInfo
 hModel
-hMover
 hParent
 hResult
 hSystem
@@ -20348,7 +20241,6 @@ jurisdictionST
 jurisdictionStateOrProvinceName
 justify_horizontal
 justify_vertical
-kDecalMin
 k_EGCMsgResponseDenied
 k_EGCMsgResponseInvalid
 k_EGCMsgResponseNoMatch
@@ -20653,122 +20545,51 @@ m_DebugLines
 m_Entity_pEnvMap
 m_Entity_pLightProbeVolume
 m_Entity_pSceneObject
-m_InstructionDebugInfos
 m_LRU
 m_LastCmd
 m_LastOpvarValueString
-m_LegacyJump
-m_ModernJump
 m_ModifiedConvars
 m_NavAreas.Count() < CNavMarkerData::MAX_ELEMENTS
 m_OutputName
 m_ParamType
 m_PulseArguments
-m_SequencePointName
 m_Sim.m_fWindDir
 m_Sim.m_flWindSpeed
 m_Stops
 m_TagValue
 m_average
 m_averageDelta
-m_bAlignWithTargetAtLastWarpEvent
-m_bAllowObstacleConvexHullMerging
-m_bAttachedEntityWasParented
 m_bBakedTwoSided
-m_bBombPlantedAndAlive
 m_bCanBatchWithDynamicShaderConstants
 m_bClientSpawnGroup
 m_bCompleteReset: %d\n
 m_bConditionValue
 m_bDrawLast
-m_bDynamicBounce
-m_bFastRefresh
 m_bFirstEvaluate
-m_bFollowConstraintsInitialized
-m_bForceNavObstacleCut
-m_bForceServerConstraintsEnabled
-m_bFreshStartThisRound
-m_bGenerateMuzzleLight
-m_bGraphBindingsCreated
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasPulseArguments
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
-m_bProjectToBackfaces
-m_bShouldSampleRootMotion
-m_bStartFollowingClosestMover
-m_bStoppedBullet
 m_bSuppressAllEntities
-m_bSuppressFlinch
-m_bSwitchDynamically
-m_bUpdateNavWhenMoving
 m_bUseCompressedNormalTangent
-m_bUseParentedPath
 m_bUseShadowFastPath
-m_bWarpTranslation
 m_bodyGroupChoices
 m_capabilities
 m_command
 m_conceptCooldowns
-m_controllers
 m_deltaTime
-m_eFollowConstraint
 m_ePlayerControllerKickPolicyMask
 m_events
 m_externalMethodTargetGraph
-m_externalPoseSlots
 m_fMatchStartTime: %f\n
 m_fMoveTo
 m_fRoundStartTime: %f\n
-m_flAttenMax
-m_flAttenMin
-m_flBeginStopT
 m_flCachedSequenceCycleRate
-m_flComputedDistanceToReachMaxSpeed
-m_flComputedDistanceToReachZeroSpeed
-m_flEmitterAngle
-m_flFollowMoverCalculatedDistance
-m_flFollowMoverDistance
-m_flFollowMoverSpeed
-m_flFollowMoverSpringStrength
-m_flFollowMoverVelocity
-m_flInteractRadius
-m_flKeyPointMaxSoundThreshold
-m_flKeyPointMinSoundThreshold
-m_flLastActualJumpPressFrac
-m_flLastJumpFrac
-m_flLastJumpVelocityZ
-m_flLastLandedFrac
-m_flLastLandedVelocityX
-m_flLastLandedVelocityY
-m_flLastLandedVelocityZ
-m_flLastSpawnTime
-m_flLastUsableJumpPressFrac
-m_flLimitsDebugVisRotation
-m_flMaxYawRotation
-m_flMinYawRotation
-m_flOrientationScoreWeight
-m_flPartDamage
-m_flPartDamageRadius
-m_flPathLocationStart
-m_flPositionScoreWeight
-m_flReduceRangeTimeSeconds
-m_flReferencePoseTwistWeight
-m_flRefreshTime
 m_flSaveTime
 m_flSlopeIncoming
 m_flSlopeOutgoing
-m_flSpawnFrequencyDistToNearestMover
-m_flSpawnFrequencySeconds
-m_flSpeedScale
-m_flStartCurveScale
-m_flStopCurveScale
-m_flSweetSpotAngle
-m_flTotalledPreModifiedDamage
-m_flVelMulAtJumpStart
-m_flWeaponActionPlaybackRate
 m_fog.blend
 m_fog.colorPrimary
 m_fog.colorSecondary
@@ -20777,11 +20598,8 @@ m_fog.enable
 m_fog.end
 m_fog.farz
 m_fog.start
-m_graphControllerManager
-m_graphEvents
 m_guid
 m_hAmbientSound
-m_hAnimClip
 m_hColorCorrectionController
 m_hConVarUserInfoSet
 m_hCurrentNavArea
@@ -20790,103 +20608,52 @@ m_hCursor
 m_hDef
 m_hEntActivator
 m_hEntLandmark
-m_hExtGraphHandle
-m_hExternalGraph
-m_hExternalGraphOwner
 m_hFogController
-m_hFollowMover
-m_hGraphDefinition
 m_hJoint
 m_hLastValidNavArea
-m_hMoverSpawner
 m_hOpvarData
-m_hPath
 m_hPawnListEntry
 m_hPlayingSound
 m_hProjectedDecal
 m_hScriptInstance
 m_hSoundMoving
-m_hSpeedFromMover
 m_hinge.worldAxisDirection
 m_hinge.worldPosition
 m_iRoundTime: %d\n
 m_iRoundWinStatus: %d\n
 m_iTotalRoundsPlayed: %d\n
-m_iszFollowMoverEntityName
 m_iszIdle
-m_iszMoverSpawnerName
-m_iszParameterName
-m_iszReversalSoundLarge
-m_iszReversalSoundMedium
-m_iszReversalSoundSmall
-m_iszSpeedFromMover
 m_ls.sLockedSound
 m_ls.sUnlockedSound
-m_mapSpawnedMoverTemplates
-m_maxNumRoundsSurvivedStreak
-m_nAnimGraphUpdateId
-m_nAnimationAlgorithm
 m_nConnectionCount
 m_nCurrentIndex
 m_nCurrentSampleIndex
 m_nCurrentWakeIndex
-m_nDecalRtEncoding
-m_nDefuseStarts
 m_nDepletionCount
-m_nDestroyFlags
-m_nDetailLayerMask
-m_nDetailLayerMaskType
 m_nEntityType
-m_nExternalGraphNodeIdx
-m_nExternalPoseNodeIdx
 m_nFramePerfSamplesTotalReceived
 m_nGUID
-m_nGroupValue
-m_nHostagePickUps
-m_nInactiveBehavior
-m_nIsWeaponActionActiveNodeIdx
-m_nLastActualJumpPressTick
-m_nLastJumpTick
-m_nLastLandedTick
 m_nLastLateCommandExecuted
 m_nLastRealCommandNumberExecuted
-m_nLastUsableJumpPressTick
 m_nLoopCount
 m_nMapVersion
-m_nMaxActive
 m_nMaxSampleCount
 m_nMovingSoundGUID
 m_nNavObstacleType
-m_nNextExternalGraphHandle
 m_nNoiseRunningGuid
-m_nOverrideFlinchHitGroup
 m_nParamIndex < 0
-m_nPrevAnimUpdateTick
 m_nSamples
-m_nSecondarySkeletonMasterCount
-m_nServerGraphInstanceIteration
 m_nSound
 m_nSpawnGroupCount
-m_nSpawnIndex
-m_nTargetDetailLayer
-m_nTickMovementRan
-m_nTicks < INT_MAX
-m_nValueNodeID
-m_nWeaponDropNodeIdx
-m_nWeaponTypeNodeIdx
 m_nameList
-m_numRoundsSurvivedStreak
-m_numTeammatesFlashed
 m_pAnimGraph1Instance == nullptr && m_pAnimGraph2Instance == nullptr && m_pAnimGraphInstanceOwner != nullptr
 m_pAnimGraphDestructibleGraphController
-m_pAnimGraphInstance
 m_pAsyncSaveCallQueue
 m_pController == NULL
 m_pCurrentCommand
 m_pFixedWorldBody
 m_pGraphInstanceAG2
 m_pJoint
-m_pMainGraphController
 m_pMotorJoint
 m_pMovementSound
 m_pPrecacheEntityKeys
@@ -20899,29 +20666,19 @@ m_pSplineBody
 m_pSpringJoint
 m_pSubclassVData
 m_pSurfaceData
-m_pUserData
 m_pVPhysicsAggregate
 m_pfnBlocked
 m_pfnMoveDone
 m_pfnTouch
 m_pfnUse
 m_previousSample
-m_primaryGraphId
 m_ragdoll.allowStretch
 m_ragdoll.hierarchyJoints
 m_ragdoll.list
-m_reversalSoundThresholdLarge
-m_reversalSoundThresholdMedium
-m_reversalSoundThresholdSmall
 m_ruleCooldowns
-m_sAnimClipSlot
-m_sAnimClipSlotWeight
-m_sAnimGraph2Identifier
-m_sExternalGraphSlotID
 m_sGroupName
 m_sLandmark
 m_sRequiredAddons
-m_sSceneFile
 m_sSpawnGroupName
 m_saveId
 m_skyboxData.bClip3DSkyBoxNearToWorldFar
@@ -20938,30 +20695,14 @@ m_skyboxData.origin
 m_skyboxData.scale
 m_soundEngine
 m_soundTreads
-m_state
-m_strInteractVData
-m_strParentPathUniqueID
-m_strPathNodeParameter
-m_strSlotEntityName
-m_szPanelType
-m_szPayloadTypeName
-m_szSpawnTemplates
 m_think
 m_time
-m_uHandle
 m_unFrameFuncThreadID == unCurrentThread
-m_vWsPartDamageForce
-m_vWsPartDamageOrigin
-m_vecExternalClipIds
-m_vecExternalGraphIds
-m_vecExternalGraphs
 m_vecLandmarkAngles
 m_vecLandmarkOrigin
 m_vecNodes.Count() < m_vecNodes.NumAllocated()
 m_vecPathCornerPairs
 m_vecSamples
-m_vecSecondarySkeletonNames
-m_vecSecondarySkeletons
 m_vecWorldOffset
 m_version
 mac10
@@ -20977,6 +20718,7 @@ malloc failure
 mamamamamama
 manager
 manual
+map %s%s\n
 map %s\n
 mapUsageType
 map_background
@@ -21563,8 +21305,6 @@ open_buymenu
 opened
 operation_coin
 operation_type
-operator+
-operator-
 operatorName
 operatorname
 optionalEntityName
@@ -21891,7 +21631,6 @@ phys_start_asleep
 phys_thruster
 phys_torque
 phys_wheelconstraint
-phys_wind_force_scale
 physdamagescale
 physicalDeliveryOfficeName
 physics_entity_solver
@@ -22284,7 +22023,6 @@ queued_outputs
 queueing followup after '%s' speaks '%s', in %.3f seconds (%.3f duration, %.3f delay)\n
 quotation-mark
 rFC822localPart
-r_decals_max_on_deformables
 rad2deg
 radio.go
 radio.letsgo
@@ -22498,7 +22236,6 @@ revolver
 revolving_loot_lists
 reward_drop_list
 rfc822Mailbox
-rhs > 0 ? ret < lhs : ret >= lhs
 rifle
 rifle0
 rifle1
@@ -22583,12 +22320,12 @@ save/%s/%s.sav
 save/%s_%s.kv3.txt
 save/*.hl?
 saveAndRestore
+save_%s.txt
 save_maxarray_spew set to %d\n
 save_threshold
 savedwep_lastinv
 savedwep_set
 saveentityindex
-saving_enabled
 sawedoff
 sbgp-autonomousSysNum
 sbgp-ipAddrBlock
@@ -22599,7 +22336,6 @@ scales
 scar20
 scene
 scene%d
-scene_coordinator_add_request
 scene_director_playback_%u
 scene_manager
 scene_owner
@@ -22638,7 +22374,6 @@ scripts/nav_hulls_presets.vdata
 scripts/physics_particles.vdata!
 scripts/population.txt
 scripts/propdata.vdata
-scripts/scenes.vdata
 scripts/soundscapes_
 scripts/soundscapes_manifest.txt
 scripts/surfaceproperties_game.txt
@@ -22646,6 +22381,7 @@ scripts/talker/response_rules.vrr
 scripts/talker/response_rules.vrr_c
 scripts/vscripts/
 scripts/vscripts/%s
+scripts/workshop_cvar_whitelist.txt
 sdsiCertificate
 seal_epic.planted_a_01
 seal_epic.planted_a_02
@@ -23027,7 +22763,6 @@ snapobjectpositions
 snapshot_file
 snd_event_alignedbox
 snd_event_cone
-snd_event_cone_debug
 snd_event_orientedbox
 snd_event_param
 snd_event_path_corner
@@ -23041,7 +22776,6 @@ snd_opvar_set_obb
 snd_opvar_set_path_corner
 snd_opvar_set_point
 snd_opvar_set_point_base
-snd_opvar_set_point_update_interval_fast
 snd_opvar_set_wind_obb
 snd_sound_area_base
 snd_sound_area_obb
@@ -23452,8 +23186,6 @@ sv: Lag comp - full interp info not valid, using target time.\n
 sv: Player tick from command clamped by server, [ #%d : %.3f ] -> [ #%d : %.3f ], server player tick = [ #%d : %.3f ]\n
 sv: Running lag compensation for player %s cmd %d tick %d\n
 sv: StartLagCompensation clamped invalid attack history index to -1. Was %d, cmd history size %d.
-sv_ag2_record_entity_graph
-sv_allow_annotations_access_level
 sv_allow_annotations_access_level 2\n
 sv_auto_cstrafe_logging end of match summary: "%s<%i><%s><%s>": {15...0} ticks of overlap: {%u %u %u %u %u %u %u %u %u %u %u %u %u %u %u %u}, {0...15} ticks of underlap: {%u %u %u %u %u %u %u %u %u %u %u %u %u %u %u %u}\n
 sv_auto_cstrafe_logging: actual overlaps in the last %d attempts: %d (%f%%)\n
@@ -23464,7 +23196,6 @@ sv_auto_cstrafe_logging: overall attempts with %2d ticks of overlap:  %2u\n
 sv_auto_cstrafe_logging: overall attempts with %2d ticks of underlap: %2u\n
 sv_auto_cstrafe_logging: overlap threshold for this best success sequence: %f%%\n
 sv_auto_cstrafe_logging: player %d: %s\n
-sv_bhop_time_window
 sv_cheats must be set to 1\n
 sv_game_mode_flags %d\n
 sv_grenade_trajectory_prac_pipreview 1\n
@@ -23472,10 +23203,6 @@ sv_grenade_trajectory_prac_trailtime 8\n
 sv_infinite_ammo 1\n
 sv_interp0 backtrack
 sv_interp1 backtrack
-sv_legacy_jump
-sv_legacy_jump disabled only: The time window (in seconds) around landing where a jump press is considered a bhop attempt.
-sv_legacy_jump only: Stamina penalty for jumping
-sv_legacy_jump only: Stamina penalty for landing
 sv_load_forced_client_names_file: failed to deserialize client forced names key values from file "%s"!\n
 sv_load_forced_client_names_file: failed to deserialize client random names key values from file "%s"!\n
 sv_load_forced_client_names_file: failed to load file "%s"!\n
@@ -24199,6 +23926,7 @@ v8::HandleScope::~HandleScope()
 v8::Int32::Value() const
 v8::Integer::New(v8::Isolate*, int)
 v8::Integer::NewFromUnsigned(v8::Isolate*, unsigned int)
+v8::Integer::Value() const
 v8::Isolate::Enter()
 v8::Isolate::Exit()
 v8::Isolate::GetCurrent()
@@ -24253,6 +23981,7 @@ v8::Value::IsObject() const
 v8::Value::IsUint32() const
 v8::Value::NumberValue(v8::Local<v8::Context>) const
 v8::Value::ToInt32(v8::Local<v8::Context>) const
+v8::Value::ToInteger(v8::Local<v8::Context>) const
 v8::Value::ToNumber(v8::Local<v8::Context>) const
 v8::Value::ToObject(v8::Local<v8::Context>) const
 v8::Value::ToString(v8::Local<v8::Context>) const
@@ -24314,7 +24043,6 @@ vecAlternateOrigin
 vecForce
 vecImpulse
 vecInValue
-vecOtherEntities
 vecOutValue
 vecPathAreas is empty
 vecPathAreas[%d] + nPreexistingSegments[%d] (m_nSegmentCount[%d]) Exceeded max path segments
@@ -24654,6 +24382,7 @@ wedding_ring
 weptype
 wheels
 whirlpool
+whitelist_cvars
 will_produce_stattrak
 wind_direction_variation
 wind_map_max
@@ -24679,6 +24408,7 @@ wm_bodygroup_override
 wm_bodygroup_state_override
 work item
 workshop
+workshop_saves
 workthreadpool.cpp
 world
 world.glass

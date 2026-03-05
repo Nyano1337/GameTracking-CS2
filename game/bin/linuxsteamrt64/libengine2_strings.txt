@@ -895,7 +895,6 @@ $lZT
 --CNetworkGameServerBase
 --startmovie
 -0123456789
--0x8000'0000p0f <= flTicks && flTicks < +0x8000'0000p0f
 -5?KYks
 -> Reservation cookie %llx:  reason %s\n
 -?Vb,?H$+?Z
@@ -1040,7 +1039,6 @@ $lZT
 00A+
 0123456789
 0123456789abcdef
-01:14:54
 0: Force z prepass off. 1: Force on. -1: Don't force
 0: Use normals reconstructed from depth. 1: Output correct normals in z prepass.
 0: run all send jobs on main thread; 1: send jobs run asynchronously (except on dedicated server); 2: send jobs asynchronously; 3: send jobs run in parallel but block to not overlap the next tick; 4: main server clients' send jobs run in parallel, then HLTV server jobs; this approximately matches pre-async profile for a single HLTV server configuration
@@ -1634,6 +1632,7 @@ $lZT
 1wsHp
 2%sT5
 200000
+20:08:06
 20CCLCMsg_ClientInfo_t
 20CCLCMsg_CmdKeyValues
 20CCLCMsg_Diagnostic_t
@@ -1949,11 +1948,14 @@ $lZT
 35IKV3TransferInterface_GameTime_Load
 35IKV3TransferInterface_GameTime_Save
 35RO
+36CMsgSource2PlayStatsPackedRecordList
 36CNETMsg_SpawnGroup_SetCreationTick_t
 36CSource1InputHandlerPreClientHandler
+36CSource2Metrics_FetchMapData_Request
 37CCompressedResourceManifestRefCounted
 37CMetaDuplicationAutoCompletionFunctor
 37CSource1InputHandlerPostClientHandler
+37CSource2Metrics_FetchMapData_Response
 37CVConsole2FlattenedSerializerListener
 37CWaitForGameServerStartupPrerequisite
 37IKV3TransferInterface_Worldspace_Load
@@ -1989,8 +1991,11 @@ $lZT
 43CSVCMsg_PacketEntities_alternate_baseline_t
 43CScreenshotServiceReadTexturePixelsCallback
 43IGameResourceManifestLoadCompletionCallback
+44CSource2Metrics_RecordPlayStats_Notification
 456789:;<=
+45CMsgSource2PlayStatsPackedRecordList_FieldDef
 45CNetworkServerSpawnGroup_AllocatePrerequisite
+45CSource2Metrics_FetchMapData_Response_MapData
 45CSource2Metrics_MatchPerfSummary_Notification
 476\r
 488:1: POS_FLOATLITERAL : ( ( DIGIT )+ '.' ( DIGIT )* ( EXPONENT )? | '.' ( DIGIT )+ ( EXPONENT )? | ( DIGIT )+ EXPONENT );
@@ -3859,7 +3864,6 @@ CheckServerReservationUpdate: %d conn periodic update\n
 CheckTimeouts: Disconnecting client: %s %s, after a netchan-decided timeout of %0.2fs with no acks received\n
 CheckTimeouts: Disconnecting client: %s %s, after a server-decided timeout of %0.2fs with no acks received\n
 CheckTransmit
-CheckedAdd
 Cherokee
 ClampFloatToZero_SSE2
 Clamping split screen users to 1 due to -tools mode.\n
@@ -3940,6 +3944,7 @@ ConColorMsg(Color const&, char const*, ...)
 ConDMsg
 ConMsg(char const*, ...)
 ConVars
+Config %s contains invalid commands\n
 Conflicting regex grammar options
 Connect to SourceTV server and relay broadcast.
 Connect to a remote HLTV server.
@@ -4635,6 +4640,7 @@ Force full sendtable sending path.
 Force toggle hibernation state
 Force uncompressed update
 Force user input to this split screen player.
+ForceFixedAppIds
 Forced by cvar\n
 Forcing engine to render for the next %d frames\n
 Forward
@@ -4663,7 +4669,6 @@ Free physical memory: %.2f MiB\n
 Freed EMS handle %u
 Freed XMS handle %u
 Friday
-FromFloatTicks
 Full Frame
 FullFrameSplit tick=%d, chunk=%d of %d\n
 FullPacketGoto
@@ -5295,7 +5300,6 @@ Invoke '%s' failed with code %d
 InvokeMiniDumpHandler
 Is fixup operator client running at low FPS? Only %d/%d fixup ticks available for %s\n
 Is the server pausable.
-IsValidFrac( flFrac )
 IsValidIndex( i )
 Issue an rcon command.
 J3GS
@@ -5633,6 +5637,7 @@ MapValueRef::SetInt64Value
 MapValueRef::SetStringValue
 MapValueRef::SetUInt32Value
 MapValueRef::SetUInt64Value
+Mar  4 2026
 March
 Marked tick %u in '%s'\n
 Marker,GPUTimeAvgMS,GPUTimeRangeMS,GPUTimeMinMS,GPUTimeMaxMS\n
@@ -6994,6 +6999,7 @@ RenderDeviceMgr001
 RenderHardwareConfig002
 RenderService
 RenderService::OnClientOutput
+RenderService::OnClientPostAdvanceTick
 RenderService_001
 RenderSystem/VulkanOnly
 RenderSystem/VulkanOnlyTestProbability
@@ -8207,6 +8213,7 @@ ThreadGetProcessPriority
 ThreadInMainThread
 ThreadInPrimaryOrSecondaryMainThread
 ThreadNanoSleep
+ThreadSetPerfSetAffinity
 ThreadSetPriority
 ThreadSetProcessPriority
 ThreadSleep
@@ -10123,7 +10130,6 @@ fWeightSumLeft > 0.0f
 fWeightSumRight > 0.0f
 fWeightSumTop > 0.0f
 failed
-failed to exec %s -- rejected by game\n
 failed to get memory
 failed!
 failure
@@ -11579,7 +11585,6 @@ results.txt
 resume
 retail
 retval
-rhs < 0 ? ret < lhs : ret >= lhs
 rnd_down
 rnd_up
 rnn_celt_autocorr
@@ -15655,7 +15660,6 @@ throw
 throw 
 tick
 tick_interval
-ticks_and_frac.cpp
 ticks_per_interval
 tier0
 time

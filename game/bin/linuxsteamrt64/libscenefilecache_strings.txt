@@ -612,7 +612,6 @@ flexanimation
 flexanimations
 fraction
 gesture
-gh*zx
 hardstopspeakevent
 hold
 ignorePhonemes
@@ -661,7 +660,6 @@ m_delay.range
 m_delay.start
 m_flFollowupDelay
 m_freeVariableValues
-m_hAnimClip
 m_hRoot
 m_handle
 m_iNode

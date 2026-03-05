@@ -1175,7 +1175,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1OnAccepted()
 1OnAddSavedSearchClicked()
 1OnAddTagClicked()
-1OnAllSelected()
 1OnAlphaChanged()
 1OnAssetListModelChanged()
 1OnAssetPanelDoubleClicked(int)
@@ -1363,6 +1362,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1trigger()
 255, 255, 255
 2AddTag()
+2AllSelected()
 2ApplySelectedSavedSearch( KeyValues3* )
 2AssetDoubleClicked(IAsset*)
 2AssetSelectionChanged()
@@ -3781,7 +3781,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CPulse_InstructionDebug
 CQ2DCanvas
 CQAdjustableDateInput
 CQAssetBrowserMainWnd
@@ -4207,7 +4206,6 @@ Delete selected working set
 Delete...
 DeleteAsset
 DeleteCriticalSection
-Description
 DeselectAllFiles
 Designable
 Desired Kill Priority
@@ -6206,7 +6204,7 @@ ZoomOutFromMiniMap
 \nYou are invoking a costly operation involving %1 Assets.\nAre you sure?\n
 \nYour selection will open the %1 that may create up to %2 instances.\nAre you sure?\n
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
-\r2AllSelected()
+\r1OnAllSelected()
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -7023,11 +7021,9 @@ m_Context
 m_Exposure
 m_Grid
 m_InputMacros
-m_InstructionDebugInfos
 m_MapName
 m_PointLights
 m_PostProcessing
-m_SequencePointName
 m_Sky
 m_SpotLights
 m_Stops
@@ -7059,7 +7055,6 @@ m_flSlopeOutgoing
 m_hPostProcessing
 m_nCurrentWakeIndex
 m_nRigType
-m_nValueNodeID
 m_tail != QUEUE_ITERATOR_INVALID
 m_vLookAt
 magenta

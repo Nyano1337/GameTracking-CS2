@@ -3875,6 +3875,7 @@ $prefix_element$
 2\rlhp
 2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vpDb
 2^pV
 2a"l
 2aboutToShow()
@@ -4141,12 +4142,12 @@ $prefix_element$
 =87M
 == (or missing)
 == PulseGraphDef ==\n
+=CMapIsoSurface
 =O?AqP
 =Q9M
 =cQ6
 =cdE
 =e2m
-=hammer_isosurface_subtract
 =imb;D
 =trF6,#
 >#>)>/>3>A>W>c>e>w>
@@ -6571,7 +6572,6 @@ CMapGrassTileCollection
 CMapGroup
 CMapGroupProxy
 CMapInstance
-CMapIsoSurface
 CMapIsoSurface::ConstructMeshRenderData(623): 
 CMapLatticeControlPointLocator
 CMapLocator
@@ -6803,7 +6803,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CPulse_InstructionDebug
 CQBaseEditorMdiFrame
 CQBaseEditorSessionCheckin
 CQBaseEditorSessionStatus
@@ -7938,7 +7937,6 @@ Density Scale
 Dependent on context, single convex if part of an entity, mesh if world geometry
 DeregisterEventSource
 Derived must implement
-Description
 Description cannot be empty.
 Designable
 Desired Kill Priority
@@ -11307,7 +11305,7 @@ R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\tV_powf
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
 R\vp!6
-R\vpLe
+R\vpDb
 R]Di
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
@@ -13305,7 +13303,6 @@ Z~wl
 \n?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
 \nIHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
 \nNo game entities will be available for creation.\n
-\nPLe
 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \n\tIPSec/IKE/Oakley curve #3 over a 155 bit binary field.\n\tNot suitable for ECDSA.\n\tQuestionable extension field!
@@ -13382,7 +13379,6 @@ Z~wl
 \tLa0+
 \tN1a
 \tNAN encountered in element '%s' guid %s attribute '%s'!\n
-\tPPE
 \tV_cosd
 \tV_cosf
 \tV_coshf
@@ -13435,15 +13431,13 @@ Z~wl
 \vGt5
 \vHCK/
 \vNCE\v
-\vPPE
 \vUY6[E
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 \v\tV_exp2f
 \v\vTSG
 \vj0k
 \vjC7
-\vpDH
-\vpLe
+\vppB
 ]1h=bfz
 ]FhSD}
 ]GT7]
@@ -13541,7 +13535,6 @@ _}eOk
 `ITS
 `RTTI
 `VX:H
-`\rP\f0Le
 `\tV_sinf
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `adjustor{
@@ -15653,7 +15646,7 @@ g|FeW\v
 g|MT
 h&eC
 h*Ax
-h.\n0yi
+h+\n0ni
 h0'D
 h0XB
 h2Wl
@@ -15705,6 +15698,7 @@ hammer_gridnav_show_ward_blocking
 hammer_isosurface_merge_tolerance
 hammer_isosurface_remove_interior
 hammer_isosurface_sample_offset
+hammer_isosurface_subtract
 hammer_overlay_draw_projection_triangles
 hammer_preview_lighting
 hammer_raytrace_debug_draw
@@ -16721,7 +16715,6 @@ m_InputPositionB
 m_InputVector
 m_InputVectorA
 m_InputVectorB
-m_InstructionDebugInfos
 m_InterfaceName
 m_IntrospectedRootStruct
 m_Keys
@@ -16783,7 +16776,6 @@ m_SelectionMode
 m_SelectionMode != GRADIENT_LOCATION
 m_SelectionMode != SPECIFIC_COLOR
 m_SelectionMode == SPECIFIC_COLOR
-m_SequencePointName
 m_SourceFile
 m_SpecificChildIndex
 m_StateName
@@ -17021,7 +17013,6 @@ m_nResourceNameIndex
 m_nScaleMode
 m_nSelectedProbeType
 m_nSourceLine
-m_nValueNodeID
 m_pInstanceProceduralConnectionsClass
 m_pVertexData
 m_pathingCoeffs
@@ -18228,7 +18219,6 @@ rRfKR
 rX&O0
 rZ1VwGf5
 rZPM
-r\fpLe
 r\tVr.>T
 r\vDi
 rad2deg

@@ -3700,103 +3700,112 @@ $woundcutouttexture
 0.2 0.4 0.4
 0.9 0.85 0.8
 0.96862745 0.066666670 0.086274512
-00b@
-00l@
-00m@
+00Z@
 0123456789abcdefghijklmnopqrstuvwxyz
-044@
-04P@
+02i@
+06P@
+06U@
+06i@
+06j@
 07X@
 07h@
-07k@
-07w@
-08S@
-096@
-0DW@
+082@
+086@
+088@
+090@
+09M@
+0AS@
+0Aj@
+0BT@
+0D2@
 0DX@
 0E>X
-0EP@
+0ET@
 0GV@
+0GX@
 0Gg@
-0H5@
-0HV@
+0HP@
 0Hh@
-0I5@
-0K5@
-0L1@
-0M1@
-0M5@
-0MW@
-0O0@
-0O5@
-0Q1@
-0S0@
-0SV@
-0U8@
-0V8@
-0W8@
+0I0@
+0IT@
+0Ig@
+0J4@
+0K7@
+0M7@
+0N7@
+0NT@
+0NW@
+0O7@
+0OS@
+0OW@
+0P9@
+0QW@
+0R8@
+0ST@
+0T3@
+0TV@
+0Ta@
+0WR@
+0X8@
 0X8b?~
-0Z6@
-0ZR@
-0Zh@
+0XT@
+0Xh@
+0Y2@
 0\fU04i
 0\r%0t
-0a2@
-0a8@
-0am@
-0b3@
-0b8@
+0a1@
+0aW@
+0aj@
+0bL@
+0bR@
+0bS@
+0bV@
 0c2@
-0c7@
-0c8@
-0cW@
 0cX@
-0eL@
-0eW@
-0eh@
-0fT@
-0fV@
-0fj@
-0fu@
-0gX@
-0h1@
-0h9@
-0hM@
-0he@
-0hl@
+0cm@
+0df@
+0dm@
+0em@
+0fe@
+0fm@
+0g0@
+0ge@
+0hY@
+0i0@
 0iN>/
+0iW@
 0ie@
+0jA@
 0jV@
-0je@
-0k1@
-0kR@
-0kW@
+0kT@
 0ke@
 0ki@
-0lW@
+0l2@
+0le@
+0lf~
 0li@
-0m0@
+0m9@
+0mL@
 0me@
-0n7@
-0ok@
-0pV@
-0q1@
-0qh@
-0rO@
-0sV@
-0t9@
-0uN@
-0uO@
-0uT@
-0uh@
-0v3@
-0vR@
-0vV@
-0w3@
+0n1@
+0ne@
+0o0@
+0oT@
+0pb@
+0qm@
+0rL@
+0tR@
+0tx@
+0v1@
+0vL@
+0w1@
 0x%llx
+0xV@
+0xj@
+0yR@
 0yV@
 0yW@
-0z0@
+0zW@
 0zX@
 1 1 0
 1 64
@@ -3822,12 +3831,12 @@ $woundcutouttexture
 1wsHp
 2D Views
 2DARRAY
+2P6~
 2\nP!E
 2\rU2t
 2\tV_isnand
 2\vp!J
-2\vpp
-2\vpt
+2\vplf~
 2nd most active material around a probe.
 3 FB
 30.0
@@ -3867,6 +3876,7 @@ $woundcutouttexture
 8Csinf
 8b  16-May-2010
 8ke?;
+8nV@
 969p
 9>-memory-
 9>70
@@ -3915,10 +3925,10 @@ $woundcutouttexture
 == (or missing)
 == PulseGraphDef ==\n
 =====================================================================\n
+=CMapIsoSurface
 =JRJ
 =cQ6
 =e2m
-=hammer_isosurface_subtract
 =imb;D
 >>> Reading bsp from path %s\n
 >JUMP
@@ -5015,7 +5025,6 @@ CMapGrassTileCollection
 CMapGroup
 CMapGroupProxy
 CMapInstance
-CMapIsoSurface
 CMapIsoSurface::ConstructMeshRenderData(623): 
 CMapLatticeControlPointLocator
 CMapLocator
@@ -6863,6 +6872,7 @@ DmeVertexData
 DmeVertexDataBase
 DmeVertexDeltaData
 DmeXSIMakefile
+DnV@
 Do not allow selected elements to be scaled, the parts may not fit the line exactly
 Do not load vmf files in hammer, import to a vmap first!
 Do not render when using the lowest quality video settings. This object is a non-essential detail.
@@ -9328,20 +9338,20 @@ Override CP 2 (X/Y/Z *= Pitch/Yaw/Roll)
 Override CP field
 Override Max Velocity from this CP
 Override Surface Property
-P04@
-P1S@
-P2P@
+P0N@
+P1m@
+P2S@
+P2X@
 P2_null_start
-P34@
 P4CopyFile
 P4CopyFile: Couldn't copy "%s" to "%s"\n
 P4CopyFile: Couldn't deduce depot path for source file "%s"\n
 P4File
-P64@
-P6V@
-P7S@
-P9Y@
-PA7@
+P4l@
+P6X@
+P7X@
+P7k@
+P90@
 PANEL_ID
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
@@ -9363,10 +9373,19 @@ PATTACH_RENDERORIGIN_FOLLOW
 PATTACH_ROOTBONE_FOLLOW
 PATTACH_WATERWAKE
 PATTACH_WORLDORIGIN
-PB9@
+PB2@
+PC8@
+PC9@
+PCX@
+PD2@
+PD9@
+PF8@
 PFNoiseModifier_t
 PFNoiseTurbulence_t
 PFNoiseType_t
+PFP@
+PFQ@
+PFW@
 PF\n%d %d\n-1.000000\n
 PF_BIAS_TYPE_COUNT
 PF_BIAS_TYPE_EXPONENTIAL
@@ -9440,25 +9459,21 @@ PF_TYPE_RANDOM_UNIFORM
 PF_TYPE_RENDERER_CAMERA_DISTANCE
 PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT
 PF_TYPE_SNAPSHOT_COUNT
-PG5@
+PG0@
 PGDInstruction_t
-PGS@
 PGX@
-PGk@
-PH5@
-PHP@
-PHX@
+PH0@
 PHg@
-PI7@
+PHh@
+PI4@
 PITCH_HIGH
 PITCH_LOW
 PITCH_NORM
+PIV@
+PIX@
 PIg@
 PInstruction_t<41>::Run
 PInstruction_t<42>::Run
-PK8@
-PKl@
-PL8@
 PLATFORM
 PLUG_TYPE_INPUT
 PLUG_TYPE_OUTPUT
@@ -9467,25 +9482,25 @@ PLUG_TYPE_RELAY_PREFAB_INBOUND
 PLUG_TYPE_RELAY_PREFAB_LOCAL
 PLUG_TYPE_RELAY_PREFAB_OUTBOUND
 PLUG_TYPE_UNKNOWN
-PM8@
+PMM@
 PMW@
 PM_TYPE_CONTROL_POINT
 PM_TYPE_COUNT
 PM_TYPE_INVALID
 PM_TYPE_NAMED_VALUE_EHANDLE
 PM_TYPE_NAMED_VALUE_MODEL
-PN0@
-PN8@
+PN7@
 PNG\r\n
-PO5@
 POISONED 
 POS_FLOATLITERAL
 POS_INTLITERAL
-PPV@
-PQ1@
-PQW@
-PR7@
+PP3@
+PQ8@
+PR8@
 PRIVATE
+PRg@
+PS4@
+PS7@
 PT_TYPE_CONTROL_POINT
 PT_TYPE_CONTROL_POINT_RANGE
 PT_TYPE_COUNT
@@ -9549,13 +9564,13 @@ PVEC_TYPE_PARTICLE_VECTOR
 PVEC_TYPE_PARTICLE_VELOCITY
 PVEC_TYPE_RANDOM_UNIFORM
 PVEC_TYPE_RANDOM_UNIFORM_OFFSET
-PVX@
-PVh@
-PW8@
+PXL@
 PXX@
-PZ3@
+PYL@
+PZL@
+PZV@
 P\v5Pd
-Pa3@
+PaV@
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -9661,15 +9676,11 @@ PatternType
 Pause
 Pause the cursor at this point.
 PauseGameOnActivate
-Pb8@
-PbT@
-PbW@
-Pbm@
-Pc8@
-PcR@
-PcX@
+Pb1@
+PdL@
+PdT@
+Pe4@
 Pe6^
-PeX@
 Per Particle World Collision Tests
 Per-Edge
 Per-Tile
@@ -9679,13 +9690,14 @@ PerVertexLighting
 Perform a trace between the specified origin and a specified target point.
 Perform a trace from a specified origin point to a the closest point on a line.
 Perform a trace in a direction from a specified origin and stop when a surface is hit.
+Pf0@
 PfV@
-PfX@
 Pf\n%d %d\n-1.000000\n
-Pg2@
-PgL@
-PgV@
+Pfe@
+Pge@
 Pgg@
+Pgm@
+Phe@
 Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
@@ -9704,8 +9716,6 @@ PhysicsSurfaceProperties4
 PhysicsTypeOverride_Mesh
 PhysicsTypeOverride_MultiConvex
 PhysicsTypeOverride_SingleConvex
-Pi7@
-Pi9@
 Pick
 Pick a choice specified by an additional authored value.
 Pick a random choice from the child elements that will fit within the remaining length, repeat this process until the line is full or no child will fit in the remaining length.
@@ -9718,7 +9728,6 @@ Pickover B Parameter
 Pickover C Parameter
 Pickover D Parameter
 Picks a material group from a set of choices and assigns that material group to a specified variable.
-Pie@
 Piecewise Bezier
 Pitch
 Pitch Yaw Roll
@@ -9726,15 +9735,13 @@ Pitch Yaw Roll Max
 PivotPaint
 PivotToolSnapToBBox
 PixarLog
-Piy@
-PjA@
-PjP@
-PjT@
+Pj6@
 Pje@
-PkS@
-Pke@
+Pjm@
+Pk9@
+PkL@
+PkV@
 Pki@
-Pky@
 Place
 Place In Radius
 Place Multiple
@@ -9822,10 +9829,13 @@ Play End Cap Effect
 Ple@
 Please make sure you deleted history on the mesh before exporting.\nThe mesh apparently has %d vertices, but %d blendWeights in field %s, while having %d weights per vertex\n
 Pli@
-Pm0@
-PmT@
+Plk@
+Pme@
+PnV@
+PnW@
 Pne@
-Pnm@
+PoR@
+Poh@
 PointEntity
 Pointers cannot be used as numeric values
 Polygon Mesh Data Pool - level 1
@@ -9903,8 +9913,8 @@ PostProcessingSystem_001
 PostProcessingTonemapParameters_t
 PostProcessingVignetteParameters_t
 PosterSettings
-Pp1@
-Pr1@
+PpL@
+PpT@
 Pre-Age Noise
 Predictor
 PredictorEncodeTile
@@ -9932,6 +9942,7 @@ Preview MotionExtraction
 Preview Unit
 PreviewModelFade
 Previous Position
+Pri@
 PrimaryChromaticities
 Print model load-time conversion info
 Private
@@ -9979,10 +9990,10 @@ Proxies
 Proxy
 Proxy Instance
 Proxy Name
-Ps6@
-Pt3@
-PtR@
-PtW@
+PsV@
+Psb@
+Pt1@
+PtL@
 Pull towards control point
 Pulse
 Pulse domain which enables particle content to query leaf code to introspect game state.
@@ -10024,16 +10035,13 @@ PulseSymbol_t
 PulseType
 PulseValueType_t
 PulseVariableKeysSource_t
-PvL@
-Pvk@
-PwP@
-PwW@
+Pvi@
+Pw1@
+PwR@
+Px4@
 PxW@
-Py7@
-PyR@
-Pyh@
-PzW@
-PzX@
+Pym@
+Pzx@
 Q2XXR
 Q5rHg,>
 QAf?
@@ -10164,8 +10172,10 @@ RIGID
 RSDS%6
 RST%d
 RT60 for low, mid, and high frequency bands for the probe.
+R\fplf~
 R\tV_powf
 R\vp!6
+R\vplf~
 R_T5Y
 Rad2 Deg
 Radius
@@ -12336,11 +12346,12 @@ Zpm"U
 \prefabs\%s\%s_gameplay.vmap
 \r\f\v\v\n\n\t\t\t\t\t
 \r\tV_expf
+\rconvertedvcdfilestemp.txt
 \resource\Flash\econ\
 \resource\Flash\images\ui_icons\
 \resource\overview\
 \rmj>zjZ
-\rvcd
+\rpIG
 \scripts\
 \scripts\items\unencrypted\
 \smousetracking=\"\w*\"
@@ -12612,6 +12623,7 @@ Zpm"U
 \v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%\v%
 \vA03>A|
 \v\tV_exp2f
+\vplf~
 ^(?:[^v]+|v(?!gui))*$
 ^(?:[^v]+|v(?!mat))*$
 ^<V7w
@@ -13555,7 +13567,6 @@ convertedpcffilestemp.txt
 convertedscriptfilestemp.txt
 convertedsheetstemp.txt
 convertedsoundfilestemp.txt
-convertedvcdfilestemp.txt
 convertedvmtstemp.txt
 convex
 convex_multi
@@ -14736,6 +14747,7 @@ hammer_gridnav_show_ward_blocking
 hammer_isosurface_merge_tolerance
 hammer_isosurface_remove_interior
 hammer_isosurface_sample_offset
+hammer_isosurface_subtract
 hammer_overlay_draw_projection_triangles
 hammer_preview_lighting
 hammer_raytrace_debug_draw
@@ -17797,51 +17809,63 @@ owM&
 owner dead
 ownerlog
 owns_polymorphic_data
-p0i@
-p34@
+p22@
+p3i@
 p4lib
 p4path
-p5i@
-p6X@
 p6h@
+p79@
+p7i@
 p7j@
-p80@
-pAX@
+p82@
+p8j@
+p90@
+p92@
+p98@
+p9S@
+pAT@
 pCheckpointName
-pCi@
+pD2@
+pDT@
 pDescription
-pEY@
-pFP@
-pFS@
 pFg@
-pH5@
+pGO@
 pHX@
-pIS@
-pIg@
-pLW@
-pM0@
-pM5@
+pIP@
+pIX@
+pJT@
+pK2@
+pLS@
 pMaterialGroupName
 pMessage
 pModelResourceName
-pNW@
-pPW@
-pPk@
-pQ1@
-pRW@
-pRg@
+pN7@
+pOT@
+pOV@
+pP0@
+pP2@
+pP4@
+pPV@
+pQ8@
 pRootClass
+pS3@
+pTT@
+pTW@
 pTagName
-pVR@
-pX1@
+pU0@
+pV7@
+pW2@
+pWX@
+pXR@
 pXV@
-pY3@
+pY9@
+pYl@
 p\r0\fP
 p\tV_strlower_fast
+paW@
 pa_arcana_proxy
 packmode flat\n
 packmode rgb+a\n
-pah@
 panorama
 panorama/images
 panorama\
@@ -17935,9 +17959,11 @@ pathnode
 pathnodeclass
 pattern
 payload_path_marker
-pb6@
-pcT@
-pd7@
+pby@
+pc7@
+pcf@
+pe7@
+peg@
 penetrationmodifier
 per particle
 per particle spatial offset
@@ -17954,12 +17980,12 @@ perl.exe
 permission denied
 permitresponses
 pervertexlighting
-pf7@
-pfe@
-pg7@
+pfL@
+pgR@
 pgV@
-pge@
-phe@
+pgX@
+ph0@
+phT@
 phonememap
 phys
 physics
@@ -17975,9 +18001,8 @@ physicsSimplificationOverride
 physicsType
 physics_prop
 physicsmode
-piL@
-piM@
 pickBySize
+pie@
 pinEnabled
 pin_enabled
 pitch
@@ -17987,13 +18012,11 @@ pitch_rand_max
 pitch_rand_min
 pivotOffset
 pixelAspectRatio
-pje@
+pj5@
+pj6@
 pkV@
 pke@
 pki@
-pl8@
-plA@
-plV@
 plane
 plane normal
 plane point
@@ -18009,12 +18032,14 @@ playback_time
 player
 playerclip
 playoverscript
-ple@
+plf~
 pli@
-plk@
 plugTypes
+pm3@
 pme@
-pnT@
+pn6@
+pnL@
+pne@
 point
 point offset
 point_follow
@@ -18067,9 +18092,13 @@ postprocessing
 posxyz
 power
 powf
-ppR@
-pq2@
-pr1@
+ppQ@
+ppX@
+pq0@
+pqT@
+pqV@
+pqW@
+pqm@
 precomputedboundsmaxs
 precomputedboundsmins
 precomputedfieldsvalid
@@ -18154,14 +18183,15 @@ protocol error
 protocol not supported
 proxyName
 proxySelectionHelper
-psV@
+ps4@
+psL@
 pseudo-
-pti@
+psh@
+puR@
 public: 
 publiccontent
 publish_data
 publish_data.txt
-puf@
 pulse_bindings
 pulse_feature_tag
 pulse_inflows
@@ -18176,11 +18206,13 @@ pulse_save_execution_history_limit
 pulse_system.dll
 purecall
 pvTarget
+pvV@
 pvec_color_black
 pvec_color_white
-pwR@
-pya@
-pzi@
+pvk@
+pxa@
+pyf@
+pzR@
 qS>g?h3
 q\tV_strnchr
 qangle
@@ -18193,6 +18225,7 @@ quaternion log
 quaternion_array
 quiet
 r\tVr.>T
+r\vplf~
 r_freezeparticles
 r_limit_particle_job_duration
 r_particle_max_detail_level
@@ -19561,7 +19594,6 @@ yaw_stop_time
 yield_token
 yields
 z>AlignedByteArray not properly aligned\n
-zD R
 z\tV_tand
 zero
 zero_value

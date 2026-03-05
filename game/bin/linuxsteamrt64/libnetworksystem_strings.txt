@@ -234,6 +234,7 @@
 21NetMessagePacketEnd_t
 22CDecodeSerializerStack
 22CEncodeSerializerStack
+23INetworkMessageInternal
 23NetMessagePacketStart_t
 25CConCommandMemberAccessorI16CNetworkMessagesE
 25CFieldShadowSpewCollector
@@ -619,6 +620,7 @@ Netchan queued message new high water mark reached by %s at %d messages\n
 Network System Initialized\n
 Network field tried to use a priority that has not been registered!\n
 Network socket '%s' opened on port %d\n
+NetworkConfigLimits
 NetworkMessages::FindOrCreateNetMessage: Message %s is of size %d in leaf code, but protobuf object is size %lld, the added fields should be placed into object derived from protobuf and then CNetMessagePB references that\n
 NetworkReplayCompatField_t %s::%s on field '%s' is using possibly bogus this pointer from class %s!\n
 NetworkSystem
@@ -662,6 +664,7 @@ ProcessMessages
 ProcessOverride encountered unknown directive NetworkOverrideType_t(%d)\n
 Processing
 Proto 
+PublicUniverse
 QAngle
 Quaternion
 QuaternionStorage
@@ -814,7 +817,6 @@ YWB:  remember to remove this code, once we combine networking startup procedure
 \tID                       = %u\n
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 ^$\.*+?()[]{}|
-`cg_Z
 activated
 added
 aggegated
@@ -1125,7 +1127,6 @@ prediction_errors
 previous only
 pri(%u)
 problem detected locally
-p}?23INetworkMessageInternal
 qangle_pitch_yaw
 question-mark
 quotation-mark

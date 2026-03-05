@@ -27,7 +27,7 @@
   R%d: %15s %25s %s\n
   Top-level Mesh Op '%s' returning a cached result.\n
   V%d: '%s' (%s)\n
- !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@
+ !"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  !"#$%&'()*+,-./
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  #%d: %d Faces, %d Verts, %d Edges\n
@@ -686,30 +686,34 @@ $schemasystem/schema_enable_defines.h
 (%d tracks)
 ((6"8(:,<*>
 (0`hpx
+(19H
+(1RH
 (1iH
 (4pZ\n
-(5IH
-(5nH
-(5vH
-(9LH
+(58H
+(9nH
+(9wH
 (? Queued)
 (?!\d)[\w_]*
 (Advanced Feature) Used to specify special interaction rules or exclusions. References a name in scripts/collision_properties.txt.
 (Anonymous)
+(AtH
 (Cannot dynamically spawn a prop_static)
 (Custom Colors Disabled)
 (Debug Feature) Used to draw collision with the same material in Physics Debugger as in Hammer.
 (Debug) Visualize Simplification Edges
+(EDH
+(EdH
 (Edges to Faces)
 (Edges to Vertices)
-(EeH
 (EpH
+(ErH
 (Error)
 (Faces to Edges)
 (Faces to Vertices)
 (Filter)
-(IGO
-(MNH
+(I0H
+(MJH
 (Mesh Substring Filter)
 (Multiple)
 (No Active Session)
@@ -719,14 +723,12 @@ $schemasystem/schema_enable_defines.h
 (No class selected)
 (Outliner Filter)
 (Preview Outliner Filter)
-(QrH
+(QeH
 (Specified in project's gameinfo.gi)
 (Steam Audio) Update physics surface property of VMDL files. They are used for picking acoustic material property for Steam Audio.
-(UBH
-(UPH
+(U7H
 (Vertices to Edges)
 (Vertices to Faces)
-(YAH
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\t"\r\n\vCNETMsg_NOP"'\n
@@ -755,25 +757,20 @@ $schemasystem/schema_enable_defines.h
 (\v2\v.CMsgVector
 (\v2\v.CMsg_CVars:
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(aCH
-(axH
+(aAH
+(aFH
+(aZH
 (export) %d %s %d %s %s\n
 (export) %d %s %d %s\n
-(i1H
-(iKO
-(iZH
 (layer %d)
-(mGO
-(mbH
-(mmH
+(m5H
+(myH
 (no-compile)
 (null)
-(q9H
-(qRH
-(qiH
-(u8H
-(ynH
-(ywH
+(qqH
+(qvH
+(uLH
+(yfH
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )#GameUI_Disconnect_PureServer_ClientExtra
 )#GameUI_Disconnect_RemoteProblem_BadCrypt
@@ -13022,6 +13019,8 @@ $schemasystem/schema_enable_defines.h
 2\rU2t
 2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vp4)
+2\vpT&
 2_BONE_IK
 2aboutToShow()
 2accepted()
@@ -13144,8 +13143,6 @@ $schemasystem/schema_enable_defines.h
 8-byte data pool
 8@HP:
 8Csinf
-8QSH
-8YGH
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n\textension
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
@@ -15389,12 +15386,13 @@ $schemasystem/schema_enable_defines.h
 @%s_lookFrame_1
 @%s_lookFrame_2
 @08@HPX`hpx
-@08N4
+@08N
 @AuthPhysCollisionAttributesModeEnum_t
 @C:\buildworker\csgo_rel_win64\build\src\mathlib\extended\generic_expr.g
 @HPX
 @HPX&I
-@HPX`hv
+@HPX`hv`
+@HVp
 @Integer overflow in %s
 @Invalid
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
@@ -15405,7 +15403,6 @@ $schemasystem/schema_enable_defines.h
 @m_name
 @spawn
 @unnamed_%d
-@yCO
 A bone named %s already exists.
 A box shape which cloth collides with.
 A capsule shape which cloth collides with.
@@ -16893,7 +16890,6 @@ CNmAnimDocument
 CNmBlendSpace1D
 CNmBlendSpace1D::Point_t
 CNmBlendSpace2D
-CNmBoneMaskSwitchNode::CDefinition
 CNmClipDocEvent
 CNmClipDocEventTrack
 CNmClipDocEventTrack::Type_t
@@ -16924,7 +16920,6 @@ CNmClipDocEvent_Transition
 CNmClipDocument
 CNmClipDocument::AdditiveBaseFrame_t
 CNmClipDocument::AdditiveType_t
-CNmExternalPoseNode::CDefinition
 CNmGraphDocAndNode
 CNmGraphDocAnimationPoseNode
 CNmGraphDocAnimationPoseNode::CData
@@ -17075,18 +17070,13 @@ CNmGraphInstance::EvaluateGraph
 CNmGraphInstance::GetCurrentGraphTimingInfo
 CNmGraphParameterArchetype
 CNmGraphParameterArchetype::EntryType_t
-CNmGraphVariationUserData
 CNmIKRigDocument
 CNmIKRigLink
 CNmIKRigTarget
-CNmIsExternalGraphSlotFilledNode::CDefinition
-CNmIsExternalPoseSetNode::CDefinition
 CNmPreviewArchetype
 CNmPreviewArchetype::SecondarySkeleton_t
 CNmSkeletonDocument
 CNmSkeletonDocument::SecondarySkeleton_t
-CNmTargetSelectorNode::CDefinition
-CNmTwoBoneIKTask
 CNmVariationHierarchy
 COMMAND_TEXT_MODE_BUTTON
 COMMAND_TEXT_MODE_ICON
@@ -17209,7 +17199,6 @@ CPulseTestScriptLib::IndicateTestFailure
 CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
-CPulse_InstructionDebug
 CQ2DBlendDelegate
 CQAnimBlendEntryWidget
 CQAnimBlendListWidget
@@ -17524,7 +17513,6 @@ CSOAContainer::FilterInX(), C:\buildworker\csgo_rel_win64\build\src\mathlib\exte
 CSOAContainer::IterateSlices
 CSVCMsgList_GameEvents
 CSVCMsg_GameEvent
-CSceneObjectData::RTProxyDrawDescriptor_t
 CSkeletonDemoRecorder
 CSkeletonDemoRecorder: Cannot load %s: %s\n
 CStrongHandle
@@ -18570,7 +18558,6 @@ Delta Min/Max :: %8.4f, %8.4f R :: %8.4f %8.4f C :: %8.4f %8.4f :: %s\n
 Depends on scale of translation, increase for stability at the cost of accuracy
 Deprecated
 Depth
-Description
 Description cannot be empty.
 DescriptorProto
 DescriptorProtosH
@@ -19487,7 +19474,6 @@ Fixed Blend is true, pose parameter "%s" is ignored.
 Fixed Section
 Fixed Time Value
 Fixed Weight Bone Mask
-FixedSection
 Flag sets do not have long names
 Flags Bones To Keep
 FlagsChanged
@@ -19850,19 +19836,18 @@ Grow Selection
 Grow or Shrink
 Grow or shrink a selection
 Grow the selection by adding contiguous components to the selection.
-H!DO
-H!FO
 H.FM
+H1DO
 HAC K  Unused Binding
 HELPER_BONE
 HH:mm:ss
-HQCO
 HSLA
 HSLA\t
 HSVA
 HSVA\t
 HSequence ID
 HUD Display
+HYDO
 Hack Dota Layer Opaque
 Hack Dota Layer Opaque Translucent
 HairShader
@@ -20160,6 +20145,7 @@ Importing a file whose mod (%s) is not in the leafiest search path.<br>Do you wa
 Imports The Skeleton From The Specified File Or SkeletonFile Node
 In Frame
 In-Game Animation Capture
+InEO
 InFrame
 InFrame frame, also called "apex" and "in", can be aliased via "entrytag" in sequence KV
 Inactive events ignored
@@ -20198,7 +20184,6 @@ IncreaseMoveSpeed
 Incremental Face Reduction
 Incremental Shapes "%s" & "%s" cannot have the same Peak value %.2g
 Incremental Vertex Reduction
-Index
 Indicate Test Failure
 Indicate that a checkpoint has been reached.
 IndicateEditorStateModified
@@ -20265,7 +20250,6 @@ Insert col before col %d
 Insert row before row %d
 Inside-Out Sort
 Inspect document after this step
-Instant Stop
 Instead of referencing the mesh directly in this LOD group, instead copy it and apply a simplification operation.\n(The resulting mesh will be automatically added to any bodygroups that reference the original mesh.)
 Insufficient data length.\n
 Insufficient data size for attributes.\n
@@ -20739,13 +20723,6 @@ MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
 MCustomFGDMetadata
 MENU
-MESH_BUFFER_USAGE_ADJACENCY
-MESH_BUFFER_USAGE_IB
-MESH_BUFFER_USAGE_MESHLET_TRIS
-MESH_BUFFER_USAGE_NONE
-MESH_BUFFER_USAGE_RT_PROXY
-MESH_BUFFER_USAGE_VB
-MESH_BUFFER_USAGE_VERTEX_ALBEDO
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
@@ -21145,7 +21122,6 @@ Model Space Target
 Model SubKey
 Model scale of %g, this breaks animation interaction.
 ModelAnimGraph2Identifier()
-ModelAnimGraph2Ref_t
 ModelAnimName()
 ModelAnimNameWithDeltas()
 ModelAttachmentName()
@@ -21302,7 +21278,6 @@ ModelDocViewMode_t::PERSPECTIVE
 ModelKeys
 ModelMaterialGroupName()
 ModelMesh
-ModelMeshBufferUsage_t
 ModelModifierList
 ModelModifier_DisableMorph
 ModelModifier_ScaleAndMirror
@@ -21387,7 +21362,6 @@ MoveManipulatorModifier
 Movement Speed: %0.*fx   [%s] to reset
 Movement Speeds
 Movement Tolerance
-MovementCapability_t
 MovementSettings
 MovementSettingsEditor
 Mul R%d <- R%d * R%d
@@ -22432,7 +22406,7 @@ Overwrite existing flags only
 Overwriting existing wrinkle map data on mesh
 P08@J
 P08JP|.
-P08N4
+P08N
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
@@ -22682,7 +22656,6 @@ Planarize
 Plane %d %s->%s
 Plane Primitive
 Planes[%d]
-Planted Turn
 Plastic
 Plasticity
 Play
@@ -23021,10 +22994,12 @@ RMouseDoubleClick
 ROTATION
 RSDS
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
+R\fp4)
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\tV_powf
 R\v0!F
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vpT&
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
 Radial Basis Function Type
@@ -23875,7 +23850,6 @@ Shrink Pieces
 Shrink Selection
 Shrink Selection 
 Shrink the selection by removing components that border unselected components.
-Shuffle
 Shutdown
 Sign Float
 Sign Int
@@ -24153,7 +24127,6 @@ StopRecording
 StopSendingCameraTo
 StopSound
 Stores metadata for groom meshes.
-Strafe
 Strand Count
 Strand Segments
 Stray Boundary Radius
@@ -24208,7 +24181,6 @@ Suppressed Shapes
 Surface Bias
 Surface Bias 
 Surface Normals
-Surface Offset
 Surface Property
 Surface Property Override
 Surface property '%s'\nDensity: %.1f [kg/m^3]
@@ -24684,7 +24656,6 @@ TrySendVNotify - SendKV3 failed\n
 Trying to divide by zero!
 Trying to mod by zero!
 Trying to set an offset on an unset node!
-Turn
 Turn off animation compression for this animation.<p><span style="color:#aa0000"><b>NOTE</b></span>: This significantly increases the size of the animation data.<p>Normally it should be false but if there are obvious compression artifacts, typically in tiny rotations, disabling compression may fix those.
 Twist Relax
 Twists
@@ -24936,9 +24907,6 @@ VDataChoice
 VDataChoice( %s )
 VDataModelVersion001
 VDmElementFrameworkVersion001
-VERTEX_ALBEDO_565
-VERTEX_ALBEDO_8888
-VERTEX_ALBEDO_NONE
 VMDL Prefab Files (*.vmdl_prefab);;All Files (*)
 VNOTIFY_DISABLE
 VNotify
@@ -25025,7 +24993,6 @@ Vertex normals of selected faces are only unified if they meet at this angle (in
 Vertex to Edge
 Vertex to Face
 Vertex-Vertex Only
-VertexAlbedoFormat_t
 VertexColorUVPos_t
 VertexElementAnnotation
 VertexGenericIntegerData
@@ -25287,6 +25254,7 @@ YY?setDropAction@QDropEvent@@QEAAXW4DropAction@Qt@@@Z
 Y\n)NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
 Y\n*NETWORK_DISCONNECT_STRINGTABLEMSG_OVERFLOW
 Y\n0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
+Y\nEO
 Y\tV_roundf
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 Yaw Bounce
@@ -25295,7 +25263,6 @@ YawCameraLeft
 YawCameraRight
 Yes - Discard and reload from disk
 Yes: Checkout, resolve conflicts later.
-YfEO
 Yield, Resume=%s
 You have changed the start frame of an animation with events.<br>Should those events preserve their absolute frames,<br>or shift to keep their offset from the start of the sequence?
 You have too many input options (max is 32) - please remove some options to continue!
@@ -25535,6 +25502,7 @@ Zpm"U
 \n?editorEvent@QStyledItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \nDescription: %s
 \nErrors Found:\n%s
+\nGGH
 \nIHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
 \nThickness: %.1f [inches]
 \n[ERR] Not enough memory, shop for some more RAM. See you!\n
@@ -25718,7 +25686,7 @@ Zpm"U
 \t\f?data@QString@@QEBAPEBVQChar@@XZ
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
 \t\t\t\t\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
-\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tw
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t%hu
 \t_MakeGlobalSymbol
 \t_MakeGlobalSymbolCaseSensitive
 \t_V_ExtractFileExtension
@@ -25917,7 +25885,6 @@ _variant_
 _volumeatlas_
 _wjb
 _zero
-`9CO
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
@@ -25926,6 +25893,8 @@ _zero
 `Q?lightnessF@QColor@@QEBANXZ
 `RTTI
 `V?queryKeyboardModifiers@QGuiApplication@@SA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
+`YFO
+`YHH
 `\r?entryInfoList@QDir@@QEBA?AV?$QList@VQFileInfo@@@@V?$QFlags@W4Filter@QDir@@@@V?$QFlags@W4SortFlag@QDir@@@@@Z
 `\tV_sinf
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
@@ -25957,6 +25926,7 @@ _zero
 `omni callsig'
 `placement delete closure'
 `placement delete[] closure'
+`qGO
 `scalar deleting destructor'
 `string'
 `template static data member constructor helper'
@@ -25980,12 +25950,12 @@ _zero
 `virtual displacement map'
 `vtordispex{
 `vtordisp{
+`yFO
 a6>r
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
-aBv4
 a\f?foreground@QTreeWidgetItem@@QEBA?AVQBrush@@H@Z
 a\n?dragDropMode@QAbstractItemView@@QEBA?AW4DragDropMode@1@XZ
 abcdefghijklmnopqrstuvwxyz
@@ -26873,15 +26843,8 @@ e ?topLevelItem@QTreeWidget@@QEBAPEAVQTreeWidgetItem@@H@Z
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 e+000
 eF>t
-eIdleTurn
-eInstantStop
 eLK(w
 eO@R
-ePlantedTurn
-eShuffle
-eStart
-eStop
-eStrafe
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
 e\v?event@QStatusBar@@MEAA_NPEAVQEvent@@@Z
@@ -27886,8 +27849,6 @@ m_DebugColor
 m_DefaultSolverSettings.m_nNumIterations
 m_DefaultTargetSettings.m_Bone
 m_DefaultTargetSettings.m_TargetSource
-m_DetailLayerStrings
-m_DetailLayers
 m_EndEffectorFixedOffsetAttachment
 m_EnumArray
 m_Exposure
@@ -27902,7 +27863,6 @@ m_IncludedDetailLayers
 m_Indices
 m_InputDependencies
 m_InputMacros
-m_InstructionDebugInfos
 m_Int
 m_IntArray
 m_Integrator
@@ -27910,7 +27870,6 @@ m_LocalBindPose
 m_MapName
 m_MissingDetailLayers
 m_ModelVertexSetName
-m_NodeStrayBoxes
 m_ParameterType
 m_ParentJoint
 m_PartsData
@@ -27923,8 +27882,6 @@ m_RelativeFilename
 m_RootRelativePath
 m_SearchPath
 m_SearchableUserData
-m_SelfCollisionLayers
-m_SequencePointName
 m_Shapes
 m_Sky
 m_SoftParents
@@ -27951,14 +27908,12 @@ m_WeakReferenceList
 m_additiveBaseFilename
 m_additiveBaseFrame
 m_additiveType
-m_animGraph2Refs
 m_animationSkeletonName
 m_attachToBoneName
 m_attachments
 m_bAddBendOnlyRods
 m_bAddBoneToRenderMesh
 m_bAddStiffnessRods
-m_bAlignWithTargetAtLastWarpEvent
 m_bAllowMultipleOutConnections
 m_bAllowPitchForFacing
 m_bAlwaysDynamicOnClient
@@ -27977,7 +27932,6 @@ m_bDisableContinuousCollisionDetection
 m_bDisableRegionSVM
 m_bDrawLast
 m_bEnableEmptyModel
-m_bEnableEyeBulgeDeformation
 m_bExplicitLength
 m_bExplicitMasses
 m_bExternalRBrefFlag
@@ -28035,13 +27989,11 @@ m_bPositionDriven
 m_bRelativePositioning
 m_bRender3DSkybox
 m_bRigidEdgeHinges
-m_bShouldSampleRootMotion
 m_bShutdown
 m_bSimulated
 m_bStraightBendRods
 m_bSuspenders
 m_bSwapLeftRightParentBones
-m_bSwitchDynamically
 m_bTwistPriority
 m_bUninertialRods
 m_bUnitlessDamping
@@ -28053,7 +28005,6 @@ m_bUsePerNodeLocalForceAndRotation
 m_bUseRods
 m_bUseShadowFastPath
 m_bVirtual
-m_bWarpTranslation
 m_bodyLocationDef
 m_bodyPartChoiceName
 m_boneMaskSetDefinitions
@@ -28068,7 +28019,6 @@ m_comparisonOperator
 m_debugParameterSets
 m_defaultID
 m_defaultResourceName
-m_drawDesc
 m_eColorFormat
 m_eMaxBlendWeightsPerVertex
 m_eMirrorSpace
@@ -28102,6 +28052,7 @@ m_flDefaultWorldCollisionPenetration
 m_flDesiredDuration
 m_flDesiredVelocity
 m_flDurationOverrideSeconds
+m_flDurationSeconds
 m_flExtraStretch
 m_flFollowWeight
 m_flGlobalScale
@@ -28124,11 +28075,7 @@ m_flMinEV
 m_flMinRadians
 m_flMotionBias
 m_flMultiplier
-m_flOrientationScoreWeight
-m_flParentReaction
-m_flPositionScoreWeight
 m_flQuadBendTolerance
-m_flReferencePoseTwistWeight
 m_flRelaxationFactor
 m_flRenderInfluence
 m_flSamplingPositionErrorThreshold
@@ -28147,7 +28094,6 @@ m_floatValues
 m_floatingComment
 m_followTargetBoneName
 m_fromNodeID
-m_graphEvents
 m_graphType
 m_hDef
 m_hPostProcessing
@@ -28160,7 +28106,6 @@ m_inputPins
 m_isInclusiveCheck
 m_isSynchronized
 m_links
-m_mWorldFromLocal
 m_mappings
 m_markerIDToMatch
 m_maskID
@@ -28169,18 +28114,12 @@ m_morphSet
 m_nAdditiveBaseFrameIdx
 m_nBone
 m_nBones
-m_nBufferUsage
 m_nChildBone
 m_nCurrentWakeIndex
-m_nEndIdx
-m_nExternalGraphNodeIdx
-m_nExternalPoseNodeIdx
 m_nFileCRC
 m_nFingerprint
 m_nFingerprintDefault
 m_nFollowParent
-m_nGroupValue
-m_nIncludeDetailLayerCount
 m_nLockLocalTranslation
 m_nMergePriority
 m_nNodes
@@ -28191,12 +28130,7 @@ m_nRopeOptions
 m_nSerial
 m_nSyncEventIdx
 m_nUserData
-m_nValueNodeID
 m_nValueType
-m_nVertexAlbedoFormat
-m_nVertexAlbedoOffset
-m_nVertexAlbedoStride
-m_nVertexAlbedoVB
 m_nodeColor
 m_offsetType
 m_onlySampleBaseRootMotion
@@ -28210,7 +28144,6 @@ m_pChildGraph
 m_pDefaultVariationData
 m_pRootGraph
 m_pSecondaryGraph
-m_pUserData
 m_parameterGroupName
 m_parameterName
 m_parameterUUID
@@ -28233,8 +28166,6 @@ m_rbfParameters
 m_resultType
 m_rootBoneName
 m_rotation
-m_rtProxyDrawCalls
-m_sIdentifier
 m_sMDLFilename
 m_sMaterialName
 m_sSemanticName
@@ -28245,6 +28176,7 @@ m_size
 m_sourceFilename
 m_startStateID
 m_stateEvents
+m_switchDynamically
 m_targetOrientation
 m_targetPosition
 m_timeElapsedEvents
@@ -28261,7 +28193,6 @@ m_variation
 m_variationHierarchy
 m_variationTimeValue
 m_variations
-m_vecNmSkeletonRefs
 m_vecSpeculationPosMiddle
 m_vectorValues
 m_viewOffset
@@ -28715,7 +28646,7 @@ owM&
 owner dead
 owns_polymorphic_data
 p"?value@QSpinBox@@QEBAHXZ
-p08@H^4
+p08@H^
 p0jP=-
 p0p@
 p@HPX`h\f
@@ -28978,6 +28909,7 @@ quadratic
 quaternion_array
 quiet
 r\tVr.>T
+r\vp4)
 rad2deg
 radiant
 radiant_creeps
@@ -30143,8 +30075,6 @@ uzKs@>
 v %f %f %f\n#%d ComponentIndex %d, queue %d, angle %.1f; ring:
 v2!L.2
 vForward
-vMax
-vMin
 vT?pointSize@QFont@@QEBAHXZ
 vValue
 v\f?frameWidth@QFrame@@QEBAHXZ

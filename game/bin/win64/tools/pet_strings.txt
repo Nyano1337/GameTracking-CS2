@@ -2666,8 +2666,8 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 /\tV_isdigit_str
 /]?size@QImage@@QEBA?AVQSize@@XZ
 /y?YL
+04O@
 0?TVS>
-0X4@
 0iN>/
 0x%1
 0x%p = %s '%s'
@@ -5007,7 +5007,6 @@ About &Qt
 About...
 Abs Float
 Abs Int
-Abs Origin
 Absolute value (float)
 Absolute value (int)
 AcceptColorInternal
@@ -5570,7 +5569,6 @@ CPulseTestScriptLib::IsInTestMode
 CPulseTestScriptLib::RegisterTestCheckpoint
 CPulseTestScriptLib::TestModeAssertTrue
 CPulseValuePort::CMD_CHANGE_VALUE_SOURCE
-CPulse_InstructionDebug
 CQAnimPreviewWidget
 CQAssetParentChildMenu
 CQAttributeEditor_Base
@@ -5738,7 +5736,6 @@ CQWidgetDebugHighlight
 CQWidgetDebugger
 CQWidgetWithEnterLeaveSignals
 CRenderOptionsPopupUI
-CSceneObjectData::RTProxyDrawDescriptor_t
 CStrongHandle
 CStrongHandleCopyable
 CTSQueue<class std::function<void __cdecl(void)> *,0>::Push
@@ -6194,7 +6191,6 @@ Deleting autosave file: %s\n
 Delta Between Control Points
 Delta CP#
 Delta between CP#%d and CP%d
-Description
 Description cannot be empty.
 Deselect Element
 Designable
@@ -6652,7 +6648,6 @@ FreeEnvironmentStringsW
 FreeLibrary
 FreeLibraryWhenCallbackReturns
 FreeOffsets
-Friendly Name
 From
 Functions
 G channel not found!\n
@@ -6858,7 +6853,6 @@ Include Inactive
 Incoming
 IncreaseMoveSpeed
 Increment Value by this amount each time through the loop
-Index
 Index in the array (first element is 0)
 Indicate Test Failure
 Indicate that a checkpoint has been reached.
@@ -6893,7 +6887,6 @@ Input value which will be compared to the cases below.
 Input:
 InputBindSystem
 Insert 'element' in the given index in 'a', increasing its count by one and moving the elements after index.
-Instant Stop
 Instead of calling an Input on an Entity, call it on the associated Game Blackboard.
 Insufficient data length.\n
 Insufficient data size for attributes.\n
@@ -7133,13 +7126,6 @@ MAtomicTransfersAsMap
 MAtomicTransfersAsPlainString
 MCustomFGDMetadata
 MENU
-MESH_BUFFER_USAGE_ADJACENCY
-MESH_BUFFER_USAGE_IB
-MESH_BUFFER_USAGE_MESHLET_TRIS
-MESH_BUFFER_USAGE_NONE
-MESH_BUFFER_USAGE_RT_PROXY
-MESH_BUFFER_USAGE_VB
-MESH_BUFFER_USAGE_VERTEX_ALBEDO
 MEntitySubclassScopeFile
 MFgdHelper
 MHideInPolymorphicClassList
@@ -7322,7 +7308,6 @@ Mod R%d <- R%d %% R%d
 ModalPointEdit
 Model imported from source1
 ModelAnimGraph2Identifier()
-ModelAnimGraph2Ref_t
 ModelAnimName()
 ModelAnimNameWithDeltas()
 ModelAttachmentName()
@@ -7330,7 +7315,6 @@ ModelBodyGroupName()
 ModelBoneName()
 ModelInput
 ModelMaterialGroupName()
-ModelMeshBufferUsage_t
 ModelScale
 Models
 Modulo %
@@ -7362,7 +7346,6 @@ MoveCameraUp3D
 Movement Gait
 Movement Speed: %0.*fx   [%s] to reset
 Movement lag compensation
-MovementCapability_t
 Mul R%d <- R%d * R%d
 MultiByteToWideChar
 Multiply *
@@ -7886,6 +7869,7 @@ P1 Max
 P2 Max
 P3 Max
 P4 Max
+P4O@
 P7>D
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
@@ -7916,7 +7900,6 @@ POISONED
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 PREVIEW
-PX4@
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
@@ -8056,7 +8039,6 @@ Placeholder
 PlanarConfiguration
 Planarconfig tag value assumed incorrect, assuming data is contig instead of chunky
 Plane
-Planted Turn
 Play
 Play Scene
 Play Scripted Sequence on NPC
@@ -8233,6 +8215,7 @@ R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\tV_powf
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vp4O@
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
 Random %g - %g
@@ -8616,7 +8599,6 @@ ShowRenameDialog
 ShowVisualizerControls
 ShowWidgetDebugger
 ShowWindowsList
-Shuffle
 Shutdown
 Sign Float
 Sign Int
@@ -8710,7 +8692,6 @@ StopSimWithEndcap
 StopSound
 StopWait
 StopWaiting
-Strafe
 Strings Are Equal Case Sensitive
 StripByteCounts
 StripOffsets
@@ -8975,7 +8956,6 @@ TryAcquireSRWLockExclusive
 TrySendVNotify - SendKV3 failed\n
 Turbulence Freq Scale:
 Turbulence Mix:
-Turn
 Type:
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -9100,9 +9080,6 @@ VConsole
 VData:%s
 VDataChoice
 VDataChoice( %s )
-VERTEX_ALBEDO_565
-VERTEX_ALBEDO_8888
-VERTEX_ALBEDO_NONE
 VNOTIFY_DISABLE
 VNotify
 VNotify Abandoned (ActiveProtocolIsNewer)\n
@@ -9162,7 +9139,6 @@ VersionControlCheckIn
 VersionControlCheckInAll
 VersionControlCheckOut
 VersionControlStatus
-VertexAlbedoFormat_t
 VertexColorUVPos_t
 VertexElementAnnotation
 VertexGenericIntegerData
@@ -9464,6 +9440,7 @@ Zpm"U
 \n?editorEvent@QStyledItemDelegate@@MEAA_NPEAVQEvent@@PEAVQAbstractItemModel@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 \nComplete!  ----------\n
 \nIHDRPLTEIDATIENDtRNScHRMgAMAiCCPsBITsRGBtEXtzTXtiTXtbKGDhISTpHYssPLTtIMEoFFseXIf
+\nP4O@
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
 \r?a7L>mt
 \r?darker@QColor@@QEBA?AV1@H@Z
@@ -9500,7 +9477,7 @@ Zpm"U
 \r\f\v\v\n\n\t\t\t\t\t
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
 \r\tV_expf
-\rxSp
+\rpSp
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
 \t?alphaF@QColor@@QEBANXZ
@@ -9575,6 +9552,7 @@ Zpm"U
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
 \v\tV_exp2f
+\vp4O@
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
 ]X?setBackgroundMode@QPainter@@QEAAXW4BGMode@Qt@@@Z
@@ -9999,15 +9977,8 @@ e ?topLevelItem@QTreeWidget@@QEBAPEAVQTreeWidgetItem@@H@Z
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 e+000
 eF>t
-eIdleTurn
-eInstantStop
 eLK(w
 eO@R
-ePlantedTurn
-eShuffle
-eStart
-eStop
-eStrafe
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
 e\v?event@QStatusBar@@MEAA_NPEAVQEvent@@@Z
@@ -10528,8 +10499,6 @@ m_DefaultCaseOutflow
 m_DefaultKV3
 m_DesiredOutputValueType
 m_DestinationSubType
-m_DetailLayerStrings
-m_DetailLayers
 m_EditableCases
 m_Entity
 m_EntityParent
@@ -10558,7 +10527,6 @@ m_Inflow_Start
 m_InparamPort
 m_InputMacros
 m_Inputs
-m_InstructionDebugInfos
 m_InternalInparam
 m_InternalPortName
 m_IsFalse
@@ -10573,7 +10541,6 @@ m_MetaData
 m_MirroredAncestorInparamName
 m_MirroredAncestorNodeID
 m_ModelContextHint
-m_NodeStrayBoxes
 m_ObjectParam
 m_OptionalRequirementsCheckPointForInlineSkip
 m_OptionalRequirementsCommitPoint
@@ -10593,8 +10560,6 @@ m_PostProcessing
 m_PrimaryPoint
 m_PropertyName
 m_SecondArg
-m_SelfCollisionLayers
-m_SequencePointName
 m_SingleParamType
 m_Sky
 m_Source
@@ -10615,7 +10580,6 @@ m_UnifiedElementType
 m_UserRefinedType
 m_VarDefID
 m_VarName
-m_animGraph2Refs
 m_attachments
 m_bAllowStateCells
 m_bBakedTwoSided
@@ -10626,7 +10590,6 @@ m_bCondition
 m_bConditionValue
 m_bCustom
 m_bDrawLast
-m_bEnableEyeBulgeDeformation
 m_bFirstEvaluate
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
@@ -10648,7 +10611,6 @@ m_bUsingLegacyDefault
 m_bmaxs
 m_bmins
 m_cachedParamValueType
-m_drawDesc
 m_eRbfType
 m_externalMethodTargetGraph
 m_flAxisScale
@@ -10656,7 +10618,6 @@ m_flIdealHeight
 m_flLightSourceRadius
 m_flMaxEV
 m_flMinEV
-m_flParentReaction
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_hDef
@@ -10664,41 +10625,29 @@ m_hPostProcessing
 m_hitboxsets
 m_iValue
 m_influenceFlags
-m_mWorldFromLocal
 m_morphSet
 m_nArrayIndexDimension
-m_nBufferUsage
 m_nChildCursors
 m_nClassType
 m_nCurrentWakeIndex
 m_nCycleMode
-m_nEndIdx
 m_nEvaluationOperator
 m_nExitCount
 m_nFailBehavior
-m_nIncludeDetailLayerCount
 m_nLegacyDefaultInt
 m_nNumExits
 m_nRequirementFailBehavior
 m_nRequirementOperator
 m_nRigType
 m_nUserVisibility
-m_nValueNodeID
-m_nVertexAlbedoFormat
-m_nVertexAlbedoOffset
-m_nVertexAlbedoStride
-m_nVertexAlbedoVB
 m_pItemSet
 m_rbfParameters
 m_rgbColor
-m_rtProxyDrawCalls
-m_sIdentifier
 m_strEditorModel
 m_vLookAt
 m_vcdFilename
 m_vecAdditionalActorsData
 m_vecGameBlackboards
-m_vecNmSkeletonRefs
 main_view
 map_effect
 mapkeys
@@ -10887,6 +10836,7 @@ overrideclass
 owM&
 owner dead
 owns_polymorphic_data
+p4O@
 pAction
 pAsset
 pAssetMenuObject
@@ -10913,7 +10863,6 @@ pV?read@QImageReader@@QEAA?AVQImage@@XZ
 pVoidAsset
 pWidget
 pWindow
-pX4@
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
 p\tV_strlower_fast
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
@@ -11012,6 +10961,7 @@ q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 quX?
 quiet
 r?GZf?
+r\fp4O@
 r\tVr.>T
 rad2deg
 radiant_creeps
@@ -11300,8 +11250,6 @@ uzKs@>
 v2!L.2
 v=Kv
 vForward
-vMax
-vMin
 vValue
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 valAsText
