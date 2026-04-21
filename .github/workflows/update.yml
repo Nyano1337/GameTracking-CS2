@@ -1,0 +1,33 @@
+name: Update
+
+on:
+    workflow_dispatch:
+        inputs:
+            branch:
+                description: 'CS2 Branch'
+                required: false
+                default: 'public'
+                type: string
+            reset-gametracking:
+                description: 'Reset GameTracking'
+                required: false
+                default: false
+                type: boolean
+
+concurrency:
+    group: ${{ github.workflow }}
+    cancel-in-progress: true
+
+jobs:
+    process:
+        permissions:
+            contents: write
+            statuses: write
+        uses: steamtracking/gametracking/.github/workflows/gametracking.yml@master    
+        secrets: inherit
+        with:
+          branch: ${{ github.event.inputs.branch }}
+          appid: 730
+          run-on-windows: true
+          reset-gametracking: ${{ inputs.reset-gametracking }}
+          dumpsource2-schema-json: "cs2"

@@ -127,9 +127,9 @@
 //	}
 //}
 // MVDataRoot
-// MVDataOutlinerDetailExpr (UNKNOWN FOR PARSER)
+// MVDataOutlinerDetailExpr = "name"
 // MVDataOverlayType = 1
-// MVDataPreviewWidget (UNKNOWN FOR PARSER)
+// MVDataPreviewWidget = "csgo_inv_image_preview"
 // MVDataHideNodeClass
 // MVDataOutlinerLeafNameFn (UNKNOWN FOR PARSER)
 // MVDataOutlinerLeafColorFn (UNKNOWN FOR PARSER)
@@ -143,7 +143,7 @@ class CInventoryImageData
 	InventoryNodeType_t m_nNodeType;
 	// MPropertyFriendlyName = "Item Name"
 	// MPropertyReadOnly
-	// MPropertyReadonlyExpr (UNKNOWN FOR PARSER)
+	// MPropertyReadonlyExpr = "1"
 	// MPropertySuppressExpr = "name == """
 	CUtlString name;
 	// MPropertyFriendlyName = "Inventory Image Data"

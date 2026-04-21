@@ -76,9 +76,6 @@
 -spray_menu (clientdll release)
 	<no description>
 
-CreatePredictionError (gamedll cheat)
-	Create a prediction error
-
 ShowSteamStatsSessionID (developmentonly clientdll)
 	Prints out the game stats session ID's (developer convar must be set to non-zero).
 
@@ -245,6 +242,9 @@ bot_kill (gamedll cheat)
 bot_knives_only (gamedll release)
 	Restricts the bots to only using knives
 
+bot_path (gamedll cheat)
+	bot_path <all> <t|ct> <type> <difficulty> <name> - Tells a specific bot to follow a human path, matching the given criteria.
+
 bot_pistols_only (gamedll release)
 	Restricts the bots to only using pistols
 
@@ -301,6 +301,9 @@ camera_path_clear_all (clientdll cheat)
 	<no description>
 
 camera_path_delete (clientdll cheat)
+	<no description>
+
+camera_path_demo (clientdll cheat)
 	<no description>
 
 camera_path_load (clientdll cheat)
@@ -436,9 +439,6 @@ cl_drawline (clientdll cheat)
 	Red is collides with something
 	Arguments: x1 y1 z1 x2 y2 z2
 
-cl_dump_player_animgraph_state (developmentonly clientdll)
-	Dumps the local player's animgraph state to console
-
 cl_dump_projected_texture_count (developmentonly clientdll defensive)
 	Print out number of active projected textures
 
@@ -470,11 +470,6 @@ cl_ent_animgraph2_record (clientdll cheat)
 
 cl_ent_animgraph_debug (clientdll cheat)
 	Displays debug draws about the given entity(ies) animgraph
-	Arguments:   	{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
-
-cl_ent_animgraph_record (clientdll cheat)
-	Toggles recording of animgraph replay of the given entity(s)
-	Arguments: entityName automaticallyOpenInAnimgraphEditor
 	Arguments:   	{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
 
 cl_ent_attachments (clientdll cheat)
@@ -692,14 +687,7 @@ cl_phys_list (developmentonly clientdll)
 	    -world -save <name>   save world to a file
 	    -world -mem           memory dump (separately per game dll)
 	    -world -snapshots     Start/Stop dumping snapshots of the world into the current directory
-	    -world -profiletraces ProfileRecordedTraces
 	    -world -agg           current aggregate data registry (loaded resources)
-
-cl_phys_record_rays (developmentonly clientdll)
-	Dump physics main world to file
-
-cl_phys_record_rays_and_world (developmentonly clientdll)
-	Dump traces physics main world to file
 
 cl_phys_sleep (developmentonly clientdll)
 	Put all physics in all the worlds to sleep
@@ -771,10 +759,6 @@ cl_rr_dump_rules (clientdll cheat)
 
 cl_rr_reloadresponsesystems (clientdll cheat)
 	Reload all response system scripts.
-
-cl_save_animgraph_recording (clientdll cheat)
-	Saves all active animgraph recordings to disk
-	Arguments: automaticallyOpenInAnimgraphEditor
 
 cl_script_add_debug_filter (clientdll cheat)
 	Add a filter to the game debug overlay
@@ -1219,15 +1203,6 @@ ent_animgraph_debug (gamedll cheat)
 	Displays debug draws about the given entity(ies) animgraph
 	Arguments:   	{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
 
-ent_animgraph_record (gamedll cheat)
-	Toggles recording of animgraph replay of the given entity(s)
-	Arguments: entityName automaticallyOpenInAnimgraphEditor
-	Arguments:   	{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
-
-ent_animgraph_setvar (gamedll cheat)
-	Sets a variable on the animgraph of the given entity(s)
-	Arguments:   <varname>=<value>	<{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}>
-
 ent_attachments (gamedll cheat)
 	Displays the attachment points on an entity.
 	Arguments:   	{entity_name} / {class_name} / {entity_index} / {no argument = pick what player is looking at}
@@ -1508,6 +1483,9 @@ force_assert (developmentonly)
 force_fatal_error (developmentonly)
 	Fire a fatal error
 
+force_floating_point_exceptions (developmentonly)
+	Enable floating point exceptions to find bugs
+
 force_hibernate (developmentonly)
 	Force toggle hibernation state
 
@@ -1516,6 +1494,12 @@ fs_clear_open_duplicate_times (developmentonly defensive)
 
 fs_dump_open_duplicate_times (developmentonly defensive)
 	Set fs_report_long_reads 1 before loading to use this. Prints a list of files that were opened more than once and ~how long was spent reading from them.
+
+func_mover_count (gamedll cheat)
+	<no description>
+
+func_mover_enable_debug_all (gamedll cheat)
+	<no description>
 
 game_alias (release)
 	Set the configuration of game type and mode based on game alias like "deathmatch".
@@ -1864,9 +1848,6 @@ lrucache_set_size (developmentonly defensive)
 lrucache_stats (developmentonly defensive)
 	Spews information about all CUtlLRUCaches
 
-malloc_stats_dump (developmentonly defensive)
-	Dump malloc stats to stderr.
-
 map (release vconsole_fuzzy_matching vconsole_set_focus)
 	map <mapname> :Load a new map.
 
@@ -2197,11 +2178,17 @@ notarget (gamedll cheat client_can_execute)
 open_asset (developmentonly defensive)
 	Opens an asset in it's primary editor of choice. Specify the full path to the asset from the mod directory.
 
+open_current_map_in_hammer (developmentonly)
+	opens the current map in hammer.
+
 p2p_listpeers (developmentonly defensive)
 	List currently known peers.
 
 p2p_ping (developmentonly clientdll defensive)
 	Ping a peer.
+
+panorama_console_reset_size_and_position (linked_concommand developmentonly clientdll hidden defensive)
+	Resets the panorama console to its default size and position
 
 panorama_dispatch_event (developmentonly defensive)
 	Dispatch the event defined by the argument string. No creating panel is specified.
@@ -2272,14 +2259,7 @@ phys_list (developmentonly gamedll)
 	    -world -save <name>   save world to a file
 	    -world -mem           memory dump (separately per game dll)
 	    -world -snapshots     Start/Stop dumping snapshots of the world into the current directory
-	    -world -profiletraces ProfileRecordedTraces
 	    -world -agg           current aggregate data registry (loaded resources)
-
-phys_record_rays (developmentonly gamedll)
-	Dump physics main world to file
-
-phys_record_rays_and_world (developmentonly gamedll)
-	Dump traces physics main world to file
 
 phys_shoot (gamedll cheat)
 	Shoots a phys object.
@@ -2387,6 +2367,9 @@ push_var_values (developmentonly defensive)
 quit (release vconsole_set_focus)
 	Quit the game
 
+r_dx11_report_live_objects (developmentonly defensive)
+	Prints out live D3D11 objects (requires -dx11debug)
+
 r_force_engine_render_frame (developmentonly defensive)
 	Force a single render of the engine viewport.
 
@@ -2396,14 +2379,20 @@ r_gpu_mem_stats (linked_concommand developmentonly defensive)
 r_print_buffers (linked_concommand developmentonly defensive)
 	Print Vertex/Index/GPU buffers.
 
+r_print_texture_stats (developmentonly defensive)
+	Texture stats
+
 r_render_coordination_state (developmentonly defensive)
 	Prints out the current render coordination state.
 
 r_renderdoc_capture_frame (linked_concommand developmentonly defensive)
 	Triggers a RenderDoc capture
 
-r_renderdoc_capture_window_vulkan (developmentonly)
+r_renderdoc_capture_window_dx11 (developmentonly)
 	Triggers a RenderDoc capture of a specific Window
+
+r_textures_evict_all (linked_concommand developmentonly defensive)
+	Evict all resident texture.
 
 r_toggleviewportsize (developmentonly defensive)
 	Toggles viewport size between small + full window.
@@ -2502,6 +2491,9 @@ resource_list (developmentonly defensive)
 resource_log_allocate_timing (developmentonly defensive)
 	Log time spent in Allocate for all resource types
 
+resource_manifest_validate_modules (developmentonly defensive)
+	Scan all of the loaded modules and validate any resource manifests found
+
 resource_repeated_reload (developmentonly defensive)
 	resource_repeated_reload <count> <resource_name> (<resource name> ...): Load and unload the specified resource(s)
 
@@ -2554,10 +2546,6 @@ run_perftest (cheat dontrecord)
 
 save (developmentonly gamedll dontrecord defensive)
 	Save Game
-
-save_animgraph_recording (gamedll cheat)
-	Saves all active animgraph recordings to disk
-	Arguments: automaticallyOpenInAnimgraphEditor
 
 save_clear_subdirectory (developmentonly gamedll replicated defensive)
 	<no description>
@@ -2872,20 +2860,11 @@ snd_list_soundevents (developmentonly cheat)
 snd_list_soundevents_by_stack (developmentonly cheat)
 	List all available soundevents using specified stack name
 
-snd_print_activetracks (cheat)
-	List all active tracks
-
-snd_print_arrangements (cheat)
-	List all available sequence arrangments
-
 snd_print_current_mixer_mixgroup (developmentonly defensive)
 	Get data related to mix group matching string
 
 snd_print_samplers (cheat)
 	List all available samplers
-
-snd_print_sequences (cheat)
-	List all available midi sequences
 
 snd_print_soundevent (developmentonly vconsole_fuzzy_matching vconsole_set_focus)
 	Print the data associated with the specified soundevent.
@@ -2920,17 +2899,29 @@ snd_samplers_play_note (cheat)
 snd_samplers_stop_note (cheat)
 	Stop a note from a specified sampler
 
-snd_sequence_set_track_bpm (cheat)
+snd_sequencer_print_activetracks (cheat)
+	List all active tracks
+
+snd_sequencer_print_arrangements (cheat)
+	List all available sequence arrangments
+
+snd_sequencer_print_sequences (cheat)
+	List all available midi sequences
+
+snd_sequencer_set_track_bpm (cheat)
 	Sets the tempo of the specified track
 
-snd_sequence_set_track_transpose (cheat)
+snd_sequencer_set_track_transpose (cheat)
 	Sets the transposition of the specified track
 
-snd_sequence_stop_all_tracks (cheat)
+snd_sequencer_stop_all_tracks (cheat)
 	Stops all currently playing sequences
 
-snd_sequence_stop_track (cheat)
+snd_sequencer_stop_track (cheat)
 	Stops the specified track
+
+snd_sequencer_vmidi_flush (cheat)
+	Purge and reload all vmidi data and files.
 
 snd_set_physics_surface_properties (cheat)
 	Set physics surface properties for materials. Usage: <heuristic #> <commit>
@@ -3028,6 +3019,9 @@ snd_sos_stop_soundevent_guid (cheat)
 snd_sos_stop_soundevent_index (cheat)
 	Stops a specified soundevent
 
+snd_sos_stop_track (cheat)
+	Stop the specified track and it's queue.
+
 snd_sos_sv_soundevent_pause_last (developmentonly gamedll defensive)
 	Test
 
@@ -3085,9 +3079,6 @@ snd_surround_speaker_pan_exponent (developmentonly defensive)
 snd_surround_speaker_pan_radial_weight (developmentonly defensive)
 	Apply cos(angle) * weight before pan law
 
-snd_vmidi_flush (cheat)
-	Purge and reload all vmidi data and files.
-
 sndplaydelay (developmentonly defensive)
 	<no description>
 
@@ -3105,6 +3096,9 @@ soundscape_flush (developmentonly gamedll defensive)
 
 soundsysteminfo (developmentonly defensive)
 	Describe the current sound device without an active voice list.
+
+spawnCashStack (developmentonly gamedll cheat)
+	<no description>
 
 spec_goto (clientdll clientcmd_can_execute)
 	Move the spectator camera to a specific location. `spec_goto x y z pitch yaw`
@@ -3464,6 +3458,9 @@ voice_reset_mutelist (developmentonly defensive)
 voice_show_mute (developmentonly defensive)
 	Show whether current players are muted.
 
+voice_status_test_toggle (developmentonly clientdll)
+	Test voice and status notices
+
 voice_toggle_open_mic (clientdll release)
 	Toggles between open-mic and push-to-talk
 
@@ -3508,27 +3505,6 @@ vprof_time_scale (developmentonly hidden)
 
 vtune (developmentonly defensive)
 	Controls VTune's sampling.
-
-vulkan_framebuffermgr_print (developmentonly defensive)
-	Prints out stats for the Vulkan Framebuffer manager
-
-vulkan_memgr_fragmentation_print (developmentonly defensive)
-	Prints out detailed memory fragmentation stats for the Vulkan memory manager
-
-vulkan_memgr_print (developmentonly defensive)
-	Prints out stats for the Vulkan memory manager
-
-vulkan_pipelinemgr_print (developmentonly defensive)
-	Prints out stats for the Vulkan Pipeline manager
-
-vulkan_shader_table_print (developmentonly defensive)
-	Prints out stats for the Vulkan shader table
-
-vulkan_vma_defrag (developmentonly defensive)
-	Force defragmenting memory with VMA
-
-vulkan_vma_gpu_mem_dump (developmentonly defensive)
-	Dump .json file for use by GpuMemDumpVis.py
 
 weapon_switch (developmentonly gamedll)
 	Use a particular weapon	

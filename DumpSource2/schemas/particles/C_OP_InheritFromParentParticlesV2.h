@@ -15,7 +15,7 @@
 //		"m_flRandomMin": 0.000000,
 //		"m_flRandomMax": 1.000000,
 //		"m_bHasRandomSignFlip": false,
-//		"m_nRandomSeed": -1,
+//		"m_nRandomSeed": <HIDDEN FOR DIFF>,
 //		"m_nRandomMode": "PF_RANDOM_MODE_CONSTANT",
 //		"m_strSnapshotSubset": "",
 //		"m_flLOD0": 0.000000,
@@ -77,6 +77,7 @@
 //		}
 //	},
 //	"m_nOpEndCapState": "PARTICLE_ENDCAP_ALWAYS_ON",
+//	"m_nToolsState": "PARTICLE_TOOLS_STATE_ALWAYS_ON",
 //	"m_flOpStartFadeInTime": 0.000000,
 //	"m_flOpEndFadeInTime": 0.000000,
 //	"m_flOpStartFadeOutTime": 0.000000,
@@ -105,7 +106,7 @@
 //		"m_flRandomMin": 0.000000,
 //		"m_flRandomMax": 1.000000,
 //		"m_bHasRandomSignFlip": false,
-//		"m_nRandomSeed": -1,
+//		"m_nRandomSeed": <HIDDEN FOR DIFF>,
 //		"m_nRandomMode": "PF_RANDOM_MODE_CONSTANT",
 //		"m_strSnapshotSubset": "",
 //		"m_flLOD0": 0.000000,
@@ -181,7 +182,7 @@
 //		"m_flRandomMin": 0.000000,
 //		"m_flRandomMax": 1.000000,
 //		"m_bHasRandomSignFlip": false,
-//		"m_nRandomSeed": -1,
+//		"m_nRandomSeed": <HIDDEN FOR DIFF>,
 //		"m_nRandomMode": "PF_RANDOM_MODE_CONSTANT",
 //		"m_strSnapshotSubset": "",
 //		"m_flLOD0": 0.000000,
@@ -242,6 +243,7 @@
 //			]
 //		}
 //	},
+//	"m_bSubSample": false,
 //	"m_bRandomDistribution": false,
 //	"m_bReverse": false,
 //	"m_nMissingParentBehavior": "MISSING_PARENT_DO_NOTHING",
@@ -259,7 +261,7 @@
 //		"m_flRandomMin": 0.000000,
 //		"m_flRandomMax": 1.000000,
 //		"m_bHasRandomSignFlip": false,
-//		"m_nRandomSeed": -1,
+//		"m_nRandomSeed": <HIDDEN FOR DIFF>,
 //		"m_nRandomMode": "PF_RANDOM_MODE_CONSTANT",
 //		"m_strSnapshotSubset": "",
 //		"m_flLOD0": 0.000000,
@@ -330,6 +332,8 @@ class C_OP_InheritFromParentParticlesV2 : public CParticleFunctionOperator
 	ParticleAttributeIndex_t m_nFieldOutput;
 	// MPropertyFriendlyName = "particle increment amount"
 	CPerParticleFloatInput m_nIncrement;
+	// MPropertyFriendlyName = "sub-sample parent particles"
+	bool m_bSubSample;
 	// MPropertyFriendlyName = "random parent particle distribution"
 	bool m_bRandomDistribution;
 	// MPropertyFriendlyName = "start at last parent particle in reverse"

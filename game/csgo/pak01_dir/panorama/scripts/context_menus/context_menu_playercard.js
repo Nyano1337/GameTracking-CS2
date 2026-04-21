@@ -301,6 +301,34 @@ var ContextmenuPlayerCard;
                 $.DispatchEvent('ContextMenuEvent', '');
             },
         },
+        {
+            name: 'viewaddon',
+            icon: 'globe',
+            AvailableForItem: (id) => {
+                if (FriendsListAPI.IsFriendJoinable(id) && FriendsListAPI.GetFriendAddon(id)) {
+                    return true;
+                }
+                return false;
+            },
+            OnSelected: (xuid) => {
+                const workshopID = FriendsListAPI.GetFriendAddon(xuid);
+                if (workshopID) {
+                    $.DispatchEvent('CSGOOpenSteamWorkshop', workshopID);
+                }
+                $.DispatchEvent('ContextMenuEvent', '');
+            },
+        },
+        {
+            name: 'kick_player',
+            icon: 'ban_global',
+            AvailableForItem: (id) => {
+                return GameStateAPI.BIsLocalServerHost() && !_IsSelf(id);
+            },
+            OnSelected: (xuid) => {
+                FriendsListAPI.Kick(xuid);
+                $.DispatchEvent('ContextMenuEvent', '');
+            },
+        }
     ];
     function _HasMusicKit(id) {
         return (InventoryAPI.GetMusicIDForPlayer(id) > 1);

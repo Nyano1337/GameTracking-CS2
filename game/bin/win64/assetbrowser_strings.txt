@@ -1,4 +1,3 @@
-                          
   C%d:I%-2d {F=%-10d,V=%-10d} 
   CallInfo%d: %s\n
   Cell%d - NULL\n
@@ -9,8 +8,6 @@
   Output%d: '%s' (%s)\n
   R%d: %15s %25s %s\n
   V%d: '%s' (%s)\n
- !"#$%&'()*+,-./
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  (Excluding %1)
  (repeat)
  * Draw Skybox :: %s\n
@@ -24,10 +21,6 @@
  ?timerEvent@QAbstractSlider@@MEAAXPEAVQTimerEvent@@@Z
  ?timerEvent@QAbstractSpinBox@@MEAAXPEAVQTimerEvent@@@Z
  ?write@QMetaProperty@@QEBA_NPEAVQObject@@AEBVQVariant@@@Z
- Base Class Array'
- Base Class Descriptor at (
- Class Hierarchy Descriptor'
- Complete Object Locator'
  DOUBLE_CLICK
  New
  PRESS
@@ -35,7 +28,6 @@
  REPEAT
  Save search as: 
  Saved Search
- Type Descriptor'
  Vector b
  X?setAlignment@QTextOption@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
  Y?setDefaultTextOption@QTextDocument@@QEAAXAEBVQTextOption@@@Z
@@ -43,6 +35,8 @@
  [unset/initial]
  \f?focusNextPrevChild@QPlainTextEdit@@MEAA_N_N@Z
  \t()|-<>=!:
+ color: #de8e29;
+!#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 != (Not During)
 !?triggered@QAction@@QEAAX_N@Z
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
@@ -122,6 +116,7 @@ $\f?focusNextPrevChild@QWidget@@MEAA_N_N@Z
 $\r?end@QString@@QEBAPEBVQChar@@XZ
 % ?timerEvent@QMenu@@MEAAXPEAVQTimerEvent@@@Z
 %1 -> %2 (%3)
+%1 / %2 files selected
 %1 Assets Visible
 %1 [W = %2, C = %3, Instance = %4, Mode = %5]
 %1 by %2 assets...
@@ -139,6 +134,8 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 %\?setUnderline@QFont@@QEAAX_N@Z
 %]?sibling@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
 %^?strokePath@QPainter@@QEAAXAEBVQPainterPath@@AEBVQPen@@@Z
+%c%c%c%c%c%c
+%c%c%c%c%c%c%c%c
 %d Assets
 %d Assets From Clipboard
 %d CallInfos:\n
@@ -170,7 +167,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 &File
 &Help
 &Rename
-&Sgw
 &Tools
 &View
 &Working Sets
@@ -182,8 +178,8 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ( %1, %2, %3, %4% )
 ( ?timerEvent@QTabBar@@MEAAXPEAVQTimerEvent@@@Z
 (#?windowModality@QWidget@@QEBA?AW4WindowModality@Qt@@XZ
-(%1 / %2 assets)
 (%1 files = %2 source + %3 compiled)
+(All)
 (Custom Colors Disabled)
 (Fallback)
 (Filter)
@@ -203,7 +199,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(null)
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n?displayText@QStyledItemDelegate@@UEBA?AVQString@@AEBVQVariant@@AEBVQLocale@@@Z
@@ -215,13 +210,13 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 * ForceRescanOfActiveKeys
 * Rehandling active codes
 * { font-size: 10px }
+* { font-size: 14px; margin: 6px 8px 3px 8px;%s }
 * { font-weight: bold; color: #de8e29; }
 * { font-weight: bold; color: red; }
 *"?updateGeometries@QHeaderView@@MEAAXXZ
 *** Test failure: "%s"
 */game/*.*_c
 *NONE*VALID*
-*StO9>T
 *\f?focusOutEvent@QAbstractSpinBox@@MEAAXPEAVQFocusEvent@@@Z
 *extraFilterString
 *filterProcedural:
@@ -234,15 +229,14 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 +\t?buddy@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 , ?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 ,"?updateGeometries@QTableView@@MEAAXXZ
-,<ellipsis>
 ,\n?atEnd@QTextCursor@@QEBA_NXZ
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?updateGeometries@QTreeView@@MEAAXXZ
 -> Success (%d attempts)\n
--memory-
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
-.00cfg
+.?AUCPulseCell_BooleanSwitchState_DebugInfo_t@@
+.?AUCPulseCell_Timeline_DebugInfo_t@@
 .?AUVDataInitInfo_t@@
 .?AV<lambda_10>@?BM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_10>@?M@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -262,7 +256,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AV<lambda_17>@?CI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseCursorCancelPriority_t@@@@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@C2DCanvasCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -284,7 +277,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AV<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
-.?AV<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseCursorCancelPriority_t@@@@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@C2DCanvasCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
 .?AV<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@
@@ -443,18 +435,12 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AV?$CPropertyAttributeEditorFactoryBaseVariableHeight@VCQAttributeEditor_PanoramaLayout@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseVariableHeight@VCQAttributeEditor_PanoramaStyle@@@@
 .?AV?$CPropertyAttributeEditorFactoryBaseVariableHeight@VCQAttributeEditor_PanoramaVideo@@@@
-.?AV?$CPulseModuleRegistrationHook@VIPulseTypeQueriesForScope@@@@
-.?AV?$CRefCountServiceBase@VCRefMT@@@@
-.?AV?$CRefCounted@V?$CRefCountServiceBase@VCRefMT@@@@@@
 .?AV?$CTier0AppSystem@VIAssetBrowserSystem@@$0A@@@
 .?AV?$CTier1AppSystem@VIAssetBrowserSystem@@$0A@@@
 .?AV?$CTier2AppSystem@VIAssetBrowserSystem@@$0A@@@
 .?AV?$CTier3AppSystem@VIAssetBrowserSystem@@$0A@@@
 .?AV?$CVDataFileManager@VCToolSceneLightRig@@@@
 .?AV?$ISceneObjectDescBase@VCToolSceneAxisObject@@@@
-.?AV?$_Func_base@I$$V@std@@
-.?AV?$_Func_base@VCPulseValueFullType@@$$V@std@@
-.?AV?$_Func_base@X$$V@std@@
 .?AV?$_Func_base@XAEBUAssetSelectionInfo_t@@@std@@
 .?AV?$_Func_base@XNN@std@@
 .?AV?$_Func_base@XPEAVC2DCanvasCamera@@@std@@
@@ -509,7 +495,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AV?$_Func_impl_no_alloc@V<lambda_17>@?CI@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_18>@?CM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_19>@?CN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_1>@?$PulseBindingSchemaEnumTraits_t@W4PulseCursorCancelPriority_t@@@@VCPulseValueFullType@@$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@C2DCanvasCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_1>@?2???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -531,7 +516,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AV?$_Func_impl_no_alloc@V<lambda_27>@?DJ@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_28>@?DM@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_29>@?DN@???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CBindableCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
-.?AV?$_Func_impl_no_alloc@V<lambda_2>@?$PulseBindingSchemaEnumTraits_t@W4PulseCursorCancelPriority_t@@@@I$$V@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@C2DCanvasCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CGlobalHotkeyCommands@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
 .?AV?$_Func_impl_no_alloc@V<lambda_2>@?3???0CBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@CLightingControlRig@@SAPEAVCBindTargetDescriptorBase@@XZ@QEAA@XZ@XPEAV4@@std@@
@@ -600,10 +584,10 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVC2DCanvasCamera@@
 .?AVCAssetBrowserToolSystem@@
 .?AVCAssetGraphItem@@
+.?AVCAssetGraphItem_Curve@@
 .?AVCAssetGraphItem_Port@@
 .?AVCBaseDynamicWidgetFactory@@
 .?AVCBaseVDataFileManager@@
-.?AVCBaseVModuleMetadataProvider@@
 .?AVCBindTargetDescriptorBase@@
 .?AVCBindableCommand@@
 .?AVCBindableTargetDescriptorInstance@?1??StaticBindableTargetDescriptor@C2DCanvasCamera@@SAPEAVCBindTargetDescriptorBase@@XZ@
@@ -624,17 +608,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCFolderItemFiles@@
 .?AVCFolderItemFolder@@
 .?AVCGCStylePropInfo@@
-.?AVCGenericExprPart@@
-.?AVCGenericExpr_Binary@@
-.?AVCGenericExpr_BoolLiteral@@
-.?AVCGenericExpr_FloatLiteral@@
-.?AVCGenericExpr_FunctionCall@@
-.?AVCGenericExpr_IntLiteral@@
-.?AVCGenericExpr_Property@@
-.?AVCGenericExpr_StringLiteral@@
-.?AVCGenericExpr_TernaryConditional@@
-.?AVCGenericExpr_Unary@@
-.?AVCGenericExpr_VariableReference@@
 .?AVCGlobalHotkeyCommands@@
 .?AVCGraphCanvasDragOperation@@
 .?AVCGraphCanvasItem@@
@@ -646,38 +619,17 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCGraphCanvasScene@@
 .?AVCGraphCanvasStyleManager@@
 .?AVCInputLayoutRegistration_s_hColoredVertexLayout@@
-.?AVCKV3TransferContextBase@@
-.?AVCKV3TransferInterface_EHandle_Load_NoOp@@
-.?AVCKV3TransferInterface_EHandle_Save_NoOp@@
-.?AVCKV3TransferInterface_GameTime_Load_NoOp@@
-.?AVCKV3TransferInterface_GameTime_Save_NoOp@@
-.?AVCKV3TransferInterface_Worldspace_Load_NoOp@@
-.?AVCKV3TransferInterface_Worldspace_Save_NoOp@@
-.?AVCKV3TransferLoadContext@@
-.?AVCKV3TransferSaveContext@@
 .?AVCKV3Transfer_AssertAlreadyLoadedResourceLoadInterface@@
-.?AVCKV3Transfer_EmptyResourceLoadInterface@@
 .?AVCModelInstanceManager@@
-.?AVCModuleMetadataProvider_ResourceManifests@@
 .?AVCNewWorkingSetDialog@@
-.?AVCP4File@@
-.?AVCPostConnectCallback@@
-.?AVCPulseCell_Base@@
-.?AVCPulseCell_BaseFlow@@
-.?AVCPulseCell_BaseRequirement@@
 .?AVCPulseCell_BaseState@@
-.?AVCPulseCell_BaseValue@@
-.?AVCPulseCell_BaseYieldingInflow@@
 .?AVCPulseCell_BooleanSwitchState@@
 .?AVCPulseCell_CursorQueue@@
 .?AVCPulseCell_FireCursors@@
-.?AVCPulseCell_Inflow_BaseEntrypoint@@
 .?AVCPulseCell_Inflow_EntOutputHandler@@
 .?AVCPulseCell_Inflow_EventHandler@@
 .?AVCPulseCell_Inflow_GraphHook@@
-.?AVCPulseCell_Inflow_Method@@
 .?AVCPulseCell_Inflow_ObservableVariableListener@@
-.?AVCPulseCell_Inflow_Wait@@
 .?AVCPulseCell_Inflow_Yield@@
 .?AVCPulseCell_InlineNodeSkipSelector@@
 .?AVCPulseCell_IntervalTimer@@
@@ -694,17 +646,10 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCPulseCell_Unknown@@
 .?AVCPulseCell_Value_Curve@@
 .?AVCPulseCell_Value_Gradient@@
-.?AVCPulseCell_Value_RandomFloat@@
-.?AVCPulseCell_Value_RandomInt@@
 .?AVCPulseCell_WaitForCursorsWithTag@@
 .?AVCPulseCell_WaitForCursorsWithTagBase@@
 .?AVCPulseCell_WaitForObservable@@
 .?AVCPulseGraphDef@@
-.?AVCPulseInstanceLoadAPI_NoOp@@
-.?AVCPulseInstanceSaveAPI_NoOp@@
-.?AVCPulseInterfaceHelpers_Load_NoOp@@
-.?AVCPulseInterfaceHelpers_Save_NoOp@@
-.?AVCPulseScopeEnumeratingTypeService@@
 .?AVCQ2DCanvas@@
 .?AVCQAdjustableDateInput@@
 .?AVCQAssetBrowserMainWnd@@
@@ -712,6 +657,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCQAssetBrowserPage@@
 .?AVCQAssetBrowserWidget@@
 .?AVCQAssetComboBox@@
+.?AVCQAssetDirTreeWidget@@
 .?AVCQAssetFileHelper@@
 .?AVCQAssetGraphView@@
 .?AVCQAssetGridPanel@@
@@ -730,9 +676,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCQAssetSelectionWidget@@
 .?AVCQAssetTable@@
 .?AVCQAssetTagSelectWidget@@
-.?AVCQAssetTree@@
 .?AVCQAssetTreeModel@@
-.?AVCQAssetTreeView@@
 .?AVCQAssetTypeSelectWidget@@
 .?AVCQAssetViewBase@@
 .?AVCQAttributeEditor_AssetBrowse@@
@@ -762,6 +706,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCQConnectHelper_int@@
 .?AVCQConnectHelper_intvoid@@
 .?AVCQConnectHelper_void@@
+.?AVCQDirTreeWidgetItem@@
 .?AVCQDragOverlayWidget@@
 .?AVCQDraggableWidgetList@@
 .?AVCQDynamicWidget@@
@@ -769,13 +714,13 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCQDynamicWidgetHelper@@
 .?AVCQElidedLabel@@
 .?AVCQEmbeddedAssetPicker@@
+.?AVCQEraseWindowBackgroundFilter@@
 .?AVCQFileSizeTableWidgetItem@@
 .?AVCQFilterListGroupbox@@
 .?AVCQFilteredTreeWidget@@
 .?AVCQFilteredWorkingSet@@
 .?AVCQFlowingLayout@@
 .?AVCQFocusChainDebugger@@
-.?AVCQFullscreenBrowser@@
 .?AVCQGCD_ActiveStyles@@
 .?AVCQGCD_AllProperties@@
 .?AVCQGCD_CommonInfo@@
@@ -802,7 +747,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCQGraphCanvasViewMiniMap@@
 .?AVCQHeaderViewWithCheckboxes@@
 .?AVCQHeaderViewWithStretchFactors@@
-.?AVCQHierarchyItemDelegate@@
 .?AVCQHoverButton@@
 .?AVCQInputBindEditor@@
 .?AVCQInputBindManager@@
@@ -839,7 +783,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCQTagItemDelegate@@
 .?AVCQTagSetWidget@@
 .?AVCQTagWidget@@
-.?AVCQTreeTagItemDelegate@@
 .?AVCQTreeWidgetWithArrowEvents@@
 .?AVCQTreeWidgetWithHover@@
 .?AVCQWidgetDebugHighlight@@
@@ -851,9 +794,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCQtImageCache@@
 .?AVCRenameWorkingSetDialog@@
 .?AVCSceneObject@@
-.?AVCSceneSkyBoxLightQuery@@
-.?AVCSchemaInstallCallback@@
-.?AVCSchemaRegistration@@
 .?AVCSchemaRegistration_pulse_runtime_lib@@
 .?AVCSchemaRegistration_qcontrols@@
 .?AVCSimpleErrorListener@@
@@ -881,12 +821,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVCTreeWidgetFilter_KeywordList@@
 .?AVCTreeWidgetFilter_Regexp@@
 .?AVCVNotifyErrorForwarder@@
-.?AVConCommand@@
-.?AVConCommandRef@@
-.?AVDNameNode@@
-.?AVDNameStatusNode@@
 .?AVI2DCanvas@@
-.?AVIAppSystem@@
 .?AVIAssetBrowseCallbacks@@
 .?AVIAssetBrowserSystem@@
 .?AVIAssetCacheListener@@
@@ -896,32 +831,18 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVIBaseErrorContext@@
 .?AVIBaseSequence@@
 .?AVIBindTarget@@
-.?AVICommandCallback@@
-.?AVICommandCompletionCallback@@
 .?AVIDynamicWidgetHost@@
 .?AVIEmbeddedAssetBrowser@@
 .?AVIEmbeddedAssetPicker@@
-.?AVIErrorListener@@
 .?AVIGraphCanvasSceneListener@@
 .?AVIGraphCanvasStyleResolveListener@@
 .?AVIGraphCanvasViewInfo@@
 .?AVIGridViewWidgetProvider@@
 .?AVIHelpChangeListener@@
-.?AVIKV3TransferInterface_EHandle_Load@@
-.?AVIKV3TransferInterface_EHandle_Save@@
-.?AVIKV3TransferInterface_GameTime_Load@@
-.?AVIKV3TransferInterface_GameTime_Save@@
-.?AVIKV3TransferInterface_ResourceLoad@@
-.?AVIKV3TransferInterface_Worldspace_Load@@
-.?AVIKV3TransferInterface_Worldspace_Save@@
 .?AVIListener@CGenericFilterDomain@@
 .?AVILiveEmbeddedPreviewStateListener@@
-.?AVIMultipleWorkerJob@@
 .?AVIPropertyAttributeEditorFactory@@
 .?AVIPulseGraphDef@@
-.?AVIPulseInstanceLoadAPI@@
-.?AVIPulseInstanceSaveAPI@@
-.?AVIPulseTypeQueriesForScope@@
 .?AVIQtImageCache@@
 .?AVISceneObjectDesc@@
 .?AVISemiModalAssetBrowser@@
@@ -929,13 +850,13 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVIToolFrameListener@@
 .?AVIToolFrameworkAudioSettingsListener@@
 .?AVIToolSceneCustomTrace@@
-.?AVIToolsResourceListener@@
 .?AVIVDataResourceListener@@
 .?AVQAbstractButton@@
 .?AVQAbstractItemDelegate@@
 .?AVQAbstractItemModel@@
 .?AVQAbstractItemView@@
 .?AVQAbstractListModel@@
+.?AVQAbstractNativeEventFilter@@
 .?AVQAbstractProxyModel@@
 .?AVQAbstractScrollArea@@
 .?AVQAbstractSlider@@
@@ -981,6 +902,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVQProgressBar@@
 .?AVQPushButton@@
 .?AVQRadioButton@@
+.?AVQRegularExpressionValidator@@
 .?AVQScrollArea@@
 .?AVQScrollBar@@
 .?AVQSlider@@
@@ -1012,50 +934,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .?AVQWidget@@
 .?AVQWidgetAction@@
 .?AVQWidgetItem@@
-.?AV_Generic_error_category@std@@
-.?AV_Ref_count_base@std@@
-.?AV_System_error@std@@
-.?AV__non_rtti_object@std@@
-.?AVbad_alloc@std@@
-.?AVbad_array_new_length@std@@
-.?AVbad_cast@std@@
-.?AVbad_exception@std@@
-.?AVbad_function_call@std@@
 .?AVbad_optional_access@std@@
-.?AVbad_typeid@std@@
-.?AVcharNode@@
-.?AVerror_category@std@@
-.?AVexception@std@@
-.?AVlength_error@std@@
-.?AVlogic_error@std@@
-.?AVout_of_range@std@@
-.?AVpDNameNode@@
-.?AVpairNode@@
-.?AVpcharNode@@
-.?AVruntime_error@std@@
-.?AVsystem_error@std@@
-.?AVtype_info@@
-.CRT$XCA
-.CRT$XCC
-.CRT$XCL
-.CRT$XCU
-.CRT$XCZ
-.CRT$XDA
-.CRT$XDU
-.CRT$XDZ
-.CRT$XIA
-.CRT$XIC
-.CRT$XIZ
-.CRT$XLA
-.CRT$XLC
-.CRT$XLD
-.CRT$XLZ
-.CRT$XPA
-.CRT$XPX
-.CRT$XPXA
-.CRT$XPZ
-.CRT$XTA
-.CRT$XTZ
 .P6AXPEAVCQBindableCommandPushButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVCQBindableCommandToolButton@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
 .P6AXPEAVQCheckBox@@AEBUInitContext_t@CBaseDynamicWidgetFactory@@@Z
@@ -1071,52 +950,16 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 .[?setRed@QColor@@QEAAXH@Z
 .\r?hideEvent@QMenu@@MEAAXPEAVQHideEvent@@@Z
 .\v?event@QAbstractItemView@@MEAA_NPEAVQEvent@@@Z
-.bss
-.data
-.data$r
-.data$rs
-.edata
-.idata$2
-.idata$3
-.idata$4
-.idata$5
-.idata$6
-.pdata
-.rdata
-.rdata$00
-.rdata$T
-.rdata$r
-.rdata$voltmd
-.rdata$zzzdbg
-.rtc$IAA
-.rtc$IZZ
-.rtc$TAA
-.rtc$TZZ
+.dmx
+.fbx
 .svg
-.text$di
-.text$mn
-.text$mn$00
-.text$mn$21
-.text$x
-.text$yd
-.tls
-.tls$
-.tls$ZZZ
 .vsvg
-.xJ>Hf
-.xdata
-.xdata$x
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
 /\v?event@QAbstractScrollArea@@MEAA_NPEAVQEvent@@@Z
 /]?size@QImage@@QEBA?AVQSize@@XZ
-0iN>/
 0x%1
 0x%p = %s '%s'
 1"?updateGeometry@QWidget@@QEAAXXZ
-1#IND
-1#QNAN
-1#SNAN
-11Y@
 1AcceptColorInternal(FatColor_t)
 1AcceptIfItemPicked()
 1ActivateAllAssetsTab()
@@ -1134,8 +977,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1ClearThumbnailCache()
 1CloneWorkingSetAction()
 1CloseWorkingSetTab( int )
-1CollapseAll()
-1Collapsed( const QModelIndex & )
 1CopyAsset()
 1CopyAssetName()
 1CopyColor( int )
@@ -1156,9 +997,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1ExitAllTools()
 1ExitAndResetToolSettings()
 1ExitTools()
-1ExpandAll()
-1ExpandRecursively()
-1Expanded( const QModelIndex & )
 1FocusChanged( QWidget *, QWidget * )
 1History()
 1ImportLooseFBXFiles()
@@ -1175,6 +1013,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1OnAccepted()
 1OnAddSavedSearchClicked()
 1OnAddTagClicked()
+1OnAllSelected()
 1OnAlphaChanged()
 1OnAssetListModelChanged()
 1OnAssetPanelDoubleClicked(int)
@@ -1232,7 +1071,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1OnRemove()
 1OnRemoveSavedSearchClicked()
 1OnRemoveTag( QVariant )
-1OnRightClickHierarchy( IAsset *, QModelIndex )
 1OnSaveToolSettings()
 1OnSavedSearchDropdown()
 1OnSavedSearchSelected( KeyValues3 * )
@@ -1243,6 +1081,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1OnSelectNone()
 1OnSelectionChanged()
 1OnSelectionCleared()
+1OnSetColorInternal(FatColor_t)
 1OnShowAddTagDialog()
 1OnShowDocumentationWebpage()
 1OnShowInfoPopup( int, void* )
@@ -1255,7 +1094,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1OnTableContextMenuRequested(const QPoint &)
 1OnTagRemoveClicked( QVariant )
 1OnTagSelectionChanged(CQAssetTagSelectWidget *)
-1OnTextChanged( int )
 1OnTextDownArrow()
 1OnTextUpArrow()
 1OnToggleOrientationAction()
@@ -1285,6 +1123,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1PasteColor( int )
 1PasteColor()
 1PickColor( int )
+1PruneStaleThumbnails()
 1PullSelectionFromGlobalBrowser()
 1PushAssetToGlobalBrowser()
 1PushSelectionToGlobalBrowser()
@@ -1317,7 +1156,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1SelectedAssets_ShowRevisionHelper()
 1SetAlphaEditFromSlider(int)
 1SetAssetViewPathFilter(IWorkingSet*, QString, bool)
-1SetColorInternal(FatColor_t)
 1SetCurrentWorkingSet( IWorkingSet* )
 1SetShowDependencies(bool)
 1SetShowDependingOnMe(bool)
@@ -1328,8 +1166,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1ShowOptionsDialog()
 1ShowSubassetDefinitions()
 1ShowSubassetReferences()
-1ToggleAutoExpand()
-1ToggleHierarchy()
 1ToggleModSelector()
 1ToggleTagSelector()
 1ToggleTypeSelector()
@@ -1343,7 +1179,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1UpdatePreviewWidget()
 1UpdateSliderFromEdit()
 1UpdateSortIndicator()
-1UpdateSortIndicator(int,bool)
 1UpdateUIFromCheckState()
 1UpdateWorkingSet()
 1WorkingSetTabChanged( int )
@@ -1351,7 +1186,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 1[?setRedF@QColor@@QEAAXN@Z
 1\n?doItemsLayout@QHeaderView@@UEAAXXZ
 1\r?hideEvent@QTabBar@@MEAAXPEAVQHideEvent@@@Z
-1\tV_isinfd
 1aboutQt()
 1accept()
 1close()
@@ -1399,12 +1233,10 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2ParentChildAssetHovered( IAsset* )
 2ParentChildAssetSelected( IAsset* )
 2PickCancelled()
-2PostListChange()
 2PreviewVisibilityChanged()
 2RemoveTag( QVariant )
 2RenameTabAt( int )
 2RightClick()
-2RightClickHierarchy( IAsset *, QModelIndex )
 2RightClickSelectedAssets()
 2SIG_OnDeleteSelectedWorkingSet()
 2SavedSearchSaved()
@@ -1420,8 +1252,9 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2\f?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
-2\tV_isnand
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
+2\vp0
+2\vpt,
 2aboutToShow()
 2accepted()
 2buttonClicked( QAbstractButton* )
@@ -1430,15 +1263,14 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2clicked( const QModelIndex & )
 2clicked()
 2clicked(const QModelIndex &)
-2collapsed( const QModelIndex & )
 2currentChanged( int )
 2currentIndexChanged( int )
 2currentIndexChanged(int)
 2customContextMenuRequested(const QPoint &)
 2destroyed(QObject*)
 2doubleClicked(const QModelIndex&)
+2editingFinished( bool )
 2editingFinished()
-2expanded( const QModelIndex & )
 2fileChanged(QString)
 2focusChanged( QWidget *, QWidget * )
 2geometriesChanged()
@@ -1448,7 +1280,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2mapped(int)
 2mapped(int,void*)
 2mapped(void*)
-2modelSortOrderChanged(int,bool)
 2rejected()
 2returnPressed()
 2sectionMoved(int,int,int)
@@ -1458,6 +1289,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2sliderPressed()
 2sliderReleased()
 2sortIndicatorChanged(int,Qt::SortOrder)
+2stateChanged( int )
 2stateChanged(int)
 2tabCloseRequested( int )
 2textChanged( QString )
@@ -1477,15 +1309,12 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 2valueChanged(int)
 2valueEdited()
 333333
-37>k
-3>N;kU
-3>fvw
 3T?pen@QPainter@@QEBAAEBVQPen@@XZ
 3\f?focusOutEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
 3\n?doItemsLayout@QTableView@@UEAAXXZ
+4[?setRegularExpression@QRegularExpressionValidator@@QEAAXAEBVQRegularExpression@@@Z
 4\n?doItemsLayout@QTreeView@@UEAAXXZ
 4\r?hidePopup@QComboBox@@UEAAXXZ
-4\tV_isvalidhex
 5\f?focusOutEvent@QMenuBar@@MEAAXPEAVQFocusEvent@@@Z
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
@@ -1493,7 +1322,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
-8Csinf
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
@@ -1504,10 +1332,9 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 :\r?endResetModel@QAbstractItemModel@@IEAAXXZ
 :\v?canRead@QImageReader@@QEBA_NXZ
 ;1#INF
-;1cb
-;?0123456789:;<=>?
 ;\n?doSetTextCursor@QTextEdit@@MEAAXAEBVQTextCursor@@@Z
 ;\v?event@QDialogButtonBox@@MEAA_NPEAVQEvent@@@Z
+;`?transientParent@QWindow@@QEBAPEAV1@XZ
 < (Before)
 <= (Before)
 <DESCRIPTION>\n
@@ -1521,7 +1348,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 <b>Paint Index:</b> %1
 <b>Palette:</b> %1
 <b>Position:</b> [ %1, %2 ]
-<ellipsis>
 <font color='red'>NOT PARTIAL</font>
 <font size='+%1'>%2</font>
 <li>%s</li>
@@ -1529,33 +1355,20 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 <missing file>
 <no p4>
 <none>\n
+<texcoord
 = (During)
-=1cb
-=87M
 == PulseGraphDef ==\n
 =ACTIVITY WEIGHTS
 =]?size@QScreen@@QEBA?AVQSize@@XZ
-=cQ6
-=imb;D
 > (After)
 >]?size@QStaticText@@QEBA?AVQSizeF@@XZ
->cQ6
->jtm}S
 ?#?write@QListWidgetItem@@UEBAXAEAVQDataStream@@@Z
-?1cb
-?333333
-?7zQ6$
-?8bunz8
 ??0?$QVector@VQPointF@@@@QEAA@XZ
-??0CCountedStringPool_CI@@QEAA@XZ
-??0CUtlBuffer@@QEAA@HHW4BufferFlags_t@0@@Z
-??0CUtlString@@QEAA@AEBVCBufferString@@@Z
-??0CUtlSymbolTable@@QEAA@HH_N@Z
 ??0Connection@QMetaObject@@QEAA@AEBV01@@Z
 ??0Connection@QMetaObject@@QEAA@XZ
-??0KeyValues@@QEAA@PEBDPEAVIKeyValuesSystem@@_N@Z
 ??0QAbstractItemModel@@QEAA@PEAVQObject@@@Z
 ??0QAbstractListModel@@QEAA@PEAVQObject@@@Z
+??0QAbstractNativeEventFilter@@QEAA@XZ
 ??0QAbstractScrollArea@@QEAA@PEAVQWidget@@@Z
 ??0QAction@@QEAA@AEBVQIcon@@AEBVQString@@PEAVQObject@@@Z
 ??0QAction@@QEAA@AEBVQString@@PEAVQObject@@@Z
@@ -1676,6 +1489,8 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??0QRectF@@QEAA@AEBVQPointF@@AEBVQSizeF@@@Z
 ??0QRectF@@QEAA@AEBVQRect@@@Z
 ??0QRegExp@@QEAA@AEBVQString@@W4CaseSensitivity@Qt@@W4PatternSyntax@0@@Z
+??0QRegularExpression@@QEAA@AEBVQString@@V?$QFlags@W4PatternOption@QRegularExpression@@@@@Z
+??0QRegularExpressionValidator@@QEAA@AEBVQRegularExpression@@PEAVQObject@@@Z
 ??0QScrollArea@@QEAA@PEAVQWidget@@@Z
 ??0QScrollBar@@QEAA@PEAVQWidget@@@Z
 ??0QSettings@@QEAA@AEBVQString@@W4Format@0@PEAVQObject@@@Z
@@ -1699,7 +1514,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??0QString@@QEAA@PEBD@Z
 ??0QString@@QEAA@XZ
 ??0QStyleOptionButton@@QEAA@XZ
-??0QStyleOptionViewItem@@QEAA@AEBV0@@Z
 ??0QStyledItemDelegate@@QEAA@PEAVQObject@@@Z
 ??0QSurfaceFormat@@QEAA@XZ
 ??0QTabBar@@QEAA@PEAVQWidget@@@Z
@@ -1749,12 +1563,10 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??0QWidgetAction@@QEAA@PEAVQObject@@@Z
 ??0QWidgetItem@@QEAA@PEAVQWidget@@@Z
 ??1?$QVector@VQPointF@@@@QEAA@XZ
-??1CCountedStringPool_CI@@UEAA@XZ
-??1CUtlSymbolTable@@QEAA@XZ
 ??1Connection@QMetaObject@@QEAA@XZ
-??1KeyValues@@QEAA@XZ
 ??1QAbstractItemModel@@UEAA@XZ
 ??1QAbstractListModel@@UEAA@XZ
+??1QAbstractNativeEventFilter@@UEAA@XZ
 ??1QAbstractScrollArea@@UEAA@XZ
 ??1QAction@@UEAA@XZ
 ??1QBrush@@QEAA@XZ
@@ -1817,6 +1629,8 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??1QRadioButton@@UEAA@XZ
 ??1QRegExp@@QEAA@XZ
 ??1QRegion@@QEAA@XZ
+??1QRegularExpression@@QEAA@XZ
+??1QRegularExpressionValidator@@UEAA@XZ
 ??1QScrollArea@@UEAA@XZ
 ??1QScrollBar@@UEAA@XZ
 ??1QSettings@@UEAA@XZ
@@ -1832,7 +1646,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??1QStaticText@@QEAA@XZ
 ??1QString@@QEAA@XZ
 ??1QStyleOptionButton@@QEAA@XZ
-??1QStyleOptionViewItem@@QEAA@XZ
 ??1QStyledItemDelegate@@UEAA@XZ
 ??1QSurfaceFormat@@QEAA@XZ
 ??1QTabBar@@UEAA@XZ
@@ -1858,7 +1671,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??1QWidget@@UEAA@XZ
 ??1QWidgetAction@@UEAA@XZ
 ??1QWidgetItem@@UEAA@XZ
-??4CUtlString@@QEAAAEAV0@AEBVCBufferString@@@Z
 ??4Connection@QMetaObject@@QEAAAEAV01@$$QEAV01@@Z
 ??4QBrush@@QEAAAEAV0@$$QEAV0@@Z
 ??4QColor@@QEAAAEAV0@AEBV0@@Z
@@ -1881,7 +1693,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??4QVariant@@QEAAAEAV0@AEBV0@@Z
 ??6QDebug@@QEAAAEAV0@PEBD@Z
 ??8@YA_NAEBVQString@@0@Z
-??8CUtlString@@QEBA_NAEBV0@@Z
 ??8QColor@@QEBA_NAEBV0@@Z
 ??8QString@@QEBA_NPEBD@Z
 ??8QVariant@@QEBA_NAEBV0@@Z
@@ -1896,113 +1707,16 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ??BQImage@@QEBA?AVQVariant@@XZ
 ??BQPixmap@@QEBA?AVQVariant@@XZ
 ??BQSizePolicy@@QEBA?AVQVariant@@XZ
-??HCUtlString@@QEBA?AV0@PEBD@Z
 ??M@YA_NAEBVQString@@0@Z
 ??MQListWidgetItem@@UEBA_NAEBV0@@Z
 ??MQStandardItem@@UEBA_NAEBV0@@Z
 ??MQTableWidgetItem@@UEBA_NAEBV0@@Z
 ??MQTreeWidgetItem@@UEBA_NAEBV0@@Z
-??YCUtlString@@QEAAAEAV0@AEBV0@@Z
-??YCUtlString@@QEAAAEAV0@D@Z
-??YCUtlString@@QEAAAEAV0@PEBD@Z
 ??YQString@@QEAAAEAV0@AEBV0@@Z
 ??YQString@@QEAAAEAV0@PEBD@Z
 ??YQString@@QEAAAEAV0@VQChar@@@Z
-?@En[vP
-?Acquire@CUtlString@@QEAAXPEAVCBufferString@@_N@Z
-?AcquireLock@CAtomicMutex@@AEAAXI@Z
-?AddString@CUtlSymbolTable@@QEAA?AVCUtlSymbol@@PEBDPEA_N@Z
-?AddString@KeyValues@@QEAAXPEBD0@Z
-?AllocAligned@CUtlScratchMemoryPool@@QEAAPEAXHH@Z
-?Append@CUtlString@@QEAAXPEBD@Z
-?AppendFormat@CBufferString@@QEAAHPEBDZZ
-?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@@Z
-?Assert_ConditionFailed@@YA_NAEBU_AssertCompileTimeConstantStruct_t@@PEBDZZ
-?DirName@CUtlString@@QEBA?AV1@XZ
-?EndsWith@CBufferString@@QEBA_NPEBD@Z
-?ExtendPath@CBufferString@@QEAAPEBDPEBDD_N@Z
-?ExtractFileBase@CBufferString@@QEAAPEBDPEBD_N@Z
-?ExtractFileExtension@CBufferString@@QEAAPEBDPEBD@Z
-?Find@CUtlSymbolTable@@QEBA?AVCUtlSymbol@@PEBD@Z
-?FindKey@KeyValues@@QEAAPEAV1@PEBD_N@Z
-?FindKey@KeyValues@@QEBAPEBV1@PEBD@Z
-?FindOrAddFileName@CUtlFilenameSymbolTable@@QEAAIPEBD@Z
-?FioGetBaseFileInfo@@YAHPEBDPEAUFioBaseFileInfo_t@@I@Z
-?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixSlashes@CUtlString@@QEAAXD@Z
-?FixupPathName@CBufferString@@QEAAPEBDD@Z
-?Format@CBufferString@@QEAAHPEBDZZ
-?Format@CUtlString@@QEAAHPEBDZZ
-?FreeMemoryBlock@CUtlString@@AEAAXXZ
-?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ
-?GetForModify@CUtlString@@QEAAPEADXZ
-?GetInt@KeyValues@@QEBAHPEBDH@Z
-?GetName@KeyValues@@QEBAPEBDXZ
-?GetNextKey@KeyValues@@QEAAPEAV1@XZ
-?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
-?Internal_GetString@CKeyValues_Data@@IEAAPEBDPEBDPEAD_K@Z
-?IsEqual_CaseSensitive@CUtlString@@QEBA_NPEBD@Z
-?IsEqual_FastCaseInsensitive@CUtlString@@QEBA_NPEBD@Z
-?Left@CUtlString@@QEBA?AV1@H@Z
-?LoadFromFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1P6A_N1PEAX@Z21@Z
-?LoadKV3@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@AEBUKV3ID_t@@PEBDI@Z
-?LoadKV3FromFile@@YA_NPEAVCKV3Arena@@PEAVCUtlString@@PEBD2AEBUKV3ID_t@@I@Z
-?LoadKV3FromFile@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBD2AEBUKV3ID_t@@I@Z
-?LoadKV3Text_NoHeader@@YA_NPEAVKeyValues3@@PEAVCUtlString@@PEBDAEBUKV3ID_t@@2I@Z
-?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
-?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
-?MatchesPattern@CUtlString@@QEBA_NAEBV1@H@Z
-?MoveFrom@CBufferString@@QEAAXAEAV1@@Z
-?Purge@CBufferString@@QEAAXH@Z
-?Purge@CUtlString@@QEAAXXZ
 ?QStringList_join@QtPrivate@@YA?AVQString@@PEBVQStringList@@PEBVQChar@@H@Z
 ?QStringList_sort@QtPrivate@@YAXPEAVQStringList@@W4CaseSensitivity@Qt@@@Z
-?RemoveAll@CUtlSymbolTable@@QEAAXXZ
-?RemoveAt@CBufferString@@QEAAPEBDHH@Z
-?RemoveFilePath@CBufferString@@QEAAPEBDXZ
-?RemoveFromStart@CUtlString@@QEBA?AV1@PEBD_N@Z
-?Replace@CBufferString@@QEAAHPEBD0_N@Z
-?Replace@CUtlString@@QEBA?AV1@PEBD0_N@Z
-?SaveKV3@@YA_NAEBUKV3ID_t@@0PEBVKeyValues3@@PEAVCUtlString@@PEAVCUtlBuffer@@I@Z
-?SaveKV3Text_NoHeader@@YA_NPEBVKeyValues3@@PEAVCUtlString@@1I@Z
-?SaveKV3Text_NoHeader@@YA_NPEBVKeyValues3@@PEAVCUtlString@@PEAVCBufferString@@I@Z
-?SaveKV3ToFile@@YA_NAEBUKV3ID_t@@0PEBVKeyValues3@@PEAVCUtlString@@PEBD3I@Z
-?SaveToFile@KeyValues@@QEAA_NPEAVIFileSystem@@PEBD1_N2@Z
-?Set@CUtlString@@QEAAXPEBD@Z
-?SetDirect@CUtlString@@QEAAXPEBDH@Z
-?SetExtension@CBufferString@@QEAAPEBDPEBD_N@Z
-?SetExternalBuffer@CUtlBuffer@@QEAAXPEAXHHW4BufferFlags_t@1@@Z
-?SetFromString@netadr_t@@QEAA_NPEBD_N@Z
-?SetIP@netadr_t@@QEAAXI@Z
-?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
-?SetLength@CUtlString@@QEAAXH@Z
-?SetPort@netadr_t@@QEAAXG@Z
-?SetType@netadr_t@@QEAAXW4netadrtype_t@@@Z
-?ShortenPath@CBufferString@@QEAAPEBD_N@Z
-?Slice@CUtlString@@QEBA?AV1@HH@Z
-?Split@CSplitString@@AEAAXPEBDHPEAPEBDH_N@Z
-?SplitString@CUtlStringList@@AEAAXPEBDPEBQEBDH@Z
-?StartsWith@CBufferString@@QEBA_NPEBD@Z
-?String@CUtlSymbolTable@@QEBAPEBDVCUtlSymbol@@@Z
-?StripExtension@CUtlString@@QEBA?AV1@XZ
-?StripFilename@CUtlString@@QEBA?AV1@XZ
-?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
-?StripTrailingSlash@CUtlString@@QEAAXXZ
-?ThreadAtomicNotifyOne@@YAXPEAI@Z
-?ToLowerFast@CBufferString@@QEAAXH@Z
-?ToLowerFast@CUtlString@@QEAAXXZ
-?ToSockadr@netadr_t@@QEBAXPEAUsockaddr@@@Z
-?ToString@netadr_t@@QEBAXPEADI_N@Z
-?Trim@CBufferString@@QEAAPEBDPEBD@Z
-?Trim@CUtlString@@QEAAXD@Z
-?TrimTail@CBufferString@@QEAAPEBDPEBD@Z
-?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
-?UUUUUU
-?UnqualifiedFilenameAlloc@CUtlString@@QEBA?AV1@XZ
-?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@VCUtlString@@HV?$CUtlVectorMemory_Growable@VCUtlString@@H$0A@@@@@_N@Z
-?V_stristr_fast@@YAPEBDPEBD0@Z
-?V_strnlen@@YAHPEBDH@Z
 ?\f?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
 ?absoluteFilePath@QFileInfo@@QEBA?AVQString@@XZ
 ?accept@QDialog@@UEAAXXZ
@@ -2028,6 +1742,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?addButton@QButtonGroup@@QEAAXPEAVQAbstractButton@@H@Z
 ?addButton@QDialogButtonBox@@QEAAPEAVQPushButton@@AEBVQString@@W4ButtonRole@1@@Z
 ?addChildWidget@QLayout@@IEAAXPEAVQWidget@@@Z
+?addChildren@QTreeWidgetItem@@QEAAXAEBV?$QList@PEAVQTreeWidgetItem@@@@@Z
 ?addDays@QDate@@QEBA?AV1@_J@Z
 ?addDockWidget@QMainWindow@@QEAAXW4DockWidgetArea@Qt@@PEAVQDockWidget@@@Z
 ?addDockWidget@QMainWindow@@QEAAXW4DockWidgetArea@Qt@@PEAVQDockWidget@@W4Orientation@3@@Z
@@ -2146,7 +1861,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?columnCount@QGridLayout@@QEBAHXZ
 ?columnCount@QTreeWidgetItem@@QEBAHXZ
 ?columnWidth@QTableView@@QEBAHH@Z
-?columnWidth@QTreeView@@QEBAHH@Z
 ?commitData@QAbstractItemView@@MEAAXPEAVQWidget@@@Z
 ?complete@QCompleter@@QEAAXAEBVQRect@@@Z
 ?completer@QComboBox@@QEBAPEAVQCompleter@@XZ
@@ -2228,7 +1942,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?drawText@QPainter@@QEAAXAEBVQRect@@HAEBVQString@@PEAV2@@Z
 ?drawText@QPainter@@QEAAXAEBVQRectF@@AEBVQString@@AEBVQTextOption@@@Z
 ?drawText@QPainter@@QEAAXAEBVQRectF@@HAEBVQString@@PEAV2@@Z
-?drawText@QPainter@@QEAAXHHAEBVQString@@@Z
 ?dropMimeData@QStandardItemModel@@UEAA_NPEBVQMimeData@@W4DropAction@Qt@@HHAEBVQModelIndex@@@Z
 ?elidedText@QFontMetrics@@QEBA?AVQString@@AEBV2@W4TextElideMode@Qt@@HH@Z
 ?elidedText@QFontMetricsF@@QEBA?AVQString@@AEBV2@W4TextElideMode@Qt@@NH@Z
@@ -2236,7 +1949,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?endEditBlock@QTextCursor@@QEAAXXZ
 ?exec@QDrag@@QEAA?AW4DropAction@Qt@@V?$QFlags@W4DropAction@Qt@@@@@Z
 ?expf
-?f`Y4
 ?ffffff
 ?fill@QImage@@QEAAXAEBVQColor@@@Z
 ?fill@QImage@@QEAAXI@Z
@@ -2319,6 +2031,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?insertSection@QMenu@@QEAAPEAVQAction@@PEAV2@AEBVQIcon@@AEBVQString@@@Z
 ?insertWidget@QBoxLayout@@QEAAXHPEAVQWidget@@HV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
 ?installEventFilter@QObject@@QEAAXPEAV1@@Z
+?installNativeEventFilter@QCoreApplication@@QEAAXPEAVQAbstractNativeEventFilter@@@Z
 ?instance@QCoreApplication@@SAPEAV1@XZ
 ?intersected@QRect@@QEBA?AV1@AEBV1@@Z
 ?invalidate@QBoxLayout@@UEAAXXZ
@@ -2349,13 +2062,16 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?isIndexHidden@QTableView@@MEBA_NAEBVQModelIndex@@@Z
 ?isIndexHidden@QTreeView@@MEBA_NAEBVQModelIndex@@@Z
 ?isMaximized@QWidget@@QEBA_NXZ
+?isModified@QLineEdit@@QEBA_NXZ
 ?isNull@QVariant@@QEBA_NXZ
 ?isResettable@QMetaProperty@@QEBA_NXZ
+?isRowHidden@QTableView@@QEBA_NH@Z
 ?isSelected@QTreeWidgetItem@@QEBA_NXZ
 ?isSortingEnabled@QTableWidget@@QEBA_NXZ
 ?isValid@QElapsedTimer@@QEBA_NXZ
 ?isValid@QVariant@@QEBA_NXZ
 ?isVisible@QWidget@@QEBA_NXZ
+?isVisibleTo@QWidget@@QEBA_NPEBV1@@Z
 ?isWidgetType@QObject@@QEBA_NXZ
 ?isWritable@QMetaProperty@@QEBA_NXZ
 ?item@QListWidget@@QEBAPEAVQListWidgetItem@@H@Z
@@ -2627,7 +2343,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?orientation@QHeaderView@@QEBA?AW4Orientation@Qt@@XZ
 ?orientation@QSplitter@@QEBA?AW4Orientation@Qt@@XZ
 ?orientation@QSplitterHandle@@QEBA?AW4Orientation@Qt@@XZ
-?paint@QStyledItemDelegate@@UEBAXPEAVQPainter@@AEBVQStyleOptionViewItem@@AEBVQModelIndex@@@Z
 ?paintEngine@QOpenGLWidget@@MEBAPEAVQPaintEngine@@XZ
 ?paintEngine@QWidget@@UEBAPEAVQPaintEngine@@XZ
 ?paintEvent@QAbstractScrollArea@@MEAAXPEAVQPaintEvent@@@Z
@@ -2676,8 +2391,8 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?property@QMetaObject@@QEBA?AVQMetaProperty@@H@Z
 ?property@QObject@@QEBA?AVQVariant@@PEBD@Z
 ?propertyCount@QMetaObject@@QEBAHXZ
-?qBJ
 ?qBadAlloc@@YAXXZ
+?qstrcmp@@YAHAEBVQByteArray@@PEBD@Z
 ?qt_metacall@QAbstractItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QAbstractListModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ?qt_metacall@QAbstractScrollArea@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -2798,6 +2513,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?read@QMetaProperty@@QEBA?AVQVariant@@PEBVQObject@@@Z
 ?read@QTableWidgetItem@@UEAAXAEAVQDataStream@@@Z
 ?read@QTreeWidgetItem@@UEAAXAEAVQDataStream@@@Z
+?realloc@QListData@@QEAAXH@Z
 ?recalcMostLeftNode@QMapDataBase@@QEAAXXZ
 ?rect@QWidget@@QEBA?AVQRect@@XZ
 ?redirected@QOpenGLWidget@@MEBAPEAVQPaintDevice@@PEAVQPoint@@@Z
@@ -2813,6 +2529,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?removeColumns@QAbstractItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 ?removeColumns@QSortFilterProxyModel@@UEAA_NHHAEBVQModelIndex@@@Z
 ?removeEventFilter@QObject@@QEAAXPEAV1@@Z
+?removeNativeEventFilter@QCoreApplication@@QEAAXPEAVQAbstractNativeEventFilter@@@Z
 ?removeRows@QAbstractItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 ?removeRows@QSortFilterProxyModel@@UEAA_NHHAEBVQModelIndex@@@Z
 ?removeTab@QTabWidget@@QEAAXH@Z
@@ -2850,6 +2567,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?resizeGL@QOpenGLWidget@@MEAAXHH@Z
 ?resizeRowsToContents@QTableView@@QEAAXXZ
 ?resizeSection@QHeaderView@@QEAAXHH@Z
+?resizeSections@QHeaderView@@QEAAXW4ResizeMode@1@@Z
 ?restoreGeometry@QWidget@@QEAA_NAEBVQByteArray@@@Z
 ?restoreState@QMainWindow@@QEAA_NAEBVQByteArray@@H@Z
 ?restoreState@QSplitter@@QEAA_NAEBVQByteArray@@@Z
@@ -2859,6 +2577,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?revert@QAbstractItemModel@@UEAAXXZ
 ?revert@QAbstractProxyModel@@UEAAXXZ
 ?roleNames@QAbstractItemModel@@UEBA?AV?$QHash@HVQByteArray@@@@XZ
+?row@QTableWidgetItem@@QEBAHXZ
 ?rowCount@QGridLayout@@QEBAHXZ
 ?rowCount@QSortFilterProxyModel@@UEBAHAEBVQModelIndex@@@Z
 ?rowCount@QTableWidget@@QEBAHXZ
@@ -2943,6 +2662,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?setColor@QMapNodeBase@@QEAAXW4Color@1@@Z
 ?setColumnCount@QTableWidget@@QEAAXH@Z
 ?setColumnCount@QTreeWidget@@QEAAXH@Z
+?setColumnHidden@QTableView@@QEAAXH_N@Z
 ?setColumnMinimumWidth@QGridLayout@@QEAAXHH@Z
 ?setColumnStretch@QGridLayout@@QEAAXHH@Z
 ?setColumnWidth@QTableView@@QEAAXHH@Z
@@ -2950,6 +2670,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?setCompleter@QComboBox@@QEAAXPEAVQCompleter@@@Z
 ?setCompletionMode@QCompleter@@QEAAXW4CompletionMode@1@@Z
 ?setCompletionPrefix@QCompleter@@QEAAXAEBVQString@@@Z
+?setContentsMargins@QLayout@@QEAAXAEBVQMargins@@@Z
 ?setContentsMargins@QLayout@@QEAAXHHHH@Z
 ?setContentsMargins@QWidget@@QEAAXHHHH@Z
 ?setContextMenuPolicy@QWidget@@QEAAXW4ContextMenuPolicy@Qt@@@Z
@@ -3105,6 +2826,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?setRowMinimumHeight@QGridLayout@@QEAAXHH@Z
 ?setRowStretch@QGridLayout@@QEAAXHH@Z
 ?setScaledContents@QLabel@@QEAAX_N@Z
+?setSectionHidden@QHeaderView@@QEAAXH_N@Z
 ?setSectionResizeMode@QHeaderView@@QEAAXHW4ResizeMode@1@@Z
 ?setSectionResizeMode@QHeaderView@@QEAAXW4ResizeMode@1@@Z
 ?setSectionsClickable@QHeaderView@@QEAAX_N@Z
@@ -3213,7 +2935,6 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?showEvent@QTabWidget@@MEAAXPEAVQShowEvent@@@Z
 ?showEvent@QTextEdit@@MEAAXPEAVQShowEvent@@@Z
 ?showEvent@QWidget@@MEAAXPEAVQShowEvent@@@Z
-?showFullScreen@QWidget@@QEAAXXZ
 ?showMaximized@QWidget@@QEAAXXZ
 ?showMessage@QStatusBar@@QEAAXAEBVQString@@H@Z
 ?showNormal@QWidget@@QEAAXXZ
@@ -3278,6 +2999,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?splitDockWidget@QMainWindow@@QEAAXPEAVQDockWidget@@0W4Orientation@Qt@@@Z
 ?splitPath@QCompleter@@UEBA?AVQStringList@@AEBVQString@@@Z
 ?splitter@QSplitterHandle@@QEBAPEAVQSplitter@@XZ
+?splitterMoved@QSplitter@@QEAAXHH@Z
 ?start@QElapsedTimer@@QEAAXXZ
 ?start@QTimer@@QEAAXH@Z
 ?start@QTimer@@QEAAXXZ
@@ -3394,6 +3116,7 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?toString@QDate@@QEBA?AVQString@@W4DateFormat@Qt@@@Z
 ?toString@QDateTime@@QEBA?AVQString@@AEBV2@@Z
 ?toString@QVariant@@QEBA?AVQString@@XZ
+?toUpper@QString@@QEHAA?AV1@XZ
 ?toUtf8@QString@@QEGBA?AVQByteArray@@XZ
 ?toUtf8@QString@@QEHAA?AVQByteArray@@XZ
 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
@@ -3410,27 +3133,20 @@ $\r?end@QString@@QEBAPEBVQChar@@XZ
 ?value@QSettings@@QEBA?AVQVariant@@AEBVQString@@AEBV2@@Z
 ?valueToKey@QMetaEnum@@QEBAPEBDH@Z
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
-?ysB
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
 @Palette 
 @Palette '%s' already defined!
+@\tV_isinfd
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
-@^8U)zj
+@fff>fff>fff>fff>
 A compound list that matches if any parts matches
 A compound list that requires all its parts to match
 A string associated with this Cursor, to use later for remote Kill or Wait requests. Cursors can have any number of Tags associated with them.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
-A>pP&
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ACT_IDLE
 ACT_NEUTRAL_REF_POSE
-ADD_FLOW
-ADVAPI32.dll
-ANCHOR
 AND List
 AND: This group will only match if ALL of the parts match\n(Click to toggle to AND)
-AUTO
-A\tV_log10f
 AbandonAnyModalBrowse
 About &Qt...
 About...
@@ -3441,10 +3157,7 @@ Absolute value (int)
 Accept
 AcceptColorInternal
 AcceptIfItemPicked
-Access violation - no RTTI data!
-AcquireSRWLockExclusive
-Actions (%1 files selected)
-Activate
+Actions
 ActivateAllAssetsTab
 Active Window Widget
 Add R%d <- R%d + R%d
@@ -3459,10 +3172,10 @@ AddPath
 AddTag
 AddToForceDirty
 Additional Related File
+Additional filter from tool context:<pre> "%1" </pre>(Click to toggle)
 Additional pixel spacing between children
 Addr
 Address
-Advanced
 AfterDataModelsUpdated
 Alignment of STRETCH will be ignored due to FixedSize property
 AllSelected
@@ -3471,7 +3184,6 @@ Alpha:
 Always
 And R%d <- R%d && R%d
 Any Other Cursors Have Tag
-AppPolicyGetProcessTerminationMethod
 Append to forcedirty.txt
 AppendCurrentSelection
 ApplySelectedSavedSearch
@@ -3484,10 +3196,10 @@ Arc Tangent of input value. Input can be any real number. Output in radians, fro
 ArcCos input out of range (-1, 1)
 ArcSin input out of range (-1, 1)
 Are we currently running unit tests?
-AreFileApisANSI
 Array Append
 Array Concatenate
 Array Count
+Array Find Element Matching
 Array First N Elements
 Array Insert
 Array Remove Element Matching
@@ -3532,7 +3244,9 @@ AssetLabel
 AssetLink_Base
 AssetLink_Dep
 AssetLink_Strong
+AssetLink_Subasset
 AssetLink_Weak
+AssetListModel
 AssetMenu
 AssetSelectionChanged
 AssetStats
@@ -3543,13 +3257,8 @@ Async Fire C%d:I%d
 Attempted a typeid of nullptr pointer!
 Attempted to pop off of an empty CUtlQueue. Please check before using this method.
 Attempting to register the command %s for context %s multiple times\n
-Auto Expand 200 or fewer assets (Currently %s)
 Auto-Recompile Disabled
 Automatic Popup
-BASE
-BC?>6t9^\tc:>
-BF>^G
-BOTTOM
 BUTTON
 B\f?focusWidget@QApplication@@SAPEAVQWidget@@XZ
 B`?translate@QPainter@@QEAAXAEBVQPointF@@@Z
@@ -3572,7 +3281,6 @@ BackwardPortContainer
 Bad Path
 Bad checkstate (expected eg. 'PartiallyChecked')
 Bad count in ArraySetCount (%d)
-Bad dynamic_cast!
 Bad horizontalPolicy "%s"
 Bad max in ArrayFirstNElements (%d)
 Bad number '%s'
@@ -3606,7 +3314,6 @@ Border_DrawBehavior
 Border_FixedScreenWidth
 Border_Style
 Border_Width
-Bottom
 Break at: %s
 Browse
 BrushStyle
@@ -3619,19 +3326,15 @@ C2DCanvasBase
 C2DCanvasCamera
 C:\buildworker\csgo_rel_win64\build\_build_\assetbrowser\_vpc_assetbrowser\default\win64\_msvc_\Retail\assetbrowser.pdb
 C:\buildworker\csgo_rel_win64\build\src\assetbrowser\qasset_graph_view.cpp
-C:\buildworker\csgo_rel_win64\build\src\mathlib\extended\generic_expr.g
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utldict.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlmap.h
 C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlqueue.h
-C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlrbtree.h
 C:\buildworker\csgo_rel_win64\build\src\qcontrols\graphcanvas_item.cpp
 C:\buildworker\csgo_rel_win64\build\src\qcontrols\graphcanvas_item_simpletooltip.cpp
 C:\buildworker\csgo_rel_win64\build\src\qcontrols\graphcanvas_item_text.cpp
 C:\buildworker\csgo_rel_win64\build\src\qcontrols\qgraphcanvas_view.cpp
 C:\buildworker\csgo_rel_win64\build\src\toolrenderutils\toolmatsysutils.cpp
+C:\buildworker\csgo_rel_win64\build\src\toolrenderutils\toolstandardmodels.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\lightingcontrolrig.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_hitboxes.cpp
-C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_materialpreview.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolscene\toolscene_sky.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolrenderutils.cpp
 CAssetBrowserToolSystem::StartAssetBrowserSystem
@@ -3639,41 +3342,31 @@ CBindableCamera
 CBufferString
 CColorGradient
 CDeleteWorkingSetsPromptDialog
-CENTER
 CEntityNameString
 CGenericFilterDomain::IListener
 CGlobalHotkeyCommands
 CGlobalSymbol
 CGlobalSymbolCaseSensitive
+CIKV3TransferInterface_ResourceLoad
 CInputBindManager::HandleInputCode recursion depth got too deep.\n
-CKV3Arena::Root
 CKV3MemberNameSet
 CKV3MemberNameWithStorage
-CKeyValues3Array::EnsureElementCapacity
-CKeyValues3Array::InsertMultipleBefore
-CKeyValues3Array::RemoveMultiple
-CKeyValues3Table::EnsureMemberCapacity
-CLIP_TEXT
 CLightingControlRig
 CLightingControlRig::DestroyBackgroundMap
 CLightingControlRig::ReloadLightRigConfig
 CLightingPreviewPopupUI
 CNewWorkingSetDialog
-COLLAPSE
 COMMAND_TEXT_MODE_BUTTON
 COMMAND_TEXT_MODE_ICON
 COMMAND_TEXT_MODE_MENU
 COMMAND_TEXT_MODE_NONE
-COMMENTS
-COMMENT_OVERLAY
-CONNECTIONS_BACKGROUND
-CONNECTIONS_FOREGROUND
 CP4FileInfoCache&
 CParticleCollectionBindingInstance::HACK_UnusedBinding
 CPiecewiseCurve
 CPulseArraylib::ArrayAppend
 CPulseArraylib::ArrayConcatenate
 CPulseArraylib::ArrayCount
+CPulseArraylib::ArrayFindElementMatching
 CPulseArraylib::ArrayFirstNElements
 CPulseArraylib::ArrayInsert
 CPulseArraylib::ArrayRemoveElementMatching
@@ -3685,13 +3378,19 @@ CPulseCell_BooleanSwitchState::Activate
 CPulseCell_CursorQueue::Wait
 CPulseCell_FireCursors::Cancel
 CPulseCell_FireCursors::Start
+CPulseCell_FireCursors::StopWaiting
 CPulseCell_Inflow_EntOutputHandler '%s'.'%s' --> Chunk%d: %s
 CPulseCell_Inflow_EventHandler '%s' --> Chunk%d: %s
 CPulseCell_Inflow_GraphHook '%s' --> Chunk%d: %s
 CPulseCell_Inflow_ObservableVariableListener '%s'.'%s (%u)' --> Chunk%d: %s
+CPulseCell_InlineNodeSkipSelector::ProcessSelector
 CPulseCell_IntervalTimer::OnInterval
 CPulseCell_IntervalTimer::Start
 CPulseCell_IntervalTimer::StopTimer
+CPulseCell_IsRequirementValid::CheckRequirement
+CPulseCell_LimitCount::CheckRequirement
+CPulseCell_LimitCount::CommitStep
+CPulseCell_PickBestOutflowSelector::ProcessSelector
 CPulseCell_Step_CallExternalMethod '%s'
 CPulseCell_Timeline::Start
 CPulseCell_Timeline::Stop
@@ -3705,7 +3404,6 @@ CPulseCursorFuncs::CursorHasTag
 CPulseCursorFuncs::KillAllOtherCursors
 CPulseCursorFuncs::KillCursorsWithTag
 CPulseCursorFuncs::KillThisCursorAndCancel
-CPulseCursorFuncs::KillThisCursorAndFail
 CPulseCursorFuncs::RemoveTagFromCursor
 CPulseCursorFuncs::TagCursor
 CPulseMathlib::AbsFloat
@@ -3755,6 +3453,7 @@ CPulseMathlib::Pi
 CPulseMathlib::Pow
 CPulseMathlib::RSqrt
 CPulseMathlib::Rad2Deg
+CPulseMathlib::RandomWorldPosition
 CPulseMathlib::RemapClampedFloat
 CPulseMathlib::RoundFloat
 CPulseMathlib::Saturate
@@ -3772,6 +3471,7 @@ CPulseMathlib::SplitWorldVector
 CPulseMathlib::SqrFloat
 CPulseMathlib::SqrInt
 CPulseMathlib::Sqrt
+CPulseMathlib::StringLength
 CPulseMathlib::StringsAreEqualCaseSensitive
 CPulseMathlib::Tan
 CPulseMathlib::VectorToWorldVector
@@ -3789,6 +3489,7 @@ CQAssetBrowserPage
 CQAssetBrowserWidget
 CQAssetComboBox
 CQAssetComboBox:%s
+CQAssetDirTreeWidget
 CQAssetFileHelper
 CQAssetGraphView
 CQAssetGridPanel
@@ -3811,7 +3512,6 @@ CQAssetTagSelectWidget
 CQAssetTagSelectWidget*
 CQAssetTree
 CQAssetTreeModel
-CQAssetTreeView
 CQAssetTypeSelectWidget
 CQAssetTypeSelectWidget*
 CQAssetViewBase
@@ -3874,10 +3574,8 @@ CQEmbeddedAssetPicker
 CQFilterListGroupbox
 CQFilteredTreeWidget
 CQFilteredWorkingSet
-CQFilteredWorkingSet::RunFilters
 CQFlowingLayout
 CQFocusChainDebugger
-CQFullscreenBrowser
 CQGCD_ActiveStyles
 CQGCD_AllProperties
 CQGCD_CommonInfo
@@ -3965,7 +3663,6 @@ CTonemappingPopupUI
 CToolAxisObjectDesc::DrawArray
 CToolSceneAxis
 CToolSceneLight
-CToolSceneLightRig
 CToolSceneNode
 CToolSceneNodeGroup
 CToolSceneSky
@@ -3978,24 +3675,20 @@ CURVE_TANGENT_SPLINE
 CUtlBlockVector<class Vec2D<float>,int,class CMemAllocAllocator>::GrowCount
 CUtlBlockVector<struct CacheOptimizedTriangle_t,int,class CMemAllocAllocator>::GrowCount
 CUtlDict<struct CQInputBindEditor::BindingContextInfo_t *,class CDefFastCaselessStringLess>::Insert
+CUtlHashtable<IAssetDir*>*
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CToolSceneNode *,struct CToolScene::Empty_t,class CDefLess<class CToolSceneNode *>,unsigned int>::Node_t,unsigned int>,unsigned int,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IAsset *,class CFolderItemAsset *,class CDefLess<class IAsset *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IAssetType *,int,class CDefLess<class IAssetType *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbol,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<class CPulseRuntimeMethodArg,int,class CMemAllocAllocator>,class CPulseRuntimeMethodArg,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_InstructionDebug,int,class CMemAllocAllocator>,struct CPulse_InstructionDebug,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CPulse_RegisterInfo,int,class CMemAllocAllocator>,struct CPulse_RegisterInfo,int>::InsertBeforeGetPtr
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<class CUtlString,char const *,struct CaseSensitiveStrEquals,struct MurmurHash3ConstCharPtr>::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<class CUtlString,char const *,struct CaseSensitiveStrEquals,struct MurmurHash3ConstCharPtr>::HashBucket_t,int>::AddMultipleToTail
-CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int,class CMemAllocAllocator>,struct CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::MemPage_t,int>::EnsureUnusedCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct PGDInstruction_t,int,class CMemAllocAllocator>,struct PGDInstruction_t,int>::InsertBeforeGetPtr
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::AddPage
-CUtlMemoryBlockAllocator<char,class CMemAllocAllocator>::Alloc
 CUtlMemoryBlockAllocator<class Vec2D<float>,class CMemAllocAllocator>::AddPage
 CUtlMemoryBlockAllocator<struct CacheOptimizedTriangle_t,class CMemAllocAllocator>::AddPage
-CUtlOrderedMap<class PulseCursorID_t,struct PulseGraphExecutionHistoryCursorDesc_t *,class CDefLess<class PulseCursorID_t>,int>::FindElement
 CUtlQueue<int,class CUtlLeanVector<struct CUtlQueueNode_t<int>,int,class CMemAllocAllocator> >::RemoveAtTail
 CUtlRBTree<struct CUtlOrderedMapBase<class CGlobalSymbol,class CGCPalette::CVariable<class CUtlString>,class CDefLess<class CGlobalSymbol>,int>::Node_t,class CUtlOrderedMapBase<class CGlobalSymbol,class CGCPalette::CVariable<class CUtlString>,class CDefLess<class CGlobalSymbol>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CGlobalSymbol,class CGCPalette::CVariable<class CUtlString>,class CDefLess<class CGlobalSymbol>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class CGlobalSymbol,class CGCPalette::CVariable<class Color>,class CDefLess<class CGlobalSymbol>,int>::Node_t,class CUtlOrderedMapBase<class CGlobalSymbol,class CGCPalette::CVariable<class Color>,class CDefLess<class CGlobalSymbol>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class CGlobalSymbol,class CGCPalette::CVariable<class Color>,class CDefLess<class CGlobalSymbol>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
@@ -4005,16 +3698,14 @@ CUtlRBTree<struct CUtlOrderedMapBase<class CUtlSymbolLarge,struct CQGenericFilte
 CUtlRBTree<struct CUtlOrderedMapBase<class IAsset *,class CFolderItemAsset *,class CDefLess<class IAsset *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class IAsset *,class CFolderItemAsset *,class CDefLess<class IAsset *>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IAsset *,class CFolderItemAsset *,class CDefLess<class IAsset *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class IAssetType *,int,class CDefLess<class IAssetType *>,unsigned short>::Node_t,class CUtlOrderedMapBase<class IAssetType *,int,class CDefLess<class IAssetType *>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IAssetType *,int,class CDefLess<class IAssetType *>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<class IWorkingSet *,class CAssetTreeData *,class CDefLess<class IWorkingSet *>,int>::Node_t,class CUtlOrderedMapBase<class IWorkingSet *,class CAssetTreeData *,class CDefLess<class IWorkingSet *>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class IWorkingSet *,class CAssetTreeData *,class CDefLess<class IWorkingSet *>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CGraphCanvasStyleLayer *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CGraphCanvasStyleLayer *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CGraphCanvasStyleLayer *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
+CUtlRBTree<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,class CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<class VDataEntryKey_t,class CToolSceneLightRig *,class CDefLess<class VDataEntryKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum GCStyleProp,class CGlobalSymbol,class CDefLess<enum GCStyleProp>,int>::Node_t,class CUtlOrderedMapBase<enum GCStyleProp,class CGlobalSymbol,class CDefLess<enum GCStyleProp>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum GCStyleProp,class CGlobalSymbol,class CDefLess<enum GCStyleProp>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum GCStyleProp,class CGraphCanvasStyleLayer const *,class CDefLess<enum GCStyleProp>,int>::Node_t,class CUtlOrderedMapBase<enum GCStyleProp,class CGraphCanvasStyleLayer const *,class CDefLess<enum GCStyleProp>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum GCStyleProp,class CGraphCanvasStyleLayer const *,class CDefLess<enum GCStyleProp>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum GCStyleProp,struct GCVarLookupInfo_t,class CDefLess<enum GCStyleProp>,int>::Node_t,class CUtlOrderedMapBase<enum GCStyleProp,struct GCVarLookupInfo_t,class CDefLess<enum GCStyleProp>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum GCStyleProp,struct GCVarLookupInfo_t,class CDefLess<enum GCStyleProp>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<enum GCStyleProp,struct GraphCanvasOriginInfo_t,class CDefLess<enum GCStyleProp>,int>::Node_t,class CUtlOrderedMapBase<enum GCStyleProp,struct GraphCanvasOriginInfo_t,class CDefLess<enum GCStyleProp>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum GCStyleProp,struct GraphCanvasOriginInfo_t,class CDefLess<enum GCStyleProp>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,class CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<enum KV3MetatextType_t,class CBufferString,class CDefLess<enum KV3MetatextType_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CGraphCanvasStyleLayer *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CGraphCanvasStyleLayer *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CGraphCanvasStyleLayer *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CToolSceneLightRig *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,class CUtlSymbol,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,class CUtlSymbol,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CUtlSymbol,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CUtlRBTree<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,class CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct CQHeaderViewWithCheckboxes::CustomSection_t,class CDefLess<int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
-CUtlRBTreeBase
 CUtlVector<IAsset*>
 CUtlVector<IAsset*>*
 CUtlVector<IAssetType*>
@@ -4040,11 +3731,10 @@ CapToggle
 Caps
 Ceiling - round float up to nearest integer)
 Ceiling Float
-Center
-Centered
 Cgraphcanvas_debug_layout
 Changelist
 Changelist description
+Check Requirement
 Check Type
 Check if any yielded cursors on the graph already have the given tag.
 Check if the cursor already has the given tag.
@@ -4054,23 +3744,21 @@ Checkout
 Checkout and open '%1' in %2
 CheckoutAndOpenRoot
 Child Asset(s)
-Children
 Clamp Float
 Clamp Int
 Clamp value to range (float)
 Clamp value to range (int)
 Class
 Class does not allow allocation from its schema binding
-Clear
 Clear History
 Clear Thumbnail Cache
+Clear cache of any thumbnails that are out-of-date or whose assets no longer exist
 Clear cache of saved generated thumbnails, forcing all thumbnails to update the next time they are viewed
 ClearFilterAndGiveFocus
 ClearInputHistory
 ClearThumbnailCache
 Clicked
 Client Exclusions Active: %s
-Clone
 Clone Set
 Clone the selected working set
 CloneWorkingSetAction
@@ -4078,10 +3766,8 @@ Close
 Close the Asset Browser. (Does NOT shut down the engine or other tools.)
 Close the group automatically after a short wait (good for 'success' messages)
 Close the group automatically when the associated parent process exits (good for sticky 'error' messages)
-CloseHandle
 CloseWorkingSetTab
-Collapse all folders
-CollapseAll
+Collapse All
 Collapsed
 Color Picker
 Color of the background. Can be specified as hex, [r, g, b, a], or a predefined color.
@@ -4092,17 +3778,19 @@ Command Filter
 Command Name
 Command.%s.%s
 Command:\n%1\nWorking Directory:\n%2
+Commit Step
 Compare strings with case sensitivity, in contrast to normal string equality which is case-insensitive
 Compile Dependency (Content)
 Compile Dependency (Game)
 Completed
 Completer Settings
+CompleterClosed
+CompleterOpened
 CompleterRequested
 Computes 2 ( 2.71...) raised to a power
 Computes e ( 2.71...) raised to a power
 Configure various options
 Considered by parent in LayoutSystem_PlaceItemAndChildren_R
-Contain
 Content Files: %1
 Content Only
 ContentRoot File
@@ -4123,23 +3811,27 @@ Copy Asset...
 Copy Path To Clipboard
 Copy R%d <- R%d
 Copy Set To Clipboard
+Copy Subasset Names
+Copy Tags
+Copy Tags (no tags in common)
+Copy Tags (no tags)
 Copy a working set to the clipboard
 Copy fbx files and textures into the content tree, and create a model and material(s) from them.
 Copy filenames to clipboard
 Copy to Clipboard
+Copy/Paste Tags
 CopyAsset
 CopyAssetName
 CopyColor
 CopyPath
 CopyString
 CopyToClipboard
-CorExitProcess
 CornerWidget:%s
 Cosine of angle. Input in radians, output in radians
 Could not execute the command:\n%1\nWorking directory:\n%2
 Could not resolve path: %1
+Count the number of codepoints in the string (unicode-aware). If you want rendered glyphs, you probably want to consider using Panorama.
 Courier
-Cover
 Create Changelist
 Create Failed
 Create New Working Set
@@ -4147,7 +3839,6 @@ Create Set From Clipboard
 Create a new working set
 Create new changelist for %1 files:
 CreateChangelist
-CreateFileW
 Cross Product Vector
 Cross Product of Vector a x Vector b
 Ctrl
@@ -4161,14 +3852,12 @@ Cursors Allowed To Wait
 Custom Color
 Custom Colors
 DELETE
-DRAG_HANDLE
-D\tV_log2f
+D\tV_isvalidhex
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
 Date/Time
 DateChanged
-Debug
 Debug Focus Widget
 Debug Widget Under Mouse
 Debug-print path to root
@@ -4182,7 +3871,6 @@ DebugWidgetUnderMouse
 DebugWidgetWithFocus
 Debuger Break With Widget
 Debugger break with widget: 0x%p\n
-DecodePointer
 DecreaseMaxDepth
 DecreaseMaxLinks
 DecreaseMoveSpeed
@@ -4198,6 +3886,7 @@ Delete
 Delete %1 Assets...
 Delete %1 Working Sets?
 Delete Asset...
+Delete Files
 Delete Set
 Delete Widget
 Delete Working Set?
@@ -4205,7 +3894,6 @@ Delete compiled assets that are no longer used.
 Delete selected working set
 Delete...
 DeleteAsset
-DeleteCriticalSection
 DeselectAllFiles
 Designable
 Desired Kill Priority
@@ -4240,10 +3928,8 @@ Duplicate the current working set tab
 DuplicateCurrentTab
 DuplicateTab
 DuplicateTabAt
-ELIDE_TEXT_END
 ERROR: Failed to open file for key bindings:\n%1\n
 ERROR: Failed to read key bindings from:\n%1\n
-ET5>
 EXEC-BEGIN (UNSUPRESSED): %s
 EXEC-BEGIN-MODIFIER: %s
 EXEC-BEGIN: %s
@@ -4253,7 +3939,6 @@ EXEC-END_SUPPRESSED: %s
 EXEC-HELD: %s
 EXEC-INVALID-END: %s
 EXEC-REMOVE-END: %s
-EXPAND_ITEM
 E\r?endsWith@QByteArray@@QEBA_ND@Z
 EatEscapeKeyPress
 Edit Description...
@@ -4271,10 +3956,10 @@ Enable a live animation frame slider for model asset preview
 Enable a menu for asset preview types that support (eg. models)
 Enable date range
 Enable live grid preview for asset types that support it. (eg. particles)
+Enable the ref count column (same as refby_count property). It's cheap but not free to show so we hide by default
 EnableOkButton
 EnableRenameButton
 EnableSorting
-EncodePointer
 End mouse capture [%i] due to hidden widget\n
 End mouse capture [%i]: %s\n
 EndCancelSequence
@@ -4282,7 +3967,6 @@ EndWheelSequence
 EnsureModsVisibleForAssets
 EnsureTypesVisible
 Enter
-EnterCriticalSection
 EntityName
 Eq R%d <- R%d == R%d
 Error (problem that prevents task success)
@@ -4296,13 +3980,9 @@ Exit Asset Browser
 Exit Tools
 ExitAllTools
 ExitAndResetToolSettings
-ExitProcess
 ExitTools
 Exp2
-Expand %s recursively
-Expand all folders
-ExpandAll
-ExpandRecursively
+Expand All
 Expanded
 Expanding
 Expected '%s'
@@ -4316,14 +3996,10 @@ External Tools
 Extra Large
 ExtraLarge
 FBX Files ( *.fbx )
-FEMh\f
-FIRST_CHILD
 FLT_MAX
 FY?setDevicePixelRatio@QPixmap@@QEAAXN@Z
-F\tV_logf
 F\v?event@QGroupBox@@MEAA_NPEAVQEvent@@@Z
 Fail Outflow
-Failed to allocate a token stream for '%s'. (Out of memory?)
 Failed to allocate an instance of a class
 Failed to convert value '%s' to enum/flags '%s' (expecting eg. '%s')
 Failed to create widget %s
@@ -4335,16 +4011,15 @@ Failed to read colors: %s\n
 Failed to run external tool
 Failed to save '%s': %s\n
 Failed to save colors: %s\n
-Failed to save unsupported class
 Fast Asset Search
 FastAssetPicked
 FatColor_t
-File
 File '%1'
 File Hierarchy
 Files Belonging to Selected Assets
 Files:
 Fill the thumbnail cache for all assets.
+FillRect
 Filter Part
 Filter name/description:
 Filter paths
@@ -4356,13 +4031,12 @@ FilterEdited
 FilterEditingFinished
 FilterPartChoice_t
 Fimage
+Find
 Find all the yielded cursors on this graph and cancel them.
 Find all the yielded cursors on this graph with the matching tag and cancel them.
+Find first element 'a' which compare equal to 'element' and return its index.
 Find:
-FindClose
-FindFirstFileExW
 FindItemsOverlapping
-FindNextFileW
 FitAllInView
 Fix Assets?
 Fix selected assets...
@@ -4373,11 +4047,6 @@ Float To Game Time
 Floor - round float down to nearest integer
 Floor Float
 Flow Node ID
-FlsAlloc
-FlsFree
-FlsGetValue
-FlsSetValue
-FlushFileBuffers
 Fly [Toggle: %s]
 Foc:N 
 Foc:Y 
@@ -4405,58 +4074,27 @@ Foreground_Width
 ForwardPortContainer
 Frac
 Fractional component (ie. returns 0.34 for 12.34)
-FreeEnvironmentStringsW
-FreeLibrary
+Frame preview models using the bounding box of the vertices only.  Only applies to model previews and models which have animation sequence for their preview may clip as they animate.
+Free
 Full\t(Asset and ALL associates)
 G ?toggle@QAbstractButton@@QEAAXXZ
-GCTL
-GROUP
-GROUP_BACKGROUND
 G\v?event@QHeaderView@@MEAA_NPEAVQEvent@@@Z
 Game Blackboards: 
 Game Files: %1
 Game Time To Float
 Game audio muted while tools are active
 GameRoot File
+GatherSelectionDirs
 GatherStyles_R
 Generate Thumbnail Cache...
 GenericFilterRelation_t
-GetACP
-GetActiveWindow
 GetArrayElement R%d <- R%d[ R%d ]
 GetAsyncKeyState
 GetBlackboardReference R%d <- BR%d (%s)
-GetCPInfo
-GetCommandLineA
-GetCommandLineW
-GetConsoleMode
-GetConsoleOutputCP
 GetConst R%d <- C%d (%s)
-GetCurrentPackageId
-GetCurrentProcess
-GetCurrentProcessId
-GetCurrentThreadId
 GetCursorPos
 GetDomainValue R%d <- DV%d (%s)
-GetEnvironmentStringsW
-GetFileType
 GetInlineConst R%d <- C%d (%s)
-GetLastError
-GetLongPathNameA
-GetModuleFileNameW
-GetModuleHandleExW
-GetModuleHandleW
-GetOEMCP
-GetProcAddress
-GetProcessHeap
-GetShortPathNameA
-GetStartupInfoW
-GetStdHandle
-GetStringTypeW
-GetSystemMetrics
-GetSystemTimeAsFileTime
-GetSystemTimePreciseAsFileTime
-GetTempPath2W
 GetVar R%d <- V%d (%s)
 GetVar R%d <=MOVE*V%d (%s)
 GetWorkingSet
@@ -4466,22 +4104,8 @@ GlobalHotkeys
 GlobalTopLevel
 GotoAsset
 Gradient()
-GraphCanvasBackgroundImageSize_t
-GraphCanvasBackgroundPosition_t
-GraphCanvasBackgroundRepeat_t
-GraphCanvasBorderDrawBehavior_t
-GraphCanvasChildLayoutAlgorithm_t
 GraphCanvasDebugger
-GraphCanvasHAlign_t
-GraphCanvasInteractionPriority_t
-GraphCanvasItemHoverBehavior_t
-GraphCanvasPositioning_t
-GraphCanvasPseudoClass_t
-GraphCanvasRenderLayer_t
-GraphCanvasTextClipMode_t
-GraphCanvasVAlign_t
 GraphCanvasViewMiniMap
-GraphCanvasVisibilityState_t
 GraphSceneView
 GraphView
 Grid
@@ -4493,30 +4117,17 @@ HANDLED in LayoutAlgorithm_Box_PlaceChildren
 HANDLED in LayoutAlgorithm_Default_PlaceChildren
 HANDLED in LayoutSystem_HideItem_R
 HAlign
-HBOX
-HBOX_REVERSE
 HGraphCanvasItem
-HH:mm:ss
-HIDDEN
 HKEY_CLASSES_ROOT\
 HKEY_CURRENT_USER\
 HKEY_CURRENT_USER\Software\Valve\Tools
 HKEY_LOCAL_MACHINE\
-HOVER_ANCESTOR
-HOVER_CUSTOM_A
-HOVER_CUSTOM_B
-HOVER_CUSTOM_C
-HOVER_DESCENDANT
-HOVER_OVERLAY
-HOVER_PROPAGATE
-HOVER_SELF
-HOVER_STOP_PROPAGATION
 HeaderCheckStateChanged
+Hex:
 Hide cursor during camera manipulation
 Hide unless error/warning occurs
 HideCoreMod
 Hierarchy
-Hierarchy Commands:
 Highlight '%1' In %2
 History
 History - %s
@@ -4533,6 +4144,7 @@ IAsset*
 IAsset**
 IAssetBrowseCallbacks
 IAssetCacheListener
+IAssetDir*
 IAssetNameStringAdapter
 IAssetSelectionListener
 IAssetTagListener
@@ -4548,7 +4160,6 @@ IHelpChangeListener
 IKV3TransferInterface_ResourceSave
 ILiveEmbeddedPreviewStateListener
 IMPORTMODEL 
-INSIDE_PARENT
 ISemiModalAssetBrowser
 ISubasset*
 IToolFrameListener
@@ -4578,6 +4189,7 @@ Include Hidden
 Include Inactive
 Include References && Dependencies
 Include Sub-Folders
+Include files in core
 IncreaseMaxDepth
 IncreaseMaxLinks
 IncreaseMoveSpeed
@@ -4588,23 +4200,17 @@ Indicates a test failure if Value is false.
 Indicates a test failure if value is false; only tested when running unit tests
 InitIncrementalOperation
 InitItem
-InitializeCriticalSectionAndSpinCount
-InitializeCriticalSectionEx
-InitializeSListHead
 Input Binding Error
 Input Debugger [%1]
 Input Sequence
 InputBindSystem
 Insert 'element' in the given index in 'a', increasing its count by one and moving the elements after index.
-Inside
 Integer Divide
 Integer division - unlike the divide (/) node, this will truncate any remainder (floor) and return an integer.
 Integrate
 Integrate Files
 Integration commands printed!
 InteractionPriority
-InterlockedFlushSList
-InterlockedPushEntrySList
 Invalid 'dockWidgetArea (%s)
 Invalid 'toolbarArea' (%s)
 Invalid color string '%s' (Must be '#rgb' '#rgba' '#rrggbb' '#rrggbbaa' or color name)
@@ -4621,20 +4227,14 @@ InvokeCommand
 Is In Test Mode
 Is Valid Vector
 Is Valid World Vector
-IsDebuggerPresent
-IsProcessorFeaturePresent
-IsValidCodePage
+IsChild
 ItemDoubleClicked
 J ?toggleViewAction@QToolBar@@QEBAPEAVQAction@@XZ
 J\r?hitButton@QPushButton@@MEBA_NAEBVQPoint@@@Z
-J\tV_modfd
 J\v?event@QLabel@@MEAA_NPEAVQEvent@@@Z
 Jump to Instr I%d
-JumpOrLeap( C%d:I%d )
 K ?toggled@QAbstractButton@@QEAAX_N@Z
-KERNEL32.dll
 KV3 Pointer
-KV3 save transfer failed: %s
 K\r?hitButton@QRadioButton@@MEBA_NAEBVQPoint@@@Z
 K\v?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
 Key Bindings
@@ -4642,17 +4242,9 @@ KeyState
 KeyState[%1]
 KeyValues3
 KeyValues3*
-KeyValues3: pre-allocated array memory is too small for %u elements (%u bytes available, %u bytes needed)\n
-KeyValues3: pre-allocated table memory is too small for %u members (%u bytes available, %u bytes needed)\n
 Kill All Other Cursors
 Kill Cursors With Tag
 Kill This Cursor And Cancel
-Kill This Cursor And Fail
-L>ev
-LAST_CHILD
-LCMapStringEx
-LCMapStringW
-LEFT
 LMouse
 LMouseDoubleClick
 LT?pixel@QImage@@QEBAIHH@Z
@@ -4665,12 +4257,10 @@ LabelPos_t
 Large
 Large Asset Count
 LaunchEngineTool
-LaunchFullscreenBrowser
 Layer determines the draw order, so this can be used to make certain items draw on top of others:
 Layout Side To Side
 Layout Top To Bottom
 Layout algorithm for children:
-LayoutAxis_t
 LayoutChildSpacing
 LayoutChildren
 LayoutGrowFactor
@@ -4684,7 +4274,6 @@ LayoutSystem_PlaceInRegion_R
 Layout_CalcDesiredSize_R
 Layout_CalcDesiredSize_R::ForceCollapsed
 Leap to Chunk C%d
-LeaveCriticalSection
 Left Mouse (Point)
 Length (magnitude) of Vector
 Length (magnitude) of Vector2D
@@ -4695,16 +4284,14 @@ Lerp Vector
 Lerp World Vector
 Less R%d <- R%d < R%d
 LessEq R%d <- R%d <= R%d
-LightRigType_t
 LightingControl
 LightmapUV
 LightmapUVW
 List
 Live
+Load and search inside of files (fbx, dmx) for dependencies which were filtered out during compile.  Can be slow.
 LoadKV3Object error: %s\n
-LoadKV3ObjectInPlace error: %s\n
-LoadLibraryExW
-LocaleNameToLCID
+Locate Selection In Tree
 Lock Cam
 Lock Height [Toggle: %s]
 Log10
@@ -4713,36 +4300,13 @@ M/dd/yyyy h:mm ap
 M?globalX@QMouseEvent@@QEBAHXZ
 M?globalY@QMouseEvent@@QEBAHXZ
 MATERIALTOFACESELECTION 
-MATERIAL_THUMBNAIL
 MAtomicTransfersAsPlainString
-MCustomFGDMetadata
 MENU
-MM/dd/yy
 MMouse
 MMouseDoubleClick
-MPropertyAttributeChoiceName
-MPropertyAttributeEditor
-MPropertyAttributeRange
-MPropertyAttributeSuggestionName
-MPropertyAutoRebuildOnChange
-MPropertyCustomFGDType
-MPropertyEditContextOverrideKey
-MPropertyEditContextOverrideValue
 MPropertyFlattenIntoParentRow
-MPropertyGroupName
-MPropertyProvidesEditContextString
-MPropertyReadonlyExpr
-MPropertySuppressExpr
-MPulseAdvanced
-MPulseEditorCanvasItemSpecKV3
-MPulseEditorHeaderIcon
 MPulseExpressionAlias
 MPulseFunctionHiddenInTool
-MPulsePolymorphicDependentArg
-MPulsePolymorphicDependentReturn
-MPulseSignatureForOutflow
-MVDataNodeType
-MVDataOverlayType
 MWheelDn
 MWheelLeft
 MWheelRight
@@ -4767,7 +4331,6 @@ Make a Vector2D from component parts.
 Make a World Vector from component parts.
 Make an Angle from a Forward Vector
 Make an Angle from component parts
-MapViewOfFile
 Margin
 Margin_Bottom
 Margin_Left
@@ -4781,7 +4344,6 @@ MaxSizeY
 Maximum
 Maximum of two values (float)
 Maximum of two values (int)
-MbP?
 Millisecond delay between typing in the assetbrowser filter and the filter being applied
 Min Float
 Min Int
@@ -4824,7 +4386,7 @@ MouseLeave
 MouseLook3D
 MouseZoom
 Move %1 Assets...
-Move %1 selected files to pending changelist
+Move %d selected file(s) to pending changelist
 Move Asset...
 Move To Changelist...
 Move files
@@ -4838,7 +4400,6 @@ MoveCameraUp3D
 MoveUnusedAssets
 Movement Speed: %0.*fx   [%s] to reset
 Mul R%d <- R%d * R%d
-MultiByteToWideChar
 Multisample Mode:
 Mute Game (In Tools)
 Mute Tools
@@ -4850,22 +4411,13 @@ N?height@QPaintDevice@@QEBAHXZ
 N?height@QPixmap@@QEBAHXZ
 N?horizontalAdvance@QFontMetrics@@QEBAHAEBVQString@@H@Z
 N?index@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
-NAN(IND)
-NAN(SNAN)
 NO COMMAND TARGET
-NODES
-NONINTERACTIVE
 NO_UI
 NT?pixelColor@QImage@@QEBA?AVQColor@@HH@Z
-NTH_CHILD
-NTH_LAST_CHILD
 NULL CELL 
-NUM_TYPES
 N\v?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
 Name Contains
-Natural
 Natural logarithm (base e)
-NavSystem001
 Navigate To File
 NavigateHistoryBack
 NavigateHistoryForward
@@ -4881,7 +4433,6 @@ New Game Tag
 New Set
 New Working Set
 New Working Set Name
-New outflow: %s\n
 NewValueAccepted
 NewWorkingSetAction
 No Active Window
@@ -4904,7 +4455,6 @@ No mods selected!
 No signal '%s'
 No slot '%s'
 NoAttr
-NoRepeat
 NodeID %d port '%s' called from C%d:I%d
 Non-Asset Child
 Non-Asset Content Dependency
@@ -4912,7 +4462,6 @@ Non-Asset Game Dependency
 Non-Asset Reference
 Non-Asset Weak Reference
 NoneSelected
-Normalize Vector
 Normalize Vector a
 Not At Head: %s\n
 Not R%d <- !R%d
@@ -4938,16 +4487,11 @@ NumEnter
 NumMul
 NumSub
 NumToggle
-ONLY_CHILD
-ON_PARENT_BORDER
 OP?isNull@QIcon@@QEBA_NXZ
 OR List
 OR: This group will match if ANY of the parts match\n(Click to toggle to AND)
-OUTSIDE_PARENT
-OZQ%
 Oa?width@QImage@@QEBAHXZ
 OkClicked
-Old outflow: %s\n
 On Interval
 On True
 OnAbout
@@ -4974,6 +4518,7 @@ OnCheckboxClicked
 OnClear
 OnClearClicked
 OnClearPressed
+OnCollapseAllClicked
 OnColorAccepted
 OnColorPicked
 OnColorSamplePicked
@@ -4990,6 +4535,7 @@ OnDeferredSelectAsset
 OnDeleteChecked
 OnDeleteSelectedWorkingSet
 OnDevHelp
+OnDirTreeSplitterMoved
 OnDontRemindToggled
 OnDownPressed
 OnDragHideLabelShowValue
@@ -5000,6 +4546,8 @@ OnEditClicked
 OnEditReturnPressed
 OnEditingFinished
 OnEndEdited
+OnExpandAllClicked
+OnExtraFilterToggled
 OnFastAssetPicked
 OnFileChanged
 OnFilterChanged
@@ -5007,11 +4555,13 @@ OnFilterEditedFromPopup
 OnFilterReturnPressed
 OnFilterTextChanged
 OnFilterTextEdited
+OnFilteredSetChange
 OnFixSelected
 OnFocusOut
 OnForceRenderingChanged
 OnGridZoomSliderChanged
 OnHeaderCheckStateChanged
+OnHexChanged
 OnHoverChanged
 OnIndexChanged
 OnIntegrate
@@ -5023,6 +4573,7 @@ OnLineEditDownPressed
 OnListUpArrow
 OnLivePreviewToggled
 OnLiveRenderingSwapChainChanged
+OnLocateSelectionClicked
 OnLockPreviewCameraToggled
 OnMakeChangelistChecked
 OnMenu
@@ -5067,7 +4618,6 @@ OnRemoveClicked
 OnRemoveSavedSearchClicked
 OnRemoveTag
 OnReturnPressed
-OnRightClickHierarchy
 OnSaveToolSettings
 OnSavedSearchDropdown
 OnSavedSearchSelected
@@ -5078,12 +4628,13 @@ OnSelectNone
 OnSelectOne
 OnSelectionChanged
 OnSelectionCleared
+OnSetColorInternal
+OnShouldRecurseToggled
 OnShowAddTagDialog
 OnShowDocumentationWebpage
 OnShowInfoPopup
 OnShowKeyBindings
 OnShowReferenceVisualization
-OnSortChanged
 OnSortEdited
 OnStartEdited
 OnStartPick
@@ -5098,6 +4649,7 @@ OnTextEdited
 OnTextUpArrow
 OnTimerUpdateAutoTonemapValue
 OnToggleCombinerClicked
+OnToggleDirTreeClicked
 OnToggleFPS
 OnToggleGrid
 OnToggleOrientationAction
@@ -5106,11 +4658,13 @@ OnToggleShadows
 OnToggleShowBoneNames
 OnToggleSkybox
 OnToggleSmoothCamera
+OnToggleSpaceWalkCamera
 OnToggleWireframe
 OnTonemapModeButtonPressed
 OnTonemapSliderValueChanged
 OnToolSpecificUIButton
 OnToolsVisModeChanged
+OnTreeDirChanged
 OnTreeHoverChanged
 OnTreeHoverItemChanged
 OnTreeItemContextMenu
@@ -5128,12 +4682,10 @@ OnWorkingSetChanged
 OnWorkingSetRenamed
 OnWorkingSetRenamed_Internal
 OnYearEdited
-Only show asset leaf names
-Only showing leaf names of assets
 Only wrote %d (of %d) values when saving map!
 Open
 Open %1 %2 file%3 in %4
-Open %1 files for delete?
+Open %d file(s) for delete?
 Open '%1' in %2
 Open Assets In Tools
 Open Containing Folder
@@ -5145,7 +4697,6 @@ Open the %1 tool
 OpenAssetBrowser
 OpenBuildWatch
 OpenContainingFolder
-OpenFileMappingA
 OpenFolder
 OpenFolderInExplorer
 OpenInPrimaryTool
@@ -5160,14 +4711,12 @@ OpenSelectedInTools
 OpenVConsole
 OpenWorkingSet
 Optional. After taking an OnCanceled outflow, signal to any observers that this cursor is now canceled. Equivalent to not handling the original cancel outflow. If you don't use this, handling OnCanceled will be treated as success.
-Optional. After taking an OnFailed outflow, signal to any observers that this cursor is now failed. Equivalent to not handling the original fail outflow. If you don't use this, handling OnFailed will be treated as success.
 Optional. Type 'Any'. An associated value, e.g. the Entity Handle which is responsible for this Cursor. The Tag is defined by the unique combination of Name and Value.
 Options...
 Or R%d <- R%d || R%d
 Other Tools
 Other assets referencing or depending on this
 Outflow List
-Outside
 OverflowIndicator
 OverflowIndicator_Depth
 OverflowIndicator_Links
@@ -5182,10 +4731,6 @@ P?isValid@QTextCharFormat@@QEBA_NXZ
 P?item@QStandardItemModel@@QEBAPEAVQStandardItem@@HH@Z
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
-PInstruction_t<41>::Run
-PInstruction_t<42>::Run
-PORT
-PREVIEW
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 PackedBlobNormal
 Padding
@@ -5219,6 +4764,8 @@ ParticlesLib
 Pass Outflow
 Paste
 Paste (Overwrite)
+Paste Tags (append)
+Paste Tags (replace)
 PasteColor
 Pen behavior not supported for this property
 Pen color not supported for this property
@@ -5236,7 +4783,7 @@ Perforce Integration [Unavailable]
 Perforce Integration [Working Disconnected]
 Perforce integration unavailable. No perforce interface!
 Permanently delete %1 local files? (They are NOT checkd in!)
-Permanently delete %1 local files? (They are NOT checked in!)
+Permanently delete %d local files? (They are NOT checked in!)
 PgDn
 PgUp
 Physics
@@ -5250,8 +4797,10 @@ PlaceItem
 Play Sound Asset When Selected In Asset Browsers
 Policy
 PopupClosed
+PopupOpened
 Port_Dep
 Port_Strong
+Port_Subasset
 Port_Weak
 PosX
 PosY
@@ -5266,7 +4815,9 @@ Preferred
 Preview
 Preview Anim Slider Enabled
 Preview Menu Enabled
+Preview Model Vertex Framing
 Previous
+Process Selector
 PropEdModifyType_t
 PropEdSpecificAttr_t
 PropWorldOrigin
@@ -5274,6 +4825,8 @@ PropagateClicksToNonOverlappingAncestors
 Properties
 Property
 Property '%s.%s' not writable
+Prune Stale Thumbnails
+PruneStaleThumbnails
 Pseudo-Classes
 Pull From Global Browser
 PullSelectionFromGlobalBrowser
@@ -5331,37 +4884,33 @@ QVector<double>
 QWidget
 QWidget*
 Q\v?event@QMenu@@MEAA_NPEAVQEvent@@@Z
-Qt5Core.dll
-Qt5Gui.dll
 Qt5Widgets.dll
 Qt::KeyboardModifiers
 Qt::MouseButton
 QtMetaTypePrivate::QSequentialIterableImpl
-QueryPerformanceCounter
 R Sqrt
+R?metaObject@QRegularExpressionValidator@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QStandardItemModel@@UEBAPEBUQMetaObject@@XZ
 R?metaObject@QTextDocument@@UEBAPEBUQMetaObject@@XZ
 R?metric@QImage@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
 R?metric@QPixmap@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
+R?mimeData@QClipboard@@QEBAPEBVQMimeData@@W4Mode@1@@Z
 R?mimeData@QStandardItemModel@@UEBAPEAVQMimeData@@AEBV?$QList@VQModelIndex@@@@@Z
 R?mimeTypes@QStandardItemModel@@UEBA?AVQStringList@@XZ
 R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 REM skipped compiled file: %s\n
-RESIZE_CORNER
-RESIZE_EDGE
 REVERT
 RGBA\t%1\t%2\t%3\t%4
-RIGHT
 RMouse
 RMouseDoubleClick
-RSDS
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
-R\tV_powf
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vpt,
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Rad2 Deg
+Random World Position
 Randomizes the order of items in the array (Knuth/Fisher-Yates Shuffle)
 ReSelectOnReturn
 Ready
@@ -5379,14 +4928,10 @@ Reference From
 Referenced
 References or dependencies on other assets
 Refresh Thumbnail(s)
-RegCloseKey
-RegOpenKeyExA
-RegQueryValueExA
+Refs
 Register Test Checkpoint
 Reinterpret Instance %s R%d <- %s R%d
 Related Files
-ReleaseMutex
-ReleaseSRWLockExclusive
 Reload
 Reload Shaders
 Reload Style
@@ -5402,6 +4947,7 @@ Reloading...
 Remap Clamped Float
 Remap and clamp input value from input range to output range (float)
 Remove
+Remove All
 Remove From Most Recently Used
 Remove From Working Set
 Remove From Working Set (selected assets are implicit)
@@ -5429,9 +4975,6 @@ RenameTabAt
 RenameWorkingSet
 RenamedWorkingSet
 Render All Windows
-Repeat
-RepeatX
-RepeatY
 Replace %1 Assets...
 Replace Asset...
 ReplaceAsset
@@ -5449,10 +4992,10 @@ ResolveStyle
 ResolveStyles_R
 ResourceHandle_t
 RestartSim
-Result
 Return the number of elements in the array.
 Returns -1 or 0 or 1 based on the sign of the argument
 Returns -1.0 or 0.0 or 1.0 based on the sign of the argument
+Returns a random position centered on vCenter with random min and max radius
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (float)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (vector)
 Returns interpolated value between A and B based on frac 0.0 - 1.0 (world vector)
@@ -5480,19 +5023,11 @@ RotateAboutTarget3D
 RotateLights
 Round - round float up or down to integer
 Round Float
-RtlCaptureContext
-RtlLookupFunctionEntry
-RtlPcToFileHeader
-RtlUnwindEx
-RtlVirtualUnwind
-S9>H
 S?movePosition@QTextCursor@@QEAA_NW4MoveOperation@1@W4MoveMode@1@H@Z
 S?openUrl@QDesktopServices@@SA_NAEBVQUrl@@@Z
 S?paint@QIcon@@QEBAXPEAVQPainter@@AEBVQRect@@V?$QFlags@W4AlignmentFlag@Qt@@@@W4Mode@1@W4State@1@@Z
 S?paintEngine@QImage@@UEBAPEAVQPaintEngine@@XZ
 S?paintEngine@QPixmap@@UEBAPEAVQPaintEngine@@XZ
-SELECTED
-SELECTION_OVERLAY
 SIG_OnDeleteSelectedWorkingSet
 SLIDER_BACKFILL_EMPTY
 SLIDER_BACKFILL_HARD
@@ -5517,11 +5052,7 @@ SLIDER_VALTEXT_HIDDEN
 SLIDER_VALTEXT_LEFT
 SLIDER_VALTEXT_RIGHT
 SP?isNull@QPixmap@@QEBA_NXZ
-SPECIAL_DEBUGGER_OVERLAY
-SPECIAL_LAYER_HOVER_TOOLTIP
-STANDARD_LAYER_COUNT
 STANDIN: %1
-S\tV_qsort
 Sa?width@QPaintDevice@@QEBAHXZ
 Sample Pixel Color
 Saturate
@@ -5538,9 +5069,9 @@ Scale R%d <- R%d * R%d
 Scan for assets that require specific attention.
 SceneCameraChanged
 SceneSystem
-Scopes: %s\n
 ScrLk
 ScrToggle
+Search Inside Files
 Search:
 Segoe UI,11,-1,5,50,0,0,0,0,0,Regular
 Select
@@ -5559,6 +5090,7 @@ SelectedAssets_RemoveFromMRU
 SelectedAssets_RemoveFromWorkingSet
 SelectedAssets_SetNameFilter
 SelectedAssets_ShowRevisionHelper
+SelectedTreeDirChanged
 SelectionAddModifier
 SelectionChanged
 SelectionCleared
@@ -5578,7 +5110,6 @@ SetBackStyleSlot
 SetBackgroundEnabledDBG
 SetBlackboardReference BR%d (%s) <- R%d 
 SetColor
-SetColorInternal
 SetContentOnly
 SetCurrentAsset
 SetCurrentAssetFromResource
@@ -5587,7 +5118,6 @@ SetCurrentWorkingSet
 SetCursorPos
 SetDragEnd
 SetDragStart
-SetFilePointerEx
 SetFilter
 SetForceHidden
 SetHandleInformation
@@ -5596,7 +5126,6 @@ SetLabelHidden
 SetLabelLeft
 SetLabelRight
 SetLabelText
-SetLastError
 SetSelection
 SetShowAsTickMarkEnabled
 SetShowCursorDuringDrag
@@ -5604,14 +5133,12 @@ SetShowDependencies
 SetShowDependingOnMe
 SetShowHiddenAssets
 SetShowRejectedAssets
-SetStdHandle
 SetTabStyleArrows
 SetTabStyleBar
 SetTabStyleBrick
 SetTabStyleLine
 SetTabStyleNone
 SetThumbnailBackground
-SetUnhandledExceptionFilter
 SetValueCenter
 SetValueHidden
 SetValueLeft
@@ -5627,13 +5154,16 @@ Shallow\t(Asset and out-of-date associates)
 SharedToolCommands
 Shift
 Should have already been loaded via CVDataTypeManager::RegisterExtRefs
+ShouldRecurseChanged
 Show All Keys
 Show Asset Menu
+Show Assets In Child Folders
 Show Dependencies
 Show Depending on Me
 Show Hidden Assets
 Show Key Bindings
 Show Properties
+Show RefCount column
 Show Rejected Assets
 Show Unmodified Files
 Show assets tagged as notin the browser
@@ -5641,7 +5171,6 @@ Show assets that depend on or reference the working set
 Show assets that reference or depend on the working set
 Show assets that the working set reference or depend on
 Show assets without any tags
-Show full asset paths
 Show information about Qt.
 Show rarely-used assets in the browser
 Show regardless of user setting
@@ -5661,8 +5190,6 @@ ShowOptionsDialog
 ShowSubassetDefinitions
 ShowSubassetReferences
 ShowWidgetDebugger
-Showing full asset paths
-Showing leaf name of: %s
 Shutdown
 Shutdown all tools and the engine.
 ShutdownEngine
@@ -5677,14 +5204,12 @@ SimpleTooltipCtn
 Sine of angle. Input in radians, output in radians
 SizePolicy
 SizePolicy array must have two elements
-SleepConditionVariableSRW
 Small
 Smaller
 SnapCameraToSelection
 SnapSizeX
 SnapSizeY
 Socket error: %d\n
-SortChanged
 Source Mod
 Space
 Spline
@@ -5714,18 +5239,18 @@ Statistics...
 Stop Timer
 Stop any active timers - the completed outflow will still fire
 StopSendingCameraTo
-Stretch
+String Length
 Strings Are Equal Case Sensitive
 Strong Ref
 Style of the background. By default it is SolidPattern.
 Style the border should be drawn:
 Stylesheet
-Sub Graph
 Sub R%d <- R%d - R%d
 Subasset Definitions
 Subasset References
 Subasset definitions
 Subasset references
+Subassets:\n
 Switch to 'All Assets'
 SwitchToEngineWindow
 T?parent@QStandardItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
@@ -5733,13 +5258,11 @@ T?pos@QCursor@@SA?AVQPoint@@XZ
 T?pos@QDropEvent@@QEBA?AVQPoint@@XZ
 T?pos@QMouseEvent@@QEBA?AVQPoint@@XZ
 T?prepare@QStaticText@@QEAAXAEBVQTransform@@AEBVQFont@@@Z
-THUMBNAIL
 TT?pixelSize@QFont@@QEBAHXZ
-TUUUU
 TW?restoreOverrideCursor@QGuiApplication@@SAXXZ
 T\n?doubleClickInterval@QApplication@@SAHXZ
 T\t?canFetchMore@QSortFilterProxyModel@@UEBA_NAEBVQModelIndex@@@Z
-T\tV_qsort_s
+T\tV_log2f
 T\v?event@QOpenGLWidget@@MEAA_NPEAVQEvent@@@Z
 Tab name:
 TabStyle_t
@@ -5751,8 +5274,6 @@ TakeRenderDocCapture
 TanFrameQuat
 Tangent of angle. Input in radians, output in radians
 TermIncrementalOperation
-Terminate()
-TerminateProcess
 Test Mode Assert True
 TestCheckpoint: %s
 Text = "%1"
@@ -5768,12 +5289,7 @@ This asset has tags that indicate it's been rejected for shipping - avoid use!
 Thumbnails
 Time since the start of the timer
 Tint property on the image or background image.
-TlsAlloc
-TlsFree
-TlsGetValue
-TlsSetValue
-ToggleAutoExpand
-ToggleHierarchy
+Toggle Folder Tree
 ToggleLights
 ToggleLockCameraHeight
 ToggleModSelector
@@ -5799,22 +5315,20 @@ Tooltip_CreateOrUpdateSimpleTooltipItem
 Tooltip_CreateTooltipAnchorIfNecessary
 Total files for this asset in all search paths
 Track Mouse & Focus
-Tree
 TriggerSettingsSave
-TryAcquireSRWLockExclusive
 TrySendVNotify - SendKV3 failed\n
 TypeSelectionChanged
 U?qt_metacall@QIntValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+U?qt_metacall@QRegularExpressionValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QStandardItemModel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacall@QTextDocument@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 U?qt_metacast@QDoubleValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QDrag@@UEAAPEAXPEBD@Z
 U?qt_metacast@QIntValidator@@UEAAPEAXPEBD@Z
+U?qt_metacast@QRegularExpressionValidator@@UEAAPEAXPEBD@Z
 U?qt_metacast@QStandardItemModel@@UEAAPEAXPEBD@Z
 U?qt_metacast@QTextDocument@@UEAAPEAXPEBD@Z
 UNKNOWN TOOL
-USER32.dll
-UUUUUU
 U\r?home@QTextBrowser@@UEAAXXZ
 U\v?event@QPlainTextEdit@@MEAA_NPEAVQEvent@@@Z
 Uncheck All
@@ -5822,11 +5336,8 @@ Uncompiled files
 UnderMouse
 Unexpected trailing tokens
 Unhandled/unrecognized child entry (Must have a _class, or be a special entry like: vbox=[] hbox=[] grid=[[],[]] flowing=[] spacing=NUM stretch=NUM
-UnhandledExceptionFilter
-Unknown exception
 Unknown property '%s'
 Unknown protocol.
-UnmapViewOfFile
 Unnamed Search
 Unrecognized File: '%s'\n
 Unrecognized action class '%s'
@@ -5872,11 +5383,8 @@ V?redirected@QPaintDevice@@MEBAPEAV1@PEAVQPoint@@@Z
 V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VAlign
-VBOX
-VBOX_REVERSE
 VConsole
 VData:%s
-VISIBLE
 VNOTIFY_DISABLE
 VNotify
 VNotify Abandoned (ActiveProtocolIsNewer)\n
@@ -5932,14 +5440,8 @@ WARNING: The following files are open for edit or not at the head revision - are
 WARNING: VNotify abandoned after too many attempts:\n%s\n
 WARNING: unhandled command '%s'\n
 WIDGET DEBUGGER DELETING widget: 0x%p\n
-WORD_WRAP
 WP?isNull@QTextCursor@@QEBA_NXZ
-WS2_32.dll
 Wait Complete
-Wait, Resume=%s
-WaitForSingleObject
-Wake Resume
-WakeAllConditionVariable
 WarnAboutMissingFiles
 WarnAboutUncompiledFiles
 WarnTrailingWhitespace
@@ -5964,7 +5466,6 @@ Whether an item can be selected when the user draws a box on the canvas or not.
 Whether the background image repeats and how
 Whether the hittest region for an item should include its margin.
 Whether this item should propagate clicks to its ancestor items even when the click is outside their bounds. (Useful for flyout buttons)
-WideCharToMultiByte
 Widget Debugger
 Widget Properties
 WidgetAssetAcceptedByListener
@@ -5976,11 +5477,8 @@ Working set "%1" is active and constraining the current results.\nPlease note a 
 WorkingSetTabChanged
 World Vector To Vector
 Writable
-WriteConsoleW
-WriteFile
 WriteSavedSearchKVsToDisk
 X to the Y power
-X/4B
 X?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
 X?setBrush@QPainter@@QEAAXW4BrushStyle@Qt@@@Z
 X?setBrushOrigin@QPainter@@QEAAXAEBVQPoint@@@Z
@@ -6012,7 +5510,6 @@ Y?setHintingPreference@QFont@@QEAAXW4HintingPreference@1@@Z
 Y?setHorizontalHeaderLabels@QStandardItemModel@@QEAAXAEBVQStringList@@@Z
 YO?insertColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 YYYY
-Y\tV_roundf
 Y\v?event@QRadioButton@@MEAA_NPEAVQEvent@@@Z
 YawCameraLeft
 YawCameraRight
@@ -6035,6 +5532,7 @@ Z?setPixelSize@QFont@@QEAAXH@Z
 Z?setPlainText@QTextDocument@@QEAAXAEBVQString@@@Z
 Z?setPointSize@QFont@@QEAAXH@Z
 ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
+Z\tV_modfd
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 ZoomAllCamerasIn
 ZoomAllCamerasOut
@@ -6085,10 +5583,7 @@ ZoomOutFromMiniMap
 [RETURN]
 [System Fallback]
 [\v?event@QScrollArea@@MEAA_NPEAVQEvent@@@Z
-[aOni*{
 [not set]
-[test]
-[thunk]:
 [truncated]
 [unset/initial]
 \ ?toolTip@QWidget@@QEBA?AVQString@@XZ
@@ -6204,7 +5699,6 @@ ZoomOutFromMiniMap
 \nYou are invoking a costly operation involving %1 Assets.\nAre you sure?\n
 \nYour selection will open the %1 that may create up to %2 instances.\nAre you sure?\n
 \n\r?heightForWidth@QBoxLayout@@UEBAHH@Z
-\r1OnAllSelected()
 \r?darker@QColor@@QEBA?AV1@H@Z
 \r?data@QStandardItem@@UEBA?AVQVariant@@H@Z
 \r?data@QStandardItemModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z
@@ -6226,6 +5720,7 @@ ZoomOutFromMiniMap
 \r?indexAt@QTableView@@UEBA?AVQModelIndex@@AEBVQPoint@@@Z
 \r?indexAt@QTreeView@@UEBA?AVQModelIndex@@AEBVQPoint@@@Z
 \r?indexOf@QLayout@@UEBAHPEAVQWidget@@@Z
+\r?indexOf@QSplitter@@QEBAHPEAVQWidget@@@Z
 \r?indexOf@QTabWidget@@QEBAHPEAVQWidget@@@Z
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
 \r?information@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1W421@2@Z
@@ -6234,9 +5729,7 @@ ZoomOutFromMiniMap
 \rN?grabWindow@QScreen@@QEAA?AVQPixmap@@_KHHHH@Z
 \rO?initPainter@QPaintDevice@@MEBAXPEAVQPainter@@@Z
 \r\f?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
-\r\f\v\v\n\n\t\t\t\t\t
 \r\r?heightForWidth@QGridLayout@@UEBAHH@Z
-\r\tV_expf
 \s?\([0-9]+\)\s*$
 \t?addPixmap@QIcon@@QEAAXAEBVQPixmap@@W4Mode@1@W4State@1@@Z
 \t?alpha@QColor@@QEBAHXZ
@@ -6261,31 +5754,19 @@ ZoomOutFromMiniMap
 \t?dataChanged@QTreeView@@UEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
 \t?defaultWidget@QWidgetAction@@QEBAPEAVQWidget@@XZ
 \tQToolButton { \t\tbackground-color : rgb( 100, 100, 100 ); \t\tborder: 2px solid rgb( 200, 200, 200 ); \t\tborder-radius: %2px; \t\tbackground-image: url(game:tools/images/common/tag_add.png); \t\tbackground-repeat: no-repeat; \t\tbackground-position: center center; \t\tmargin: 3px; \t} \tQToolButton:hover:!pressed { \t\tbackground-color : rgb( 0, 0, 0 ); \t\tborder-color : rgb( 255, 255, 255 ); \t} 
+\tT?parent@QWindow@@QEBAPEAV1@XZ
+\tV_acosd
+\tV_asind
 \tV_cosd
-\tV_cosf
-\tV_fmodd
-\tV_fmodf
-\tV_fpclassifyd
-\tV_fprintf
-\tWarning
+\tV_exp2f
+\tV_tand
 \t\f?data@QString@@QEBAPEBVQChar@@XZ
 \t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\n\v\n\v\n\v\n\v\n\v\n\v\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\f\r\f\r\f\r\f\r\f\r\f\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\tV_atand
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tw
-\t_MakeGlobalSymbol
-\t_MakeGlobalSymbolCaseSensitive
-\t_V_StringAfterPrefix
 \t_V_StringAfterPrefixCaseSensitive
-\t_V_StripExtension
-\t_V_hextobinary
 \t_V_strcspn
-\t_V_strncmp
-\t_V_strncpy
-\t_V_strnicmp_fast
-\tcQr
 \tg_flConfigMaxCoord
-\tg_pMemAlloc
-\tg_pThreadPool
-\tkE>fvw
 \v ?willGrow@QHashData@@QEAA_NXZ
 \v?brush@QPainter@@QEBAAEBVQBrush@@XZ
 \v?brush@QPalette@@QEBAAEBVQBrush@@W4ColorRole@1@@Z
@@ -6308,6 +5789,7 @@ ZoomOutFromMiniMap
 \v?exec@QMenu@@QEAAPEAVQAction@@AEBVQPoint@@PEAV2@@Z
 \v?exec@QMenu@@QEAAPEAVQAction@@XZ
 \v?expand@QTreeView@@QEAAXAEBVQModelIndex@@@Z
+\v?expandAll@QTreeView@@QEAAXXZ
 \v?expandingDirections@QBoxLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
 \v?expandingDirections@QFormLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
 \v?expandingDirections@QGridLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
@@ -6318,24 +5800,23 @@ ZoomOutFromMiniMap
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
-\v\tV_exp2f
 ]?sharedPainter@QPaintDevice@@MEBAPEAVQPainter@@XZ
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
+]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
 ]\v?currentDateTime@QDateTime@@SA?AV1@XZ
-^<V7w
+^#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})
+^#?([0-9A-Fa-f]{8}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{4}|[0-9A-Fa-f]{3})$
 ^?text@QClipboard@@QEBA?AVQString@@W4Mode@1@@Z
 ^?text@QStandardItem@@QEBA?AVQString@@XZ
 ^?text@QStaticText@@QEBA?AVQString@@XZ
 ^Q?lighter@QColor@@QEBA?AV1@H@Z
 ^\r?horizontalOffset@QTableView@@MEBAHXZ
-^\tV_sincosf
 _?textWidth@QStaticText@@QEBANXZ
 _?texture@QBrush@@QEBA?AVQPixmap@@XZ
 _AssetMenuHelper
 _Q?lightness@QColor@@QEBAHXZ
 _\r?horizontalOffset@QTreeView@@MEBAHXZ
-_\tV_sind
 _\v?event@QSlider@@UEAA_NPEAVQEvent@@@Z
 __AllKeys__
 __CursorQueue__
@@ -6344,147 +5825,32 @@ __IsValveCQTabbedStyle
 __State_Child_Condition__
 __State_Child_Subgraph__
 __TimelineParent__
-__based(
-__cdecl
-__clrcall
-__eabi
-__fastcall
-__int16
-__int32
-__int64
-__int8
-__pascal
-__populated_from_schema_modules
-__ptr64
 __standin_dock
-__stdcall
-__swift_1
-__swift_2
-__swift_3
-__thiscall
-__unaligned
-__vectorcall
 _baked/*
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QIntValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-`RTTI
-`\tV_sinf
+`?validate@QRegularExpressionValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
 `a?widthF@QPen@@QEBANXZ
-`adjustor{
-`anonymous namespace'
-`copy constructor closure'
-`default constructor closure'
-`dynamic atexit destructor for '
-`dynamic initializer for '
-`eh vector constructor iterator'
-`eh vector copy constructor iterator'
-`eh vector destructor iterator'
-`eh vector vbase constructor iterator'
-`eh vector vbase copy constructor iterator'
-`generic-class-parameter-
-`generic-method-parameter-
-`generic-type-
-`local static destructor helper'
-`local static guard'
-`local static thread guard'
-`local vftable constructor closure'
-`local vftable'
-`managed vector constructor iterator'
-`managed vector copy constructor iterator'
-`managed vector destructor iterator'
-`non-type-template-parameter
-`omni callsig'
-`placement delete closure'
-`placement delete[] closure'
-`scalar deleting destructor'
-`string'
-`template static data member constructor helper'
-`template static data member destructor helper'
-`template-parameter
-`template-parameter-
-`template-type-parameter-
-`typeof'
-`udt returning'
-`unknown ecsu'
-`vbase destructor'
-`vbtable'
-`vcall'
-`vector constructor iterator'
-`vector copy constructor iterator'
-`vector deleting destructor'
-`vector destructor iterator'
-`vector vbase constructor iterator'
-`vector vbase copy constructor iterator'
-`vftable'
-`virtual displacement map'
-`vtordispex{
-`vtordisp{
 a:fulltype
 a:typeparam
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
-abcdefghijklmnopqrstuvwxyz
+accept
 actions
 active_styles
 active_view
-address family not supported
-address in use
-address not available
-advanced_view
 aliceblue
 align
 all_properties
 allowed_api_features
 allowed_requirements
-already connected
+and %d more...
 antiquewhite
-antlr3BaseRecognizerNew
-antlr3BitsetCopy
-antlr3BitsetList
-antlr3BitsetLoad
-antlr3BitsetNew
-antlr3BitsetOf
-antlr3BitsetSetAPI
-antlr3CommonTokenDebugStreamSourceNew
-antlr3CommonTokenNew
-antlr3CommonTokenStreamNew
-antlr3CommonTokenStreamSourceNew
-antlr3EnumNew
-antlr3ExceptionNew
-antlr3Hash
-antlr3HashTableNew
-antlr3IntStreamNew
-antlr3IntTrieNew
-antlr3LexerNew
-antlr3LexerNewStream
-antlr3ListNew
-antlr3MTExceptionNew
-antlr3NewAsciiStringCopyStream
-antlr3NewAsciiStringInPlaceStream
-antlr3NewUCS2StringInPlaceStream
-antlr3ParserNew
-antlr3ParserNewStream
-antlr3ParserNewStreamDbg
-antlr3RecognitionExceptionNew
-antlr3SetTokenAPI
-antlr3SetVectorApi
-antlr3StackNew
-antlr3StringFactoryNew
-antlr3TokenFactoryNew
-antlr3TokenStreamNew
-antlr3UCS2StringFactoryNew
-antlr3VectorFactoryNew
-antlr3VectorNew
-antlr3dfapredict
-antlr3dfaspecialStateTransition
-antlr3dfaspecialTransition
 application/x-source2-assetname
 aqua
 aquamarine
 area
-argument list too long
-argument out of domain
 assetList
 asset_browser
 asset_count
@@ -6494,16 +5860,7 @@ assetbrowser
 assetbrowser.dll
 assetbrowser_name_filter_delay
 assetsystem
-assettreeview2_column_%d_width
-assettreeview2_column_1_width
-assettreeview2_column_5_width
-assettreeview_column_%d_width
-assettreeview_folders
-associated_inflow_name
-associated_outflow_name
 attr_factory
-attribute_range
-auto_expand
 automatic_quiet_import
 azure
 bAccepted
@@ -6523,21 +5880,14 @@ bShow
 bToggled
 bValue
 bVisible
+bWasModified
 b\v?event@QSplitter@@MEAA_NPEAVQEvent@@@Z
-backed_by_variable
 background
 background-color: #22b14c
 backgroundEnabled
 backgroundFill
 backgroundName
 backgroundStyle
-bad address
-bad allocation
-bad array new length
-bad exception
-bad file descriptor
-bad function call
-bad message
 beige
 bentnormal
 bisque
@@ -6550,7 +5900,6 @@ blue
 blueviolet
 bold
 bottom
-broken pipe
 brown
 browser_geo
 browser_state
@@ -6558,43 +5907,25 @@ browser_views
 browser_visible
 burlywood
 cR?metaObject@QDrag@@UEBAPEBUQMetaObject@@XZ
-c\tV_snprintf
 c\v?event@QSplitterHandle@@MEAA_NPEAVQEvent@@@Z
 cadetblue
-ceil
 centralWidget
 central_widget
-char 
 chartreuse
 checkstate
 chocolate
-choice_name
-class 
+clamp
 className
 clear_filter
 clear_group
-cli::array<
-cli::pin_ptr<
 clicked
-client.dll
-cmd.exe /s /c p4vc history "%s"
-coclass 
-cointerface 
-collapsed
 color: rgba(255,255,255,0.1)
 colorSelected
-colors
 colspan
 column
 column_%d_width
 common_info
 compressedtangentframe
-connection aborted
-connection already in progress
-connection refused
-connection reset
-connections
-const 
 const AssetMenuToolGroup_t*
 const CAssetWarningCheck *
 const char*
@@ -6606,13 +5937,10 @@ coral
 cornflowerblue
 cornsilk
 crimson
-cross device link
 currentColorChanged
 curvature
 custom_colors
-custom_fgd_type
 cyan
-d8L2
 d\f?convertToFormat_helper@QImage@@IEBA?AV1@W4Format@1@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 d\f?deleteLater@QObject@@QEAAXXZ
 darkColors
@@ -6636,23 +5964,16 @@ darkslategrey
 darkturquoise
 darkviolet
 ddd MMMM d hh:mm
-dddd, MMMM dd, yyyy
 debugger
-debugger_can_create_instance
-decal
 decrease_depth_button
 deeppink
 deepskyblue
 defaultAction
-default_value
 deg2rad
 dest
-destination address required
-device or resource busy
 dimgray
 dimgrey
-direct_return_value_for
-directory not empty
+dir_tree_splitter
 doItemsLayout
 dock
 docked_widget
@@ -6660,28 +5981,15 @@ dodgerblue
 domain_scope
 dont_remind_today_checkbox
 e"?validate@QSpinBox@@MEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
-e+000
-eF>t
-eLK(w
 e\f?foregroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
 e\n?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
-edit_context_override
 edit_filter
 editingFinished
-editor
-editor_canvas_item_spec
 element
 end_as_info
 end_group
-enum 
 even
-event
 exclude
-executable format error
-expanded
-expect_default_outflow
-expected_return_type
-extern "C" 
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
 fast
@@ -6689,13 +5997,9 @@ fbx_import_dir
 ffValueIn
 fff?proped_attr_logging
 field_name
-file exists
-file too large
 file:
 file://{images}/
 filePath
-filename too long
-fillBufferExt
 filter
 filterText
 filter_bar_container
@@ -6717,6 +6021,8 @@ flFloat
 flFrac
 flInputA
 flInputB
+flMaxRadius
+flMinRadius
 flOutputA
 flOutputB
 flPercentage
@@ -6744,16 +6050,15 @@ foreground
 forestgreen
 forever
 frac
-friendly_name
 fuchsia
 fullPath
-function not supported
 g[?setSamples@QSurfaceFormat@@QEAAXH@Z
 g\r?enumerator@QMetaObject@@QEBA?AVQMetaEnum@@H@Z
 g\r?horizontalScrollbarAction@QTableView@@MEAAXH@Z
 g\v?event@QTabBar@@MEAA_NPEAVQEvent@@@Z
 g_pToolSceneNodeFactory
 gainsboro
+game/
 game:
 game:tools/images/assetbrowser/allassets_sm.png
 game:tools/images/assetbrowser/appicon.ico
@@ -6795,8 +6100,6 @@ game:tools/images/common/bind_command_list.png
 game:tools/images/common/bind_command_target.png
 game:tools/images/common/bindable_camera_fly_toggle.png
 game:tools/images/common/bindable_camera_lock_height_toggle.png
-game:tools/images/common/cancel_sm.png
-game:tools/images/common/check_sm.png
 game:tools/images/common/color_wheel_sm.png
 game:tools/images/common/copy_sm.png
 game:tools/images/common/delete_sm.png
@@ -6805,7 +6108,6 @@ game:tools/images/common/edit.png
 game:tools/images/common/edit_sm.png
 game:tools/images/common/eyedropper_sm.png
 game:tools/images/common/filter_match_in_text.png
-game:tools/images/common/folder_sm.png
 game:tools/images/common/gotofolder_sm.png
 game:tools/images/common/grab_handle_nub.png
 game:tools/images/common/help_about_icon.png
@@ -6859,14 +6161,8 @@ game:tools/images/valve_style/arrow_left.png
 game:tools/images/valve_style/dropdown_menu_open.png
 game:tools/images/vconsole/appicon.ico
 game:tools/images/vconsole/appicon_dev.ico
-generic-type-
 genericFilterCompleter_AutoPopupMode
 genericFilterCompleter_ShowDetails
-generic_exprLexerNew
-generic_exprLexerNewSSD
-generic_exprParserNew
-generic_exprParserNewSSD
-generic_node_category
 ghostwhite
 gold
 goldenrod
@@ -6894,16 +6190,13 @@ grid
 grid_icon_scale
 grid_icon_scale_name
 group_title
-h0'D
 hResource
 h\r?horizontalScrollbarAction@QTreeView@@MEAAXH@Z
 h\v?event@QTabWidget@@MEAA_NPEAVQEvent@@@Z
 ha?window@QPalette@@QEBAAEBVQBrush@@XZ
 hbox
 hcenter
-header_icon
 helper
-hidden_in_tool
 hidden_types
 hittest
 honeydew
@@ -6911,7 +6204,6 @@ horizontalPolicy
 horizontalStretch
 horizontal_header
 horizontal_header_labels
-host unreachable
 hotpink
 hover
 hover-ancestor
@@ -6926,14 +6218,12 @@ i\f?forward@QTextBrowser@@UEAAXXZ
 i\r?enumerator@QMetaProperty@@QEBA?AVQMetaEnum@@XZ
 i\r?horizontalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
 i\v?event@QTableWidget@@MEAA_NPEAVQEvent@@@Z
-identifier removed
 idiv
-illegal byte sequence
-inappropriate io control operation
 include
 include_all_tags
 include_deps
 include_strong_refs
+include_subassets
 include_untagged
 include_weak_refs
 increase_depth_button
@@ -6943,27 +6233,14 @@ indigo
 info_description
 info_table
 initial
-int 
-interrupted
-invalid seek
-invalid string position
-invalid_parameter
-io error
-is a directory
 is_cqbasegridview_panel
-is_default_inflow
-is_default_outflow
-is_game_blackboard
-is_pulse_domain
 is_selector
-is_state_cell
 italic
 ivory
 jY?setFamily@QFont@@QEAAXAEBVQString@@@Z
 jZ?setMimeData@QDrag@@QEAAXPEAVQMimeData@@@Z
 j\v?event@QTextBrowser@@MEAA_NPEAVQEvent@@@Z
 k"?value@QAbstractSlider@@QEBAHXZ
-k=yI
 kQ?lineSpacing@QFontMetrics@@QEBAHXZ
 kX?setBlue@QColor@@QEAAXH@Z
 k\v?event@QTextEdit@@MEAA_NPEAVQEvent@@@Z
@@ -6975,8 +6252,8 @@ labelPos
 labelText
 label_include_deps
 label_include_strong_refs
+label_include_subassets
 label_include_weak_refs
-lambda
 last-child
 lavender
 lavenderblush
@@ -6985,7 +6262,7 @@ left
 lemonchiffon
 length2d
 length3d
-lib:
+lerp
 lifespan
 lightblue
 lightcoral
@@ -7005,29 +6282,17 @@ lightyellow
 lime
 limegreen
 linen
-long 
+log2
 loud
 lowprecisionuv
 lowprecisionuv1
-mG4>
 mX?setBlueF@QColor@@QEAAXN@Z
 m\f?frameGeometry@QWidget@@QEBA?AVQRect@@XZ
 m\n?dragEnterEvent@QPlainTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
-m\nXo
-m_Background
-m_BackgroundMap
 m_Bindings
 m_Context
-m_Exposure
-m_Grid
 m_InputMacros
-m_MapName
-m_PointLights
-m_PostProcessing
-m_Sky
-m_SpotLights
 m_Stops
-m_Suns
 m_TagValue
 m_bBakedTwoSided
 m_bCanBatchWithDynamicShaderConstants
@@ -7039,28 +6304,18 @@ m_bHasBakedLightingFromVertexStream
 m_bIsNotMatchedToMaterial
 m_bNoShadow
 m_bOnlyShadow
-m_bParentToCamera
-m_bParticlesTraceAgainstMap
-m_bRelativePositioning
-m_bRender3DSkybox
 m_bUseCompressedNormalTangent
 m_bUseShadowFastPath
 m_externalMethodTargetGraph
-m_flAxisScale
-m_flLightSourceRadius
-m_flMaxEV
-m_flMinEV
 m_flSlopeIncoming
 m_flSlopeOutgoing
-m_hPostProcessing
 m_nCurrentWakeIndex
-m_nRigType
+m_nGraphID
 m_tail != QUEUE_ITERATOR_INVALID
-m_vLookAt
 magenta
+mapped
 margin
 maroon
-materials/dev/gray_50.vmat
 materials/dev/tools_2d_generic.vmat
 materials/tools/fill_vertex_color.vmat
 materials/tools/grid.vmat
@@ -7086,7 +6341,6 @@ materials/tools/light_probe.vmat
 materials/tools/selection_overlay.vmat
 materials/tools/selection_overlay_nocull.vmat
 materials/tools/show_hitboxes.vmat
-materials/tools/ui_material_preview_on_model.vmat
 materials/tools/vertex_color_solid.vmat
 materials/tools/vertex_color_translucent.vmat
 materials/tools/wireframe_vertex_color.vmat
@@ -7106,7 +6360,6 @@ mediumvioletred
 menu
 menuAction
 menus
-message size
 midnightblue
 minValue
 mintcream
@@ -7116,8 +6369,10 @@ mod_selection
 modelIndex
 modelSortOrderChanged
 modeldoc_editor
+modeldoc_utils
+models/editor/axis_helper_thick.vmdl
+models/editor/camera.vmdl
 monitor_pid
-n03>Pu
 nAlpha
 nAssetCount
 nCol
@@ -7143,42 +6398,18 @@ nToolId
 nValue
 nX?setBold@QFont@@QEAAX_N@Z
 n\n?dragEnterEvent@QTextEdit@@MEAAXPEAVQDragEnterEvent@@@Z
-n\tV_stricmp_fast
 n\v?event@QToolButton@@MEAA_NPEAVQEvent@@@Z
-nan(ind)
-nan(snan)
 navajowhite
 navigate_back_button
 navigate_forward_button
 navy
-network down
-network reset
-network unreachable
 newValue
-no buffer space
-no child process
-no link
-no lock available
-no message
-no message available
-no protocol option
-no space on device
-no stream resources
-no such device
-no such device or address
-no such file or directory
-no such process
-not a directory
-not a socket
-not a stream
-not connected
-not enough memory
 nth-child
 nth-last-child
 num_items
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
+o\tV_sind
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
-obwQ4
 offsetDelta
 oldlace
 olive
@@ -7188,19 +6419,12 @@ open for add
 open for delete
 open for edit
 open for integrate
-operation canceled
-operation in progress
-operation not permitted
-operation not supported
-operation would block
-operator "" 
-operator co_await
-operator<=>
 optionallycompressedtangentframe
 options.m_bDrawBoneNames
 options.m_bModSpecificBrowserTabSettings
 options.m_bRevHelperShowUnmodified
 options.m_bShowAllAssets
+options.m_bShowRefCountColumn
 options.m_bShowRejectedAssets
 options.m_bShowSkyBox
 options.m_bUsePerforceIntegration
@@ -7208,10 +6432,9 @@ orange
 orangered
 orchid
 orientation
-owM&
-owner dead
 p4 integ %s %s\n
 p4FileInfoCache
+p4v.exe -p4vc history "%s"
 pAsset
 pButton
 pCheckpointName
@@ -7221,6 +6444,7 @@ pFilter
 pFromSelectionWidget
 pGroup
 pLightRigButton
+pOutDirs
 pOutSelection
 pPrevFocusWidget
 pSet
@@ -7235,7 +6459,6 @@ pVoidWarning
 pWidget
 pWorkingSet
 p\n?dragLeaveEvent@QAbstractItemView@@MEAAXPEAVQDragLeaveEvent@@@Z
-p\tV_strlower_fast
 p\v?event@QWidget@@MEAA_NPEAVQEvent@@@Z
 p`?type@QStandardItem@@UEBAHXZ
 padding
@@ -7245,11 +6468,8 @@ paleturquoise
 palevioletred
 panorama/images/
 papayawhip
-particle_debug_creation_filter
-particlesystem
 pathFilter
 peachpuff
-permission denied
 peru
 pet_preview_gravity
 pet_preview_underwater
@@ -7257,29 +6477,15 @@ pickedColor
 pink
 plum
 polymorphic_arg
-polymorphic_dependent_arg
 posxyz
 powderblue
 ppAssets
 preview_splitter
-private: 
-process
 prompt_for_new_toplevel_node
 propattr_flatten_into_parent_row
 propertyeditor
-protected: 
-protocol error
-protocol not supported
-public: 
-pulse_feature_tag
-pulse_inflows
-pulse_inparams
 pulse_node_custom_attributes
-pulse_outflows
-pulse_outparams
 pulse_runtime_lib
-pulse_system.dll
-purecall
 purple
 qQ?lineTo@QPainterPath@@QEAAXAEBVQPointF@@@Z
 q\n?dragLeaveEvent@QAbstractScrollArea@@MEAAXPEAVQDragLeaveEvent@@@Z
@@ -7287,36 +6493,23 @@ q\v?event@QWidgetAction@@MEAA_NPEAVQEvent@@@Z
 qcontrols
 quiet
 r\f?copy@QPixmap@@QEBA?AV1@AEBVQRect@@@Z
-r\tVr.>T
 rad2deg
-range check failure
-read only file system
-readonly_expr
+random_position
 rebeccapurple
-rebuild_propertyeditor_on_change
 recompile
 remap
 render
 require_all_include
-requirement_check
-requirement_commit
-requirement_pass
-requirement_summary_expr
-resource deadlock would occur
-resource unavailable try again
-resourcecompiler.dll
-restrict(
-result out of range
 rigIdx
 right
 root
 root_asset_name
 root_asset_unqualified_name
 rosybrown
+round
 rowspan
 royalblue
 rsqrt
-sHF'
 sO?insertRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 s_hColoredVertexLayout
 saddlebrown
@@ -7328,7 +6521,6 @@ saved_search_name
 saved_search_preview_image
 saved_search_string
 saved_search_temp_entry
-scope_to_dependency_name
 scripts/activity_modifier_weights.txt
 scripts/tools/asset_graph_view_styles.vdata
 scripts/tools/game_asset_tags.vdata
@@ -7337,10 +6529,8 @@ seagreen
 seashell
 selected
 selected_mods
-selector_has_specificity
 self
 separator
-server.dll
 setMaximum
 setMinimum
 setRange
@@ -7348,14 +6538,13 @@ setRootIndex
 setText
 setValue
 set_name
-short 
 showAsTickMark
 showValueText
-show_hierarchy
 show_vdata_file
 shown_types
 sienna
-signed 
+sign
+signal
 silver
 skyblue
 slateblue
@@ -7370,24 +6559,13 @@ source_column
 source_file_searchpath
 spacing
 springgreen
-sprite
-stack buffer overrun (/GS failure)
 stacked
 stacked_one
-state not recoverable
-static 
-std::nullptr_t 
 std::optional
 std_optional
 steelblue
-stream timeout
+strValue
 stretch
-string too long
-struct 
-studio
-suggestion_name
-supported_domains
-suppress_expr
 t\n?beginEditBlock@QTextCursor@@QEAAXXZ
 t\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@AEBVQMetaMethod@@01W4ConnectionType@Qt@@@Z
 tabStyle
@@ -7398,37 +6576,38 @@ tag_selection
 tangent
 tangentu_signv
 teal
-template-parameter-
 tentative
-terminates
 texcoord
-text file busy
 text/plain
 text/uri-list
 thistle
 through
-tier0.dll
-timed out
 toggleViewAction
 tomato
-too many files open
-too many files open in system
-too many links
-too many symbolic link levels
 too_many_assets
 toolSpecificUI
 toolbarArea
 toolhud_enable
 tools/colors/shared_colors.txt
+tools/images/assetbrowser/asset_dir.png
+tools/images/assetbrowser/asset_dir_direct_selection.png
+tools/images/assetbrowser/asset_dir_indirect_selection.png
 tools/images/assetbrowser/disabled_option.png
+tools/images/assetbrowser/external_filter_active.png
+tools/images/assetbrowser/external_filter_inactive.png
 tools/images/assetbrowser/filter_tags_empty.png
 tools/images/assetbrowser/filter_tags_full.png
 tools/images/assetbrowser/filter_tags_partial.png
+tools/images/assetbrowser/include_child_folders.png
+tools/images/assetbrowser/locate_selection_dirs.png
 tools/images/assetbrowser/recently_used_asset.png
 tools/images/assetbrowser/tag_exclude.png
 tools/images/assetbrowser/tag_include.png
+tools/images/assetbrowser/tree.png
 tools/images/common/add_sm.png
 tools/images/common/arrow_left_up_thin.png
+tools/images/common/collapse_all.png
+tools/images/common/expand_all.png
 tools/images/common/generic_filter_add_dialog.png
 tools/images/common/generic_filter_add_part.png
 tools/images/common/generic_filter_and.png
@@ -7451,7 +6630,6 @@ tools/layout/common/graph_canvas_debugger.vqlayout
 toolsVisModeIndex
 tools_preview
 tools_renderscenes
-toolscenelightrigs.vdata
 transparent
 tree
 turquoise
@@ -7461,26 +6639,20 @@ uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 underline
-union 
 unmodified
 unmodified (deleted at head)
 unmodified (out of date)
 unset
-unsigned 
 userData
 userEdit
 user_tab_name
-uzKs@>
-v2!L.2
 vForward
 vT?pointSize@QFont@@QEBAHXZ
 v\v?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
-value too large
 valueChanged
 valueChangedByEdit
 valueChangedBySlider
 valueEdited
-value_is_key_name
 vbox
 vcenter
 vdata_editor
@@ -7494,14 +6666,8 @@ very_fast
 vffValueSetIn
 view_mode_name
 violet
-virtual 
-visible_scopes
 vmap
-vmat
-vmdl
 vnotify_ui
-void 
-volatile 
 w\n?connectImpl@QObject@@CA?AVConnection@QMetaObject@@PEBV1@PEAPEAX01PEAVQSlotObjectBase@QtPrivate@@W4ConnectionType@Qt@@PEBHPEBU3@@Z
 w\n?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 waiting_group
@@ -7511,8 +6677,9 @@ warning_title
 wheat
 white
 whitesmoke
+windows_dispatcher_MSG
+windows_generic_MSG
 wrapping
-wrong protocol type
 x"?valueFromText@QSpinBox@@MEBAHAEBVQString@@@Z
 x\n?dragLeaveEvent@QListView@@MEAAXPEAVQDragLeaveEvent@@@Z
 yU?qt_metacall@QDoubleValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -7520,10 +6687,8 @@ y\n?dragLeaveEvent@QPlainTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
 y\v?eventFilter@QCompleter@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 yellow
 yellowgreen
-yields
 zU?qt_metacall@QDrag@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 z\n?dragLeaveEvent@QTextEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
-z\tV_tand
 z\v?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
 z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 { "%1",\t{ %2, %3 },\t\t{ %4, %5 }\t },\n
@@ -7538,10 +6703,7 @@ z\v?eventFilter@QDialog@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 {MultipleFilePaths}
 {\n?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
 {\n?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
-{\tV_tanf
 {count}
-{flat}
-{for 
 |"?verticalHeader@QTableView@@QEBAPEAVQHeaderView@@XZ
 }\n?dragMoveEvent@QAbstractItemView@@MEAAXPEAVQDragMoveEvent@@@Z
 ~CGenericFilter

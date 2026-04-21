@@ -7,24 +7,22 @@ cd "${0%/*}"
 echo "Processing CS2..."
 
 set +e
-../tools/dump_source2.sh csgo CS2
+../tools/dump_source2.sh CS2
 DUMPER_EXIT_CODE=$?
 set -e
 
-ProcessDepot ".so"
-ProcessDepot ".dll"
-ProcessDepot ".exe"
-DeduplicateStringsFrom ".so" "game/bin/linuxsteamrt64/libengine2_strings.txt" "game/bin/linuxsteamrt64/libtier0_strings.txt" "DumpSource2/.stringsignore"
-DeduplicateStringsFrom ".dll" "game/bin/linuxsteamrt64/libengine2_strings.txt" "game/bin/linuxsteamrt64/libtier0_strings.txt" "DumpSource2/.stringsignore"
-DeduplicateStringsFrom ".exe" "game/bin/linuxsteamrt64/libengine2_strings.txt" "game/bin/linuxsteamrt64/libtier0_strings.txt" "DumpSource2/.stringsignore"
+ProcessDepot ".dll" ".exe"
+DeduplicateStringsFrom ".dll" ".exe" -- "game/bin/win64/engine2_strings.txt" "game/bin/win64/tier0_strings.txt" "DumpSource2/.stringsignore"
 ProcessVPK
+
+echo "::group::Extracting VPKs"
 
 set +e
 while IFS= read -r -d '' file
 do
-	echo " > $file"
+	echo " $file"
 
-	# When updating vpk_extensions, also update "vpk:..." in GameTracking/files.json
+	# When updating vpk_extensions, also update "vpk:..." in files.json
 	"$VRF_PATH" \
 		--input "$file" \
 		--output "$(echo "$file" | sed -e 's/\.vpk$/\//g')" \
@@ -35,7 +33,33 @@ do
 		DUMPER_EXIT_CODE=$?
 	fi
 done <   <(find . -type f -name "pak01_dir.vpk" -print0)
+
+while IFS= read -r -d '' file
+do
+	echo " $file"
+
+	"$VRF_PATH" \
+		--input "$file" \
+		--output "$(echo "$file" | sed -e 's/\.vpk$/\//g')" \
+		--vpk_cache \
+		--vpk_decompile \
+		--vpk_extensions "vcs"
+	if [[ "$DUMPER_EXIT_CODE" -eq 0 ]] && [[ $? -ne 0 ]]; then
+		DUMPER_EXIT_CODE=$?
+	fi
+done <   <(find . -type f -name "shaders_vulkan_dir.vpk" -print0)
+
+while IFS= read -r -d '' file
+do
+	newfile=$(echo "$file" | sed -e 's/_vulkan_[0-9]\+\.vfx$/.slang/g')
+	if [[ "$file" != "$newfile" ]]; then
+		mv "$file" "$newfile"
+	fi
+done <   <(find . -type f -name "*_vulkan_*.vfx" -print0)
+
 set -e
+
+echo "::endgroup::"
 
 while IFS= read -r -d '' file
 do
@@ -46,7 +70,7 @@ ProcessToolAssetInfo
 
 FixUCS2
 
-CreateCommit "$(grep "ClientVersion=" game/csgo/steam.inf | grep -o '[0-9\.]*')" "${1:-}"
+CreateCommit "$(grep "ClientVersion=" game/csgo/steam.inf | grep -o '[0-9\.]*')" "$(grep -o '[0-9\.]*' steam_buildid.txt)"
 
 echo "Done"
 

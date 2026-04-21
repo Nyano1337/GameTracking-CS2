@@ -1,6 +1,7 @@
 // MGetKV3ClassDefaults = {
 //	"_class": "CBasePlayerWeaponVData",
 //	"m_szWorldModel": "",
+//	"m_szWorldModelAg2Override": "",
 //	"m_sToolsOnlyOwnerModelName": "",
 //	"m_bBuiltRightHanded": true,
 //	"m_bAllowFlipping": true,
@@ -40,6 +41,9 @@ class CBasePlayerWeaponVData : public CEntitySubclassVDataBase
 	// MPropertyDescription = "Model used on the ground or held by an entity"
 	// MPropertyProvidesEditContextString = "ToolEditContext_ID_VMDL"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_szWorldModel;
+	// MPropertyDescription = "Model used on the ground or held by an entity"
+	// MPropertyProvidesEditContextString = "ToolEditContext_ID_VMDL"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_szWorldModelAg2Override;
 	// MPropertyDescription = "Model used by the tools only to populate comboboxes for things like animgraph parameter pickers"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName;
 	// MPropertyDescription = "Was the weapon was built right-handed?"
@@ -52,7 +56,7 @@ class CBasePlayerWeaponVData : public CEntitySubclassVDataBase
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szMuzzleFlashParticle;
 	// MPropertyDescription = "Effect Config for Muzzle Flash - if set, will use this config specified in the particle effect, using whatever CP configuration is specified there, vdata muzzleflash attachment will be ignored"
 	// MPropertyAttributeEditor = "ParticleConfigName()"
-	// MPropertyEditContextOverrideKey (UNKNOWN FOR PARSER)
+	// MPropertyEditContextOverrideKey = "ToolEditContext_ID_VPCF"
 	CUtlString m_szMuzzleFlashParticleConfig;
 	// MPropertyDescription = "Barrel smoke after firing this weapon"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szBarrelSmokeParticle;

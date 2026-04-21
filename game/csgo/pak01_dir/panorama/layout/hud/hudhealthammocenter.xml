@@ -32,39 +32,6 @@
 			<Panel id="WeaponName" class="HudSpecplayer__ItemName additive">
 				<Label html="true" id="WeaponNameLabel" class="HudSpecplayer__ItemName__label stratum-bold" text="#HudSpecPlayer_WeaponName" />
 			</Panel>
-			<Panel class="HudSpecplayerParentContainer additive">
-				<Label id="Stat_DamageTaken" class="HudSpecplayer__Stats_DamageTaken stratum-bold-mono" html="true" text="#Scoreboard_kills" />
-				<Label id="Stat_DamageGiven" class="HudSpecplayer__Stats_DamageTaken stratum-bold-mono" html="true" text="#Scoreboard_kills" />
-			</Panel>
-		</Panel>
-		<Panel id="HudSpecplayer__Stats" class="HudSpecplayer__Stats additive">
-			<Panel class="HudSpecplayer__Stats_Header">
-				<Label class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="#Scoreboard_kills" />
-				<Label class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="#Scoreboard_assists" />
-				<Label class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="#Scoreboard_deaths" />
-				<Label class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="#Scoreboard_kdr" />
-				<Label class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="#Scoreboard_adr" />
-				<Label class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="#Scoreboard_hsp" />
-				<Label id="Stat_HeadX_1" class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="" />
-				<Label id="Stat_HeadX_2" class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="" />
-				<Label id="Stat_HeadX_3" class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="" />
-				<Label id="Stat_HeadX_4" class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="" />
-				<Label id="Stat_HeadX_5" class="HudSpecplayer__Stats_HeaderText stratum-bold-mono" text="" />
-			</Panel>
-			<Panel class="HudSpecplayer__Stats_Numbers">
-				<Label class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="#Scoreboard_kills_val" />
-				<Label class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="#Scoreboard_assists_val" />
-				<Label class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="#Scoreboard_deaths_val" />
-				<Label class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="#Scoreboard_kdr_val" />
-				<Label class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="#Scoreboard_adr_val" />
-				<Label class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="#Scoreboard_hsp_val" />
-				<Label id="Stat_NumX_1" class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="" />
-				<Label id="Stat_NumX_2" class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="" />
-				<Label id="Stat_NumX_3" class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="" />
-				<Label id="Stat_NumX_4" class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="" />
-				<Label id="Stat_NumX_5" class="HudSpecplayer__Stats_NumberText stratum-bold-mono" text="" />
-			</Panel>
-			<Panel class="hud-spectator-bkg-BOT" />
 		</Panel>
 		<Panel id="hud-HA__kills" class="hud-HA__kills">
 			<Panel class="kill-flag-svg-container">
@@ -185,30 +152,29 @@
 				<Panel id="hud-WPN-main" class="hud-WPN-main HUD--weapon--on-change--listener">
 					<Panel class="hud-WPN-ammo-reserve">
 						<Panel class="hud-WPN-ammo">
-							<Panel class="hud-WPN-text HUD--weapon--on-fired--listener">
-								<Label class="hud-HA-health_or_ammo-label hud-colorize-wash stratum-bold-tf" text="{d:ammo_clip}" />
-							</Panel>
-							<Panel class="hud-HA-ammo-icon_container">
+							<Panel class="hud-HA-ammo-mode-icon_container">
 								<Image class="hud-HA-icon hud-WPN-ammo-icon--single hud-colorize-wash" src="s2r://panorama/images/hud/ammo_single.vsvg" texturewidth="100px" scaling="stretch-to-fit-preserve-aspect" />
 								<Image class="hud-HA-icon hud-WPN-ammo-icon--burst hud-colorize-wash" src="s2r://panorama/images/hud/ammo_burst.vsvg" texturewidth="100px" scaling="stretch-to-fit-preserve-aspect" />
 								<Image class="hud-HA-icon hud-WPN-ammo-icon--fullauto hud-colorize-wash" src="s2r://panorama/images/hud/ammo_fullauto.vsvg" texturewidth="100px" scaling="stretch-to-fit-preserve-aspect" />
 							</Panel>
+							<Panel class="hud-WPN-text HUD--weapon--on-fired--listener">
+								<Label class="hud-HA-health_or_ammo-label stratum-bold-tf hud-colorize-wash" text="{d:ammo_clip}" />
+							</Panel>
+							<ProgressBar id="AmmoClipBar" class="hud-colorize-wash" min="0" max="1" value="1" vertical="false" />
 						</Panel>
 						<Panel class="hud-WPN-reserve ">
 							<Panel class="hud-WPN-reserve-text">
-								<Label class="hud-WPN-pipe hud-colorize-wash stratum-bold-mono" text="|" />
-								<Label class="hud-WPN-reserve-text__label hud-HA-armor-label hud-colorize-wash stratum-bold-tf" text="{d:ammo_reserve}" />
+								<Label id="HudReserveAmmoCounter" class="hud-WPN-reserve-text__label hud-HA-armor-label stratum-bold-tf hud-colorize-wash" text="{d:ammo_reserve}" />
 							</Panel>
 						</Panel>
 						<Panel class="hud-HA-icon-container HUD--on-reload--listener">
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--magazine hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_magazine.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--banana_mag hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_banana_mag.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--shotgun_shell hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_shotgun_shell.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--box hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_box.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--revolver_loader hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_revolver_loader.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--bizon_tube hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_bizon_tube.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--p90 hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_p90.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
-							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--generic_bullet hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_generic_bullet.vsvg" textureheight="32" scaling="stretch-to-fit-preserve-aspect" />
+							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--magazine hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_magazine.vsvg" texturewidth="32px" scaling="stretch-to-fit-preserve-aspect" />
+							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--banana_mag hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_banana_mag.vsvg" texturewidth="32px" scaling="stretch-to-fit-preserve-aspect" />
+							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--shotgun_shell hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_shotgun_shell.vsvg" texturewidth="32px" scaling="stretch-to-fit-preserve-aspect" />
+							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--box hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_box.vsvg" texturewidth="32px" scaling="stretch-to-fit-preserve-aspect" />
+							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--revolver_loader hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_revolver_loader.vsvg" texturewidth="32px" scaling="stretch-to-fit-preserve-aspect" />
+							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--bizon_tube hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_bizon_tube.vsvg" texturewidth="32px" scaling="stretch-to-fit-preserve-aspect" />
+							<Image class="hud-HA-icon hud-WPN-ammo-reserve__icon ammo-reserve--p90 hud-colorize-wash" src="s2r://panorama/images/hud/ammo_reserve_p90.vsvg" texturewidth="32px" scaling="stretch-to-fit-preserve-aspect" />
 						</Panel>
 					</Panel>
 				</Panel>
