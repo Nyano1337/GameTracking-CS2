@@ -3,6 +3,7 @@
 /// <reference path="../common/item_context_entries.ts" />
 /// <reference path="../inspect.ts" />
 /// <reference path="../characterbuttons.ts" />
+/// <reference path="../common/shopping_cart.ts" />
 var InspectActionBar;
 (function (InspectActionBar) {
     function Init() {
@@ -24,9 +25,18 @@ var InspectActionBar;
         _SetUpMarketLink(elActionBar, itemId);
         _SetUpOpenSeasonStatsAction(elActionBar, $.GetContextPanel(), itemId);
         _SetUpViewHighlightReelAction(elActionBar, itemId);
+        const nPrice = InspectShared.GetPopupSetting('price_in_tokens');
+        _SetupAddRemoveToCartButtons(elActionBar, itemId, nPrice);
+        _SetupCartActionsBtn(elActionBar, nPrice, itemId);
+        _ShowHideCartBtn(elActionBar, nPrice);
+        _ShowHideFavoriteBtn($.GetContextPanel(), elActionBar, nPrice);
         if (!elActionBar.Data().panelRegisteredForEvents) {
             elActionBar.Data().panelRegisteredForEvents = true;
             $.RegisterForUnhandledEvent('PanoramaComponent_Loadout_EquipSlotChanged', () => _SetupEquipItemBtns(elActionBar, itemId));
+        }
+        if (nPrice) {
+            $.RegisterForUnhandledEvent('PanoramaComponent_Store_VolatileShopSubscribe', (...args) => { _OnVolatileShopSubscribe(...args, elActionBar); });
+            _EnsureVolatileShopSubscribed($.GetContextPanel());
         }
         const contentPanel = $.GetContextPanel();
         elActionBar.FindChildInLayoutFile('InspectPlayMvpBtn').SetPanelEvent('onactivate', () => InspectPlayMusic('mvp', contentPanel));
@@ -47,6 +57,24 @@ var InspectActionBar;
         }
     }
     InspectActionBar.Init = Init;
+    function _EnsureVolatileShopSubscribed(cp) {
+        if (!cp || !cp.IsValid())
+            return;
+        if (cp.Data().refreshSubscriptionHandle) {
+            $.CancelScheduled(cp.Data().refreshSubscriptionHandle);
+            cp.Data().refreshSubscriptionHandle = null;
+        }
+        g_ActiveTournamentDynamicContainers.forEach((id) => StoreAPI.VolatileShopSubscribe(id, true));
+        cp.Data().refreshSubscriptionHandle = $.Schedule(150, () => _EnsureVolatileShopSubscribed(cp));
+    }
+    function _OnVolatileShopSubscribe(nContainerDef, bNewPricesParsed, elActionBar) {
+        const nPrice = InspectShared.GetPopupSetting('price_in_tokens');
+        const itemId = InspectShared.GetPopupSetting('item_id');
+        _SetupAddRemoveToCartButtons(elActionBar, itemId, nPrice);
+        _SetupCartActionsBtn(elActionBar, nPrice, itemId);
+        _ShowHideCartBtn(elActionBar, nPrice);
+        _ShowHideFavoriteBtn($.GetContextPanel(), elActionBar, nPrice);
+    }
     function _SetUpItemCertificate(elPanel, id) {
         const elCert = elPanel.FindChildInLayoutFile('InspectItemCert');
         if (!elCert || !elCert.IsValid()) {
@@ -101,11 +129,15 @@ var InspectActionBar;
         if (!reelId)
             return;
         const elViewHighlightReelAction = elPanel.FindChildInLayoutFile('ViewHighlightReelAction');
-        elViewHighlightReelAction.SetPanelEvent('onactivate', () => {
+        const fnPopupVideoClip = () => {
             UiToolkitAPI.ShowCustomLayoutPopupParameters('popup-videoclip-' + reelId, 'file://{resources}/layout/popups/popup_videoclip.xml', 'reelid=' + reelId + '&' +
                 'itemid=' + id);
-        });
+        };
+        elViewHighlightReelAction.SetPanelEvent('onactivate', fnPopupVideoClip);
         elViewHighlightReelAction.SetHasClass('hidden', false);
+        if (ItemInfo.IsKeychain(id)) {
+            $.Schedule(0.0001, fnPopupVideoClip);
+        }
     }
     function _SetupEquipItemBtns(elPanel, id) {
         const elMoreActionsBtn = elPanel.FindChildInLayoutFile('InspectActionsButton');
@@ -131,8 +163,8 @@ var InspectActionBar;
         const isPatch = ItemInfo.IsPatch(id);
         const isKeychain = ItemInfo.IsKeychain(id);
         const isSpraySealed = ItemInfo.IsSpraySealed(id);
-        const isEquipped = InventoryAPI.IsEquipped(id, 't') || InventoryAPI.IsEquipped(id, 'ct') || InventoryAPI.IsEquipped(id, "noteam");
-        let bCloseInspectOnSingleAction = (isSticker || isSpraySealed || isFanToken || isPatch || isKeychain || isStickerDisplaySleeve);
+        const bCloseInspectOnSingleAction = (isSticker || isSpraySealed || isFanToken || isPatch || isKeychain || isStickerDisplaySleeve);
+        let isEquipped = InventoryAPI.IsEquipped(id, 't') || InventoryAPI.IsEquipped(id, 'ct') || InventoryAPI.IsEquipped(id, "noteam");
         if (ItemInfo.IsEquippalbleButNotAWeapon(id) ||
             bCloseInspectOnSingleAction ||
             isEquipped) {
@@ -178,11 +210,10 @@ var InspectActionBar;
                 displayName = entry.name;
             }
             const previewActionPrefix = displayName.startsWith('preview_') ? '' : 'preview_';
-            const bisItemInLootlist = InspectShared.GetPopupSetting('is_item_in_lootlist');
             const contextPanel = $.GetContextPanel();
             elSingleActionBtn.text = '#inv_context_' + previewActionPrefix + displayName;
             elSingleActionBtn.SetPanelEvent('onactivate', () => {
-                const bCloseInspect = (bisItemInLootlist && contextPanel.IsValid()) ? false : true;
+                const bCloseInspect = (contextPanel.IsValid()) ? false : true;
                 _OnSingleAction(entry, id, bCloseInspect, contextPanel);
                 if (!bCloseInspect) {
                     $.DispatchEvent('BlurPopupPanel', contextPanel.id, true);
@@ -196,6 +227,99 @@ var InspectActionBar;
             CloseBtnAction(_GetSettingCallback(contextPanel), contextPanel);
         }
         entry.OnSelected(id);
+    }
+    function _SetupAddRemoveToCartButtons(elPanel, id, price) {
+        const elAddToCartContainer = elPanel.FindChildInLayoutFile('AddToCartContainer');
+        const elPrice = elPanel.FindChildInLayoutFile('MajorItemPrice');
+        if (!price) {
+            elAddToCartContainer.SetHasClass('hidden', true);
+            return;
+        }
+        elPrice.visible = price > 0;
+        elAddToCartContainer.SetHasClass('hidden', false);
+        elPanel.SetDialogVariableInt('cart-count', ShoppingCart.cart.getItemQuantity(id));
+        elPanel.SetDialogVariableInt('total-items', ShoppingCart.cart.getTotalItems());
+        const shopItem = { id: id, name: ItemInfo.GetFormattedName(id), price: price };
+        elAddToCartContainer.FindChildInLayoutFile('AddToCart').SetPanelEvent('onactivate', () => {
+            ShoppingCart.cart.addItem(shopItem, 1);
+            const quantity = ShoppingCart.cart.getItemQuantity(id);
+            elPanel.SetDialogVariableInt('cart-count', quantity);
+            _ShowHideCartBtn(elPanel, price);
+            elPrice.visible = quantity > 0;
+        });
+        elAddToCartContainer.FindChildInLayoutFile('RemoveFromCart').SetPanelEvent('onactivate', () => {
+            ShoppingCart.cart.decrementItem(id);
+            const quantity = ShoppingCart.cart.getItemQuantity(id);
+            elPanel.SetDialogVariableInt('cart-count', quantity);
+            _ShowHideCartBtn(elPanel, price);
+            elPrice.visible = price > 0;
+        });
+    }
+    function _SetupCartActionsBtn(elPanel, price, id) {
+        if (!price) {
+            return;
+        }
+        const elOpenCartBtn = elPanel.FindChildInLayoutFile('InspectOpenCheckout');
+        const cp = $.GetContextPanel();
+        function _Callback() {
+            CloseBtnAction(_GetSettingCallback(cp), elPanel);
+        }
+        ;
+        const callback = UiToolkitAPI.RegisterJSCallback(_Callback);
+        elOpenCartBtn.SetPanelEvent('onactivate', () => {
+            if (InspectShared.GetPopupSetting('back_to_checkout', cp)) {
+                CloseBtnAction(_GetSettingCallback(cp), elPanel);
+                return;
+            }
+            const popupPanel = UiToolkitAPI.ShowCustomLayoutPopupParameters('id-popup-shopping-cart-checkout', 'file://{resources}/layout/popups/popup_shopping_cart_checkout.xml', '&callback=' + callback);
+            popupPanel.Data().eventId = g_ActiveTournamentInfo.eventid;
+            popupPanel.Data().isFromInspect = true;
+        });
+        ShoppingCart.cart.subscribeToUpdates(elOpenCartBtn, 'inspect-sticker', () => {
+            const quantityInCart = ShoppingCart.cart.getItemQuantity(id);
+            elPanel.SetDialogVariableInt('cart-count', ShoppingCart.cart.getItemQuantity(id));
+            elPanel.SetDialogVariableInt('total-items', ShoppingCart.cart.getTotalItems());
+            elPanel.SetDialogVariableInt('price', quantityInCart == 0 ? price : ShoppingCart.cart.getItemLinePrice(id));
+        });
+    }
+    function _ShowHideCartBtn(elPanel, price) {
+        const elOpenCartBtn = elPanel.FindChildInLayoutFile('InspectOpenCheckout');
+        if (!price) {
+            elOpenCartBtn.SetHasClass('hidden', true);
+            return;
+        }
+        if (ShoppingCart.cart.getTotalItems() < 1) {
+            elOpenCartBtn.SetHasClass('hidden', true);
+            return;
+        }
+        elOpenCartBtn.SetHasClass('hidden', false);
+    }
+    function _ShowHideFavoriteBtn(cp, elPanel, nPrice) {
+        const elBtn = elPanel.FindChildInLayoutFile('id-sticker-bookmark');
+        const defIndex = InspectShared.GetPopupSetting('sticker_def_index', cp);
+        if (!nPrice || !defIndex) {
+            elBtn.SetHasClass('hidden', true);
+            return;
+        }
+        elBtn.checked = GameInterfaceAPI.GetSettingString('cl_major_store_watch_list').split(',').includes(defIndex.toString());
+        elBtn.SetPanelEvent('onactivate', () => {
+            const aDefIndexes = GameInterfaceAPI.GetSettingString('cl_major_store_watch_list').split(',');
+            const idIndex = aDefIndexes.findIndex(id => id === defIndex.toString());
+            if (idIndex === -1) {
+                aDefIndexes.push(defIndex.toString());
+            }
+            else {
+                aDefIndexes.splice(idIndex, 1);
+            }
+            GameInterfaceAPI.SetSettingString('cl_major_store_watch_list', aDefIndexes.length > 0 ? aDefIndexes.join(',') : "");
+        });
+        elBtn.SetPanelEvent('onmouseover', () => {
+            UiToolkitAPI.ShowTextTooltip('id-sticker-bookmark', '#major_store_bookmark_tooltip');
+        });
+        elBtn.SetPanelEvent('onmouseout', () => {
+            UiToolkitAPI.HideTextTooltip();
+        });
+        elBtn.SetHasClass('hidden', false);
     }
     function _OnActivateUpdateSelectionForMultiSelect(idSubjectItem, contextPanel) {
         CloseBtnAction(_GetSettingCallback(contextPanel), contextPanel);
@@ -341,6 +465,7 @@ var InspectActionBar;
     function CloseBtnAction(callbackHandle = -1, elActionBar) {
         $.DispatchEvent("CSGOPlaySoundEffect", "inventory_inspect_close", "MOUSE");
         $.DispatchEvent('UIPopupButtonClicked', '');
+        UiToolkitAPI.HideTextTooltip();
         if (callbackHandle != -1) {
             UiToolkitAPI.InvokeJSCallback(callbackHandle);
         }

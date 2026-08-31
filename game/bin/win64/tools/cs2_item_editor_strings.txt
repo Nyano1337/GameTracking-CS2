@@ -1,10 +1,9 @@
  (%d remaining)...
  (08@HPX`j
- (08@HPXb0
+ (08@HPXb
  (08@HPZ
- (08@HR0
- (08@J0
- (0X`hpz0
+ (08@HR
+ (0X`hpz
  (Boosted +1)
  (repeat)
  - IsCheckedOut: %s\n
@@ -20,7 +19,6 @@
  ?writableLocation@QStandardPaths@@SA?AVQString@@W4StandardLocation@1@@Z
  ?write@QIODevice@@QEAA_JPEBD_J@Z
  ?write@QMetaProperty@@QEBA_NPEAVQObject@@AEBVQVariant@@@Z
- A<NONE>
  Click to inherit.
  Click to override.
  Coupon Index
@@ -57,6 +55,7 @@
 !#?windowHandle@QWidget@@QEBAPEAVQWindow@@XZ
 !?trigger@QAction@@QEAAXXZ
 !?triggered@QAction@@QEAAX_N@Z
+!IsText()
 !\f?focusNextPrevChild@QScrollArea@@UEAA_N_N@Z
 !\n\twhitelist
 !contains
@@ -65,6 +64,8 @@
 !float==
 !float>
 !float>=
+!m_Byteswap.IsSwappingBytes()
+!m_Swap.IsSwappingBytes()
 !root
 !string==
 !string_one_of
@@ -235,6 +236,7 @@ $\n\tword_list
 %\n!k_ECommunityItemClass_BoosterPack
 %\n!k_EGCMsgGetAccountDetailsResponse
 %\n!k_ESOMsg_CacheSubscriptionRefresh
+%\n\nEGCItemMsg
 %\n\tword_type
 %]?sibling@QStandardItemModel@@UEBA?AVQModelIndex@@HHAEBV2@@Z
 %d, %d, %d, %d
@@ -282,7 +284,6 @@ $\n\tword_list
 &\n!k_EMsgGCStorePurchaseInitResponse
 &\n!k_EMsgGCToGCBannedWordListUpdated
 &\n!k_EMsgGCToGCDirtyMultipleSDOCache
-&\n!k_EMsgGCTrading_ReadinessResponse
 &\n"k_ECsgoSteamUserStat_XpEarnedGames
 &\n"k_UnlockStyle_Failed_CantLockCache
 &\n\ngc_msg_src
@@ -302,27 +303,31 @@ $\n\tword_list
 '\n"k_EMsgGCCStrike15_v2_PrivateQueues
 '\n"k_EMsgGCDev_NewItemRequestResponse
 '\n"k_EMsgGCItemPreviewRequestResponse
-'\n"k_EMsgGCTrading_TradeTypingChatMsg
 '\n\fglobal_stats
 '\v?enterEvent@QMenu@@MEAAXPEAVQEvent@@@Z
 ( %1, %2, %3, %4% )
-(1XY
-(1cY
-(A9Y
+(18X
+(1CX
+(5VX
+(5bX
+(5mX
+(9UX
+(AWX
 (Documents Filter - Use | for OR, space for AND)
-(E7Y
 (Filter)
-(IFY
-(IJY
-(IhY
-(IyY
-(MkY
+(I9X
+(IEX
+(IfX
+(MuX
+(MvX
 (No Active Session)
 (Outliner Filter)
-(Q0Y
-(Y8Y
-(YBY
+(QMX
+(ULX
+(UqX
+(YwX
 (\f"(\n&CMsgGCCStrike15_v2_ClientRequestOffers"\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir
+(\f"6\n#CSOAccountKeychainRemoveToolCharges
 (\f"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg
 (\f?focusOutEvent@QAbstractButton@@MEAAXPEAVQFocusEvent@@@Z
 (\n estimated_wait_seconds_remaining
@@ -355,7 +360,6 @@ $\n\tword_list
 (\r",\n*CMsgGCCStrike15_v2_GiftsLeaderboardRequest"
 (\r"-\n+CMsgGCCStrike15_v2_Client2GcAckXPShopTracks"
 (\r".\n,CMsgGCCStrike15_v2_MatchmakingClient2GCHello"
-(\r"6\n#CSOAccountKeychainRemoveToolCharges
 (\r"6\n&CMsgGCCStrike15_v2_ClientNetworkConfig
 (\r":\n"CWorkshop_GetContributors_Response
 (\r"=\n%CMsgGCCStrike15_v2_AcknowledgePenalty
@@ -367,6 +371,7 @@ $\n\tword_list
 (\r"K\n#CMsgGCCStrike15_v2_SetEventFavorite
 (\r"L\n)CMsgGCCStrike15_v2_ClientSubmitSurveyVote
 (\r"M\n%CMsgGCCStrike15_v2_ClientGCRankUpdate
+(\r"M\n'CMsgGCCStrike15_v2_ClientPartyJoinRelay
 (\r"O\n\rCSOEconCoupon
 (\r"P\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus
 (\r"Q\n\fCVDiagnostic
@@ -380,6 +385,7 @@ $\n\tword_list
 (\r"o\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm
 (\r"q\n"CMsgGCDev_SchemaReservationRequest
 (\r"r\n*CMsgGCCStrike15_v2_GC2ClientTournamentInfo
+(\r"y\n(CMsgGCCStrike15_v2_VolatileShopSubscribe
 (\r?hideEvent@QAbstractSpinBox@@MEAAXPEAVQHideEvent@@@Z
 (\t"!\n\vCMsgGCError
 (\t"%\n#CMsgRequestRecurringMissionSchedule"
@@ -388,7 +394,6 @@ $\n\tword_list
 (\t"A\n0CCommunity_GetGamePersonalDataCategories_Request
 (\t"E\n!CMsgGCCStrike15_v2_GCToClientChat
 (\t"E\n$CMsgGCCStrike15_v2_ClientAuthKeyCode
-(\t"M\n'CMsgGCCStrike15_v2_ClientPartyJoinRelay
 (\t"S\n"CMsgGCCStrike15_v2_ClientPollState
 (\t"T\n-CMsgGCCStrike15_v2_GC2ClientRequestValidation
 (\t"U\n3CCommunity_TerminateGamePersonalDataEntries_Request
@@ -445,20 +450,15 @@ $\n\tword_list
 (\v2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 (\v2\f.CSOEconItem
 (\v?enterEvent@QToolButton@@MEAAXPEAVQEvent@@@Z
-(a5Y
-(aaY
-(amY
-(axY
 (default)
-(e3Y
-(iUY
-(ioY
-(mIY
-(mbY
-(u1Y
-(uDY
-(uPY
-(uqY
+(eXX
+(iDX
+(iOX
+(ioX
+(iqY
+(mlX
+(uKX
+(yrX
 ) ?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 )\f?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
 )\n!penalty_account_id_sessions_green
@@ -470,14 +470,12 @@ $\n\tword_list
 )\n$k_EMsgGCRequestAnnouncementsResponse
 )\n$k_EMsgGCServerBrowser_FavoriteServer
 )\n$k_EMsgGCStorePurchaseInit_DEPRECATED
-)\n$k_EMsgGCTrading_InitiateTradeRequest
 )\n$k_EMsgGC_IncrementKillCountAttribute
 )\n%k_EClientReportingVersion_BetaVersion
 )\n%k_ECommunityItemAttribute_IssueNumber
 )\n%k_ECommunityItemClass_ProfileModifier
 )\n%k_UnlockStyle_Failed_CantAffordAttrib
 )\n?displayText@QStyledItemDelegate@@UEBA?AVQString@@AEBVQVariant@@AEBVQLocale@@@Z
-)\n\nEGCItemMsg
 )\r?hideEvent@QComboBox@@MEAAXPEAVQHideEvent@@@Z
 )\t?buddy@QAbstractItemModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 )\v?createData@QMapDataBase@@SAPEAU1@XZ
@@ -504,7 +502,6 @@ $\n\tword_list
 *\n%k_EMsgGCServerBrowser_BlacklistServer
 *\n%k_EMsgGCStorePurchaseFinalizeResponse
 *\n%k_EMsgGCStorePurchaseQueryTxnResponse
-*\n%k_EMsgGCTrading_InitiateTradeResponse
 *\n%k_EMsgGC_RevolvingLootList_DEPRECATED
 *\n&k_ECommunityItemAttribute_TradableTime
 *\n&k_EGCMsgGetUserGameStatsSchemaResponse
@@ -557,7 +554,6 @@ $\n\tword_list
 -\n\fcommendation
 -\n\nconditions
 -\n\tAttribute
--\tV_fread
 .#?windowTitle@QWidget@@QEBA?AVQString@@XZ
 .?AUCAttr_m_AlbumImage@?1??GetAttributeTable_CCS2EconNode_MusicKit@CCS2EconNode_MusicKit@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
 .?AUCAttr_m_AssociatedSet@?1??GetAttributeTable_CCS2EconNode_Collection@CCS2EconNode_Collection@@SAXPEAV?$CUtlVector@PEAVIBaseToolAttr@@HV?$CUtlVectorMemory_Growable@PEAVIBaseToolAttr@@H$0A@@@@@@Z@
@@ -2025,7 +2021,6 @@ $\n\tword_list
 .?AVCMsgClientHello@@
 .?AVCMsgClientWelcome@@
 .?AVCMsgClientWelcome_Location@@
-.?AVCMsgConVarValue@@
 .?AVCMsgConnectionStatus@@
 .?AVCMsgConsumableExhausted@@
 .?AVCMsgCsgoSteamUserStatChange@@
@@ -2135,8 +2130,10 @@ $\n\tword_list
 .?AVCMsgGCCStrike15_v2_Server2GCClientValidate@@
 .?AVCMsgGCCStrike15_v2_ServerNotificationForUserPenalty@@
 .?AVCMsgGCCStrike15_v2_ServerVarValueNotificationInfo@@
+.?AVCMsgGCCStrike15_v2_SetClanId@@
 .?AVCMsgGCCStrike15_v2_SetEventFavorite@@
 .?AVCMsgGCCStrike15_v2_SetPlayerLeaderboardSafeName@@
+.?AVCMsgGCCStrike15_v2_VolatileShopSubscribe@@
 .?AVCMsgGCCStrike15_v2_WatchInfoUsers@@
 .?AVCMsgGCClientDisplayNotification@@
 .?AVCMsgGCClientVersionUpdated@@
@@ -2206,7 +2203,6 @@ $\n\tword_list
 .?AVCMsgRecurringMissionSchema@@
 .?AVCMsgRecurringMissionSchema_MissionTemplateList@@
 .?AVCMsgReplayUploadedToYouTube@@
-.?AVCMsgReplicateConVars@@
 .?AVCMsgRequestInventoryRefresh@@
 .?AVCMsgRequestRecurringMissionSchedule@@
 .?AVCMsgSDONoMemcached@@
@@ -2298,7 +2294,8 @@ $\n\tword_list
 .?AVCQProgressWidget@@
 .?AVCQRangedSlider@@
 .?AVCQRangedSliderBarWidget@@
-.?AVCQRichItemListPicker@@
+.?AVCQRichItemListPickerDialog@@
+.?AVCQRichItemListPickerWidget@@
 .?AVCQScrollableWidgetList@@
 .?AVCQSelectionListItemDelegate@@
 .?AVCQSharedToolsMenu@@
@@ -2364,6 +2361,7 @@ $\n\tword_list
 .?AVCToolAttrHost@@
 .?AVCToolAttrPropertyDomain@@
 .?AVCToolEditContextQuery_Base@@
+.?AVCToolEditContextQuery_ExpressionGlobal@@
 .?AVCToolEditContextQuery_String@@
 .?AVCTreeWidgetFilter@@
 .?AVCTreeWidgetFilter_KeywordList@@
@@ -2409,7 +2407,6 @@ $\n\tword_list
 .?AVISchemaAttributeType@@
 .?AVISequence@@
 .?AVIToolAttrDomainListener@@
-.?AVIToolAttrExpressionGlobals@@
 .?AVIToolAttrHost@@
 .?AVIToolAttrNotifyRoot@@
 .?AVIToolAttr_Array@@
@@ -2525,7 +2522,6 @@ $\n\tword_list
 .CGCStorePurchaseInit_LineItem"`\n
 .CMsgAdjustEquipSlot
 .CMsgClientWelcome.Location
-.CMsgConVarValue"
 .CMsgCsgoSteamUserStatChange
 .CMsgGCBannedWord"U\n!CMsgGCToGCBannedWordListBroadcast
 .CMsgGCBannedWordListResponse"3\n
@@ -2625,6 +2621,7 @@ $\n\tword_list
 /\n*k_EMsgGCCStrike15_v2_ClientPlayerDecalSign
 /\n*k_EMsgGCCStrike15_v2_ClientRequestSouvenir
 /\n*k_EMsgGCCStrike15_v2_GC2ClientNotifyXPShop
+/\n*k_EMsgGCCStrike15_v2_VolatileShopSubscribe
 /\n+k_ECommunityItemAttribute_CommunityItemType
 /\r?hideEvent@QScrollBar@@MEAAXPEAVQHideEvent@@@Z
 /keychains
@@ -2635,7 +2632,8 @@ $\n\tword_list
 /stickers
 /weapons/customization/paints_gloves/
 08@HR
-08@J0
+08@J
+0La;
 0\n+k_EGCItemCustomizationNotification_NameItem
 0\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings
 0\n+k_EMsgGCCStrike15_v2_Account_RequestCoPlays
@@ -2792,9 +2790,8 @@ $\n\tword_list
 2\n?doItemsLayout@QListView@@UEAAXXZ
 2\n\nline_items
 2\r?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
-2\tV_fseek
 2\v?event@QAction@@MEAA_NPEAVQEvent@@@Z
-2\vpt
+2\vpLa;
 2aboutToShow()
 2activated( int )
 2changed()
@@ -2860,7 +2857,6 @@ $\n\tword_list
 5\n\tkeychains
 5\n\vtype_caches
 5\v?event@QCheckBox@@MEAA_NPEAVQEvent@@@Z
-6Pk@
 6[?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 6\n1k_EGCItemCustomizationNotification_CasketContents
 6\n1k_EGCItemCustomizationNotification_ExtractSticker
@@ -2876,15 +2872,14 @@ $\n\tword_list
 6\n\nvariations
 6\v?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
 6\v?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
-6pc@
 7\f?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
 7\n2k_EGCItemCustomizationNotification_XpShopAckTracks
 7\n2k_EGCItemCustomizationNotification_XpShopUseTicket
 7\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket
 7\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment
-8)gY
-8F@f@
-8UrY
+7\tV_fread
+8)gX
+89[X
 8\f?focusOutEvent@QTextBrowser@@MEAAXPEAVQFocusEvent@@@Z
 8\n3k_EGCItemCustomizationNotification_ActivateFanToken
 8\n3k_EGCItemCustomizationNotification_GenerateSouvenir
@@ -2893,7 +2888,8 @@ $\n\tword_list
 8\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo
 8\v?event@QCompleter@@MEAA_NPEAVQEvent@@@Z
 8]?size@QPixmap@@QEBA?AVQSize@@XZ
-8efY
+8mOW
+9>-memory-
 9\f?focusOutEvent@QTextEdit@@MEAAXPEAVQFocusEvent@@@Z
 9\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification
 9\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser
@@ -2925,10 +2921,12 @@ $\n\tword_list
 <!-- dmx encoding keyvalues2_noids 4 format vtex 1 -->\n"CDmeVtex"\n{\n\t"m_inputTextureArray" "element_array"\n\t[\n\t\t"CDmeInputTexture"\n\t\t{\n\t\t\t"m_name" "string" "TexturePosition"\n\t\t\t"m_fileName" "string" "$TEXTURE_REPLACEMENT_TOKEN"\n\t\t\t"m_colorSpace" "string" "linear"\n\t\t\t"m_fileExt" "string" ""\n\t\t\t"m_nMinBitsPerChannel" "int" "8"\n\t\t\t"m_typeString" "string" "2D"\n\t\t\t"m_imageProcessorArray" "element_array"\n\t\t\t[\n\t\t\t\t"CDmeImageProcessor"\n\t\t\t\t{\n\t\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t\t}\n\t\t\t]\n\t\t\t"m_bPassThroughToCompiledVtex" "bool" "0"\n\t\t\t"m_n3DSliceCount" "int" "-1"\n\t\t\t"m_n3DSliceWidth" "int" "-1"\n\t\t\t"m_n3DSliceHeight" "int" "-1"\n\t\t}\n\t]\n\t"m_outputTypeString" "string" "2D"\n\t"m_outputFormat" "string" "RGBA16161616F"\n\t"m_outputClearColor" "vector4" "0 0 0 0"\n\t"m_nOutputMinDimension" "int" "0"\n\t"m_nOutputMaxDimension" "int" "0"\n\t"m_nOutputDimensionReduce" "int" "0"\n\t"m_textureOutputChannelArray" "element_array"\n\t[\n\t\t"CDmeTextureOutputChannel"\n\t\t{\n\t\t\t"m_srcChannels" "string" "rgba"\n\t\t\t"m_dstChannels" "string" "rgba"\n\t\t\t"m_mipAlgorithm" "CDmeImageProcessor"\n\t\t\t{\n\t\t\t\t"m_algorithm" "string" "None"\n\t\t\t\t"m_stringArg" "string" ""\n\t\t\t\t"m_vFloat4Arg" "vector4" "0 0 0 0"\n\t\t\t}\n\t\t\t"m_outputColorSpace" "string" "linear"\n\t\t\t"m_inputTextureArray" "string_array"\n\t\t\t[\n\t\t\t\t"TexturePosition"\n\t\t\t]\n\t\t}\n\t]\n\t"m_vClamp" "vector3" "0 0 0"\n\t"m_bNoLod" "bool" "0"\n\t"m_bHiddenAssetFlag" "bool" "0"\n\t"m_bNormalizeRange" "bool" "0"\n\t"m_nDisplayRectWidth" "int" "0"\n\t"m_nDisplayRectHeight" "int" "0"\n\t"m_nMotionVectorsMaxDistanceInPixels" "int" "0"\n}\n
 </font>
 <Multiple Different Values>
+<NONE>
 <UNKNOWN>
 <\f?deallocate@QArrayData@@SAXPEAU1@_K1@Z
 <\f?focusPolicy@QWidget@@QEBA?AW4FocusPolicy@Qt@@XZ
 <\n\ncategories
+<\tV_fseek
 <\v?event@QDockWidget@@MEAA_NPEAVQEvent@@@Z
 <a href="%1">%2</a>
 <br>Game preview active. Switch to inspect?<br>
@@ -2942,7 +2940,6 @@ $\n\tword_list
 <unnamed>
 <your_name_here>
 =\n8k_EGCItemCustomizationNotification_ActivateOperationCoin
-=m_bUseShadowFastPath
 =texcoord
 >%1</td></tr></table><br>
 >\n9k_EGCItemCustomizationNotification_ClientRedeemFreeReward
@@ -4381,11 +4378,11 @@ $\n\tword_list
 ?userType@QVariant@@QEBAHXZ
 ?valueToKeys@QMetaEnum@@QEBA?AVQByteArray@@H@Z
 @#?write@QTableWidgetItem@@UEBAXAEAVQDataStream@@@Z
-@08N,
-@HPX`hv
+@HPX`hvp
 @\n\fSingleObject
 @\n\vserver_type
 @\v?event@QFrame@@MEAA_NPEAVQEvent@@@Z
+@ht0
 A new location must be selected in order to save the file.
 A#?write@QTreeWidgetItem@@UEBAXAEAVQDataStream@@@Z
 ARRAY_MEMBERS_VIA_PARENT
@@ -4395,6 +4392,7 @@ A`?translate@QPainter@@QEAAXAEBVQPoint@@@Z
 About &Qt 
 About...
 AcceptIfItemPicked
+Accepted
 Account ID
 AccountActivity
 AccountEntries
@@ -4413,7 +4411,6 @@ Adding %d file(s).  Please wait...
 Addr
 Address
 Album Image
-Alignment
 All itemsets must have names.
 All lootlists must have names.
 Alternate icon '%s' > '%s' must define '%s'
@@ -4455,6 +4452,7 @@ AssetBrowse( vnmclip )
 AssetBrowse( vnmgraph )
 AssetBrowse( vtex )
 AssetBrowse( wav )
+AssetBrowse()
 Associated Discrete Set
 Attempting to register the command %s for context %s multiple times\n
 Attribute
@@ -4513,6 +4511,9 @@ Building Package For Publishing...
 Bundle %s: Item definition "%s" failed to initialize\n
 C:\buildworker\csgo_rel_win64\build\_build_\tools\cs2_item_editor\_vpc_cs2_item_editor_csgo\default\win64\_msvc_\Retail\cs2_item_editor.pdb
 C:\buildworker\csgo_rel_win64\build\src\game\shared\econ_csgo_legacy\econ_item_schema.cpp
+C:\buildworker\csgo_rel_win64\build\src\gcsdk_csgo_legacy\gclogger.cpp
+C:\buildworker\csgo_rel_win64\build\src\public\tier0\utlbuffer.h
+C:\buildworker\csgo_rel_win64\build\src\public\zip\zip_utils.cpp
 C:\buildworker\csgo_rel_win64\build\src\tools\toolutils2\toolattr_propertydomain.cpp
 CAttribute_String
 CBaseEditorSession::Revert - Perforce unavailable: %s\n
@@ -4580,7 +4581,6 @@ CMsgCStrike15Welcome
 CMsgCasketItem
 CMsgClientHello
 CMsgClientWelcome
-CMsgConVarValue
 CMsgConnectionStatus
 CMsgConsumableExhausted
 CMsgCsgoSteamUserStatChange
@@ -4595,6 +4595,7 @@ CMsgGCCStrike15_v2_MatchList
 CMsgGCCStrike15_v2_Party_Invite
 CMsgGCCStrike15_v2_Party_Search
 CMsgGCCStrike15_v2_Predictions
+CMsgGCCStrike15_v2_SetClanId
 CMsgGCClientDisplayNotification
 CMsgGCClientVersionUpdated
 CMsgGCCollectItem
@@ -4641,8 +4642,7 @@ CMsgPartyInviteResponse
 CMsgProtoBufHeader
 CMsgRecurringMissionSchema
 CMsgReplayUploadedToYouTube
-CMsgReplicateConVars
-CMsgRequestInventoryRefresh".\n
+CMsgRequestInventoryRefresh"
 CMsgSDONoMemcached"/\n
 CMsgSOCacheHaveVersion
 CMsgSOCacheSubscribed
@@ -4771,7 +4771,8 @@ CQProgressWidget
 CQRangedSlider
 CQRangedSliderBarWidget
 CQReferenceVisualizer
-CQRichItemListPicker
+CQRichItemListPickerDialog
+CQRichItemListPickerWidget
 CQRichItemListPicker_Choice_Internal*
 CQRichItemListPicker_Group_Internal*
 CQScrollableWidgetList
@@ -4843,9 +4844,11 @@ CSOQuestProgress
 CSOVolatileItemClaimedRewards
 CSOVolatileItemOffer
 CSouvenirPaintKit
+CToolAttrPropertyDomain
 CToolAttrPropertyDomain::GetVDataChoiceFriendlyNameForValue
 CUnusualLootListContents
 CUnusualLootListPaintKit
+CUtlBuffer::BGetObjectRaw
 CUtlDict<class CEconHighlightReelDefinition *,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CEconLootListDefinition,class CDefFastCaselessStringLess>::Insert
 CUtlDict<class CStickerKit *,class CDefFastCaselessStringLess>::Insert
@@ -4858,31 +4861,9 @@ CUtlLeanVectorBase<struct UtlLinkedListElem_t<class CZip *,unsigned short>,unsig
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<char const *,int,class CDefStringLess,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorBase<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct kill_eater_score_type_t,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator>::EnsureCapacity
 CUtlLeanVectorImpl<class CUtlLeanVectorBase<struct CUtlHashMapLarge<int,class CEconItemDefinition *,class CUtlHashMapLargeDefEquals<int>,struct MurmurHash3Functor<int> >::HashBucket_t,int,class CMemAllocAllocator>,struct CUtlHashMapLarge<int,class CEconItemDefinition *,class CUtlHashMapLargeDefEquals<int>,struct MurmurHash3Functor<int> >::HashBucket_t,int>::AddMultipleToTail
-CUtlRBTree<char const *,class CDefFastCaselessStringLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<char const *,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<class CZipFile::CZipEntry,class CZipFile::CZipEntryLessFunc,int,class CUtlLeanVector<struct UtlRBTreeNode_t<class CZipFile::CZipEntry,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<char const *,class CEconItemSetDefinition,class CDefStringLess,int>::Node_t,class CUtlOrderedMapBase<char const *,class CEconItemSetDefinition,class CDefStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<char const *,class CEconItemSetDefinition,class CDefStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<char const *,class KeyValues *,class CDefStringLess,int>::Node_t,class CUtlOrderedMapBase<char const *,class KeyValues *,class CDefStringLess,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<char const *,class KeyValues *,class CDefStringLess,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,char const *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,char const *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,char const *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconCraftingRecipeDefinition *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconCraftingRecipeDefinition *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconCraftingRecipeDefinition *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconHighlightReelDefinition *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconHighlightReelDefinition *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconHighlightReelDefinition *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconItemDefinition *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconItemDefinition *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconItemDefinition *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconItemQualityDefinition,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconItemQualityDefinition,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconItemQualityDefinition,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconItemRarityDefinition,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconItemRarityDefinition,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconItemRarityDefinition,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconKeychainDefinition *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconKeychainDefinition *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconKeychainDefinition *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconMusicDefinition *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconMusicDefinition *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconMusicDefinition *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CEconSoundMaterialDefinition,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CEconSoundMaterialDefinition,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CEconSoundMaterialDefinition,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CPaintKit *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CPaintKit *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CPaintKit *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CSkirmishModeDefinition *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CSkirmishModeDefinition *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CSkirmishModeDefinition *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,class CStickerKit *,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,class CStickerKit *,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,class CStickerKit *,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<int,struct attachedparticlesystem_t,class CDefLess<int>,int>::Node_t,class CUtlOrderedMapBase<int,struct attachedparticlesystem_t,class CDefLess<int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<int,struct attachedparticlesystem_t,class CDefLess<int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<struct CEconItemSchema::CTournamentMatchCompositeKey_t,class CUtlVector<class CEconHighlightReelDefinition *,int,class CUtlVectorMemory_Growable<class CEconHighlightReelDefinition *,int,0> > *,class CDefLess<struct CEconItemSchema::CTournamentMatchCompositeKey_t>,int>::Node_t,class CUtlOrderedMapBase<struct CEconItemSchema::CTournamentMatchCompositeKey_t,class CUtlVector<class CEconHighlightReelDefinition *,int,class CUtlVectorMemory_Growable<class CEconHighlightReelDefinition *,int,0> > *,class CDefLess<struct CEconItemSchema::CTournamentMatchCompositeKey_t>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<struct CEconItemSchema::CTournamentMatchCompositeKey_t,class CUtlVector<class CEconHighlightReelDefinition *,int,class CUtlVectorMemory_Growable<class CEconHighlightReelDefinition *,int,0> > *,class CDefLess<struct CEconItemSchema::CTournamentMatchCompositeKey_t>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class AlternateIconData_t,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class AlternateIconData_t,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class AlternateIconData_t,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned __int64,class CUtlVector<class CProPlayerData const *,int,class CUtlVectorMemory_Growable<class CProPlayerData const *,int,0> > *,class CDefLess<unsigned __int64>,int>::Node_t,class CUtlOrderedMapBase<unsigned __int64,class CUtlVector<class CProPlayerData const *,int,class CUtlVectorMemory_Growable<class CProPlayerData const *,int,0> > *,class CDefLess<unsigned __int64>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned __int64,class CUtlVector<class CProPlayerData const *,int,class CUtlVectorMemory_Growable<class CProPlayerData const *,int,0> > *,class CDefLess<unsigned __int64>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,char const *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,char const *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,char const *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,class CProPlayerData *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,class CProPlayerData *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,class CProPlayerData *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct AchievementAward_t *,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,struct AchievementAward_t *,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct AchievementAward_t *,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,struct kill_eater_score_type_t,class CDefLess<unsigned int>,unsigned short>::Node_t,class CUtlOrderedMapBase<unsigned int,struct kill_eater_score_type_t,class CDefLess<unsigned int>,unsigned short>::CKeyLess,unsigned short,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,struct kill_eater_score_type_t,class CDefLess<unsigned int>,unsigned short>::Node_t,unsigned short>,unsigned short,class CMemAllocAllocator> >::Insert
 CWeakHandle
+CZipFile::ParseFromDisk
+CZipFile::SaveDirectory
 CabinetWClass
 Cache
 Can't load map in engine because the server is not available.\n
@@ -4978,14 +4959,12 @@ Create an explicit set for this collection.
 Creating Icons...
 Cslow
 Ctrl
-CurveEditor
 Custom Paint Job
 Custom Paint Job Extended
 CustomCharacter
 D ?toPlainText@QTextEdit@@QEBA?AVQString@@XZ
 D\n\vreservation
 DataCenterPing
-DataOffset
 Data_Branch1xy
 Data_Branch1zBranch2x
 Data_Branch2yz
@@ -5017,7 +4996,6 @@ DetailedSearchStatistic
 DevOnly Tag
 Development Only
 Didn't expect '=' for non-flags non-choices variable %s
-DirectoryEntries
 Discrete Loot List
 Discrete Set
 Do not show in the row (but maybe show in context menu)
@@ -5034,6 +5012,7 @@ DragStarted
 DragUpdated
 Drop Chance
 DropInfo
+DualHull
 DummyNoOp
 Duplicate Skirmish mode definition id %d
 Duplicate Skirmish mode name %s (%d and %d)
@@ -5058,18 +5037,9 @@ Duplicate sound material value (%d)
 Duplicate sticker kit ID %d
 Duplicate sticker kit name '%s'
 E&xit
-EClientReportingVersion
-ECommunityItemAttribute
-ECommunityItemClass
-ECsgoSteamUserStat
 EDITOR_ONLY
-EGCBaseClientMsg
-EGCBaseProtoObjectTypes
-EGCMsgResponse
-EInitSystemResult
 ERROR: Failed to open file for key bindings:\n%1\n
 ERROR: Failed to read key bindings from:\n%1\n
-ESOMsg
 EXEC-BEGIN (UNSUPRESSED): %s
 EXEC-BEGIN-MODIFIER: %s
 EXEC-BEGIN: %s
@@ -5096,6 +5066,7 @@ Element.CompositeMaterialInputLooseVariable_t
 Element.CompositeMaterialMatchFilter_t
 Element.CompositeMaterial_t
 Element.GeneratedTextureHandle_t
+EmitBaseMessageV
 EmitEditingFinishedOnDrop
 End mouse capture [%i] due to hidden widget\n
 End mouse capture [%i]: %s\n
@@ -5158,7 +5129,6 @@ Expecting tag name
 ExploreWClass
 Expression syntax error %s found in '%s'.\n
 External Modification - %1
-F0i@
 FGD Variable %s has bad default value %d (has bits set that are not valid choices)
 FOLDER
 FORCE_NOT_USED
@@ -5189,9 +5159,10 @@ Fast Asset Search
 FastAssetPicked
 File '%s' not found.\n
 Filter In Outliner
-Filter name/description:
+Filter type/description:
 Filter with dependent items
 Filter:
+FilterApplied
 Filtering
 Final K Vs
 Find:
@@ -5223,23 +5194,7 @@ From EconItems
 From Schema
 Full song. 2-5+ minutes.
 GC Reservation
-GCClientLauncherType
-GCClientLauncherType_DEFAULT
-GCClientLauncherType_SOURCE2
-GCClientLauncherType_STEAMCHINA
-GCConnectionStatus
-GCConnectionStatus_HAVE_SESSION
-GCConnectionStatus_NO_SESSION
-GCConnectionStatus_NO_STEAM
-GCProtoBufMsgSrc
-GCProtoBufMsgSrc_FromGC
-GCProtoBufMsgSrc_FromSteamID
-GCProtoBufMsgSrc_FromSystem
-GCProtoBufMsgSrc_ReplySystem
-GCProtoBufMsgSrc_Unspecified
-GC_BANNED_WORD_DISABLE_WORD
-GC_BANNED_WORD_ENABLE_WORD
-GC_BannedWordType
+GCHost
 G\n\vDataPerWeek
 G\v?event@QHeaderView@@MEAA_NPEAVQEvent@@@Z
 Game Client Schema Updated.\n
@@ -5255,6 +5210,8 @@ GetAsyncKeyState
 GetAttributeDefinitionByName
 GetClassNameA
 GetCursorPos
+GetDateFormatA
+GetTimeFormatA
 GetVDataChoiceFriendlyNameForValue
 GetWindowTextA
 GiftLeaderboardEntry
@@ -5440,6 +5397,8 @@ Keychain Kit Description
 Keychain Kit ID
 Keychain Kit Name
 Keychain Kits
+Keychain definition %s: failed to resolve base keychain: %s
+Keychain definition %s: invalid highlight reel specified: %s
 Keychain definition %s: missing "name"
 Keychain definition %s: name must be a positive integer
 Keychain definition %s: unsupported item_quality '%s'
@@ -5571,6 +5530,7 @@ No signal '%s'
 No slot '%s'
 No: Do not checkout.
 NoAttr
+NoEditor()
 Node type change not allowed.
 Not a valid save target.\n\n'%s' is also saving to '%s'.
 Not synced to latest revision
@@ -5723,25 +5683,21 @@ OperationalStatisticDescription
 OperationalStatisticElement
 OperationalStatisticsPacket
 OperationalVarValue
-Optional properties not fully supported in property editor (text editor required)
 OrigMat
 Other Tools
 Outliner
 OverlayProjectionDirection
-P08@J0
-P08J
-P08N,
-P6 B@
-P6@O@
+P08@J
+P08J0
 P?isValid@QColor@@QEBA_NXZ
 P?isValid@QTextCharFormat@@QEBA_NXZ
 P?itemData@QStandardItemModel@@UEBA?AV?$QMap@HVQVariant@@@@AEBVQModelIndex@@@Z
 P?jumpToNextImage@QImageReader@@QEAA_NXZ
+PLa;
 PROXY
 P\f?font@QTableWidgetItem@@QEBA?AVQFont@@XZ
 P\n\nattributes
 Pack item "%s" included in more than one pack bundle - not allowed!
-PackedBlobNormal
 Paint Kit
 Paint Kit Description
 Paint Kit ID
@@ -5798,7 +5754,6 @@ PopupClosed
 PopupOpened
 Pre Generation K Vs
 Preferred
-PreloadDirectoryEntries
 Preview
 Preview '%1'
 Preview Map
@@ -5889,11 +5844,12 @@ R?modifiers@QKeyEvent@@QEBA?AV?$QFlags@W4KeyboardModifier@Qt@@@@XZ
 RDO_AB
 RMouse
 RMouseDoubleClick
-RSDS9?
+RSDS]
 RW?restore@QPainter@@QEAAXXZ
 R\f?font@QTreeWidgetItem@@QEBA?AVQFont@@H@Z
 R\t?canFetchMore@QAbstractItemModel@@UEBA_NAEBVQModelIndex@@@Z
 R\v?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+R\vpLa;
 R^?supportedDropActions@QStandardItemModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 Random attributes '%s': Attribute definition "%s" was not found
 RangedFloat
@@ -6112,7 +6068,6 @@ Start Round 3
 Start of Match
 StatTrak
 StatTrak Enabled
-Status
 Sticker
 Sticker Capsule
 Sticker Capsule ID
@@ -6124,6 +6079,7 @@ Sticker Material
 Sticker Name
 Sticker kit '%s' rotate range is not valid %f:%f
 Sticker kit '%s' scale range is not valid %f:%f
+Sticker kit name '%s' is a duplicate gold sticker for event %d team %d player %d with a decreasing ID
 StickerCapsule
 StickerKit_
 StickerKit_%s
@@ -6164,6 +6120,7 @@ Target must have Property: '%s'
 Target must use Shader: '%s'
 Target name must NOT contain: '%s'
 Target name must contain: '%s'
+TargetCastForModify
 TermIncrementalOperation
 TexCoord
 TextProgramaticallyChanged
@@ -6185,6 +6142,8 @@ There is already another open editor session with this pathname.
 This file is marked as READ ONLY.  You will not be able to save your changes.\n\n%s
 This file is not checked out.  Would you like to check it out? <pre> %s </pre>
 This value is currently inherited from a base node.
+This value is optional. Click to set.
+This value is optional. Click to unset.
 This value is overriding a base node.
 Times New Roman
 Timing Text File
@@ -6274,6 +6233,7 @@ V?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 V?removeRows@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 VConsole
 VDataChoice( %s )
+VDataChoice()
 VNOTIFY_DISABLE
 VNotify
 VNotify Abandoned (ActiveProtocolIsNewer)\n
@@ -6325,6 +6285,7 @@ Waiting for GC Reservation...
 WarnTrailingWhitespace
 Warning (problem that doesn't prevent forward progress)
 Warning: This text ends with whitespace
+Warning: system time went backward by %d seconds\n
 WatchableMatchInfo
 Weapon Finish
 Weapon Name
@@ -6388,11 +6349,6 @@ Z?setPixelColor@QImage@@QEAAXHHAEBVQColor@@@Z
 Z?setPixelSize@QFont@@QEAAXH@Z
 Z?setPlainText@QTextDocument@@QEAAXAEBVQString@@@Z
 Z?setPointSize@QFont@@QEAAXH@Z
-ZIP_EndOfCentralDirRecord
-ZIP_FileHeader
-ZIP_LocalFileHeader
-ZIP_PreloadDirectoryEntry
-ZIP_PreloadHeader
 ZX?setBackground@QTextFormat@@QEAAXAEBVQBrush@@@Z
 Z]?sort@QStandardItemModel@@UEAAXHW4SortOrder@Qt@@@Z
 Zip system failure.\n
@@ -6458,6 +6414,7 @@ Zip system failure.\n
 \f\f?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
 \f\n EGCItemCustomizationNotification
 \f\n?deselect@QLineEdit@@QEAAXXZ
+\fpLa;
 \n CMsgItemAcknowledged__DEPRECATED
 \n!CMsgGCCStrike15_v2_Party_Register
 \n!CMsgGCCStrike15_v2_PlayersProfile
@@ -6737,6 +6694,7 @@ Zip system failure.\n
 \n\rupgrade_level
 \n\rutility_count
 \n\rvalidate_only
+\n\rvolatile_shop
 \n\taccountid
 \n\tattribute
 \n\tcode_type
@@ -6949,6 +6907,7 @@ Zip system failure.\n
 \v?fixup@QSpinBox@@MEBAXAEAVQString@@@Z
 \v?focusChanged@QApplication@@QEAAXPEAVQWidget@@0@Z
 \v\f?focusInEvent@QGroupBox@@MEAAXPEAVQFocusEvent@@@Z
+\vpLa;
 ]?staticMetaObject@QTextDocument@@2UQMetaObject@@B
 ]?staticMetaObject@QWindow@@2UQMetaObject@@B
 ]\r?horizontalOffset@QListView@@MEBAHXZ
@@ -6982,16 +6941,14 @@ _nodrips
 _sm.png
 _sticker_capsule
 _toolsautosave
-`6PA@
-`6PE@
 `?validate@QDoubleValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
 `?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+`IrY
 `\v?event@QSpinBox@@MEAA_NPEAVQEvent@@@Z
-`eyZ
+`ht0
 a?windowText@QPalette@@QEBAAEBVQBrush@@XZ
 a?write@QStandardItem@@UEBAXAEAVQDataStream@@@Z
 a?x@QMouseEvent@@QEBAHXZ
-aBv,
 abandon
 abandoned_match
 absolute
@@ -7037,7 +6994,6 @@ amount
 ancient
 anim_class
 anim_slot
-animgraph
 animgraph2_clip
 animgraph2_graph
 animgraph2_identifier
@@ -7051,6 +7007,7 @@ armory_remap
 assetTag
 asset_class_bucket
 asset_class_export
+asset_specific_keys_source
 asset_thumbnail
 assists
 associate_assets
@@ -7097,6 +7054,7 @@ baseitem
 baseitem_defidx
 bentnormal
 biased
+binary
 bindable_command_buttons
 blendindices
 blendweight
@@ -7146,11 +7104,11 @@ caseurl
 casket_item_id
 casual
 category
-centralDirectorySize
 centralWidget
 central_widget
 chance
 charges
+cheating_penalty_level
 checkstate
 choice_group
 choices
@@ -7159,6 +7117,7 @@ chooseteam
 choreoanchorclass
 cl_decryptdata_key
 cl_decryptdata_key_pub
+clan_id
 class_token_id
 class_usage_for_output
 classdefidx:
@@ -7190,7 +7149,6 @@ color255
 color255alpha
 color_name
 colspan
-commentLength
 common
 commonitem
 communication_cooldown
@@ -7200,12 +7158,11 @@ composite_material_class
 composite_material_keys
 composite_material_path
 compositematerialslib
-compressedSize
 compressedtangentframe
-compressionMethod
 confirm
 confirmation_id
 const char*
+contains
 contains_patches_representing_organizations
 contains_stickers_autographed_by_proplayers
 contains_stickers_representing_organizations
@@ -7238,7 +7195,6 @@ crate_musickit_%s_stattrak_capsule
 crate_musickit_%s_stattrak_capsule_lootlist
 crate_sticker_pack_%s_capsule
 crate_sticker_pack_%s_capsule_lootlist
-crc32
 creation_date
 criteria
 cs2_build_econ_items_workshop.exe
@@ -7322,7 +7278,6 @@ disable_reset_to_default
 disable_style_selector
 discrete_
 discrete_set_
-diskNumberStart
 display_items_defidx
 display_seed
 distance
@@ -7410,16 +7365,12 @@ exposed_param.%s
 exposed_params.
 extended
 extended_timeout
-externalFileAttribs
-extraFieldLength
 extra_wearable
 eyes_follow
-f0Y@
 f\n?dragEnterEvent@QAbstractScrollArea@@MEAAXPEAVQDragEnterEvent@@@Z
 f\r?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
 failping_account_id_sessions
 failready_account_id_sessions
-false:A\n
 fan_shield
 fast
 featured_display_item_defidx
@@ -7440,8 +7391,6 @@ file://{images}/econ/weapon_cases/crate_%s.png
 file://{images}/econ/weapon_cases/crate_musickit_%s_capsule.png
 file://{images}/econ/weapon_cases/crate_musickit_%s_stattrak_capsule.png
 file://{images}/econ/weapon_cases/crate_sticker_pack_%s.png
-fileCommentLength
-fileNameLength
 filePath
 files_prevented_trusted
 filter
@@ -7538,6 +7487,8 @@ game:tools/images/propertyeditor/attr_reset.png
 game:tools/images/propertyeditor/attr_reset_hover.png
 game:tools/images/propertyeditor/extra_attr_remove.png
 game:tools/images/propertyeditor/extra_attr_remove_hover.png
+game:tools/images/propertyeditor/eye_hidden.png
+game:tools/images/propertyeditor/eye_visible.png
 game:tools/images/propertyeditor/interval_lock.png
 game:tools/images/propertyeditor/interval_unlock.png
 game:tools/images/propertyeditor/overlay_inherit.png
@@ -7567,6 +7518,7 @@ gcsdk_gcmessages.proto
 gcsdk_gcmessages.proto"=\n
 gcsystemmsgs.proto
 gcsystemmsgs.proto"S\n
+gctime
 generate_icon
 generation_time
 geometry
@@ -7626,7 +7578,6 @@ horizontalStretch
 horizontal_header
 horizontal_header_labels
 hours
-hpz0
 i ?topLevelWidgets@QApplication@@SA?AV?$QList@PEAVQWidget@@@@XZ
 iValueIn
 i\f?forward@QTextBrowser@@UEAAXXZ
@@ -7672,7 +7623,6 @@ instance_parm
 instance_variable
 insufficientlevel_sessions
 intchoices
-internalFileAttribs
 intmap
 inv_container_and_tools
 inventoryPos
@@ -7723,6 +7673,7 @@ item_rarity
 item_rarity_set
 item_schema_version
 item_sets
+item_shares_equip_slot
 item_type
 item_type_name
 itemdef
@@ -7742,246 +7693,6 @@ json_favorites
 jump_to_item
 k"?value@QAbstractSlider@@QEBAHXZ
 k\v?event@QTextEdit@@MEAA_NPEAVQEvent@@@Z
-k_ECommunityItemAttribute_Level
-k_ECommunityItemClass_Badge
-k_ECommunityItemClass_Emoticon
-k_ECommunityItemClass_GameCard
-k_ECommunityItemClass_GameGoo
-k_ECommunityItemClass_Invalid
-k_ECommunityItemClass_Scene
-k_EGCMsgAchievementAwarded
-k_EGCMsgAddFreeLicense
-k_EGCMsgAddFreeLicenseResponse
-k_EGCMsgAppInfoUpdated
-k_EGCMsgCheckFriendship
-k_EGCMsgCheckFriendshipResponse
-k_EGCMsgCommitUnfinalized
-k_EGCMsgConCommand
-k_EGCMsgDPPartnerMicroTxns
-k_EGCMsgDirectServiceMethod
-k_EGCMsgFailedToCreate
-k_EGCMsgFindAccounts
-k_EGCMsgGenericReply
-k_EGCMsgGetAccountDetails
-k_EGCMsgGetCommands
-k_EGCMsgGetCommandsResponse
-k_EGCMsgGetEmailTemplate
-k_EGCMsgGetIPLocation
-k_EGCMsgGetIPLocationResponse
-k_EGCMsgGetLicenses
-k_EGCMsgGetPartnerAccountLink
-k_EGCMsgGetPersonaNames
-k_EGCMsgGetPersonaNamesResponse
-k_EGCMsgGetPurchaseTrustStatus
-k_EGCMsgGetSystemStats
-k_EGCMsgGetSystemStatsResponse
-k_EGCMsgGetUserGameStatsSchema
-k_EGCMsgGetUserStats
-k_EGCMsgGetUserStatsDEPRECATED
-k_EGCMsgGetUserStatsResponse
-k_EGCMsgGrantGuestPass
-k_EGCMsgGrantGuestPassResponse
-k_EGCMsgInvalid
-k_EGCMsgInviteUserToLobby
-k_EGCMsgLimitExceeded
-k_EGCMsgLookupAccountFromInput
-k_EGCMsgMasterSetDirectory
-k_EGCMsgMasterSetWebAPIRouting
-k_EGCMsgMemCachedDelete
-k_EGCMsgMemCachedGet
-k_EGCMsgMemCachedGetResponse
-k_EGCMsgMemCachedSet
-k_EGCMsgMemCachedStats
-k_EGCMsgMemCachedStatsResponse
-k_EGCMsgMultiplexMsg
-k_EGCMsgMultiplexMsgResponse
-k_EGCMsgPostAlert
-k_EGCMsgPreTestSetup
-k_EGCMsgReceiveInterAppMessage
-k_EGCMsgRecordSupportAction
-k_EGCMsgResponseDenied
-k_EGCMsgResponseInvalid
-k_EGCMsgResponseNoMatch
-k_EGCMsgResponseNotLoggedOn
-k_EGCMsgResponseOK
-k_EGCMsgResponseServerError
-k_EGCMsgResponseTimeout
-k_EGCMsgResponseUnknownError
-k_EGCMsgSendEmail
-k_EGCMsgSendEmailResponse
-k_EGCMsgSendHTTPRequest
-k_EGCMsgSendHTTPRequestResponse
-k_EGCMsgSetOptions
-k_EGCMsgSetOptionsResponse
-k_EGCMsgStartGameserver
-k_EGCMsgStartPlaying
-k_EGCMsgStopGameserver
-k_EGCMsgStopPlaying
-k_EGCMsgSystemBase
-k_EGCMsgSystemBase2
-k_EGCMsgSystemStatsSchema
-k_EGCMsgUpdateSession
-k_EGCMsgVacVerificationChange
-k_EGCMsgValidateSession
-k_EGCMsgValidateSessionResponse
-k_EGCMsgWGRequest
-k_EGCMsgWGResponse
-k_EGCMsgWebAPIJobRequest
-k_EGCToGCMsgMasterAck
-k_EGCToGCMsgMasterAckResponse
-k_EGCToGCMsgRouted
-k_EGCToGCMsgRoutedReply
-k_EInitSystemResult_Existing
-k_EInitSystemResult_FailedInit
-k_EInitSystemResult_FailedOpen
-k_EInitSystemResult_Invalid
-k_EInitSystemResult_Max
-k_EInitSystemResult_Mismatch
-k_EInitSystemResult_None
-k_EInitSystemResult_NotFound
-k_EInitSystemResult_Success
-k_EMsgGCAdjustEquipSlotsManual
-k_EMsgGCAdjustEquipSlotsShuffle
-k_EMsgGCApplyConsumableEffects
-k_EMsgGCApplyEggEssence
-k_EMsgGCApplyPennantUpgrade
-k_EMsgGCApplySticker
-k_EMsgGCApplyStrangePart
-k_EMsgGCBackpackSortFinished
-k_EMsgGCBannedWordListRequest
-k_EMsgGCBannedWordListResponse
-k_EMsgGCCStrike15_v2_Base
-k_EMsgGCCStrike15_v2_GlobalChat
-k_EMsgGCCStrike15_v2_MatchList
-k_EMsgGCCasketItemAdd
-k_EMsgGCCasketItemExtract
-k_EMsgGCCasketItemLoadContents
-k_EMsgGCClientConnectToServer
-k_EMsgGCClientConnectionStatus
-k_EMsgGCClientHello
-k_EMsgGCClientHelloPW
-k_EMsgGCClientHelloPartner
-k_EMsgGCClientHelloR2
-k_EMsgGCClientHelloR3
-k_EMsgGCClientHelloR4
-k_EMsgGCClientVersionUpdated
-k_EMsgGCClientWelcome
-k_EMsgGCCollectItem
-k_EMsgGCConVarUpdated
-k_EMsgGCConsumableExhausted
-k_EMsgGCCraftResponse
-k_EMsgGCCustomizeItemTexture
-k_EMsgGCDelete
-k_EMsgGCDeliverGift
-k_EMsgGCDev_NewItemRequest
-k_EMsgGCDev_PaintKitDropItem
-k_EMsgGCGameServerInfo
-k_EMsgGCGiftWrapItem
-k_EMsgGCGiftWrapItemResponse
-k_EMsgGCGiftedItems
-k_EMsgGCGiftedItems_DEPRECATED
-k_EMsgGCGoldenWrenchBroadcast
-k_EMsgGCInQueue
-k_EMsgGCInvitationCreated
-k_EMsgGCInviteToParty
-k_EMsgGCItemAcknowledged
-k_EMsgGCItemPreviewCheckStatus
-k_EMsgGCItemPreviewExpire
-k_EMsgGCItemPreviewRequest
-k_EMsgGCKickFromParty
-k_EMsgGCLANServerAvailable
-k_EMsgGCLeaveParty
-k_EMsgGCLookupAccount
-k_EMsgGCLookupAccountName
-k_EMsgGCLookupAccountResponse
-k_EMsgGCMOTDRequest
-k_EMsgGCMOTDRequestResponse
-k_EMsgGCModifyItemAttribute
-k_EMsgGCNameBaseItem
-k_EMsgGCNameBaseItemResponse
-k_EMsgGCNameEggEssenceResponse
-k_EMsgGCNameItem
-k_EMsgGCNameItemNotification
-k_EMsgGCOpenCrate
-k_EMsgGCPaintItem
-k_EMsgGCPaintItemResponse
-k_EMsgGCPaintKitBaseItem
-k_EMsgGCPaintKitItem
-k_EMsgGCPaintKitItemResponse
-k_EMsgGCPartyInviteResponse
-k_EMsgGCRemoveCustomTexture
-k_EMsgGCRemoveItemName
-k_EMsgGCRemoveItemPaint
-k_EMsgGCRemoveMakersMark
-k_EMsgGCRemoveUniqueCraftIndex
-k_EMsgGCReplicateConVars
-k_EMsgGCRequestAnnouncements
-k_EMsgGCSaxxyBroadcast
-k_EMsgGCServerAvailable
-k_EMsgGCServerConnectionStatus
-k_EMsgGCServerHello
-k_EMsgGCServerRentalsBase
-k_EMsgGCServerVersionUpdated
-k_EMsgGCServerWelcome
-k_EMsgGCSetItemPosition
-k_EMsgGCSetItemPositions
-k_EMsgGCSetItemStyle
-k_EMsgGCShowItemsPickedUp
-k_EMsgGCSortItems
-k_EMsgGCStatTrakSwap
-k_EMsgGCStoreGetUserData
-k_EMsgGCStorePurchaseCancel
-k_EMsgGCStorePurchaseFinalize
-k_EMsgGCStorePurchaseInit
-k_EMsgGCStorePurchaseQueryTxn
-k_EMsgGCSystemMessage
-k_EMsgGCToGCDirtySDOCache
-k_EMsgGCToGCIsTrustedServer
-k_EMsgGCToGCUpdateSQLKeyValue
-k_EMsgGCTradingBase
-k_EMsgGCTrading_CancelSession
-k_EMsgGCTrading_ConfirmOffer
-k_EMsgGCTrading_RemoveItem
-k_EMsgGCTrading_SessionClosed
-k_EMsgGCTrading_SetItem
-k_EMsgGCTrading_SetReadiness
-k_EMsgGCTrading_StartSession
-k_EMsgGCTrading_TradeChatMsg
-k_EMsgGCTrading_UpdateTradeInfo
-k_EMsgGCUnlockCrateResponse
-k_EMsgGCUnlockCrate_DEPRECATED
-k_EMsgGCUnlockItemStyle
-k_EMsgGCUnlockItemStyleResponse
-k_EMsgGCUnwrapGiftRequest
-k_EMsgGCUnwrapGiftResponse
-k_EMsgGCUpdateItemSchema
-k_EMsgGCUseItemRequest
-k_EMsgGCUseItemResponse
-k_EMsgGCUsedClaimCodeItem
-k_EMsgGCVerifyCacheSubscription
-k_EMsgGC_GlobalGame_Play
-k_EMsgGC_GlobalGame_Subscribe
-k_EMsgGC_GlobalGame_Unsubscribe
-k_EMsgGC_ReportAbuse
-k_EMsgGC_ReportAbuseResponse
-k_EMsgRequestSessionIP
-k_EMsgRequestSessionIPResponse
-k_EMsgUpdateSessionIP
-k_EProtoObjectLobbyInvite
-k_EProtoObjectPartyInvite
-k_EQuestType_Operation
-k_EQuestType_RecurringMission
-k_ESOMsg_CacheSubscribed
-k_ESOMsg_CacheSubscriptionCheck
-k_ESOMsg_CacheUnsubscribed
-k_ESOMsg_Create
-k_ESOMsg_Destroy
-k_ESOMsg_Update
-k_ESOMsg_UpdateMultiple
-k_UnlockStyle_Failed_CantAfford
-k_UnlockStyle_Failed_CantCommit
-k_UnlockStyle_Failed_PreReq
-k_UnlockStyle_Succeeded
 kc_sticker_display_case
 key_data
 key_name
@@ -8008,8 +7719,6 @@ l\v?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
 labelPos
 labelText
 language
-lastModifiedDate
-lastModifiedTime
 last_ip_address
 last_time_played
 last_valid_class
@@ -8145,11 +7854,6 @@ m_Weapon
 m_WeaponName
 m_WonRound
 m_WorkshopURL
-m_bBakedTwoSided
-m_bCanBatchWithDynamicShaderConstants
-m_bDrawLast
-m_bHasBakedLightingFromLightMap
-m_bHasBakedLightingFromVertexStream
 m_bHiddenSet
 m_bIdleAnimation
 m_bIncludeCoupon
@@ -8158,14 +7862,10 @@ m_bIncludeStatTrak
 m_bIncludeStatTrakCoupon
 m_bIncludeUnpainted
 m_bIncludeUnusual
-m_bIsNotMatchedToMaterial
-m_bNoShadow
-m_bOnlyShadow
 m_bSendGiftAPI
 m_bShowNameTag
 m_bShowStatTrak
 m_bStatTrakEnabled
-m_bUseCompressedNormalTangent
 m_flRevenueShare
 m_flWearStep
 m_nDisplaySeed
@@ -8254,7 +7954,6 @@ model_inventory
 model_morphchannel
 model_physics_shape
 model_player
-model_player_per_class
 model_runtime_cloth_node
 model_world
 modelanimevent
@@ -8285,8 +7984,6 @@ my_current_event_stages
 my_current_event_teams
 my_current_team
 nBuildError
-nCentralDirectoryEntries_ThisDisk
-nCentralDirectoryEntries_Total
 nColumn
 nDelayInMS
 nExitCode
@@ -8316,14 +8013,10 @@ note
 noteam
 npc_ability_name
 npcclass
-npf@
-nph@
 num_eligible_recipients
 num_found_nearby
 num_item_presets
 num_item_presets not set!
-numberOfTheDiskWithStartOfCentralDirectory
-numberOfThisDisk
 o\n?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
 o\v?event@QTreeWidget@@MEAA_NPEAVQEvent@@@Z
 objects_modified
@@ -8342,6 +8035,7 @@ open_icon_editor
 operation_coin
 operation_points_awarded
 operation_points_eligible
+optional_toggle_cmd
 optionallycompressedtangentframe
 orientation
 original
@@ -8359,14 +8053,12 @@ overrideclass
 owcaseid
 owner_only
 owns_polymorphic_data
-p08@H^,
-p606@
 pButton
 pCurrentFocusWidget
 pData
 pEvent
-pF@9@
 pFilter
+pLa;
 pPrevFocusWidget
 pResultKV
 pV?read@QImageReader@@QEAA?AVQImage@@XZ
@@ -8495,6 +8187,7 @@ proped_attr_logging
 propername
 property_editor_settings
 propertyeditor
+psid
 public_inventory
 public_list_contents
 public_profile
@@ -8546,7 +8239,6 @@ recurring_missions
 recycle_list
 redeemable_balance
 region_r
-relativeOffsetOfLocalHeader
 relay_clients_connected
 relay_slots_max
 relayed_game_server_steam_id
@@ -8689,7 +8381,6 @@ show_warning_not_trusted_2
 side
 sidelist
 signal
-signature
 single
 skin
 skip
@@ -8727,6 +8418,7 @@ source_column
 source_file_searchpath
 sourceid
 souvenir_case
+souvenir_matchid
 spacing
 special
 spectators_count
@@ -8745,7 +8437,6 @@ stacked_one
 stage
 stageid
 stamp
-startOfCentralDirOffset
 start_action1
 start_action2
 start_action3
@@ -8882,6 +8573,9 @@ tint_id
 toggleViewAction
 tokens
 tool
+tool_request_args
+tool_request_text
+tool_request_tool
 toolbarArea
 tools/cs2_item_editor/check.png
 tools/cs2_item_editor/collapse_all.png
@@ -8959,7 +8653,6 @@ uV?read@QStandardItem@@UEAAXAEAVQDataStream@@@Z
 u\n?connect@QObject@@SA?AVConnection@QMetaObject@@PEBV1@PEBD01W4ConnectionType@Qt@@@Z
 u\v?eventFilter@QAbstractItemView@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
 uid model
-uncompressedSize
 undefined
 underline
 uniqueid
@@ -8970,6 +8663,7 @@ unusual_setup
 unusuals
 upgrade_item_id
 upgraded_defidx
+upnext
 uptodate_subscribed_caches
 usable
 usable_gc
@@ -9019,8 +8713,6 @@ vdata_outliner_name_expr
 vdataderived
 vecline
 verdict
-versionMadeBy
-versionNeededToExtract
 versions
 verticalPolicy
 verticalStretch
@@ -9045,7 +8737,6 @@ vote_phase_length
 vote_phase_start
 vote_starting_side
 vphzc
-vpn@
 vpost
 vsky
 vsncheck_account_id_sessions

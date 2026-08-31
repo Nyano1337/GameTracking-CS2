@@ -3,7 +3,7 @@ import { CSHitGroup, CSPlayerPawn, Instance } from "cs_script/point_script";
 const traceFrequency = 0;
 const drawDuration = 0;
 
-/** @type {"line" | "sphere" | "box" | "bullet" | null} */
+/** @type {"line" | "sphere" | "box" | "player" | "bullet" | null} */
 let traceType = null;
 /** @type {CSPlayerPawn | undefined} */
 let tracePawn = undefined;
@@ -20,17 +20,12 @@ Instance.OnScriptReload({
     },
 });
 
-Instance.OnPlayerChat(({ player, text }) => {
-    tracePawn = player?.GetPlayerPawn();
-    if (text === "!traceline") {
-        traceType = "line";
-    } else if (text === "!tracesphere") {
-        traceType = "sphere";
-    } else if (text === "!tracebox") {
-        traceType = "box";
-    } else if (text === "!tracebullet") {
-        traceType = "bullet";
+Instance.RegisterCheatCommand("script_zoo_trace", (args) => {
+    tracePawn = Instance.GetAllPlayerControllers()[0].GetPlayerPawn();
+    if (args === "line" || args === "sphere" || args === "box" || args === "player" || args === "bullet") {
+        traceType = args;
     } else {
+        Instance.Msg("Usage: script_zoo_trace <type> - type can be line, sphere, box, player, or bullet.")
         traceType = null;
     }
 });
@@ -65,6 +60,17 @@ Instance.SetThink(() => {
         const maxs = { x: 10, y: 10, z: 10 };
 
         const result = Instance.TraceBox({ start, end, mins, maxs, ignoreEntity: tracePawn });
+
+        Instance.DebugBox({ mins: vectorAdd(result.end, mins), maxs: vectorAdd(result.end, maxs), duration: drawDuration, color: { r: 255, g: 0, b: 0 } });
+        if (result.didHit) {
+            const normalEnd = vectorAdd(result.end, vectorScale(result.normal, 10));
+            Instance.DebugLine({ start: result.end, end: normalEnd, duration: drawDuration, color: { r: 255, g: 255, b: 0 } });
+        }
+    } else if (traceType === "player") {
+        const mins = { x: -16, y: -16, z: 0 };
+        const maxs = { x: 16, y: 16, z: tracePawn.IsDucked() ? 36 : 72 };
+
+        const result = Instance.TracePlayer({ start, end, player: tracePawn });
 
         Instance.DebugBox({ mins: vectorAdd(result.end, mins), maxs: vectorAdd(result.end, maxs), duration: drawDuration, color: { r: 255, g: 0, b: 0 } });
         if (result.didHit) {

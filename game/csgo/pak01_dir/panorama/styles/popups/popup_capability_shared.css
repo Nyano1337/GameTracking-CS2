@@ -25,6 +25,11 @@
 	transition-timing-function: ease-in-out;
 }
 
+.PopupPanel.Capability.Hidden.PopupPanelCapability_craft_souvenir,.PopupPanel.Capability.PopupPanelCapability_craft_souvenir
+{
+	transition-duration: 1.2s;
+}
+
 .PopupPanel.Capability.popup-laptop-offers.Hidden
 {
 	opacity: 0.0;
@@ -100,6 +105,12 @@
 	text-align: left;
 }
 
+.popup-capability__topdesc
+{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
 .popup-capability__rental-expiration
 {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -120,6 +131,78 @@
 {
 	font-size: 18px;
 	max-width: 720px;
+}
+
+.inline-coin-icon
+{
+	height: 15px;
+	width: 15px;
+	vertical-align: top;
+	transform: translateY(-3px);
+}
+
+.PopupButtonTimer .inline-coin-icon
+{
+	height: 20px;
+	width: 20px;
+	margin-right: 6px;
+	transform: translateY(-4px);
+	wash-color: positiveColor;
+}
+
+.DropDownChild .craft_souvenir_dropdown_select_player_entry_cost .inline-coin-icon
+{
+	wash-color: baseText;
+}
+
+#MakeSouvenirPlayerSelect
+{
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 0px;
+}
+
+#MakeSouvenirPlayerSelect .DropDownChild .craft_souvenir_dropdown_select_player_entry_cost,#MakeSouvenirPlayerSelect .DropDownChild .craft_souvenir_dropdown_select_player_entry_logo
+{
+	visibility: collapse;
+}
+
+#MakeSouvenirPlayerSelect .DropDownChild .craft_souvenir_dropdown_select_player_entry_name
+{
+	padding-left: 16px;
+	margin-left: 12px;
+	color: White;
+}
+
+.craft_souvenir_dropdown_select_player_entry_name
+{
+	padding-left: 103px;
+	margin-left: -100px;
+}
+
+.craft_souvenir_dropdown_selected Label
+{
+	color: #AAEEAA;
+}
+
+.craft_souvenir_dropdown_selected Image,.craft_souvenir_dropdown_selected .craft_souvenir_dropdown_select_player_entry_cost .inline-coin-icon
+{
+	wash-color: #AAEEAA;
+}
+
+.craft_souvenir_dropdown_select_player_entry_cost
+{
+	min-width: 75px;
+	padding-right: 0px;
+	text-align: right;
+}
+
+.craft_souvenir_dropdown_select_player_entry_logo
+{
+	min-width: 20px;
+	vertical-align: center;
+	padding-left: 8px;
+	padding-right: 0px;
+	opacity: 0.1;
 }
 
 .popup-capability__info-block
@@ -162,6 +245,50 @@
 .popup-capability__button-row .IconButton:disabled
 {
 	opacity: .5;
+}
+
+.popup-capability__button-row ToggleButton.IconButton.Bookmark .TickBox
+{
+	visibility: collapse;
+}
+
+.popup-capability__button-row ToggleButton.IconButton.Bookmark .bookmark-filled
+{
+	opacity: 0;
+	wash-color: white;
+	transition-property: opacity;
+	transition-duration: 0.20s;
+	transition-timing-function: ease-in-out;
+}
+
+.popup-capability__button-row ToggleButton.IconButton.Bookmark:selected
+{
+	opacity: 1;
+	background-color: none;
+}
+
+.popup-capability__button-row ToggleButton.IconButton.Bookmark:selected .bookmark-filled
+{
+	opacity: 1;
+}
+
+#InspectOpenCheckout
+{
+	flow-children: right;
+}
+
+#InspectOpenCheckout Label
+{
+	font-size: 14px;
+	color: white;
+	background-color: rgb(223, 140, 17);
+	horizontal-align: right;
+	vertical-align: top;
+	border-radius: 4px;
+	text-align: center;
+	padding: 0px 6px;
+	margin-top: 4px;
+	transform: translateX( -12px );
 }
 
 .popup-capability__button-row .IconButton Image
@@ -247,6 +374,51 @@
 	height: 64px;
 }
 
+.popup-capability__souvenir-discount
+{
+	height: 48px;
+	background-color: rgba(0, 0, 0, 0.75);
+	vertical-align: center;
+	transform: translateX( 8px );
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	flow-children: right;
+	padding: 4px 18px 4px 0px;
+}
+
+.popup-capability__souvenir-discount .popup-capability__souvenir-discount__percent
+{
+	font-size: 24px;
+	color: positiveColor;
+	margin: 0px 8px 0px 16px;
+}
+
+.popup-capability__souvenir-discount .popup-capability__souvenir-discount__cost
+{
+	margin: 0px 4px;
+	font-size: 18px;
+	horizontal-align: center;
+}
+
+.popup-capability__souvenir-discount .popup-capability__souvenir-discount__original
+{
+	font-size: 14px;
+	text-decoration: line-through;
+	color: rgb(184, 184, 184);
+	horizontal-align: right;
+	font-weight: light;
+	horizontal-align: center;
+}
+
+.popup-capability__souvenir-discount .popup-capability__souvenir-discount__original .inline-coin-icon
+{
+	height: 13px;
+	width: 13px;
+	vertical-align: top;
+	transform: translateY(-2px);
+	wash-color:rgb(184, 184, 184);
+}
+
 .popup-capability__purchase .PopupButton Label
 {
 	text-transform: none;
@@ -259,7 +431,7 @@
 	transition-timing-function: ease-in-out;
 }
 
-.popup-capability__button-row .PopupButton.hidden,.popup-capability__button-row .PopupButtonTimer.hidden,.popup-capability__button-row .PopupButton.move-down,.popup-capability__button-row .PopupButtonTimer.move-down,.popup-capability__purchase.hidden,.popup-capability__button-row.hidden
+.popup-capability__button-row .PopupButton.hidden,.popup-capability__button-row .PopupButtonTimer.hidden,.popup-capability__button-row .PopupButton.move-down,.popup-capability__button-row .PopupButtonTimer.move-down,.popup-capability__purchase.hidden,.popup-capability__button-row.hidden,.popup-capability__souvenir-discount.hidden
 {
 	opacity: 0;
 	transform: translateY( 80% );
@@ -330,6 +502,90 @@
 #id-rental-xray-section
 {
 	visibility: collapse;
+}
+
+.add-to-cart-controls
+{
+	flow-children: right;
+	margin-left: 16px;
+	border-radius: 3px;
+	vertical-align: center;
+	height: 46px;
+	transition-property: background-color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn
+{
+	width: 46px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn Label
+{
+	font-size: 28px;
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	color: white;
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn:hover
+{
+	background-color: rgba(255, 255, 255, 0.90);
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn:hover Label
+{
+	color:black;
+}
+
+.add-to-cart-controls .add-to-cart-controls__btn:active
+{
+	sound: "UIPanorama.submenu_select";
+}
+
+.add-to-cart-controls .add-to-cart-controls__center
+{
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-left: 1px solid rgba(255, 255, 255, 0.05);
+	border-right: 1px solid rgba(255, 255, 255, 0.05);
+	padding: 0px 16px;
+	flow-children: down;
+}
+
+.add-to-cart-controls .add-to-cart-controls__center .add-to-cart-controls__title
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-size: 24px;
+	min-width: 92px;
+}
+
+.add-to-cart-controls .add-to-cart-controls__center .add-to-cart-controls__price
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-size: 14px;
+}
+
+.add-to-cart-controls .add-to-cart-controls__center .add-to-cart-controls__price Image
+{
+	width: 12px;
+	height: 12px;
+}
+
+.add-to-cart-controls .add-to-cart-controls__separator
+{
+	width: 1px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.178);
+	padding: 0px 8px;
 }
 
 .rent-bar-btn

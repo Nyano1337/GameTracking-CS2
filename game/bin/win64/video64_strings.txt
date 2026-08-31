@@ -1234,7 +1234,6 @@ $d`D-laM
 0123456789abcdefp6?
 08@HPX`hpx
 08@HR@
-08@J`
 08bX
 0;0A0C0E0G0I0c0
 0?0L
@@ -1863,7 +1862,6 @@ Account not verified
 Accounts not friends
 AchievementUnlocked
 Acrypto\asn1\tasn_new.c
-Active
 AdaptationSet
 AddClientConnectionBackToPool called, with no current map entry!
 AddedGameToWishlist
@@ -2691,6 +2689,7 @@ Can't dump heaps until you've walked them!\n
 Can't see w/o segment size
 Can't seek w/o init segment size
 Can't use datagrams with SSL connections, SSL requires reliability.
+Canceled
 Canceled by new transaction
 Cancelled by Admin
 Cancelled by Friendly Fraud Lock
@@ -4527,7 +4526,6 @@ P-384
 P-521
 P-521:P-384:P-256
 P00`
-P08@J`
 P1\t98"
 P<xD<
 P@HPX`h\f
@@ -5517,6 +5515,7 @@ Subject Information Access
 Submiting threaded work item for HTTP request to %s\n
 Subscribed
 Subscribers
+Succeeded
 Success! http%s://%s%s\n
 SuggestedFriend
 Suite B: cannot sign P-384 with P-256
@@ -10433,7 +10432,6 @@ k_EMsgGCHUpdateMultipleSessions
 k_EMsgGCHUpdateSession
 k_EMsgGCHVacVerificationChange
 k_EMsgGCInterAppMessage
-k_EMsgGCSystemMessage
 k_EMsgGMDRMSync
 k_EMsgGMGetServiceMethodRouting
 k_EMsgGMLoadActivationCodes
@@ -12859,6 +12857,7 @@ steamclient
 steamcmd
 steamcmd.exe
 steamglobal
+steamhdl
 steammessages_base.proto
 steampipe
 steampipepeering

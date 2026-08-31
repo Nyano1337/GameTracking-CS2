@@ -19,8 +19,7 @@
 .bmp
 /cursor.res
 00000409
-2\vpP
-=Cer
+ACTIVE
 ACUTE_ACCENT
 AC_BACK
 AC_BOOKMARKS
@@ -88,7 +87,6 @@ CTRL
 CURRENCYSUBUNIT
 CURRENCYUNIT
 CURRENCY_SIGN
-CUtlRBTree<struct CUtlOrderedMapBase<unsigned int,enum ButtonCode_t,class CDefLess<unsigned int>,int>::Node_t,class CUtlOrderedMapBase<unsigned int,enum ButtonCode_t,class CDefLess<unsigned int>,int>::CKeyLess,int,class CUtlLeanVector<struct UtlRBTreeNode_t<struct CUtlOrderedMapBase<unsigned int,enum ButtonCode_t,class CDefLess<unsigned int>,int>::Node_t,int>,int,class CMemAllocAllocator> >::Insert
 C_WITH_CEDILLA
 CallWindowProcA
 Couldn't initialize joysticks: %s\n
@@ -169,6 +167,7 @@ IE_WindowMove
 IE_WindowSizeChanged
 IMEManager001
 IMM32.dll
+INACTIVE
 INVERTED_EXCLAMATION_MARK
 INVERTED_QUESTION_MARK
 ISS: Cursor clip %s from '%s'\n
@@ -379,7 +378,7 @@ RIGHTARROW
 RIGHTPAREN
 RIGHT_CURLY_BRACKET
 RIGHT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK
-RSDS(k4
+RSDSr
 RSHIFT
 RWIN
 R_AXIS
@@ -422,6 +421,7 @@ SDL: Window %d shown\n
 SDL: Window %d size changed [%d,%d]\n
 SDL_CreateColorCursor failed for %s\n
 SDL_CreateColorCursor failed\n
+SDL_ENABLE_SCREEN_KEYBOARD
 SDL_EVENT(0x%x)
 SDL_EVENT_AUDIO_DEVICE_ADDED
 SDL_EVENT_AUDIO_DEVICE_REMOVED
@@ -462,7 +462,6 @@ SDL_EVENT_JOYSTICK_REMOVED
 SDL_EVENT_KEYMAP_CHANGED
 SDL_EVENT_KEY_DOWN
 SDL_EVENT_KEY_UP
-SDL_EVENT_LAST
 SDL_EVENT_LOCALE_CHANGED
 SDL_EVENT_LOW_MEMORY
 SDL_EVENT_MOUSE_BUTTON_DOWN
@@ -504,6 +503,7 @@ SELECT
 SEPARATOR
 SHARP_S
 SHIFT
+SLEEP
 SPACE
 START
 STICK1

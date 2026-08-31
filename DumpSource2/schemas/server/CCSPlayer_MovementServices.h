@@ -1,6 +1,8 @@
 class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 {
 	CCSPlayerAnimationState m_AnimationState;
+	bool m_bUsingGroundTopologyOffset;
+	float32 m_flUsingGroundTopologyOffsetTransitionSmoothing;
 	Vector m_vecLadderNormal;
 	int32 m_nLadderSurfacePropIndex;
 	bool m_bDucked;
@@ -29,7 +31,6 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 	bool m_bMadeFootstepNoise;
 	int32 m_iFootsteps;
 	GameTime_t m_fStashGrenadeParameterWhen;
-	uint64 m_nButtonDownMaskPrev;
 	bool m_bUseFrictionStashedSpeed;
 	float32 m_flUseFrictionStashedSpeedUntilFrac;
 	float32 m_flFrictionStashedSpeed;
@@ -47,9 +48,6 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 	float32 m_flLastJumpVelocityZ;
 	bool m_bJumpApexPending;
 	float32 m_flTicksSinceLastSurfingDetected;
-	bool m_bWasSurfing;
 	Vector2D m_vecWalkWishVel;
-	GameTime_t m_gtLastTimeOnStaticWorldGround;
-	GameTime_t m_gtLastTimeInAir;
 	bool m_bHasEverProcessedCommand;
 };

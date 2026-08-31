@@ -12,8 +12,6 @@ var SelectItemForCapability;
     SelectItemForCapability.oCapabilityInfo = {
         capability: '',
         initialItemId: '',
-        multiselectItemIds: {},
-        multiselectItemIdsArray: [],
         popupVisible: false,
         bWorkshopItemPreview: false,
         bIsMultiSelect: false
@@ -57,6 +55,10 @@ var SelectItemForCapability;
         else if (SelectItemForCapability.oCapabilityInfo.capability === 'casketstore') {
             szPrefixString = '#inv_select_casketstore';
         }
+        else if (SelectItemForCapability.oCapabilityInfo.capability === 'craft_souvenir') {
+            szPrefixString = '#inv_select_item_craft_souvenir';
+        }
+        _m_cp.AddClass('PopupSelectItemForCapability_' + SelectItemForCapability.oCapabilityInfo.capability);
         _m_cp.SetDialogVariable('title', $.Localize(szPrefixString, _m_cp));
     }
     function _AddSortDropdownToNavBar(elDropDownParent) {
@@ -96,25 +98,12 @@ var SelectItemForCapability;
             emptyText = $.Localize('#inv_empty_lister_for_stattrackswap', elEmpty);
         else if (SelectItemForCapability.oCapabilityInfo.capability === 'can_collect')
             emptyText = $.Localize('#inv_empty_lister_nocaskets', elEmpty);
+        else if (SelectItemForCapability.oCapabilityInfo.capability === 'craft_souvenir')
+            emptyText = $.Localize('#inv_empty_lister_for_craft_souvenir', elEmpty);
         else
             emptyText = $.Localize('#inv_empty_lister_for_use', elEmpty);
         elEmpty.SetDialogVariable('empty-text', emptyText);
         elEmpty.visible = true;
-    }
-    function _UpdateMultiSelectItemsList(itemid, bSelected) {
-        if (bSelected) {
-            if (!SelectItemForCapability.oCapabilityInfo.multiselectItemIds.hasOwnProperty(itemid)) {
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIds[itemid] = bSelected;
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.push(itemid);
-            }
-        }
-        else {
-            if (SelectItemForCapability.oCapabilityInfo.multiselectItemIds.hasOwnProperty(itemid)) {
-                delete SelectItemForCapability.oCapabilityInfo.multiselectItemIds[itemid];
-                SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.splice(SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.indexOf(itemid), 1);
-            }
-        }
-        _UpdateMultiSelectDisplay();
     }
     function _UpdateMultiSelectDisplay() {
         const elMultiSelectDisplay = _m_cp.FindChildInLayoutFile('id-popup-select-multi-item-display');
@@ -122,9 +111,9 @@ var SelectItemForCapability;
             elMultiSelectDisplay.visible = false;
             return;
         }
-        SelectItemForCapability.oCapabilityInfo.capability === "";
-        elMultiSelectDisplay.SetDialogVariableInt('count', SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.length);
-        _m_cp.FindChildInLayoutFile('id-popup-select-multi-item-btn').enabled = (SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray.length > 0);
+        let count = _m_elItemList.selectedItemCount;
+        elMultiSelectDisplay.SetDialogVariableInt('count', count);
+        _m_cp.FindChildInLayoutFile('id-popup-select-multi-item-btn').enabled = (count > 0);
         elMultiSelectDisplay.visible = true;
     }
     function ClosePopUp() {
@@ -171,14 +160,19 @@ var SelectItemForCapability;
             _CapabilityPutIntoCasketAction(itemid, SelectItemForCapability.oCapabilityInfo.initialItemId);
         }
         if (SelectItemForCapability.oCapabilityInfo.capability === 'casketretrieve') {
-            itemTile.ToggleClass('capability_multistatus_selected');
-            _UpdateMultiSelectItemsList(itemid, itemTile.BHasClass('capability_multistatus_selected'));
+            let listPanel = itemTile.FindAncestor("id-popup-select-item-list");
+            listPanel.OnItemActivated(itemid);
+            _UpdateMultiSelectDisplay();
             return;
         }
         else if (SelectItemForCapability.oCapabilityInfo.capability === 'casketstore') {
-            itemTile.ToggleClass('capability_multistatus_selected');
-            _UpdateMultiSelectItemsList(itemid, itemTile.BHasClass('capability_multistatus_selected'));
+            let listPanel = itemTile.FindAncestor("id-popup-select-item-list");
+            listPanel.OnItemActivated(itemid);
+            _UpdateMultiSelectDisplay();
             return;
+        }
+        else if (SelectItemForCapability.oCapabilityInfo.capability === 'craft_souvenir') {
+            _CapabilityCraftSouvenirAction(itemid, SelectItemForCapability.oCapabilityInfo.initialItemId);
         }
         ClosePopUp();
     }
@@ -228,6 +222,29 @@ var SelectItemForCapability;
         elPanel.Data().oSettings = oSettings;
     }
     ;
+    function _CapabilityCraftSouvenirAction(itemid, umid) {
+        if (InventoryAPI.GetItemStickerCount(itemid) > 0) {
+            const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('', 'file://{resources}/layout/popups/popup_capability_can_sticker.xml');
+            let oSettings = {
+                popup_panel: elPanel,
+                item_id: itemid,
+                remove_sticker_all_at_once: true,
+                work_type: 'remove_sticker',
+                umid_souvenir: umid
+            };
+            elPanel.Data().oSettings = oSettings;
+        }
+        else {
+            const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-inspect-' + itemid, 'file://{resources}/layout/popups/popup_capability_can_keychain.xml');
+            let oSettings = {
+                item_id: itemid,
+                tool_id: '',
+                umid_souvenir: umid,
+                work_type: 'craft_souvenir'
+            };
+            elPanel.Data().oSettings = oSettings;
+        }
+    }
     function _CapabilityWrapStickerAsKeychainAction(idsToUse) {
         const elPanel = UiToolkitAPI.ShowCustomLayoutPopup('popup-inspect-' + idsToUse.item, 'file://{resources}/layout/popups/popup_capability_can_keychain.xml');
         let oSettings = {
@@ -314,7 +331,11 @@ var SelectItemForCapability;
     ;
     function ProceedForMultiStatusCapabilityPopup() {
         let capability = SelectItemForCapability.oCapabilityInfo.capability;
-        let arrItemIDs = SelectItemForCapability.oCapabilityInfo.multiselectItemIdsArray;
+        let count = _m_elItemList.selectedItemCount;
+        let arrItemIDs = [];
+        for (let i = 0; i < count; i++) {
+            arrItemIDs.push(_m_elItemList.GetSelectedItemId(i).toString());
+        }
         if (arrItemIDs.length <= 0)
             return;
         switch (capability) {
@@ -347,7 +368,7 @@ var SelectItemForCapability;
             return false;
         if (!itemid)
             return false;
-        _UpdateMultiSelectItemsList(itemid, bSelected);
+        _UpdateMultiSelectDisplay();
         UpdateSort();
         return true;
     }

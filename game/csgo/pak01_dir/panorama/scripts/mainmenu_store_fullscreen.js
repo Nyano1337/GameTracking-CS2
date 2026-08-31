@@ -98,7 +98,7 @@ var MainMenuStore;
         if (_m_activePanelId !== panelId) {
             if (panelId === _m_pagePrefix + 'home') {
                 UpdateItemsInHomeSection('coupon', 'id-store-popular-items', 6);
-                UpdateItemsInHomeSection('tournament', 'id-store-tournament-items', 4);
+                UpdateItemsInHomeSection('tournament', 'id-store-tournament-items', 1);
             }
             else {
                 MakePageFromStoreData(keyType);
@@ -115,29 +115,56 @@ var MainMenuStore;
         }
     }
     MainMenuStore.NavigateToTab = NavigateToTab;
-    function UpdateItemsInHomeSection(catagory, parentId, numItemsToShow) {
+    function UpdateItemsInHomeSection(sSectionName, parentId, numItemsToShow) {
+        let oItemsByCategory = StoreItems.GetStoreItems();
+        let aItemsList = oItemsByCategory[sSectionName];
+        let extraSuffix = '';
+        if ((sSectionName === 'coupon') && (aItemsList.length > 0) &&
+            (aItemsList[0].isNewRelease)) {
+            if ('17293822569102711679' === aItemsList[0].id)
+                extraSuffix = '_nightmode2';
+        }
         let elPanel = _m_cp.FindChildInLayoutFile(parentId);
-        let elParent = _m_cp.FindChildInLayoutFile('id-store-home-section-' + catagory);
-        elParent.style.backgroundImage = 'url("file://{images}/backgrounds/store_home_' + catagory + '.psd")';
+        let elParent = _m_cp.FindChildInLayoutFile('id-store-home-section-' + sSectionName);
+        elParent.style.backgroundImage = 'url("file://{images}/backgrounds/store_home_' + sSectionName + extraSuffix + '.psd")';
         elParent.style.backgroundPosition = '50% 50%';
         elParent.style.backgroundSize = 'cover';
-        if (catagory === 'tournament') {
-            elParent.SetDialogVariable('tournament-name', $.Localize("#store_nav_tournament_" + g_ActiveTournamentInfo.eventid));
+        let elTitleLabel = elParent.FindChildInLayoutFile('id-store-home-section-' + sSectionName + '-title');
+        if (elTitleLabel && extraSuffix) {
+            elTitleLabel.text = $.Localize('#store_nav_section_' + sSectionName + extraSuffix, elTitleLabel);
         }
-        let oItemsByCategory = StoreItems.GetStoreItems();
-        let aItemsList = oItemsByCategory[catagory];
+        if (sSectionName === 'tournament') {
+            elParent.SetDialogVariable('tournament-name', $.Localize("#store_nav_tournament_" + g_ActiveTournamentInfo.eventid));
+            elParent.SetDialogVariable('tournament_name', $.Localize('#CSGO_Tournament_Event_NameShort_' + g_ActiveTournamentInfo.eventid));
+            const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+            let elStickerLink = elParent.FindChildInLayoutFile('id-store-home-section-major-store-btn');
+            if (!elStickerLink) {
+                elStickerLink = $.CreatePanel('Panel', elParent, 'id-store-home-section-major-store-btn');
+                elStickerLink.BLoadLayoutSnippet('TournamentStickers');
+                elStickerLink.SetPanelEvent('onactivate', () => {
+                    UiToolkitAPI.ShowCustomLayoutPopup('id-popup-major-store', 'file://{resources}/layout/popups/popup_major_store.xml');
+                    $.DispatchEvent("CSGOPlaySoundEffect", "UIPanorama.tab_mainmenu_shop", "MOUSE");
+                });
+            }
+            const defidxStickerItem = InventoryAPI.GetItemDefinitionIndexFromDefinitionName('sticker');
+            const numSticker = 5;
+            for (let i = 0; i < numSticker; i++) {
+                const itemId = InventoryAPI.GetFauxItemIDFromDefAndPaintIndex(defidxStickerItem, g_ActiveTournamentTeams[getRandomInt(0, g_ActiveTournamentTeams.length - 1)].players[getRandomInt(0, 4)].stickerids[getRandomInt(0, 3)]);
+                elStickerLink.FindChildInLayoutFile('id-sticker-' + i).itemid = itemId;
+            }
+        }
         if (aItemsList.length < 1) {
             elParent.visible = false;
             return;
         }
         elParent.visible = true;
         for (let i = 0; i < numItemsToShow; i++) {
-            let elTile = elPanel.FindChildInLayoutFile('home-' + catagory + '-' + i);
+            let elTile = elPanel.FindChildInLayoutFile('home-' + sSectionName + '-' + i);
             if (!elTile) {
-                elTile = $.CreatePanel("Button", elPanel, 'home-' + catagory + '-' + i);
+                elTile = $.CreatePanel("Button", elPanel, 'home-' + sSectionName + '-' + i);
                 elTile.BLoadLayout('file://{resources}/layout/itemtile_store.xml', false, false);
             }
-            UpdateItem(elTile, catagory, i);
+            UpdateItem(elTile, sSectionName, i);
         }
     }
     function MakeTabsBtnsFromStoreData() {
@@ -169,7 +196,7 @@ var MainMenuStore;
             if (nTrack > 0) {
                 let nCount = MissionsAPI.GetSeasonalOperationRedeemableGoodsCount(nTrack);
                 for (let i = 0; i < nCount; i++) {
-                    if (nNewItemCount > 0) {
+                    if (nNewItemCount > 1) {
                         break;
                     }
                     let ShopEntry = {
